@@ -27,8 +27,8 @@ def main():
         st.session_state.current_question = 0
     if "score" not in st.session_state:
         st.session_state.score = 0
-    if "submitted" not in st.session_state:
-        st.session_state.submitted = False
+    if "show_answer" not in st.session_state:
+        st.session_state.show_answer = False
 
     sections = quiz_data["013_sections"]
     current_section = sections[st.session_state.current_question]
@@ -53,9 +53,12 @@ def main():
     else:
         st.warning("選択肢が見つかりません。")
 
-    # 送信ボタン
-    if st.button("回答・解説を見る"):
-        st.session_state.submitted = True
+    # 回答・解説の表示切り替え
+    show_answer = st.toggle(
+        "回答・解説を表示", key=f"toggle_{st.session_state.current_question}"
+    )
+
+    if show_answer:
         correct_answer = content["033_answer"].strip()
         st.markdown(f"### あなたの回答：\n{answer}")
         st.markdown(f"### 正解：\n{correct_answer}")
@@ -69,14 +72,13 @@ def main():
             st.markdown(content["035_supplements"])
 
     # 前の問題と次の問題のボタンを横に並べる
-    col1, col2 = st.columns([0.2, 0.8])  # 等幅の場合
+    col1, col2 = st.columns([0.2, 0.8])
 
     # 前の問題へ進むボタン
     with col1:
         if st.session_state.current_question > 0:
             if st.button("前の問題へ"):
                 st.session_state.current_question -= 1
-                st.session_state.submitted = False
                 st.rerun()
 
     # 次の問題へ進むボタン
@@ -84,7 +86,6 @@ def main():
         if st.session_state.current_question < len(sections) - 1:
             if st.button("次の問題へ"):
                 st.session_state.current_question += 1
-                st.session_state.submitted = False
                 st.rerun()
 
     # 進捗状況の表示
