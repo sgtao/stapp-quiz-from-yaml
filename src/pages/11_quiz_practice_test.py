@@ -17,10 +17,18 @@ def convert_contents_to_dict(contents):
 
 
 def main():
-    st.title("クイズアプリ")
 
     # YAMLファイルの読み込み
     quiz_data = load_quiz_data("assets/practice-test.yaml")
+    # print(quiz_data)
+    # print(quiz_data["011_title"])
+
+    if "011_title" not in quiz_data:
+        st.header("クイズアプリ")
+        st.error("読み込みデータの形式が異なるようです")
+        return
+    else:
+        st.subheader(quiz_data["011_title"])
 
     # セッション状態の初期化
     if "current_question" not in st.session_state:
