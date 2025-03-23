@@ -11,8 +11,14 @@ def load_quiz_data(file_path):
 def convert_contents_to_dict(contents):
     """リスト形式のコンテンツを辞書形式に変換"""
     content_dict = {}
+    details_list = []
     for item in contents:
-        content_dict.update(item)
+        if "034_details" in item:
+            details_list.append(item["034_details"])
+        else:
+            content_dict.update(item)
+    if details_list:
+        content_dict["034_details"] = "\n\n".join(details_list)
     return content_dict
 
 
