@@ -52,14 +52,38 @@ def main():
 
     # 選択肢の表示
     options = content.get("032_selections", [])
-    if options:
-        answer = st.radio(
-            "答えを選んでください：",
-            options,
-            key=f"q_{st.session_state.current_question}",
+    # if options:
+    #     answer = st.radio(
+    #         "答えを選んでください：",
+    #         options,
+    #         key=f"q_{st.session_state.current_question}",
+    #     )
+    # else:
+    #     st.warning("選択肢が見つかりません。")
+
+    # セッション状態の初期化
+    if "selected_options" not in st.session_state:
+        st.session_state.selected_options = []
+
+    def checkbox_callback(option):
+        if option in st.session_state.selected_options:
+            st.session_state.selected_options.remove(option)
+        else:
+            st.session_state.selected_options.append(option)
+
+    st.write("答えを選んでください：")
+    for option in options:
+        is_selected = option in st.session_state.selected_options
+        st.checkbox(
+            option,
+            value=is_selected,
+            key=f"checkbox_{option}",
+            on_change=checkbox_callback,
+            args=(option,),
         )
-    else:
-        st.warning("選択肢が見つかりません。")
+
+    # 選択されたオプションを表示
+    st.write("選択された答え:", st.session_state.selected_options)
 
     # 回答・解説の表示切り替え
     show_answer = st.toggle(
@@ -68,7 +92,6 @@ def main():
 
     if show_answer:
         correct_answer = content["033_answer"].strip()
-        st.markdown(f"### あなたの回答：\n{answer}")
         st.markdown(f"### 正解：\n{correct_answer}")
 
         # 解説の表示
