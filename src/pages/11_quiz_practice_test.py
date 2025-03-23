@@ -40,14 +40,14 @@ def initialize_session_state():
         clear_checkbox_options()
 
 
-def itemSlider(sections):
+def itemSlider(sections, key="default"):
     # 前の問題と次の問題のボタンを横に並べる
     col1, col2 = st.columns([0.2, 0.8])
 
     # 前の問題へ進むボタン
     with col1:
         if st.session_state.current_question > 0:
-            if st.button("前の問題へ"):
+            if st.button("前の問題へ", key=f"{key}_prev"):
                 clear_checkbox_options()
                 st.session_state.current_question -= 1
                 st.rerun()
@@ -55,10 +55,22 @@ def itemSlider(sections):
     # 次の問題へ進むボタン
     with col2:
         if st.session_state.current_question < len(sections) - 1:
-            if st.button("次の問題へ"):
+            if st.button("次の問題へ", key=f"{key}_next"):
                 clear_checkbox_options()
                 st.session_state.current_question += 1
                 st.rerun()
+
+
+def sideMenuProgress(sections):
+    # 進捗状況の表示
+    st.sidebar.markdown("### 進捗状況")
+    st.sidebar.progress(
+        (st.session_state.current_question + 1) / len(sections)
+    )
+    st.sidebar.markdown(
+        f"問題 {st.session_state.current_question + 1} / {len(sections)}"
+    )
+    st.sidebar.markdown(f"現在のスコア: {st.session_state.score}")
 
 
 def main():
@@ -83,7 +95,7 @@ def main():
     st.subheader(current_section["021_title"])
 
     # 設問スライダー
-    itemSlider(sections)
+    itemSlider(sections, key="top")
 
     # コンテンツをリストから辞書に変換
     content = convert_contents_to_dict(current_section["023_contents"])
@@ -127,15 +139,11 @@ def main():
         if "035_supplements" in content:
             st.markdown(content["035_supplements"])
 
-    # 進捗状況の表示
-    st.sidebar.markdown("### 進捗状況")
-    st.sidebar.progress(
-        (st.session_state.current_question + 1) / len(sections)
-    )
-    st.sidebar.markdown(
-        f"問題 {st.session_state.current_question + 1} / {len(sections)}"
-    )
-    st.sidebar.markdown(f"現在のスコア: {st.session_state.score}")
+    # 設問スライダー
+    itemSlider(sections, key="bottom")
+
+    # サイドメニュー
+    sideMenuProgress(sections)
 
 
 if __name__ == "__main__":
