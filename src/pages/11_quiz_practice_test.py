@@ -39,7 +39,7 @@ def main():
         st.error("読み込みデータの形式が異なるようです")
         return
     else:
-        st.subheader(quiz_data["011_title"])
+        st.header(quiz_data["011_title"])
 
     # セッション状態の初期化
     if "current_question" not in st.session_state:
@@ -108,7 +108,7 @@ def main():
     # # 選択されたオプションを表示
     # st.write("選択された答え:", st.session_state.selected_options)
     if st.session_state.selected_options:
-        st.info("選択された答え:")
+        st.subheader("選択された答え:")
         for selected_option in st.session_state.selected_options:
             st.markdown(f"- {selected_option}")
     else:
