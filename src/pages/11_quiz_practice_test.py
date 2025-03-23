@@ -27,18 +27,7 @@ def clear_checkbox_options():
     st.session_state.selected_options = []
 
 
-def main():
-
-    # YAMLファイルの読み込み
-    quiz_data = load_quiz_data("assets/practice-test.yaml")
-
-    if "011_title" not in quiz_data:
-        st.header("クイズアプリ")
-        st.error("読み込みデータの形式が異なるようです")
-        return
-    else:
-        st.header(quiz_data["011_title"])
-
+def initialize_session_state():
     # セッション状態の初期化
     if "current_question" not in st.session_state:
         st.session_state.current_question = 0
@@ -50,9 +39,8 @@ def main():
         # st.session_state.selected_options = []
         clear_checkbox_options()
 
-    sections = quiz_data["013_sections"]
-    current_section = sections[st.session_state.current_question]
 
+def itemSlider(sections):
     # 前の問題と次の問題のボタンを横に並べる
     col1, col2 = st.columns([0.2, 0.8])
 
@@ -72,8 +60,30 @@ def main():
                 st.session_state.current_question += 1
                 st.rerun()
 
+
+def main():
+
+    # st.session_stateの初期化
+    initialize_session_state()
+
+    # YAMLファイルの読み込み
+    quiz_data = load_quiz_data("assets/practice-test.yaml")
+
+    if "011_title" not in quiz_data:
+        st.header("クイズアプリ")
+        st.error("読み込みデータの形式が異なるようです")
+        return
+    else:
+        st.header(quiz_data["011_title"])
+
+    sections = quiz_data["013_sections"]
+    current_section = sections[st.session_state.current_question]
+
     # 問題の表示
     st.subheader(current_section["021_title"])
+
+    # 設問スライダー
+    itemSlider(sections)
 
     # コンテンツをリストから辞書に変換
     content = convert_contents_to_dict(current_section["023_contents"])
