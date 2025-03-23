@@ -55,6 +55,25 @@ def main():
     sections = quiz_data["013_sections"]
     current_section = sections[st.session_state.current_question]
 
+    # 前の問題と次の問題のボタンを横に並べる
+    col1, col2 = st.columns([0.2, 0.8])
+
+    # 前の問題へ進むボタン
+    with col1:
+        if st.session_state.current_question > 0:
+            if st.button("前の問題へ"):
+                clear_checkbox_options()
+                st.session_state.current_question -= 1
+                st.rerun()
+
+    # 次の問題へ進むボタン
+    with col2:
+        if st.session_state.current_question < len(sections) - 1:
+            if st.button("次の問題へ"):
+                clear_checkbox_options()
+                st.session_state.current_question += 1
+                st.rerun()
+
     # 問題の表示
     st.subheader(current_section["021_title"])
 
@@ -111,25 +130,6 @@ def main():
         # 補足情報の表示（存在する場合）
         if "035_supplements" in content:
             st.markdown(content["035_supplements"])
-
-    # 前の問題と次の問題のボタンを横に並べる
-    col1, col2 = st.columns([0.2, 0.8])
-
-    # 前の問題へ進むボタン
-    with col1:
-        if st.session_state.current_question > 0:
-            if st.button("前の問題へ"):
-                clear_checkbox_options()
-                st.session_state.current_question -= 1
-                st.rerun()
-
-    # 次の問題へ進むボタン
-    with col2:
-        if st.session_state.current_question < len(sections) - 1:
-            if st.button("次の問題へ"):
-                clear_checkbox_options()
-                st.session_state.current_question += 1
-                st.rerun()
 
     # 進捗状況の表示
     st.sidebar.markdown("### 進捗状況")
