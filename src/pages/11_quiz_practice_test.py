@@ -16,6 +16,17 @@ def convert_contents_to_dict(contents):
     return content_dict
 
 
+def checkbox_callback(option):
+    if option in st.session_state.selected_options:
+        st.session_state.selected_options.remove(option)
+    else:
+        st.session_state.selected_options.append(option)
+
+
+def clear_checkbox_options():
+    st.session_state.selected_options = []
+
+
 def main():
 
     # YAMLファイルの読み込み
@@ -37,6 +48,9 @@ def main():
         st.session_state.score = 0
     if "show_answer" not in st.session_state:
         st.session_state.show_answer = False
+    if "selected_options" not in st.session_state:
+        # st.session_state.selected_options = []
+        clear_checkbox_options()
 
     sections = quiz_data["013_sections"]
     current_section = sections[st.session_state.current_question]
@@ -61,16 +75,6 @@ def main():
     # else:
     #     st.warning("選択肢が見つかりません。")
 
-    # セッション状態の初期化
-    if "selected_options" not in st.session_state:
-        st.session_state.selected_options = []
-
-    def checkbox_callback(option):
-        if option in st.session_state.selected_options:
-            st.session_state.selected_options.remove(option)
-        else:
-            st.session_state.selected_options.append(option)
-
     st.write("答えを選んでください：")
     for option in options:
         is_selected = option in st.session_state.selected_options
@@ -82,8 +86,14 @@ def main():
             args=(option,),
         )
 
-    # 選択されたオプションを表示
-    st.write("選択された答え:", st.session_state.selected_options)
+    # # 選択されたオプションを表示
+    # st.write("選択された答え:", st.session_state.selected_options)
+    if st.session_state.selected_options:
+        st.info("選択された答え:")
+        for selected_option in st.session_state.selected_options:
+            st.markdown(f"- {selected_option}")
+    else:
+        st.warning("選択された答えはありません")
 
     # 回答・解説の表示切り替え
     show_answer = st.toggle(
@@ -109,6 +119,7 @@ def main():
     with col1:
         if st.session_state.current_question > 0:
             if st.button("前の問題へ"):
+                clear_checkbox_options()
                 st.session_state.current_question -= 1
                 st.rerun()
 
@@ -116,6 +127,7 @@ def main():
     with col2:
         if st.session_state.current_question < len(sections) - 1:
             if st.button("次の問題へ"):
+                clear_checkbox_options()
                 st.session_state.current_question += 1
                 st.rerun()
 
