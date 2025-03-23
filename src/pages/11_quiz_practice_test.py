@@ -31,8 +31,6 @@ def main():
 
     # YAMLファイルの読み込み
     quiz_data = load_quiz_data("assets/practice-test.yaml")
-    # print(quiz_data)
-    # print(quiz_data["011_title"])
 
     if "011_title" not in quiz_data:
         st.header("クイズアプリ")
@@ -85,14 +83,6 @@ def main():
 
     # 選択肢の表示
     options = content.get("032_selections", [])
-    # if options:
-    #     answer = st.radio(
-    #         "答えを選んでください：",
-    #         options,
-    #         key=f"q_{st.session_state.current_question}",
-    #     )
-    # else:
-    #     st.warning("選択肢が見つかりません。")
 
     st.write("答えを選んでください：")
     for option in options:
@@ -115,11 +105,7 @@ def main():
         st.warning("選択された答えはありません")
 
     # 回答・解説の表示切り替え
-    show_answer = st.toggle(
-        "回答・解説を表示", key=f"toggle_{st.session_state.current_question}"
-    )
-
-    if show_answer:
+    with st.expander("回答・解説を表示"):
         correct_answer = content["033_answer"].strip()
         st.markdown(f"### 正解：\n{correct_answer}")
 
