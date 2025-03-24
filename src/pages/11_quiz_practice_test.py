@@ -18,7 +18,7 @@ def convert_contents_to_dict(contents):
         else:
             content_dict.update(item)
     if details_list:
-        content_dict["034_details"] = "\n\n".join(details_list)
+        content_dict["034_details"] = "\n\n-----\n\n".join(details_list)
     return content_dict
 
 
