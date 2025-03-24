@@ -1,7 +1,7 @@
-- 011_title: 042_練習用問題と解説メモ
+- 011_title: 021_練習用問題と解説メモ
   012_line: '000002'
   013_sections:
-  - 021_title: 質問：休暇申請アプリのドロップダウンリスト設定
+  - 021_title: 質問 01：休暇申請アプリのドロップダウンリスト設定
     022_line: '000011'
     023_contents:
     - 031_question: '休みや休暇の要求を管理するキャンバス アプリを開発しています。 そのアプリでは、データ ソースとして Microsoft
@@ -106,7 +106,7 @@
 
 
         -----'
-  - 021_title: 質問：Dataverseでの集計クエリ実行方法の選択
+  - 021_title: 質問 02：Dataverseでの集計クエリ実行方法の選択
     022_line: 000088
     023_contents:
     - 031_question: '組織サービスを使って Dataverse との統合を作成しています。
@@ -153,7 +153,7 @@
         - [9] https://www.youtube.com/watch?v=K84X_Z4Ngio\n- [10] https://learn.microsoft.com/ja-jp/power-apps/developer/data-platform/org-service/build-queries-with-queryexpression\n\
         - [11] https://mytrial365.com/category/dynamics-365/custom-plugin-activities/\n\
         \n\n\n\n-----"
-  - 021_title: 質問：Dataverse移行時のAPI制限エラー対策
+  - 021_title: 質問 03：Dataverse移行時のAPI制限エラー対策
     022_line: 000168
     023_contents:
     - 031_question: 'Dataverse SDK for .NET を使って Dataverse のテーブルにデータを移行しています。 IOrganizationService
@@ -290,7 +290,7 @@
 
 
         -----'
-  - 021_title: 質問：Azure関数でのDataverse接続のマネージドID実装
+  - 021_title: 質問 04：Azure関数でのDataverse接続のマネージドID実装
     022_line: '000267'
     023_contents:
     - 031_question: '.Net 6.0 と Microsoft.PowerPlatform.Dataverse.Client を使って、Dataverse
@@ -380,7 +380,7 @@
 
 
         -----'
-  - 021_title: 質問 1/50：リボンボタンのカスタムアクション制御
+  - 021_title: 質問 05：リボンボタンのカスタムアクション制御
     022_line: '000345'
     023_contents:
     - 031_question: 'モデル駆動型アプリを開発しています。
@@ -482,7 +482,7 @@
 
 
         -----'
-  - 021_title: 質問 2/50：モデル駆動型アプリのカスタムコントロール開発
+  - 021_title: 質問 06：モデル駆動型アプリのカスタムコントロール開発
     022_line: '000424'
     023_contents:
     - 031_question: 'キャンバス アプリを開発しています。
@@ -586,7 +586,7 @@
 
 
         -----'
-  - 021_title: 質問 3/50：モデル駆動型アプリのカスタムコントロール開発
+  - 021_title: 質問 07：モデル駆動型アプリのカスタムコントロール開発
     022_line: '000503'
     023_contents:
     - 031_question: 'モデル駆動型アプリ用のカスタム コントロールを開発しています。
@@ -690,7 +690,7 @@
 
 
         -----'
-  - 021_title: 質問 4/50：Dataverseトランザクション内でのビジネスロジック実装
+  - 021_title: 質問 08：Dataverseトランザクション内でのビジネスロジック実装
     022_line: 000582
     023_contents:
     - 031_question: 'Dataverse 内のデータに対して操作を実行するビジネス ロジックを作成しています。
@@ -823,7 +823,7 @@
 
 
         -----'
-  - 021_title: 質問 5/50： フォームのビジネスロジック実装
+  - 021_title: 質問 09： フォームのビジネスロジック実装
     022_line: '000677'
     023_contents:
     - 031_question: 'あなたは、モデル駆動型アプリを構築しています。
@@ -936,7 +936,7 @@
 
 
         -----'
-  - 021_title: 質問 1/50：ソリューションの依存関係の軽減
+  - 021_title: 質問 10：ソリューションの依存関係の軽減
     022_line: '000762'
     023_contents:
     - 031_question: 'あなたは、社内のアプリケーション ライフサイクル管理 (ALM) プロセスを担当しています。 下流のすべての環境では、マネージド
@@ -1059,7 +1059,7 @@
 
 
         -----'
-  - 021_title: 質問 2/50：モデル駆動型アプリのセキュリティエラーのトラブルシューティング
+  - 021_title: 質問 11：モデル駆動型アプリのセキュリティエラーのトラブルシューティング
     022_line: 000855
     023_contents:
     - 031_question: 'あなたは、クライアント スクリプトを使用して、モデル駆動型アプリを構築しています。
@@ -1181,7 +1181,7 @@
 
 
         -----'
-  - 021_title: 質問 3/50：Dataverse外部システム統合のセキュリティ設定
+  - 021_title: 質問 12：Dataverse外部システム統合のセキュリティ設定
     022_line: 000950
     023_contents:
     - 031_question: 'あなたは、Microsoft Dataverse 内のカスタム テーブルに対してデータの読み取りと書き込みを行う外部システムからの統合を構築しています。
@@ -1314,7 +1314,7 @@
 
 
         -----'
-  - 021_title: 質問 4/50：Power Platform パイプラインのための環境構成
+  - 021_title: 質問 13：Power Platform パイプラインのための環境構成
     022_line: '001050'
     023_contents:
     - 031_question: 'ある会社では Microsoft Power Platform を使用しています。
@@ -1429,7 +1429,7 @@
 
 
         -----'
-  - 021_title: 質問 5/50：テーブル削除時の依存関係確認
+  - 021_title: 質問 14：テーブル削除時の依存関係確認
     022_line: '001141'
     023_contents:
     - 031_question: 'あなたは、Microsoft Power Platform ソリューションでテーブルを削除することを計画しています。
@@ -1563,7 +1563,7 @@
 
 
         -----'
-  - 021_title: 質問 6/50：ALM自動化のための環境変数設定方法
+  - 021_title: 質問 15：ALM自動化のための環境変数設定方法
     022_line: 001239
     023_contents:
     - 031_question: 'あなたは、Azure DevOps パイプラインを使用して ALM の自動化を支援しています。
@@ -1698,7 +1698,7 @@
 
 
         -----'
-  - 021_title: 質問 7/50：Power Platform ALMにおけるソリューション作成方法
+  - 021_title: 質問 16：Power Platform ALMにおけるソリューション作成方法
     022_line: '001337'
     023_contents:
     - 031_question: 'ある会社は、Azure DevOps Pipelines を使用して、Microsoft Power Platform ソリューションの
@@ -1804,7 +1804,7 @@
 
 
         -----'
-  - 021_title: 質問 8/50：マネージドソリューションの変更が反映されない問題の解決
+  - 021_title: 質問 17：マネージドソリューションの変更が反映されない問題の解決
     022_line: '001422'
     023_contents:
     - 031_question: 'ある会社は、マネージド ソリューションを使用して、Microsoft Power Platform コンポーネントを開発環境から運用環境に転送しています。
@@ -1916,7 +1916,7 @@
 
 
         -----'
-  - 021_title: 質問 9/50：Dataverseカスタム APIのビジネスロジック実装
+  - 021_title: 質問 18：Dataverseカスタム APIのビジネスロジック実装
     022_line: '001511'
     023_contents:
     - 031_question: 'ある会社の Power Apps には、Dataverse カスタム API メッセージが含まれます。
@@ -2027,7 +2027,7 @@
 
 
         -----'
-  - 021_title: 質問 10/50：API セキュリティの構成
+  - 021_title: 質問 19：API セキュリティの構成
     022_line: '001602'
     023_contents:
     - 031_question: 'ある会社では Microsoft Power Platform を使用しています。
@@ -2129,7 +2129,7 @@
 
 
         -----'
-  - 021_title: 質問 11/50：カスタムコネクタでのチャンク処理の実装
+  - 021_title: 質問 20：カスタムコネクタでのチャンク処理の実装
     022_line: 001684
     023_contents:
     - 031_question: 'チャンクを使って大きなメッセージをサポートする API 用のカスタム コネクタを構築しています。
@@ -2238,7 +2238,7 @@
 
 
         -----'
-  - 021_title: 質問 13/50：レコード偽装の検出フィールド選択
+  - 021_title: 質問 21：レコード偽装の検出フィールド選択
     022_line: 001768
     023_contents:
     - 031_question: 'ある会社では Microsoft Power Platform を使用することを計画しています。
@@ -2279,7 +2279,7 @@
         ```javascript\nfunction checkImpersonation() {\n    if (Xrm.Page.getAttribute(\"\
         createdonbehalfby\").getValue() != null) {\n        // 偽装によるレコード作成が検出された場合の処理\n\
         \        // メッセージの表示など\n    }\n}\n```\n\n\n\n\n-----"
-  - 021_title: 質問 14/50：DataverseへのマネージドID認証の実装
+  - 021_title: 質問 22：DataverseへのマネージドID認証の実装
     022_line: 001848
     023_contents:
     - 031_question: '.Net 6.0 と Microsoft.PowerPlatform.Dataverse.Client を使って、Dataverse
@@ -2335,7 +2335,7 @@
         https://yourorg.crm.dynamics.com\"),\n    tokenProviderFunction: null,\n \
         \   useUniqueInstance: true,\n    useManagedIdentity: true);\n```\n\n\n\n\n\
         -----"
-  - 021_title: 質問 15/50：Power Automateフローのトリガー条件設定
+  - 021_title: 質問 23：Power Automateフローのトリガー条件設定
     022_line: 001938
     023_contents:
     - 031_question: 'Dataverse テーブルの行が更新されたときにトリガーされる Power Automate クラウド フローを構築しています。
@@ -2381,7 +2381,7 @@
         \n**FetchXML クエリ**\n- より複雑なクエリに使用されますが、この場合は行フィルターと列のフィルターで十分です\n\n#### 実装例\n\
         ```json\n{\n    \"行フィルター\": \"statecode eq 1\",\n    \"列のフィルター\": \"statecode,statuscode\"\
         \n}\n```\n\nこのように設定することで、レコードが非アクティブ化された場合のみフローが実行されます。\n\n\n\n\n\n-----"
-  - 021_title: 質問 3/50：業務ルールを使用した顧客分類の実装
+  - 021_title: 質問 24：業務ルールを使用した顧客分類の実装
     022_line: '002027'
     023_contents:
     - 031_question: '顧客の信用債務データを管理するモデル駆動型アプリを開発しています。
@@ -2475,7 +2475,7 @@
 
 
         -----'
-  - 021_title: 質問 4/50：業務ルールを使用した条件付き必須フィールドの実装
+  - 021_title: 質問 25：業務ルールを使用した条件付き必須フィールドの実装
     022_line: '002106'
     023_contents:
     - 031_question: 'モデル駆動型アプリがあります。 Microsoft Dataverse テーブルのメイン フォームをカスタマイズしています。
@@ -2527,7 +2527,7 @@
         - [8] https://community.dynamics.com/blogs/post/?postid=aa9407d5-06b5-40ea-87aa-52e239631f39\n\
         - [9] https://learn.microsoft.com/en-us/training/modules/define-create-business-rules/\n\
         \n\n\n\n\n-----"
-  - 021_title: 質問 5/50：Elastic テーブルを使用した高スループットデータの管理
+  - 021_title: 質問 26：Elastic テーブルを使用した高スループットデータの管理
     022_line: 002194
     023_contents:
     - 031_question: 'ある会社では、Microsoft Dataverse を使用してデータを保存しています。
@@ -2677,7 +2677,7 @@
 
 
         -----'
-  - 021_title: 質問 7/50：Power Automate フローにおける環境変数の値更新問題
+  - 021_title: 質問 27：Power Automate フローにおける環境変数の値更新問題
     022_line: '002300'
     023_contents:
     - 031_question: 'Power Automate のクラウド フローを実装しています。 このフローでは、標準の統合機能を使って環境変数を使います。
@@ -2820,7 +2820,7 @@
 
 
         -----'
-  - 021_title: 質問 8/50：環境変数の値がソリューションに含まれる問題
+  - 021_title: 質問 28：環境変数の値がソリューションに含まれる問題
     022_line: '002404'
     023_contents:
     - 031_question: 'ある会社では Microsoft Power Platform を使用しています。
@@ -2934,7 +2934,7 @@
 
 
         -----'
-  - 021_title: 質問 15/50：Webhook を使用した同期的なエラー処理の実装
+  - 021_title: 質問 29：Webhook を使用した同期的なエラー処理の実装
     022_line: 002493
     023_contents:
     - 031_question: 'Dynamics 365 Customer Engagement (オンプレミス) のデータを外部サービスでホストされたカスタム
@@ -3049,7 +3049,7 @@
 
 
         -----'
-  - 021_title: 質問 16/50：Microsoft Dataverseからの同期的なイベント発行方式の選択
+  - 021_title: 質問 30：Microsoft Dataverseからの同期的なイベント発行方式の選択
     022_line: 002582
     023_contents:
     - 031_question: 'Microsoft Dataverse インスタンスを管理しています。
@@ -3162,7 +3162,7 @@
 
 
         -----'
-  - 021_title: 質問 17/50：Dataverseから Azure Functions への認証方式の選択
+  - 021_title: 質問 31：Dataverseから Azure Functions への認証方式の選択
     022_line: 002669
     023_contents:
     - 031_question: 'Microsoft Dataverse から Azure Functions にイベント データを送信するソリューションを開発しています。
@@ -3291,7 +3291,7 @@
 
 
         -----'
-  - 021_title: 質問 18/50：Dataverseでのレコード同期における操作選択
+  - 021_title: 質問 32：Dataverseでのレコード同期における操作選択
     022_line: '002764'
     023_contents:
     - 031_question: 'ある組織は Microsoft Dataverse を使っています。
@@ -3395,7 +3395,7 @@
 
 
         -----'
-  - 021_title: 質問 19/50：変更追跡を使用したデータ同期の実装
+  - 021_title: 質問 33：変更追跡を使用したデータ同期の実装
     022_line: 002847
     023_contents:
     - 031_question: 'アカウントと内部システムを同期するための統合を開発しています。 環境とアカウント テーブルの両方で変更の追跡をアクティブにします。
@@ -3493,7 +3493,7 @@
 
 
         -----'
-  - 021_title: 質問 22/50：Dataverseにおける同時更新制御の実装
+  - 021_title: 質問 34：Dataverseにおける同時更新制御の実装
     022_line: 002929
     023_contents:
     - 031_question: 'Dataverse と組織サービスを使ってアプリケーションを構築しています。
@@ -3557,7 +3557,7 @@
         - [7] https://community.dynamics.com/blogs/post/?postid=57be450e-491b-4f5a-95ed-0b0fdce8b945\n\
         - [8] https://www.inogic.com/blog/2016/04/optimistic-concurrency-control-from-dynamics-crm-2015-update-1/\n\
         \n\n\n\n\n-----"
-  - 021_title: 質問 23/50：カスタムアクションのHTTPメソッド選択
+  - 021_title: 質問 35：カスタムアクションのHTTPメソッド選択
     022_line: '003027'
     023_contents:
     - 031_question: 'ある会社では Microsoft Power Platform を使用しています。
@@ -3685,7 +3685,7 @@
 
 
         -----'
-  - 021_title: 質問 24/50：Power Automateフローのエラーハンドリング設計
+  - 021_title: 質問 36：Power Automateフローのエラーハンドリング設計
     022_line: '003123'
     023_contents:
     - 031_question: 'Dataverse を別のシステムと統合するための Power Automate クラウド フローを作成しています。
@@ -3790,7 +3790,7 @@
 
 
         -----'
-  - 021_title: 質問 25/50：Power Automateフローのエラー通知実装
+  - 021_title: 質問 37：Power Automateフローのエラー通知実装
     022_line: '003207'
     023_contents:
     - 031_question: 'Power Automate クラウド フローがあるとします。 そのフローには、外部 API を呼び出すアクションがあります。
@@ -3887,7 +3887,7 @@
 
 
         -----'
-  - 021_title: 質問 26/50：プラグインのセキュア構成データの保存場所
+  - 021_title: 質問 38：プラグインのセキュア構成データの保存場所
     022_line: 003287
     023_contents:
     - 031_question: 'Microsoft Dataverse と統合するプラグインを開発しています。
@@ -3971,7 +3971,7 @@
 
 
         -----'
-  - 021_title: 質問 27/50：プラグインのエラーハンドリング実装
+  - 021_title: 質問 39：プラグインのエラーハンドリング実装
     022_line: 003359
     023_contents:
     - 031_question: 'Microsoft Dataverse の既定の動作を拡張するプラグインを作成しています。
@@ -4027,7 +4027,7 @@
         \n**IPluginExecutionContext の使用**\n- これは実行コンテキストを提供するインターフェースです\n- 例外処理には適していません\n\
         \n#### 実装のポイント\n\n- PreValidationステージでの適切な例外ハンドリング\n- 明確なエラーメッセージの設定\n- トランザクション制御の考慮\n\
         - ユーザーへの適切なフィードバック\n\n\n\n\n\n-----"
-  - 021_title: 質問 28/50：アプリケーション登録のシークレット有効期限の確認
+  - 021_title: 質問 40：アプリケーション登録のシークレット有効期限の確認
     022_line: '003454'
     023_contents:
     - 031_question: 'Microsoft Dataverse と内部オンプレミス システムの統合を開発しています。 .NET Framework
@@ -4136,7 +4136,7 @@
 
 
         -----'
-  - 021_title: 質問 29/50：QueryExpressionを使用したデータ取得メソッドの選択
+  - 021_title: 質問 41：QueryExpressionを使用したデータ取得メソッドの選択
     022_line: '003536'
     023_contents:
     - 031_question: 'プラグインを開発しています。
@@ -4245,7 +4245,7 @@
 
 
         -----'
-  - 021_title: 質問 30/50：Azure Durable Functionsでの永続的タイマーの実装
+  - 021_title: 質問 42：Azure Durable Functionsでの永続的タイマーの実装
     022_line: '003621'
     023_contents:
     - 031_question: '組織は、Power Apps を使って新しい建物の許可を追跡しています。
@@ -4298,7 +4298,7 @@
         - [7] https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-phone-verification?tabs=javascript-v4\n\
         - [8] https://learn.microsoft.com/en-in/azure/azure-functions/durable/durable-functions-serialization-and-persistence?tabs=csharp-inproc\n\
         \n\n\n\n-----"
-  - 021_title: 質問 31/50：Azure Functions のタイマートリガー CRON 式
+  - 021_title: 質問 43：Azure Functions のタイマートリガー CRON 式
     022_line: '003714'
     023_contents:
     - 031_question: 'ある組織は Microsoft Dataverse を使っています。
@@ -4413,7 +4413,7 @@
 
 
         -----'
-  - 021_title: 質問 32/50：Microsoft Dataverse イベントフレームワークのステージ選択
+  - 021_title: 質問 44：Microsoft Dataverse イベントフレームワークのステージ選択
     022_line: 003804
     023_contents:
     - 031_question: 'ある組織は Microsoft Dataverse を使っています。
@@ -4505,7 +4505,7 @@
 
 
         -----'
-  - 021_title: 質問 33/50：Microsoft Dataverse プラグインの共有変数活用
+  - 021_title: 質問 45：Microsoft Dataverse プラグインの共有変数活用
     022_line: 003878
     023_contents:
     - 031_question: '行の名前とその状態を追加する Microsoft Dataverse テーブル更新用のプラグインを構築します。 事前バインドされたクラスを使用します。
@@ -4659,7 +4659,7 @@
 
 
         -----'
-  - 021_title: 質問 34/50：プラグインのパフォーマンス最適化
+  - 021_title: 質問 46：プラグインのパフォーマンス最適化
     022_line: 003986
     023_contents:
     - 031_question: 'ある会社には、テーブル更新の PostOperation ステージで非同期的に実行されるプラグインがあります。
@@ -4800,7 +4800,7 @@
 
 
         -----'
-  - 021_title: 質問 35/50：オンプレミスデータゲートウェイでのSQL Server認証オプション
+  - 021_title: 質問 47：オンプレミスデータゲートウェイでのSQL Server認証オプション
     022_line: 004088
     023_contents:
     - 031_question: 'あなたは、オンプレミス データ ゲートウェイを使用して SQL Server インスタンスに接続するカスタム コネクタを開発しています。
@@ -4919,7 +4919,7 @@
 
 
         -----'
-  - 021_title: 質問 36/50：Power Automate トリガー条件の設定
+  - 021_title: 質問 48：Power Automate トリガー条件の設定
     022_line: 004178
     023_contents:
     - 031_question: 'スキーマ名が Cr8ec_cruises の Cruises という名前の Microsoft Dataverse テーブルに接続する自動化されたクラウド
@@ -5046,7 +5046,7 @@
 
 
         -----'
-  - 021_title: 質問 37/50：Dataverseでのトランザクション管理
+  - 021_title: 質問 49：Dataverseでのトランザクション管理
     022_line: 004268
     023_contents:
     - 031_question: 'あなたは、Microsoft Dataverse コネクタを使用するクラウド フローを開発しています。
@@ -5177,7 +5177,7 @@
 
 
         -----'
-  - 021_title: 質問 38/50：Power Apps のモニタリング機能
+  - 021_title: 質問 50：Power Apps のモニタリング機能
     022_line: '004363'
     023_contents:
     - 031_question: 'キャンバス アプリを管理しています。
@@ -5287,7 +5287,7 @@
 
 
         -----'
-  - 021_title: 質問 39/50：モデル駆動型アプリのMonitorイベント監視
+  - 021_title: 質問 51：モデル駆動型アプリのMonitorイベント監視
     022_line: 004449
     023_contents:
     - 031_question: 'モデル駆動型アプリを開発しています。
@@ -5391,7 +5391,7 @@
 
 
         -----'
-  - 021_title: 質問 40/50：Power Apps からのフロー実行関数
+  - 021_title: 質問 52：Power Apps からのフロー実行関数
     022_line: 004529
     023_contents:
     - 031_question: 'FlowtriggeredbyaPowerapp という名前の Power Automate クラウド フローがあります。
@@ -5475,7 +5475,7 @@
 
 
         -----'
-  - 021_title: 質問 41/50：モデル駆動型アプリのフォームデバッグツール
+  - 021_title: 質問 53：モデル駆動型アプリのフォームデバッグツール
     022_line: 004597
     023_contents:
     - 031_question: 'クライアント スクリプトを使用するモデル駆動型アプリのフォームのトラブルシューティングを行っています。
@@ -5603,7 +5603,7 @@
 
 
         -----'
-  - 021_title: 質問 42/50：Power Apps のコード可読性向上
+  - 021_title: 質問 54：Power Apps のコード可読性向上
     022_line: 004694
     023_contents:
     - 031_question: 'ある会社には、App.OnStart で記述された複雑なコードを含むキャンバス アプリがあります。
@@ -5719,7 +5719,7 @@
 
 
         -----'
-  - 021_title: 質問 43/50：コンポーネントライブラリのカスタマイズ設定
+  - 021_title: 質問 55：コンポーネントライブラリのカスタマイズ設定
     022_line: 004783
     023_contents:
     - 031_question: 'あなたは、5 つのコンポーネントを開発し、それらを 1 つのコンポーネント ライブラリに追加することを計画しています。
@@ -5850,7 +5850,7 @@
 
 
         -----'
-  - 021_title: 質問 44/50：Power Apps からのフロートリガー設定
+  - 021_title: 質問 56：Power Apps からのフロートリガー設定
     022_line: 004878
     023_contents:
     - 031_question: 'あなたは、Get Customers という名前のクラウド フローを開発しています。 このフローをキャンバス アプリに追加します。
@@ -5959,7 +5959,7 @@
 
 
         -----'
-  - 021_title: 質問 45/50：PCFフィールドコンポーネントのデータアクセス方法
+  - 021_title: 質問 57：PCFフィールドコンポーネントのデータアクセス方法
     022_line: 004964
     023_contents:
     - 031_question: 'モデル駆動型アプリ用に Power Apps component framework (PCF) 内にフィールド コード
@@ -6121,7 +6121,7 @@
 
 
         -----'
-  - 021_title: 質問 46/50：PCFでのReactコンポーネント開発環境構築
+  - 021_title: 質問 58：PCFでのReactコンポーネント開発環境構築
     022_line: '005077'
     023_contents:
     - 031_question: 'React を使用する Power Apps component framework (PCF) コード コンポーネントの開発を計画しています。
@@ -6233,7 +6233,7 @@
 
 
         -----'
-  - 021_title: 質問 47/50：PCFマニフェストでのCSSファイル参照設定
+  - 021_title: 質問 59：PCFマニフェストでのCSSファイル参照設定
     022_line: '005161'
     023_contents:
     - 031_question: 'キャンバス アプリ用のコード コンポーネントを作成するために、Power Apps component framework
@@ -6271,7 +6271,7 @@
         \n**property**\n- コンポーネントのプロパティを定義するノードです\n- 外部リソースの参照には適していません\n\n#### ベストプラクティス\n\
         - CSSファイルのパスは相対パスで指定します\n- 複数のCSSファイルを使用する場合は、orderプロパティで読み込み順序を制御します\n- CSSファイルは適切なフォルダ構造で管理することを推奨します\n\
         \n\n\n\n-----"
-  - 021_title: 質問 48/50：PCFソリューションのパッケージング
+  - 021_title: 質問 60：PCFソリューションのパッケージング
     022_line: '005234'
     023_contents:
     - 031_question: 'Power Apps component framework を使って、キャンバス アプリ用のコード コンポーネントを作成しています。
@@ -6376,7 +6376,7 @@
 
 
         -----'
-  - 021_title: 質問 49/50：モデル駆動型アプリのリボンボタン制御ルール
+  - 021_title: 質問 61：モデル駆動型アプリのリボンボタン制御ルール
     022_line: '005315'
     023_contents:
     - 031_question: 'モデル駆動型アプリを開発しています。 JavaScript 関数があります。
@@ -6466,7 +6466,7 @@
 
 
         -----'
-  - 021_title: 質問 50/50：モデル駆動型アプリのコマンド種類選択
+  - 021_title: 質問 62：モデル駆動型アプリのコマンド種類選択
     022_line: 005388
     023_contents:
     - 031_question: 'Power Apps のモデル駆動型アプリを開発しています。
@@ -6563,7 +6563,7 @@
 
 
         -----'
-  - 021_title: 質問 1/50：Azure Service Bus キューに投稿される情報
+  - 021_title: 質問 63：Azure Service Bus キューに投稿される情報
     022_line: '005467'
     023_contents:
     - 031_question: 'プロジェクトの統合に Microsoft Dataverse と Azure を使っています。
@@ -6612,7 +6612,7 @@
         - [12] https://dynamics-chronicles.com/article/dataverse-and-azure-service-bus-integration-c-plugins\n\
         - [13] https://www.marius-wodtke.de/post/servicebus/exporting-events/\n\n\n\
         \n\n-----"
-  - 021_title: 質問 4/50：Dataverseの代替キーと文字制限
+  - 021_title: 質問 64：Dataverseの代替キーと文字制限
     022_line: 005549
     023_contents:
     - 031_question: '既存のシステムと統合するモデル駆動型アプリを開発しています。 このシステムでは、Put、Patch、Get アクションを使います。
@@ -6733,7 +6733,7 @@
 
 
         -----'
-  - 021_title: 質問 8/50：SOAPシステムとDataverseの統合オプション
+  - 021_title: 質問 65：SOAPシステムとDataverseの統合オプション
     022_line: 005639
     023_contents:
     - 031_question: 'ある会社には、SOAP API を使用する内部システムがあります。
@@ -6879,7 +6879,7 @@
 
 
         -----'
-  - 021_title: 質問 11/50：外部サービスへの同期アクセスを実現する機能
+  - 021_title: 質問 66：外部サービスへの同期アクセスを実現する機能
     022_line: '005747'
     023_contents:
     - 031_question: 'ある会社は、Microsoft Power Platform を使用した自動化の実装を計画しています。
@@ -6998,7 +6998,7 @@
 
 
         -----'
-  - 021_title: 質問 17/50：Web APIでのルックアップフィールドの参照方法
+  - 021_title: 質問 67：Web APIでのルックアップフィールドの参照方法
     022_line: 005842
     023_contents:
     - 031_question: 'ある会社には、次のような特性を備えた TableA という名前のカスタム テーブルがあります。
@@ -7137,7 +7137,7 @@
 
 
         -----'
-  - 021_title: 質問 18/50：Web APIでのデータクエリ実装オプション
+  - 021_title: 質問 68：Web APIでのデータクエリ実装オプション
     022_line: 005947
     023_contents:
     - 031_question: 'あなたは、Microsoft Power Platform の実装の開発者です。
@@ -7253,7 +7253,7 @@
 
 
         -----'
-  - 021_title: 質問 19/50：Azure Functions 従量課金プランのタイムアウト制限
+  - 021_title: 質問 69：Azure Functions 従量課金プランのタイムアウト制限
     022_line: '006037'
     023_contents:
     - 031_question: 'ある会社では Microsoft Power Platform を使用しています。 その会社は、Azure Functions
@@ -7351,7 +7351,7 @@
 
 
         -----'
-  - 021_title: 質問 20/50：SharePointリストのStatus列が空でない場合のトリガー条件
+  - 021_title: 質問 70：SharePointリストのStatus列が空でない場合のトリガー条件
     022_line: 006118
     023_contents:
     - 031_question: 'Power Automate フローがあるとします。
@@ -7463,7 +7463,7 @@
 
 
         -----'
-  - 021_title: 質問 21/50：プラグイン実行のための初期登録要件
+  - 021_title: 質問 71：プラグイン実行のための初期登録要件
     022_line: '006205'
     023_contents:
     - 031_question: 'プラグインを開発しています。
@@ -7569,7 +7569,7 @@
 
 
         -----'
-  - 021_title: 質問 23/50：Dataverseプラグインのタイムアウト問題の解決
+  - 021_title: 質問 72：Dataverseプラグインのタイムアウト問題の解決
     022_line: 006292
     023_contents:
     - 031_question: '特定のイベントが発生したときに多くのレコードを作成して関連付けるプラグインを開発しています。
@@ -7678,7 +7678,7 @@
 
 
         -----'
-  - 021_title: 質問 27/50：OpenAPIカスタムコネクタのパラメーター動的表示設定
+  - 021_title: 質問 73：OpenAPIカスタムコネクタのパラメーター動的表示設定
     022_line: 006378
     023_contents:
     - 031_question: 'あなたは、カスタム コネクタの OpenAPI 定義をカスタマイズしています。
@@ -7788,7 +7788,7 @@
 
 
         -----'
-  - 021_title: 質問 28/50：Dataverseへの.NET Core認証オプション
+  - 021_title: 質問 74：Dataverseへの.NET Core認証オプション
     022_line: '006464'
     023_contents:
     - 031_question: 'あなたは、Microsoft Dataverse テーブル データにアクセスするための .NET Core コンソール アプリケーションを構築しています。
@@ -7937,7 +7937,7 @@
 
 
         -----'
-  - 021_title: 質問 31/50：Power Platform環境タイプの選択
+  - 021_title: 質問 75：Power Platform環境タイプの選択
     022_line: '006572'
     023_contents:
     - 031_question: 'Dataverse ソリューションを使って Microsoft Power Platform ソリューションを構築するための環境を作成する必要があります。
@@ -8035,7 +8035,7 @@
 
 
         -----'
-  - 021_title: 質問 40/50：モデル駆動型アプリのコントロール無効化の原因特定
+  - 021_title: 質問 76：モデル駆動型アプリのコントロール無効化の原因特定
     022_line: '006652'
     023_contents:
     - 031_question: 'モデル駆動型アプリ用のフォームを作成しており、フォームにコントロールを追加します。 コントロールを有効にします。
@@ -8147,7 +8147,7 @@
 
 
         -----'
-  - 021_title: 質問 46/50：モデル駆動型アプリのフォームエディターで設定可能なクライアントスクリプトイベント
+  - 021_title: 質問 77：モデル駆動型アプリのフォームエディターで設定可能なクライアントスクリプトイベント
     022_line: '006740'
     023_contents:
     - 031_question: 'モデル駆動型アプリを開発しています。
@@ -8194,7 +8194,7 @@
         - [7] https://temmyraharjo.wordpress.com/2022/10/15/model-driven-apps-add-on-post-save-event/\n\
         - [8] https://community.dynamics.com/forums/thread/details/?threadid=995dcd14-ecd0-42ee-bf11-42cc99fccb2b\n\
         \n\n\n\n-----"
-  - 021_title: 質問 47/50：Dataverseエラーダイアログの実装
+  - 021_title: 質問 78：Dataverseエラーダイアログの実装
     022_line: 006823
     023_contents:
     - 031_question: 'Microsoft Dataverse に基づくソリューションを開発しています。 カスタム リボン ボタンでは、別のレコードを取得するよう
@@ -8295,7 +8295,7 @@
 
 
         -----'
-  - 021_title: 質問 48/50：フォームイベントハンドラーの登録方法
+  - 021_title: 質問 79：フォームイベントハンドラーの登録方法
     022_line: 006899
     023_contents:
     - 031_question: 'フォーム イベント用のイベント ハンドラーを開発しています。
@@ -8406,7 +8406,7 @@
 
 
         -----'
-  - 021_title: 質問 50/50：PCFコンポーネントの出力値更新処理の実装
+  - 021_title: 質問 80：PCFコンポーネントの出力値更新処理の実装
     022_line: 006986
     023_contents:
     - 031_question: 'あなたは、Power Apps コンポーネント フレームワークを使用して、対話型の新しいコード コンポーネントを開発しています。
