@@ -97,11 +97,11 @@ def main():
     sections = quiz_data["013_sections"]
     current_section = sections[st.session_state.current_question]
 
-    # 問題の表示
-    st.subheader(current_section["021_title"])
-
     # 設問スライダー
     itemSlider(sections, key="top")
+
+    # 問題の表示
+    st.subheader(current_section["021_title"])
 
     # コンテンツをリストから辞書に変換
     content = convert_contents_to_dict(current_section["023_contents"])
