@@ -1,6 +1,12 @@
 - 011_title: 021_練習用問題と解説メモ
   012_line: '000002'
   013_sections:
+  - 021_title: 試験 PL-400 のプラクティス評価:Microsoft Power Platform Developer
+    022_line: '000003'
+    023_contents:
+    - 031_question: '- [試験 PL-400: Microsoft Power Platform Developer の学習ガイド](https://learn.microsoft.com/ja-jp/credentials/certifications/resources/study-guides/pl-400)の[試験対策用練習問題](https://learn.microsoft.com/ja-jp/credentials/certifications/exams/pl-400/practice/assessment?assessment-type=practice&assessmentId=66)のメモ
+
+        -----'
   - 021_title: 質問 01：休暇申請アプリのドロップダウンリスト設定
     022_line: '000011'
     023_contents:
@@ -8528,8 +8534,625 @@
 
 
         -----'
-  - 021_title: 質問：
+  - 021_title: 質問：キャンバスアプリにおける複雑な計算の実行
     022_line: 007080
+    023_contents:
+    - 031_question: 'ある会社では Microsoft Power Platform を使用しています。
+
+
+        Power Platform の作成者は、キャンバス アプリで複雑な計算を実行したいと考えています。 計算を実行するための Azure 関数を作成します。
+
+
+        カスタム コネクタ用に Azure 関数と認証を構成する必要があります。
+
+
+        実行する必要がある 3 つのアクションはどれですか? 各正解は解答の一部を示します。
+
+
+        該当するすべての回答を選択してください。'
+    - 032_selections:
+      - '  [関数の URL の取得] を使う。'
+      - '  HTTP トリガーを使って Azure 関数を構成する。'
+      - '  キュー トリガーを使って Azure 関数を構成する。'
+      - '  アプリケーションを Microsoft Entra ID に登録します。'
+      - '  カスタム コネクタでの認証の種類として API キーを選ぶ。'
+      - '  カスタム コネクタでの認証の種類として OAuth 2.0 を選ぶ。'
+    - 033_answer: '- 1.  関数の URL の取得
+
+        - 2.  HTTP トリガーを使って Azure 関数を構成する
+
+        - 3.  アプリケーションを Microsoft Entra ID に登録します。'
+    - 034_details: 'この項目では、カスタム コネクタで使われる Azure 関数の作成について、受験者の知識をテストします。
+
+
+        カスタム コネクタでは REST API が必要であり、API への HTTPS 呼び出しを実行します。 HTTP トリガーを構成することで、REST
+        API として使用できるように Azure 関数を構成する必要があります。 トリガーによって関数が実行され、HTTP トリガーはカスタム コネクタの作成時に使用できる
+        REST エンドポイントを公開します。 [関数の URL の取得] を使うと、API キー認証の種類を使って Azure 関数に対する認証を行うためにカスタム
+        コネクタで使うキーが生成されます。
+
+
+        キュー トリガーを使う Azure 関数は、カスタム コネクタでは使用できません。HTTP トリガーを使う必要があります。 Azure 関数は、Microsoft
+        Entra ID で関数を保護しない限り、OAuth 2.0 を使用して認証することはできません。 カスタム コネクタで Azure 関数を呼び出すために、アプリケーションを
+        Microsoft Entra ID に登録する必要はありません。
+
+
+        Azure AD で保護された Azure 関数アプリ用のカスタム コネクタを作成する | Microsoft Learn
+
+
+        Azure Functions がキャンバス アプリの機能を拡張 - Power Platform | Microsoft Learn
+
+
+        Azure Functions のトリガーとバインド | Microsoft Learn
+
+
+        Azure Functions を使用したサーバーレス API を作成する | Microsoft Learn
+
+
+        Azure Functions の HTTP トリガー | Microsoft Learn'
+    - 034_details: 'Perplexity の Eliot より: pplx.ai/share
+
+
+        この設問は、Power Platform のキャンバスアプリから Azure Functions を利用するカスタムコネクタを構築する際に必要な手順を理解しているかを問うものです。
+
+
+        1.  **関数の URL の取得**: カスタムコネクタから Azure 関数を呼び出すためには、その関数のエンドポイントとなる URL が必要です。この
+        URL は、Azure portal で関数を選択し、関数 URL の取得オプションから取得できます。
+
+        2.  **HTTP トリガーを使って Azure 関数を構成する**: カスタムコネクタは HTTP リクエストを介して Azure 関数を呼び出すため、関数は
+        HTTP トリガーで構成する必要があります。これにより、Power Platform からのリクエストを受け付け、処理できるようになります。
+
+        3.  **アプリケーションを Microsoft Entra ID に登録する**: Azure 関数へのアクセスを認証し、セキュリティを確保するために、Microsoft
+        Entra ID (旧称 Azure Active Directory) にアプリケーションを登録する必要があります。これにより、Power Platform
+        からのアクセスを安全に管理できます。
+
+
+        **補足**
+
+
+        *   キュー トリガーは、メッセージキューを介して関数をトリガーする場合に使用します。今回のシナリオでは、キャンバスアプリから直接関数を呼び出すため、HTTP
+        トリガーが適切です。
+
+        *   カスタム コネクタでの認証タイプは、API キーまたは OAuth 2.0 が利用できます。OAuth 2.0 はより安全な認証方法であり、推奨されます。ただし、API
+        キーを使用することも可能です。設問では、Azure 関数と認証を構成する必要があるため、Microsoft Entra ID にアプリケーションを登録する必要があります。
+
+
+
+
+
+
+        -----'
+  - 021_title: 質問：プラグインの実行コンテキストへのアクセス
+    022_line: 007149
+    023_contents:
+    - 031_question: 'プラグインを開発する予定です。
+
+
+        プラグインの実行コンテキストにアクセスする必要があります。
+
+
+        どのパラメーターを使用する必要がありますか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - '  IserviceProvider'
+      - '  CodeActivityContext'
+      - '  IpluginExecutionContext'
+      - '  SharedVariables'
+    - 033_answer: '- IserviceProvider'
+    - 034_details: 'この項目では、プラグインの処理について、受験者の知識をテストします。
+
+
+        プラグインでは、GetService メソッドを呼び出すことにより、Execute メソッドの IserviceProvider パラメーターを通して
+        IpluginExecutionContext にアクセスできます。 カスタム ワークフロー拡張機能では、IpluginExecutionContext
+        は Execute メソッドの CodeActivityContext 型のパラメーターとして渡されます。 IpluginExecutionContext
+        には、プラグインが実行されているランタイム環境、実行パイプラインに関連する情報、およびエンティティ ビジネス情報を記述する情報が含まれます。 共有変数を使うと、プラグインから実装パイプラインでそれより後に発生するステップに渡すことができるデータを構成できます。
+
+
+        [プラグインの実行コンテキストについて説明します。 - トレーニング | Microsoft Learn](https://learn.microsoft.com/training/modules/plug-ins-extend-power-platform/4-execution)
+
+
+        [チュートリアル: プラグインを書き込み登録する (Microsoft Dataverse) - Power Apps | Microsoft Learn](https://learn.microsoft.com/power-apps/developer/data-platform/tutorial-write-plug-in)'
+    - 034_details: "Perplexity の Eliot より: pplx.ai/share\n\nこの設問は、Microsoft Dataverse\
+        \ (旧 Dynamics 365) のプラグイン開発において、プラグインの実行コンテキストにアクセスするために必要なパラメーターを理解しているかを問うものです。\n\
+        \n*   **IserviceProvider**: プラグインのエントリポイントである `Execute` メソッドに渡される `IserviceProvider`\
+        \ は、プラグインが実行される環境に関する様々なサービスへのアクセスを提供します。これには、`IPluginExecutionContext` や\
+        \ `IOrganizationServiceFactory` など、プラグインの実行に必要な情報やサービスが含まれています。`IserviceProvider`\
+        \ を使用して、`IPluginExecutionContext` を取得し、実行コンテキストにアクセスします。\n*   **IPluginExecutionContext**:\
+        \ `IPluginExecutionContext` は、プラグインの実行コンテキストを表すインターフェースです。これには、イベントパイプラインのステージ、入力パラメータ、出力パラメータ、ターゲットエンティティなど、プラグインの実行に関するすべての関連情報が含まれています。\n\
+        *   **CodeActivityContext**: `CodeActivityContext` は、ワークフローアクティビティで使用されるコンテキストです。プラグイン開発には関係ありません。\n\
+        *   **SharedVariables**: `SharedVariables` は、プラグイン間でデータを共有するために使用されるプロパティです。実行コンテキスト全体へのアクセスを提供するものではありません。\n\
+        \n`IserviceProvider` を使用して `IPluginExecutionContext` を取得し、実行コンテキストにアクセスする手順は以下の通りです。\n\
+        \n```csharp\nusing Microsoft.Xrm.Sdk;\n\npublic class MyPlugin : IPlugin\n\
+        {\n    public void Execute(IServiceProvider serviceProvider)\n    {\n    \
+        \    // IPluginExecutionContext を取得\n        IPluginExecutionContext context\
+        \ = (IPluginExecutionContext)serviceProvider.GetService(typeof(IPluginExecutionContext));\n\
+        \n        // IOrganizationServiceFactory を取得\n        IOrganizationServiceFactory\
+        \ serviceFactory = (IOrganizationServiceFactory)serviceProvider.GetService(typeof(IOrganizationServiceFactory));\n\
+        \        IOrganizationService service = serviceFactory.CreateOrganizationService(context.UserId);\n\
+        \n        // 実行コンテキストから情報を取得\n        Guid initiatingUserId = context.InitiatingUserId;\n\
+        \        string messageName = context.MessageName;\n\n        // ...\n   \
+        \ }\n}\n```\n\n上記のコード例では、`IserviceProvider` から `IPluginExecutionContext` と\
+        \ `IOrganizationServiceFactory` を取得し、それらを使用して実行コンテキストに関する情報にアクセスしています。\n\n\
+        \n\n\n-----"
+  - 021_title: 質問：Microsoft Dataverse テーブルのデータ処理
+    022_line: '007226'
+    023_contents:
+    - 031_question: 'あなたは、組織サービスを使用して、Microsoft Dataverse テーブルのデータを処理しています。
+
+
+        外部システムから Contact テーブルの何千もの行を更新する定期的なプロセスがあります。
+
+
+        スループットが最も高く、エラーが発生した場合にすべての更新プログラムをロールバックするメソッドを使用する必要があります。
+
+
+        使用する必要があるメソッドは、次のうちどれですか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - '  UpdateMultiple'
+      - '  ExecuteAsyncRequest'
+      - '  ExecuteMultipleRequest'
+      - '  ExecuteTransactionRequest'
+    - 033_answer: '- ExecuteTransactionRequest'
+    - 034_details: ''
+    - 034_details: 'この項目では、組織サービスを使用した操作の実行、およびパフォーマンス、コンカレンシー、トランザクション、一括操作の最適化に関する受験者の知識をテストします。
+
+
+        ExecuteTransactionRequest は、連絡先行の更新を許可し、1 つのトランザクションとして機能し、エラーが発生した場合に更新をロールバックします。
+        UpdateMultiple は、最高のスループットを提供し、1 つのトランザクションとして機能しますが、Contact テーブルはサポートされていません。
+        ExecuteMultipleRequest はトランザクションをサポートしておらず、エラーが発生した場合に変更をロールバックしません。 ExecuteAsyncRequest
+        は更新要求をサポートしておらず、ソリューションのインポートとエクスポートに使用されます。
+
+
+        Dataverse Organization サービスを使用する - トレーニング | Microsoft Learn
+
+
+        一括操作メッセージを使用する - Power Apps | Microsoft Learn
+
+
+        一括操作のパフォーマンスを最適化する - Power Apps | Microsoft Learn
+
+
+        SDK for .NET (Microsoft Dataverse) を使用して複数の要求を実行する - Power Apps | Microsoft
+        Learn
+
+
+        単一のデータベース トランザクションでメッセージを実行する (Microsoft Dataverse) - Power Apps | Microsoft
+        Learn
+
+
+        メッセージを非同期に実行するために ExecuteAsync を使用する (Microsoft Dataverse) - Power Apps |
+        Microsoft Learn'
+    - 034_details: 'Perplexity の Eliot より: pplx.ai/share
+
+
+        この設問は、Microsoft Dataverse で大量のデータ更新を行う際に、最適なパフォーマンスとデータ整合性を実現するためのメソッドを選択する能力を評価するものです。
+
+
+        *   **ExecuteTransactionRequest**: 複数の操作を単一のトランザクション内で実行します[3][6]. トランザクション内のいずれかの操作が失敗した場合、すべての操作がロールバックされ、データの一貫性が保たれます[3].
+        これは、スループットとデータ整合性の両方を重視する場合に最適な選択肢です。
+
+        *   **UpdateMultiple**: 1つのリクエストで同じ種類の複数のレコードを更新できます[1]. これはスループットを向上させるのに役立ちますが、エラーが発生した場合のロールバック機能は提供されません。
+
+        *   **ExecuteAsyncRequest**: 非同期操作を実行するために使用されます。 大量のデータ処理に適していますが、トランザクションのコンテキスト内でのロールバックは保証されません。
+
+        *   **ExecuteMultipleRequest**: 複数のリクエストをバッチで実行しますが、各リクエストは個別のトランザクションで処理されます[2][5].
+        したがって、1つのリクエストが失敗しても、他のリクエストはロールバックされません。
+
+
+        したがって、スループットが最も高く、エラーが発生した場合にすべての更新プログラムをロールバックする必要がある場合は、`ExecuteTransactionRequest`を使用する必要があります。
+
+
+
+
+
+
+
+        -----'
+  - 021_title: 質問：Webhook のトリガー条件
+    022_line: 007291
+    023_contents:
+    - 031_question: 'あなたは、プラグイン登録ツールを使用して、Microsoft Dataverse イベントを発行する Webhook を登録しています。
+
+
+        Dataverse テーブル行で特定の列値が更新された場合にのみ、Webhook がトリガーされるようにする必要があります。
+
+
+        実行する必要がある 2 つのアクションはどれですか? 解答には、正しいそれぞれの回答が必要です。 2 つ選んでください。
+
+
+        該当するすべての回答を選択してください。'
+    - 032_selections:
+      - '  新しい手順の登録'
+      - '  新しいイメージを登録します'
+      - '  フィルター属性を構成します'
+      - '  実行ステージを構成します'
+      - '  プリ イメージとポスト イメージを構成します'
+    - 033_answer: '- 1.  新しい手順の登録
+
+        - 2.  フィルター属性を構成します'
+    - 034_details: 'この項目では、プラグイン登録ツールを使用した Dataverse イベントの発行に関する受験者の知識をテストします。
+
+
+        新しいステップを登録し、Dataverse テーブル行で特定の列値が更新された場合にのみ Webhook がトリガーされるようにフィルター属性を構成する必要があります。
+        イメージは、列に指定された事前値と事後値をキャプチャするように構成されています。 実行ステージは、Webhook をトリガーするタイミングを決定するステップ用に構成されます。
+
+
+        [Webhook を使用して Microsoft Dataverse イベントを発行する - トレーニング | Microsoft Learn](https://learn.microsoft.com/training/modules/integrate-dataverse-azure-solutions/webhooks)
+
+
+        [Microsoft Dataverse イベントを処理する Azure Function を記述する - トレーニング | Microsoft Learn](https://learn.microsoft.com/training/modules/integrate-dataverse-azure-solutions/azure-function)
+
+
+        [WebHook を登録する | Microsoft Learn](https://learn.microsoft.com/power-apps/developer/data-platform/register-web-hook)'
+    - 034_details: 'Perplexity の Eliot より: pplx.ai/share
+
+
+        この設問は、Microsoft Dataverse の Webhook を特定の条件でのみトリガーさせるために必要な設定を理解しているかを問うものです[3][5].
+
+
+        1.  **新しい手順の登録**: Webhook を動作させるためには、まずイベントパイプラインに新しい手順を登録する必要があります[1][3][5].
+        この手順で、Webhook をトリガーするメッセージ (例: Update)、エンティティ (例: Account)、および実行ステージ (例: PostOperation)
+        を指定します[1][6].
+
+
+        2.  **フィルター属性を構成する**: Webhook が特定の列の値が更新された場合にのみトリガーされるようにするには、フィルター属性を構成する必要があります[3][5].
+        これにより、指定された属性 (列) が変更された場合にのみ Webhook が実行されるようになります[3].
+
+
+        **補足**
+
+
+        *   **新しいイメージの登録**、**プリイメージとポストイメージを構成する**: これらの設定は、変更前と変更後のエンティティのイメージを取得するために使用されます。Webhook
+        のトリガー条件を絞り込むためには必須ではありません[3][5].
+
+        *   **実行ステージを構成する**: 実行ステージは、イベントパイプラインのどの段階で Webhook を実行するかを決定しますが、特定の列値の更新に限定するためには、フィルター属性の設定がより重要です[6].
+
+
+        したがって、特定の列値が更新された場合にのみ Webhook がトリガーされるようにするには、新しい手順を登録し、フィルター属性を構成する必要があります[3][5].
+
+
+
+
+
+        -----'
+  - 021_title: 質問：Microsoft Dataverse と Oracle データベースの統合
+    022_line: '007351'
+    023_contents:
+    - 031_question: 'ある会社は、Oracle データベースに製品情報を格納しています。 その会社は、製品データベースを Microsoft Dataverse
+        と統合する予定です。
+
+
+        あなたは、Microsoft Dataverse のデータに Oracle データベースからアクセスできるようにする必要があります。
+
+
+        どの機能を使用する必要がありますか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - '  二重書き込み'
+      - '  仮想テーブル'
+      - '  Connectors'
+      - '  アクティビティ テーブル'
+    - 033_answer: '- 仮想テーブル'
+    - 034_details: 'この項目では、要件の検証と技術アーキテクチャの設計の一部である、仮想テーブル データ ソース プロバイダーを構築すべきときと、コネクタを使うべきときの判断について、受験者の知識をテストします。
+
+
+        仮想テーブルは、 Microsoft Dataverse のテーブルとしてシームレスに表すことで、データの重複なしに、また、多くの場合、カスタム コーディングなしに、外部システムに存在するデータの統合を可能にします。
+        データは、カスタム コーディングなしで元のデータ ソースに書き戻すことができます。 二重書き込みを使うと、財務と運用アプリと Microsoft Dataverse
+        の間を緊密に結合して双方向に統合できます。 Oracle データベースでは使用できません。 コネクタは、API のプロキシまたはラッパーであり、基になるサービスが
+        Power Automate、Power Apps、Azure Logic Apps と対話できるようにします。 アクティビティ テーブルは、アクティビティの格納に使われる特別な種類のテーブルです。
+        活動は、カレンダーにエントリを作成できるアクションと考えることができます。 アクティビティには時間ディメンションがあります。
+
+
+        [二重書き込みと仮想テーブル- トレーニング | Microsoft Learn](https://learn.microsoft.com/training/modules/get-started-with-powerapps-common-data-service/2b-dual-write-vs-virtual-table)
+
+
+        [Power Platform コネクタの概要 | Microsoft Learn](https://learn.microsoft.com/connectors/connectors)'
+    - 034_details: 'Perplexity の Eliot より: pplx.ai/share
+
+
+        この設問は、外部の Oracle データベースのデータを Microsoft Dataverse で利用するための最適な機能を選択する能力を評価するものです。
+
+
+        *   **仮想テーブル**: 外部データソースに保存されているデータを Dataverse 内でテーブルとして表示し、リアルタイムでアクセスできるようにする機能です[4][6].
+        データは Dataverse に複製されず、外部データソースから直接取得されます. これにより、Dataverse から Oracle データベースのデータにアクセスし、操作することが可能になります[2].
+
+        *   **二重書き込み**: 2 つの異なるアプリケーション間でデータをほぼリアルタイムで同期するための機能です. Dataverse と Oracle
+        データベース間の統合には適していますが、Dataverse から Oracle データベースにアクセスするという要件には直接対応しません.
+
+        *   **Connectors**: Power Platform で様々なデータソースに接続するための機能ですが、仮想テーブルのように外部データを
+        Dataverse のテーブルとして直接表示する機能はありません[5]. Oracle データベースに接続するために使用できますが、追加の設定やカスタマイズが必要になる場合があります.
+
+        *   **アクティビティ テーブル**: Dataverse 内の活動 (タスク、メール、予定など) を追跡するために使用されるテーブルです. 外部データソースとの統合には関係ありません.
+
+
+        したがって、Microsoft Dataverse のデータに Oracle データベースからアクセスできるようにするためには、仮想テーブルを使用するのが最適です[2][4].
+        仮想テーブルを使用することで、Dataverse 内から Oracle データベースのデータを参照、操作できます。
+
+
+
+
+        -----'
+  - 021_title: 質問：コンポーネント内でのコレクションデータへのアクセス
+    022_line: '007402'
+    023_contents:
+    - 031_question: 'ある会社は、collection1 という名前のコレクション変数に、キャンバス アプリのデータを格納しています。
+
+
+        再利用可能なコンポーネント内で、collection1 に格納されているデータにアクセスする必要があります。
+
+
+        どのコンポーネント機能を使う必要がありますか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - '  コンポーネント ライブラリ'
+      - '  出力プロパティ'
+      - '  入力プロパティ'
+      - '  アクセス アプリ スコープ'
+    - 033_answer: '- アクセス アプリ スコープ'
+    - 034_details: 'この項目では、ソリューション コンポーネントの設計の一部である、Power Apps の再利用可能なコンポーネントの設計について、受験者の知識をテストします。
+
+
+        アクセス アプリ スコープを有効にすると、アプリ レベルの情報に直接アクセスできます。 アクセス アプリ スコープが有効になっていると、グローバル変数やコレクションなどにコンポーネント内からアクセスできるようになります。
+        コンポーネント ライブラリを作成することで、アプリ メーカーは 1 つ以上のコンポーネントを他のメーカーと簡単に共有および更新できます。 出力プロパティは、コンポーネントからアプリにデータまたはコンポーネントの状態を出力するために使われます。
+        入力プロパティは、コンポーネント内で使われるデータをコンポーネントがアプリから受け取る方法です。 出力プロパティと入力プロパティを使ってコレクションにアクセスすることはできません。
+
+
+        [キャンバス コンポーネントの概要 (ビデオを含む) - Power Apps | Microsoft Learn](https://learn.microsoft.com/power-apps/maker/canvas-apps/create-component)
+
+
+        [コンポーネント ライブラリ - Power Apps | Microsoft Learn](https://learn.microsoft.com/power-apps/maker/canvas-apps/component-library)'
+    - 034_details: 'Perplexity の Eliot より: pplx.ai/share
+
+
+        この設問は、キャンバスアプリのコンポーネント内で、アプリ全体のスコープを持つコレクション変数にアクセスするための適切な機能を理解しているかを問うものです。
+
+
+        *   **アクセス アプリ スコープ**: コンポーネントのプロパティで「アクセス アプリ スコープ」をオンにすると、コンポーネントからアプリのグローバル変数、コレクション、コントロール、およびテーブルデータソースに直接アクセスできるようになります[1][5].
+        これにより、コンポーネントとアプリ間でデータを簡単に共有できます。
+
+
+        *   **入力プロパティ**: 入力プロパティを使用すると、アプリからコンポーネントにデータを渡すことができます. しかし、この方法では、コレクション全体をコンポーネントに渡す必要があります.
+
+        *   **出力プロパティ**: 出力プロパティを使用すると、コンポーネントからアプリにデータを返すことができます. コレクションをコンポーネント内で変更し、その結果をアプリに返す必要がある場合に役立ちます.
+
+        *   **コンポーネント ライブラリ**: コンポーネントライブラリは、複数のアプリでコンポーネントを再利用するためのものですが、データアクセスに関する直接的な機能ではありません[1].
+
+
+        今回のシナリオでは、コンポーネント内で `collection1` に格納されているデータにアクセスする必要があるため、「アクセス アプリ スコープ」をオンにすることで、コンポーネントから直接
+        `collection1` にアクセスできます[1][5].
+
+
+        **補足**
+
+        以前は、コンポーネントは適切にカプセル化されており、アプリからの情報やリソースにアクセスできませんでした。すべてのデータは、入力プロパティを介してコンポーネントに渡す必要がありました[5].
+        しかし、「アクセス アプリ スコープ」機能により、コンポーネントはアプリのスコープを直接利用できるようになり、より柔軟なデータアクセスが可能になりました[5].
+
+
+
+
+
+        -----'
+  - 021_title: 質問：アカウントテーブルへのアクセス許可
+    022_line: '007457'
+    023_contents:
+    - 031_question: 'Accounts テーブルに対するユーザー レベルの作成、読み取り、書き込みアクセス許可を付与するセキュリティ ロールを作成しています。
+        そのセキュリティ ロールをチームに割り当てます。 そのセキュリティ ロールは、Accounts テーブルへのアクセス許可を付与する唯一のセキュリティ
+        ロールです。
+
+
+        所有者としてレコードを作成できないことが、ユーザーから報告されています。
+
+
+        実行する必要がある 2 つのアクションはどれですか? 解答には、正しいそれぞれの回答が必要です。
+
+
+        該当するすべての回答を選択してください。'
+    - 032_selections:
+      - '  セキュリティ グループのメンバーの特権継承の設定を、[Direct user (Basic) access levels and team privileges]
+        (直接ユーザー (基本) アクセス レベルとチームの特権) に設定する。'
+      - '  セキュリティ グループのメンバーの特権継承の設定を、[Team privileges only] (チームの特権のみ) に設定する。'
+      - '  Accounts テーブルの作成、読み取り、書き込みの特権を [組織] に設定する。'
+      - '  Accounts テーブルの作成、読み取り、書き込みの特権を [ユーザー] に設定する。'
+      - '  Contact テーブルの作成、読み取り、書き込みの特権を、[ユーザー] に設定する。'
+    - 033_answer: '- 1.  セキュリティ グループのメンバーの特権継承の設定を、[Direct user (Basic) access levels
+        and team privileges] (直接ユーザー (基本) アクセス レベルとチームの特権) に設定する[1].
+
+        - 2.  Accounts テーブルの作成、読み取り、書き込みの特権を [ユーザー] に設定する[1].'
+    - 034_details: 'この項目では、さまざまなセキュリティ ロールについて、受験者の知識をテストします。
+
+
+        [Member’s privilege inheritance] (メンバーの特権継承) では、ユーザー自身とチームの両方に対して指定された特権が、ユーザーに付与されます。
+        Accounts テーブルの作成、読み取り、書き込みの特権を [ユーザー] に設定すると、ユーザーは Accounts テーブルについて必要なすべての特権を持つようになります。
+        [Member’s privilege inheritance] (メンバーの特権継承) の [team privileges only] (チームの特権のみ)
+        は、チーム レベルに対して指定された特権のみを付与します。 問題は、Contact テーブルではなく Accounts テーブルにあります。
+
+
+        [Microsoft Dataverse のセキュリティ ロールの基本 - トレーニング | Microsoft Learn](https://learn.microsoft.com/training/modules/get-started-security-roles/)
+
+
+        [セキュリティ ロールおよび特権 - Power Platform | Microsoft Learn](https://learn.microsoft.com/power-platform/admin/security-roles-privileges)'
+    - 034_details: "Perplexity の Eliot より: pplx.ai/share\n\nこの設問は、Microsoft Dataverse\
+        \ のセキュリティロールにおける特権の継承と、レコード所有権に関する設定を理解しているかを問うものです。\n\n1.  **セキュリティ グループのメンバーの特権継承の設定**:\n\
+        \    *   チームにセキュリティ ロールを割り当てた場合、チームメンバーがレコードを所有者として作成するためには、セキュリティ ロールの「メンバーの特権継承」を「Direct\
+        \ User (Basic) access levels and team privileges」に設定する必要があります[1].\n    * \
+        \  この設定により、ユーザーはチームの特権に加えて、個人の特権も直接継承し、自身が所有するレコードを作成できるようになります[1].\n\n2.\
+        \  **Accounts テーブルの作成、読み取り、書き込みの特権**:\n    *   ユーザーがレコードを作成し、それを所有するためには、Accounts\
+        \ テーブルの作成権限を「ユーザー」レベルに設定する必要があります[1][6].\n    *   これにより、ユーザーは自分が所有するアカウントレコードを作成できるようになります。\n\
+        \n**補足**\n\n*   「Team privileges only」設定では、チームメンバーはチームが所有するレコードのみを作成でき、自身が所有するレコードを作成することはできません[1].\n\
+        *   Accounts テーブルの特権を「組織」に設定すると、すべてのユーザーが組織全体のレコードにアクセスできるようになり、セキュリティ上のリスクが高まる可能性があります[5].\n\
+        *   Contact テーブルの特権設定は、Accounts テーブルのレコード作成には直接影響しません。\n\nしたがって、ユーザーが Accounts\
+        \ テーブルのレコードを所有者として作成できるようにするためには、特権継承の設定と、Accounts テーブルの作成権限の設定を適切に行う必要があります。また、レコードを作成してそのレコードの所有者になるには、アカウントに対する「作成」アクセス権に加えて「読み取り」アクセス権も必要です[7].\n\
+        \n\n\n\n-----"
+  - 021_title: 質問：Dataverse へのアクセス管理
+    022_line: '007520'
+    023_contents:
+    - 031_question: 'あなたは、Microsoft Dataverse 内のカスタム テーブルに対してデータの読み取りと書き込みを行う外部システムからの統合を構築しています。
+        10 個の外部システムがあります。
+
+
+        あなたは、パスワードを要求したり、多要素認証を処理したりすることなく、Dataverse へのアクセスを管理する必要があります。
+
+
+        実行する必要がある 3 つの手順はどれですか? 解答には、正しいそれぞれの回答が必要です。 3 つ選んでください。
+
+
+        該当するすべての回答を選択してください。'
+    - 032_selections:
+      - '  Dataverse で非対話型ユーザーを作成します。'
+      - '  Microsoft Entra ID でアプリの登録を作成します。'
+      - '  Dataverse でアプリケーション ユーザーを作成します。'
+      - '  Microsoft Entra ID でエンタープライズ アプリケーションを作成します。'
+      - '  カスタム セキュリティ ロールを作成して選択します。'
+      - '  Basic ユーザー セキュリティ ロールを選択します。'
+    - 033_answer: '- 1.  Microsoft Entra ID でアプリの登録を作成します[3][4][6].
+
+        - 2.  Dataverse でアプリケーション ユーザーを作成します[1][2][5].
+
+        - 3.  カスタム セキュリティ ロールを作成して選択します[9][11][12].'
+    - 034_details: 'この項目では、コード コンポーネントをサポートするための Dataverse セキュリティ ロールの構成に関する受験者の知識をテストします。
+
+
+        アプリの登録はパスワードを必要とせず、多要素認証から除外されるため、Microsoft Entra ID でアプリを登録する必要があります。 Dataverse
+        でアプリの登録を選択して、アプリケーション ユーザーを作成する必要があります。 アプリケーション ユーザーは数に制限なく作成できます。 アプリケーション
+        ユーザーのカスタム セキュリティ ロールを作成して選択する必要があります。 統合のためにアプリケーション ユーザーに割り当てられるセキュリティ ロールには、統合を実行するために必要な特権のみが含まれている必要があり、アプリにログインできないようにする必要があります。
+
+
+        非対話型ユーザーは認証にパスワードが必要であり、環境ごとに非対話型ユーザーは 7 人までという制限があります。 エンタープライズ アプリケーションを使用してアプリケーション
+        ユーザーを作成することはできません。 Basic ユーザー ロールには、統合を実行するために必要な特権よりも多くの特権があり、さらに、カスタム テーブルの特権を追加するように変更することはできません。
+
+
+        [Microsoft Dataverse のセキュリティ ロールの基本 - トレーニング | Microsoft Learn](https://learn.microsoft.com/training/modules/get-started-security-roles/)
+
+
+        [Microsoft Dataverse Web API を使用する - トレーニング | Microsoft Learn](https://learn.microsoft.com/training/modules/dataverse-web-api/)
+
+
+        [Microsoft Dataverse のセキュリティ概念 - Power Platform | Microsoft Learn](https://learn.microsoft.com/power-platform/admin/wp-security-cds)
+
+
+        [Power Platform 管理センターでアプリケーション ユーザーを管理する - Power Platform | Microsoft Learn](https://learn.microsoft.com/power-platform/admin/wp-security-cds)
+
+
+        [ユーザーを作成する - Power Platform | Microsoft Learn](https://learn.microsoft.com/power-platform/admin/create-users)'
+    - 034_details: 'Perplexity の Eliot より: pplx.ai/share
+
+
+        この設問は、外部システムから Microsoft Dataverse へのセキュアなアクセスを、パスワードや多要素認証なしで実現するための適切な手順を理解しているかを問うものです。
+
+
+        1.  **Microsoft Entra ID でアプリの登録を作成する**: 外部システムが Dataverse にアクセスするためには、Microsoft
+        Entra ID (旧称 Azure Active Directory) にアプリケーションとして登録する必要があります[3][4][6]. これにより、Dataverse
+        は外部システムを認証し、アクセスを許可することができます。アプリの登録を行うことで、アプリケーション ID (クライアント ID) とテナント ID
+        が発行され、これらは後の手順で使用されます[3].
+
+        2.  **Dataverse でアプリケーション ユーザーを作成する**: Dataverse 内に、Microsoft Entra ID に登録したアプリケーションに対応するアプリケーション
+        ユーザーを作成します[1][2][5]. このアプリケーション ユーザーは、特定のセキュリティロールを割り当てることで、Dataverse 内でのアクセス権限を制御できます[6].
+        アプリケーション ユーザーは、非対話型ユーザーとして作成され、ライセンスを必要としません[1].
+
+        3.  **カスタム セキュリティ ロールを作成して選択する**: アプリケーション ユーザーに適切なアクセス許可を付与するために、カスタムセキュリティロールを作成し、それをアプリケーション
+        ユーザーに割り当てます[9][11][12]. これにより、外部システムは Dataverse 内の必要なデータのみにアクセスできるようになり、セキュリティが向上します。
+
+
+        **補足**
+
+
+        *   **非対話型ユーザー**: 非対話型ユーザーは、プログラムからの Dataverse へのアクセスに使用されますが、アプリケーションユーザーとは異なり、Microsoft
+        Entra ID に登録されたアプリケーションに関連付けられません[1].
+
+        *   **エンタープライズ アプリケーション**: Microsoft Entra ID のエンタープライズアプリケーションは、組織内で使用されるアプリケーションを管理するためのものであり、今回のシナリオには直接関係ありません[7][8].
+
+        *   **Basic ユーザー セキュリティ ロール**: Basic ユーザーセキュリティロールは、Dataverse の基本的な機能へのアクセスを提供しますが、外部システムからのアクセスに必要な特定の権限を付与するためには、カスタムセキュリティロールを作成する必要があります[11].
+
+
+        したがって、外部システムから Dataverse へのセキュアなアクセスを管理するためには、Microsoft Entra ID でのアプリ登録、Dataverse
+        でのアプリケーション ユーザーの作成、およびカスタムセキュリティロールの作成と割り当てという 3 つの手順を実行する必要があります.
+
+
+
+
+
+        -----'
+  - 021_title: 質問：コマンドボタンの表示制御
+    022_line: 007589
+    023_contents:
+    - 031_question: '最新のアプリ デザイナーを使って、モデル駆動型アプリを作成しています。
+
+
+        コマンド バーにコマンド ボタンを追加する必要があります。 グリッド ビューで 1 つ以上のレコードが選ばれている場合にのみ、コマンド ボタンを表示する必要があります。
+
+
+        コマンド ボタンの表示を制御するには、どの式を使う必要がありますか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - '  CountRows(Self.Selected.AllItems) > 0'
+      - '  CountRows(Selected.Items) > 0'
+      - '  Count(Self.Selected.AllItems) > 0'
+      - '  Count(Selected.Items) > 0'
+    - 033_answer: '- `CountRows(Self.Selected.AllItems) > 0`'
+    - 034_details: 'この項目では、コマンド ボタン関数の使用について、受験者の知識をテストします。
+
+
+        正しい数式は、CountRows(Self.Selected.AllItems) > 0 です。 式 CountRows(Selected.Items)
+        > 0 には Self 要素がありません。 要件を満たすには、Count ではなく CountRows を使う必要があります。
+
+
+        [コマンドで Power Fx を使用する - Power Apps | Microsoft Learn](https://learn.microsoft.com/power-apps/maker/model-driven-apps/commanding-use-powerfx#control-visibility-based-on-record-data?WT.mc_id=BA-MVP-5000177)'
+    - 034_details: 'Perplexity の Eliot より: pplx.ai/share
+
+
+        この設問は、モデル駆動型アプリのコマンドバーに配置されたボタンの表示/非表示を、選択されたレコード数に基づいて制御するための適切な Power Fx
+        式を理解しているかを問うものです。
+
+
+        *   **CountRows(Self.Selected.AllItems) > 0**: この式は、グリッドビューで選択されているすべてのアイテムの数を数え、その数が
+        0 より大きい場合 (つまり、1 つ以上のレコードが選択されている場合) に true を返します. この式を使用することで、1 つ以上のレコードが選択されている場合にのみコマンドボタンを表示することができます[5][6].
+
+        *   **CountRows(Selected.Items) > 0**: `Selected` は、コマンドのスコープ内で直接使用できるとは限りません.
+        `Self` を使用して、コマンドが関連付けられているコンテキストを参照する必要があります.
+
+        *   **Count(Self.Selected.AllItems) > 0** と **Count(Selected.Items) > 0**:
+        `Count` 関数は、数値のカウントには使用できますが、`Self.Selected.AllItems` のようなコレクションの行数をカウントするためには、`CountRows`
+        関数を使用する必要があります.
+
+
+        したがって、グリッドビューで1つ以上のレコードが選択されている場合にのみコマンドボタンを表示するためには、`CountRows(Self.Selected.AllItems)
+        > 0` という式を使用する必要があります[5][6].
+
+
+        **補足**
+
+
+        最新のアプリデザイナーでは、Power Fx を使用してコマンドバーのボタンの表示/非表示を制御できます[3]. これにより、JavaScript
+        コードを書くことなく、より簡単にコマンドのカスタマイズが可能になりました[3]. 類似の式として `!IsEmpty(Self.Selected.AllItems)`
+        も利用可能です[6].
+
+
+        ```powerfx
+
+        CountRows(Self.Selected.AllItems) > 0
+
+        ```
+
+
+        この式をコマンドボタンの「表示」プロパティに設定することで、選択されているレコード数に応じてボタンの表示を動的に制御できます[3][5][6].
+
+
+
+
+
+        -----'
+  - 021_title: 質問：
+    022_line: '007647'
     023_contents:
     - 031_question: ''
     - 032_selections: []
