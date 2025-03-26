@@ -76,7 +76,7 @@ def sideMenuProgress(sections):
     st.sidebar.markdown(
         f"問題 {st.session_state.current_question + 1} / {len(sections)}"
     )
-    st.sidebar.markdown(f"現在のスコア: {st.session_state.score}")
+    # st.sidebar.markdown(f"現在のスコア: {st.session_state.score}")
 
 
 def main():
@@ -84,66 +84,71 @@ def main():
     # st.session_stateの初期化
     initialize_session_state()
 
-    # YAMLファイルの読み込み
-    quiz_data = load_quiz_data("assets/practice-test.yaml")
+    try:
+        # YAMLファイルの読み込み
+        if "quiz_data" not in locals():
+            quiz_data = load_quiz_data("assets/practice-test.yaml")
 
-    if "011_title" not in quiz_data:
-        st.header("クイズアプリ")
-        st.error("読み込みデータの形式が異なるようです")
-        return
-    else:
-        st.header(quiz_data["011_title"])
+        if "011_title" not in quiz_data:
+            st.header("クイズアプリ")
+            st.error("読み込みデータの形式が異なるようです")
+            return
+        else:
+            st.header(quiz_data["011_title"])
 
-    sections = quiz_data["013_sections"]
-    current_section = sections[st.session_state.current_question]
+        sections = quiz_data["013_sections"]
+        current_section = sections[st.session_state.current_question]
 
-    # 設問スライダー
-    itemSlider(sections, key="top")
+        # 設問スライダー
+        itemSlider(sections, key="top")
 
-    # 問題の表示
-    st.subheader(current_section["021_title"])
+        # 問題の表示
+        st.subheader(current_section["021_title"])
 
-    # コンテンツをリストから辞書に変換
-    content = convert_contents_to_dict(current_section["023_contents"])
+        # コンテンツをリストから辞書に変換
+        content = convert_contents_to_dict(current_section["023_contents"])
 
-    # 問題文の表示
-    st.markdown(content["031_question"])
+        # 問題文の表示
+        st.markdown(content["031_question"])
 
-    # 選択肢の表示
-    options = content.get("032_selections", [])
+        # 選択肢の表示
+        options = content.get("032_selections", [])
 
-    st.write("答えを選んでください：")
-    for option in options:
-        is_selected = option in st.session_state.selected_options
-        st.checkbox(
-            option,
-            value=is_selected,
-            key=f"checkbox_{option}",
-            on_change=checkbox_callback,
-            args=(option,),
-        )
+        st.write("答えを選んでください：")
+        for option in options:
+            is_selected = option in st.session_state.selected_options
+            st.checkbox(
+                option,
+                value=is_selected,
+                key=f"checkbox_{option}",
+                on_change=checkbox_callback,
+                args=(option,),
+            )
 
-    # # 選択されたオプションを表示
-    # st.write("選択された答え:", st.session_state.selected_options)
-    if st.session_state.selected_options:
-        st.subheader("選択された答え:")
-        for selected_option in st.session_state.selected_options:
-            st.markdown(f"- {selected_option}")
-    else:
-        st.warning("選択された答えはありません")
+        # # 選択されたオプションを表示
+        # st.write("選択された答え:", st.session_state.selected_options)
+        if st.session_state.selected_options:
+            st.subheader("選択された答え:")
+            for selected_option in st.session_state.selected_options:
+                st.markdown(f"- {selected_option}")
+        else:
+            st.warning("選択された答えはありません")
 
-    # 回答・解説の表示切り替え
-    with st.expander("回答・解説を表示"):
-        correct_answer = content["033_answer"].strip()
-        st.markdown(f"### 正解：\n{correct_answer}")
+        # 回答・解説の表示切り替え
+        with st.expander("回答・解説を表示"):
+            correct_answer = content["033_answer"].strip()
+            st.markdown(f"### 正解：\n{correct_answer}")
 
-        # 解説の表示
-        st.markdown("### 解説")
-        st.markdown(content["034_details"])
+            # 解説の表示
+            st.markdown("### 解説")
+            st.markdown(content["034_details"])
 
-        # 補足情報の表示（存在する場合）
-        if "035_supplements" in content:
-            st.markdown(content["035_supplements"])
+            # 補足情報の表示（存在する場合）
+            if "035_supplements" in content:
+                st.markdown(content["035_supplements"])
+
+    except Exception as e:
+        st.error(f"なんらかのエラーが起きました: {str(e)}")
 
     # 設問スライダー
     itemSlider(sections, key="bottom")
