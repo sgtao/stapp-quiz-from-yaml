@@ -135,16 +135,19 @@ def main():
             st.warning("選択された答えはありません")
 
         # 回答・解説の表示切り替え
-        with st.expander("回答・解説を表示"):
-            correct_answer = content["033_answer"].strip()
-            st.markdown(f"### 正解：\n{correct_answer}")
+        if "033_answer" in content:
+            with st.expander("回答・解説を表示"):
+                correct_answer = content["033_answer"].strip()
+                st.markdown(f"### 正解：\n{correct_answer}")
 
-            # 解説の表示
-            st.markdown("### 解説")
-            st.markdown(content["034_details"])
+                # 解説の表示
+                if "034_details" in content:
+                    st.markdown("### 解説")
+                    st.markdown(content["034_details"])
 
-            # 補足情報の表示（存在する場合）
-            if "035_supplements" in content:
+        # 補足情報の表示（存在する場合）
+        if "035_supplements" in content:
+            with st.expander("補足"):
                 st.markdown(content["035_supplements"])
 
     except Exception as e:
