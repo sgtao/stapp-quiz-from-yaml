@@ -48,7 +48,7 @@ def initialize_session_state():
 
 def itemSlider(sections, key="default"):
     # 前の問題と次の問題のボタンを横に並べる
-    col1, col2 = st.columns([0.2, 0.8])
+    col1, col2, col3 = st.columns(3)
 
     # 前の問題へ進むボタン
     with col1:
@@ -57,9 +57,10 @@ def itemSlider(sections, key="default"):
                 clear_checkbox_options()
                 st.session_state.current_question -= 1
                 st.rerun()
-
-    # 次の問題へ進むボタン
     with col2:
+        pass
+    # 次の問題へ進むボタン
+    with col3:
         if st.session_state.current_question < len(sections) - 1:
             if st.button("次の問題へ", key=f"{key}_next"):
                 clear_checkbox_options()
