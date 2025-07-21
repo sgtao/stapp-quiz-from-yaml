@@ -9434,8 +9434,292 @@
 
 
         -----'
-  - 021_title: 質問：
+  - 021_title: 質問 91：Microsoft Dataverse – クエリ実行時のエラー原因
     022_line: '007730'
+    023_contents:
+    - 031_question: '組織の Power Apps モデル駆動型アプリを構成しています。
+
+
+        Microsoft Dataverse のデータが外部システムのデータと同期していることを確認するクエリを作成します。 クエリは、データが降順に並べ替えられた変更された行の合計数を返す必要があります。
+
+
+        クエリを実行すると、エラーが返されます。
+
+
+        エラーの理由は何ですか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - Web API 要求には、 odata.track-changes ヘッダーが含まれています。
+      - Web API 要求には、 $count クエリ パラメーターが含まれています。
+      - Web API ヘッダーには、 $orderby クエリ パラメーターが含まれています。
+      - Web API 要求にはデルタ リンクが含まれています。
+    - 033_answer: '- Web API ヘッダーには、 $orderby クエリ パラメーターが含まれています。'
+    - 034_details: 'この項目は、テーブル変更追跡に関する候補者の知識をテストします。
+
+
+        $orderby クエリ パラメーターは、Web API ヘッダーではサポートされていません。 Web API を使用して変更を追跡するときは、 odata.track-changes
+        ヘッダーを基本設定ヘッダーとして追加する必要があります。 $count クエリ パラメーターは、Web API 要求でサポートされています。 差分リンクがサポートされ、結果の変更を取得するために使用されます。
+
+
+        [変更の追跡を使用してデータを外部システムに同期 (Microsoft Dataverse) - Power Apps | Microsoft Learn](https://learn.microsoft.com/power-apps/developer/data-platform/use-change-tracking-synchronize-data-external-systems)'
+    - 035_supplements: "### 補足：Microsoft Dataverse – クエリ実行時のエラー原因\n- 回答: **Web API\
+        \ ヘッダーには、 $orderby クエリ パラメーターが含まれています。**\n\n#### この設問の意図\n本問は、**Microsoft\
+        \ Dataverse Web APIにおける「変更の追跡（Change Tracking）」の制限事項**を理解しているかを確認するためのものです。特に、「変更の追跡」を利用する際にサポートされないクエリオプションについて問われています。\n\
+        \n#### 解説・知識強化ポイント\n\n- **Change Tracking（変更の追跡）とは**\n　Dataverseのテーブルのデータ変更を効率的に検出し、外部システムとのデータ同期を可能にする仕組みです。「Prefer:\
+        \ odata.track-changes」ヘッダーを追加することで有効化されます[1][2]。\n\n- **Change Tracking API要求時の制約**\n\
+        　このヘッダーを利用するとき、**クエリで$orderbyオプションなど一部のODataパラメーターはサポートされません**。\n　例えば、「Prefer:\
+        \ odata.track-changes」と同時に「$orderby」「$filter」「$expand」「$top」をリクエストに含めると、エラーになります[3][4]。\n\
+        \n- **具体的な選択肢の解説**\n    - 「odata.track-changes ヘッダー」や「デルタ リンク」のみでは、エラーにはならず、正しく構成されていればデータ取得は可能です[3]。\n\
+        \    - 「$count パラメーター」は一部シナリオでサポートされますが、今回問題となるエラーの主因ではありません[5][6]。\n    -\
+        \ 「$orderby」が含まれている場合こそ、「Change Tracking」時にはサポート外となるためエラーが発生します[3][4]。\n\n\
+        #### 理解を深めるためのワンポイント\n\n- **実務での注意点**\n　「Change Tracking」APIでは、変化したデータだけを効率良く受け取ることができますが、**データ順序（$orderby）や件数制限（$top）、展開（$expand）の指定ができない**ことを押さえておきましょう。必要なデータ整形は取得後にアプリケーション側で行うことになります。\n\
+        \n【この内容を学ぶと、Web APIの技術制約・設計ポイントを押さえて、より堅牢なシステム連携を設計できるようになります。】\n\n**参考情報**\n\
+        - Microsoft公式ドキュメント（「変更の追跡」APIの制約について）[3][4][1]\n\n[1] https://learn.microsoft.com/ja-jp/power-apps/developer/data-platform/use-change-tracking-synchronize-data-external-systems\n\
+        [2] https://learn.microsoft.com/en-us/power-apps/developer/data-platform/use-change-tracking-synchronize-data-external-systems\n\
+        [3] https://pupuweb.com/pl-400-what-are-the-best-practices-for-querying-latest-changes-with-web-api-in-dataverse/\n\
+        [4] https://www.linkedin.com/pulse/enhancing-odata-integration-dynamics-365-fo-virtual-entity-aberra-abpxf\n\
+        [5] https://www.qes.co.jp/media/PowerAutomate/a543\n[6] https://learn.microsoft.com/en-us/power-apps/developer/data-platform/webapi/query/overview\n\
+        [7] https://learn.microsoft.com/ja-jp/power-apps/developer/data-platform/reference/web-service-error-codes\n\
+        [8] https://learn.microsoft.com/en-us/answers/questions/2154663/how-to-write-query-for-fetching-count-of-entity-fr\n\
+        [9] https://learn.microsoft.com/ja-jp/power-apps/developer/data-platform/webapi/query-data-web-api\n\
+        [10] https://community.dynamics.com/blogs/post/?postid=1c995074-bc0d-4560-8f20-40126e353070\n\
+        [11] https://learn.microsoft.com/de-de/dynamics365/business-central/dev-itpro/developer/properties/devenv-changetrackingallowed-property\n\
+        [12] https://learn.microsoft.com/en-us/power-apps/developer/data-platform/webapi/query/aggregate-data\n\
+        [13] https://community.powerplatform.com/forums/thread/details/?threadid=7beaa968-ee47-4187-bd47-8d52b5fa96de\n\
+        [14] https://learn.microsoft.com/ja-jp/power-apps/developer/data-platform/webapi/retrieve-related-entities-query\n\
+        [15] https://temmyraharjo.wordpress.com/2023/07/15/dataverse-the-importance-of-orderby-when-retrieve-more-than-5k-records/\n\
+        [16] https://learn.microsoft.com/en-us/power-apps/developer/data-platform/reference/web-service-error-codes\n\
+        [17] https://github.com/MicrosoftDocs/powerapps-docs/blob/main/powerapps-docs/developer/data-platform/webapi/query/order-rows.md\n\
+        [18] https://community.powerbi.com/t5/Power-Query/Dataverse-Count-Rows-of-lookup-table-column-based-on-condition/td-p/1682168\n\
+        [19] https://learn.microsoft.com/en-us/power-apps/maker/data-platform/api-limits-overview\n\
+        [20] https://www.d365freelancing.com/post/power-platform-odata-query-to-count-records-for-an-entity\n\
+        \n\n\n-----"
+  - 021_title: 質問 92：Dataverse同期イベントのトリガー選定
+    022_line: 007821
+    023_contents:
+    - 031_question: 'ある会社は、Microsoft Dataverse を外部システムと統合する予定です。
+
+
+        新しいレコードが Dataverse テーブルに追加されると、イベントが同期的に処理されるようにする必要があります。
+
+
+        何を使用する必要がありますか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - Azure Relay
+      - Azure Service Bus（アジュール サービス バス）
+      - パワーオートメート
+      - Webhooks（ウェブフック）
+    - 033_answer: '- Webhooks（ウェブフック）'
+    - 034_details: 'この項目では、Dataverse と Azure を使用して受信と送信の統合を設計する候補者の知識をテストします。
+
+
+        新しいレコードが Dataverse に追加されたときに、Webhook を使用してデータを同期的に処理できます。 Webhook は、API とサービスを接続するための軽量の
+        HTTP パターンです。 Azure Service Bus には、Dataverse ランタイム データと外部システムの間の非同期処理メカニズムが用意されています。
+        Azure Relay は、企業ネットワーク内に存在するサービスをパブリック クラウドに安全に公開するために使用されます。 Power Automate
+        では、非同期パターンを使用して、Dataverse で発生するイベントを処理します。
+
+
+        [Microsoft Dataverse Azure ソリューションの統合 - トレーニング |Microsoft Learn](https://learn.microsoft.com/training/modules/integrate-dataverse-azure-solutions/)
+
+
+        [Azure Relay とは Microsoft Learn](https://learn.microsoft.com/azure/azure-relay/relay-what-is-it)
+
+
+        [Webhook を使用してサーバー イベントの外部ハンドラーを作成する |Microsoft Learn](https://learn.microsoft.com/power-apps/developer/data-platform/use-webhooks)'
+    - 035_supplements: "### 補足：Dataverse同期イベントのトリガー選定\n- 回答: **Webhooks（ウェブフック）**\n\
+        \n#### 設問の意図\n\nこの設問は、Dataverseと外部システムをリアルタイムかつ「同期的（シンクロナス）」に連携する必要がある場合に、どの仕組みを選定するのが適切かを問うものです。\n\
+        \n#### 解説\n\n- **Webhooks（ウェブフック）**\n  Webhookは、Dataverseの「プラグイン」やイベントフレームワーク内の各タイミング（Pre/PostOperationなど）で「同期的（トランザクション内）」にも実行できます[1][2]。\n\
+        \  これにより、新しいレコードが追加された直後に外部サービスへ即座にデータを通知し、外部システム側でそのイベントをトランザクション内で受け取ることが可能となります。\n\
+        \n- **他の選択肢の解説**\n  - **パワーオートメート**：イベント駆動型の自動化が可能ですが、多くは「非同期」実行となり、トランザクション内での即時制御には向きません。\n\
+        \  - **Azure Service Bus/Azure Relay**：データ通知や連携はできますが、これらも通常「非同期」処理となり、イベント完了を待たずに後続処理が進む設計です。\n\
+        \  - **Azure Relay**：主に双方向通信やセキュアなトンネル目的で使われ、イベントトリガー用途には通常選ばれません。\n\n####\
+        \ 理解を深めるためのポイント\n\n- **Dataverseのイベントフレームワークの特徴**\n  Dataverseでは、PreOperationおよびPostOperationといったトランザクション内でWebhooksやプラグインを登録可能です。これにより、レコード追加後すぐに外部通知でき、必要であればトランザクションの中で処理を完結できます[1][2]。\n\
+        - **実務での注意点**\n  同期的イベント連携では、外部サービスの応答遅延や障害がDataverseの処理にも影響するため、外部API側の可用性やパフォーマンスも設計上重要です。\n\
+        \n- Microsoft公式ドキュメントの「Dataverse Event Framework」およびWebhooks活用セクション参照[1][2]。\n\
+        \n[1] https://learn.microsoft.com/en-us/power-apps/developer/data-platform/business-events\n\
+        [2] https://learn.microsoft.com/en-us/power-apps/developer/data-platform/event-framework\n\
+        [3] https://learn.microsoft.com/en-us/power-apps/developer/data-platform/data-synchronization\n\
+        [4] https://learn.microsoft.com/en-us/power-apps/developer/data-platform/asynchronous-service\n\
+        [5] https://community.powerplatform.com/forums/thread/details/?threadid=9722888f-2143-4137-a63a-a81bfeb16b6d\n\
+        [6] https://www.inogic.com/blog/2024/12/leveraging-newrecord-and-oldrecord-in-low-code-plug-ins-for-dataverse/\n\
+        [7] https://community.dynamics.com/forums/thread/details/?threadid=c29f4a80-cf21-f011-998a-7c1e5248e2ba\n\
+        [8] https://pnp.github.io/blog/post/power-platform-extensibility-04/\n[9]\
+        \ https://community.powerplatform.com/forums/thread/details/?threadid=a634cb2e-8276-4c76-bac6-469de2479d7d\n\
+        [10] https://community.dynamics.com/blogs/post/?postid=087011ff-1ecd-4f1b-8607-2be688cec04c\n\
+        \n\n\n-----"
+  - 021_title: 質問 93：モデル駆動型アプリのコマンドバー ボタン追加方法
+    022_line: 007899
+    023_contents:
+    - 031_question: 'モデル駆動型アプリがあります。 アプリをサードパーティのアプリケーションと統合する予定です。
+
+
+        ユーザーは、モデル駆動型アプリのフォームのコマンド バーにあるボタンを選択して、サード パーティ製アプリケーションを起動できる必要があります。
+
+
+        ボタンを追加するには、リボンを編集する必要があります。
+
+
+        この目標を達成できる 2 つの方法はどれですか? 解答はそれぞれ完全な解決策を示しています。
+
+
+        該当するすべての回答を選択してください。'
+    - 032_selections:
+      - JavaScript コードを作成します。
+      - リボン ワークベンチを使用します。
+      - ビジネス ルールを使用します。
+      - リボン XML マークアップを変更します。
+    - 033_answer: '- リボン ワークベンチを使用します。
+
+        - リボン XML マークアップを変更します。'
+    - 034_details: 'この項目では、モデル駆動型アプリ フォームのボタンのカスタマイズに関する候補者の知識をテストします。 これを行うには、リボン
+        ワークベンチを使用するか、リボン XML を直接編集する方法が 2 つだけサポートされています。
+
+
+        [コマンドとリボンをカスタマイズする (モデル駆動型アプリ) - Power Apps |Microsoft Learn](https://learn.microsoft.com/power-apps/developer/model-driven-apps/customize-commands-ribbon)
+
+
+        [コマンドで Power Fx を使用する - Power Apps | Microsoft Learn](https://learn.microsoft.com/power-apps/maker/model-driven-apps/commanding-use-powerfx)'
+    - 035_supplements: "### 補足：モデル駆動型アプリのコマンドバー ボタン追加方法\n- 回答:\n  - **リボン ワークベンチを使用します。**\n\
+        \  - **リボン XML マークアップを変更します。**\n\n#### 設問の意図\n\nこの設問は**モデル駆動型アプリの「コマンドバー」や「リボン（コマンド）」のカスタマイズ手法**について理解しているかどうか、およびサードパーティアプリの起動という要件を満たすためにどの手法が実際に有効であるかを問うものです。\n\
+        \n#### 解説\n\n- **リボンワークベンチ（Ribbon Workbench）**\n  コミュニティツールであるリボンワークベンチは、モデル駆動型アプリのコマンドバー（リボン）をGUIで直感的かつ安全にカスタマイズできるツールです。\n\
+        \  ボタン追加、動作定義、JavaScriptの埋め込み、表示ルール設定など多くのリボン編集操作がサポートされており、Ribbon XMLを直接編集するよりもミスなく効率的に作業できます[1][2][3][6][9]。\n\
+        \n- **リボンXMLマークアップを変更**\n  直接Ribbon XMLファイルのコードを編集する方法も可能で、リボンに新たなボタンを追加してコマンドの動作を実装できます。ただし、直接編集はミスを誘発しやすいため熟練者向けです[3]。\n\
+        \n- **JavaScript コードは単体では不十分**\n  JavaScriptコードを書きDynamics webリソースとして登録し、ボタンのクリックイベントで使うことはできますが、ボタン自体を新たにコマンドバーに表示するには「リボン定義の編集」（Ribbon\
+        \ WorkbenchまたはXML編集）が必須です[2]。\n\n- **ビジネスルールは不適**\n  ビジネスルールはデータ検証や自動入力等の機能提供であり、リボンコマンドバーに新しいボタンを追加したり外部アプリ起動のカスタム動作を追加する用途には使えません。\n\
+        \n#### 理解を深めるポイント\n\n- **リボンワークベンチが推奨される理由**\n    - ノーコード/ローコードでリボンカスタマイズができ、エラーや競合を少なくできるため実務で最もよく使われます[1][2][6][9]。\n\
+        \    - ボタンの表示・非表示や実行アクション（JavaScriptから外部アプリ呼び出しへ）が簡単に設定できます。\n\n- **XML編集は発展的な手法**\n\
+        \    - より高度なカスタマイズ（GUIツールでできない微調整）が必要な場合やツールが使えない場合に限って用います[3]。\n\n- **JavaScriptやビジネスルールの役割を区別する**\n\
+        \    - JavaScriptはコマンド（ボタン）が押されたときのアクション（動作）を実装しますが、そもそものボタン追加はリボン編集が必須です。\n\
+        \    - ビジネスルールは主にフォーム操作やデータ制約目的なので今回のシナリオには適しません。\n\n**実務でも、まずはリボンワークベンチを用いた安全で効率的な編集をお勧めします。**\n\
+        \n[1] https://qiita.com/skuramoto/items/acde7968aba1b1e01f0c\n[2] https://www.arcuss-japan.com/crmblogs/11040\n\
+        [3] https://learn.microsoft.com/ja-jp/power-apps/developer/model-driven-apps/customize-commands-ribbon\n\
+        [4] https://learn.microsoft.com/ja-jp/power-apps/developer/model-driven-apps/define-ribbon-display-rules\n\
+        [5] https://www.arcuss-japan.com/crmblogs/5101\n[6] https://youseibubu.com/apps/commandbar1/\n\
+        [7] https://www.docswell.com/s/yousei/5VVE6J-2023-12-08-125936\n[8] https://twitter.com/_skuramoto/status/1777565115845578861\n\
+        [9] https://www.linkedin.com/pulse/how-add-custom-button-powerapps-using-ribbon-workbench-stertak-tp53f\n\
+        \n\n\n-----"
+  - 021_title: 質問 94：Dataverse Web API：重複データ防止のためのヘッダー設定
+    022_line: 007986
+    023_contents:
+    - 031_question: 'Microsoft Dataverse Web API を使用してデータを操作しています。
+
+
+        更新操作中に、Microsoft Dataverse テーブルに重複するレコードが作成されないようにする必要があります。
+
+
+        あなたは何をすべきですか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - PATCH要求MSCRM.SuppressDuplicateDetectiontrueするヘッダーの値を設定します。
+      - PATCH要求で CalculateMatchCodeSynchronously パラメーターを渡します。
+      - PATCH要求MSCRM.SuppressDuplicateDetectionfalseするヘッダーの値を設定します。
+      - 'PATCH要求に If-Match: * ヘッダーを含めます。'
+    - 033_answer: '- PATCH要求MSCRM.SuppressDuplicateDetectionfalseするヘッダーの値を設定します。'
+    - 034_details: 'この項目では、プラットフォーム API を使用して重複するレコードを検出する候補者の知識をテストします。
+
+
+        更新操作中に重複レコードを検出する場合は、PATCH要求でfalseするヘッダーMSCRM.SuppressDuplicateDetection値を設定する必要があります。
+        ヘッダー値を true に設定すると、重複が見つかった場合でもレコードが更新されます。 PATCH要求で CalculateMatchCodeSynchronously
+        パラメーターを渡しても役に立たないのは、要求にヘッダーIf-Match:*含めるのと同じです。これは、目的が異なるためです。
+
+
+        [Microsoft Dataverse Web API の使用 - トレーニング |Microsoft Learn](https://learn.microsoft.com/training/modules/common-data-service-web-api/)
+
+
+        [Web API を使用して重複データを検出する (Microsoft Dataverse) - Power Apps |Microsoft Learn](https://learn.microsoft.com/power-apps/developer/data-platform/webapi/manage-duplicate-detection-create-update)'
+    - 035_supplements: "### 補足：Dataverse Web API：重複データ防止のためのヘッダー設定\n- 回答: **PATCH要求MSCRM.SuppressDuplicateDetectionfalseするヘッダーの値を設定します。**[1][2][5]\n\
+        \n#### 設問の意図\n\nこの設問は、**Microsoft Dataverse Web APIを使った更新操作時の重複データ防止（Duplicate\
+        \ Detection）機能の実装方法**について理解しているかを問うものです。\n\n#### 解説\n\n- **ヘッダー「MSCRM.SuppressDuplicateDetection」について**\n\
+        　Dataverse Web API や SDK では、レコードの作成や更新時に `MSCRM.SuppressDuplicateDetection`\
+        \ ヘッダーまたはパラメーターを利用して、重複データ検出（Duplicate Detection）の挙動を制御します。\n\n- **`false`（偽）を設定した場合の挙動**\n\
+        　PATCH（更新）リクエストのヘッダー `MSCRM.SuppressDuplicateDetection` の値を `false` に設定すると、「重複が検出された場合には更新をキャンセルし、エラーを返す」という動作になります。\
+        \  \n　→ この設定により**意図しない重複データの発生を未然に防止**できます[1][2][3][5][9]。\n\n- **他の選択肢が不正解となる理由**\n\
+        \    - `true` を設定した場合：重複していても更新がそのまま許可されてしまう[1][2]。\n    - `CalculateMatchCodeSynchronously`\
+        \ パラメーター：重複検出自体を制御するものではなく、マッチコード計算用です[5]。\n    - `If-Match: *` ：リクエストの一致など用途が異なり、重複データ検出とは無関係です[5]。\n\
+        \n#### 理解を深めるポイント\n\n- **準備として重複検出ルールが必要**\n　重複検出機能はDataverse側で「重複検出ルール」が事前に定義されていることが前提です。ルールが設定されてないテーブルや項目では期待した動作が行われません[2][4]。\n\
+        - **Createリクエストでも同様の指定方法が有効**\n　作成時（POST）と更新時（PATCH）の両方で、このヘッダーを活用できます[2][9]。\n\
+        - **本番環境などデータ品質が厳密に求められる場面では、必ず値を`false`にしておきましょう。**\n\n**この機能を知っていることで、大量データ連携時の重複による混乱・データ破損リスクを大幅に抑制できます。**\n\
+        \n[1] https://learn.microsoft.com/ru-ru/power-apps/developer/data-platform/webapi/manage-duplicate-detection-create-update\n\
+        [2] https://learn.microsoft.com/ja-jp/power-apps/developer/data-platform/webapi/manage-duplicate-detection-create-update\n\
+        [3] https://learn.microsoft.com/ja-jp/power-apps/developer/data-platform/optional-parameters\n\
+        [4] https://learn.microsoft.com/ja-jp/power-apps/developer/data-platform/org-service/detect-duplicate-data\n\
+        [5] https://pupuweb.com/pl-400-what-is-the-best-way-to-avoid-duplicates-during-update-operations-in-dataverse/\n\
+        [6] https://learn.microsoft.com/ja-jp/power-apps/developer/data-platform/webapi/compose-http-requests-handle-errors\n\
+        [7] https://itc-engineering-blog.netlify.app/blogs/dataverse-api-upload\n\
+        [8] https://learn.microsoft.com/nl-nl/power-apps/developer/data-platform/org-service/detect-duplicate-data\n\
+        [9] https://learn.microsoft.com/ja-jp/power-apps/developer/data-platform/webapi/create-entity-web-api\n\
+        [10] https://www.beringer.net/beringerblog/exploring-options-for-data-creation-with-the-dataverse-web-api/\n\
+        \n\n\n-----"
+  - 021_title: 質問 95：カスタムコネクタ：カスタムコードによる応答変換の実装手順
+    022_line: 008064
+    023_contents:
+    - 031_question: 'カスタム コネクタのカスタム コードを記述しています。
+
+
+        新しい操作の応答を変換する必要があります。
+
+
+        実行する必要がある 3 つのアクションはどれですか? 各正解は解答の一部を示します。 3 つ選んでください。
+
+
+        該当するすべての回答を選択してください。'
+    - 032_selections:
+      - CustomCode という名前のクラスを作成します。
+      - Script という名前のクラスを作成します。
+      - インターフェイス IScriptContext からクラスを継承します。
+      - 抽象基底クラス ScriptBase からクラスを継承します。
+      - クラスの ExecuteAsync メソッドにカスタム変換コードを実装します。
+      - SendAsync メソッドのカスタム変換コードを、クラスの ExecuteAsync メソッドのコンテキスト オブジェクトに実装します。
+    - 033_answer: '- Script という名前のクラスを作成します。
+
+        - 抽象基底クラス ScriptBase からクラスを継承します。
+
+        - クラスの ExecuteAsync メソッドにカスタム変換コードを実装します。'
+    - 034_details: 'この項目では、データを変換するカスタム コネクタのコード開発に関する候補者の知識をテストします。
+
+
+        カスタム コネクタのカスタム コードを実装するには、Script という名前のクラスを作成する必要があります。 このスクリプト クラスは、抽象基底クラス
+        ScriptBase から継承する必要があります。 ScriptBase クラスは ExecuteAsync という名前の抽象メソッドを提供します。このメソッドは、変換またはダウンストリーム
+        サービスの呼び出しに実装する必要があります。 IScriptContext インターフェイスはコンテキスト オブジェクトの定義に使用され、実装メソッドは提供されません。
+        SendAsync メソッドは、基になるサービスを呼び出すためにコンテキスト オブジェクトで使用されます。 応答変換コードを記述するために使用することはできません。
+        SendAsync は、基になるサービスからの応答をそのまま提供します。
+
+
+        [Microsoft Power Platform のカスタム コネクタでカスタム コードを使用する - 概要 - トレーニング |Microsoft
+        Learn](https://learn.microsoft.com/training/modules/custom-code-connectors/introduction)
+
+
+        [カスタム コネクタでコードを記述する | Microsoft Learn](https://learn.microsoft.com/connectors/custom-connectors/write-code)'
+    - 035_supplements: "### 補足：カスタムコネクタ：カスタムコードによる応答変換の実装手順\n#### 回答\n\n- Script という名前のクラスを作成します。\n\
+        - 抽象基底クラス ScriptBase からクラスを継承します。\n- クラスの ExecuteAsync メソッドにカスタム変換コードを実装します。\n\
+        \n#### 設問の意図\n\nこの設問は、**Power Platform のカスタムコネクタでカスタムコード（C# スクリプト）を用いてレスポンスの変換処理を実装するための正しい手順やコード構造の理解**を問うものです。\n\
+        \n#### カスタムコネクタでカスタムコードを使う基本手順\n\n1. **Script という名前のクラスを作成する**\n    - Microsoft公式のドキュメントや実装仕様に基づき、コードカスタマイズでは必ず\
+        \ “Script” というクラス名でクラスを定義します。\n2. **抽象基底クラス ScriptBase を継承する**\n    - この基底クラスを継承することで、必要なインターフェースやフレームワークの機能を利用できるようになり、コネクタ内部で適切にコードが呼び出されます。\n\
+        3. **クラスの ExecuteAsync メソッドにカスタム変換コードを実装する**\n    - 実際にレスポンス変換などのビジネスロジックを書くのはこのメソッド内です。必要に応じて引数や戻り値（通常は\
+        \ Task 型）を通じてコネクタの処理結果を返します。\n\n#### 他の選択肢が該当しない理由\n\n- **CustomCode という名前のクラスを作成します。**\n\
+        \    - 正しくは “Script” という名前が要求されるため、誤りです。\n- **インターフェイス IScriptContext からクラスを継承します。**\n\
+        \    - 正しくは ScriptBase の継承であり、IScriptContext ではありません。\n- **SendAsync メソッドのカスタム変換コードを、クラスの\
+        \ ExecuteAsync メソッドのコンテキスト オブジェクトに実装します。**\n    - カスタムコネクタC# のスクリプト実装では、SendAsync\
+        \ ではなく ExecuteAsync で処理します。\n\n#### 理解を深めるポイント\n\n- **“Script” クラスかつ ScriptBase\
+        \ 継承がセットで必要**\n    - これらの条件が揃わない場合、Power Platform のカスタムコネクタはカスタムコードを認識せず、動作しません。\n\
+        - **ExecuteAsync メソッドが唯一のビジネスロジック実装箇所**\n    - 応答変換や入力値の前処理、外部APIとの連携など、任意のカスタムロジックは全てこのメソッドで記述するのが仕様です【5番目の選択肢が正解となる理由】。\n\
+        \n**この構造と実装要件を押さえることで、カスタムコネクタにおける柔軟な処理・変換が可能となります。**\n\n[1] https://learn.microsoft.com/ja-jp/connectors/custom-connectors/\n\
+        [2] https://learn.microsoft.com/ja-jp/connectors/custom-connectors/customconnectorssolutions\n\
+        [3] https://doc.sitecore.com/xp/ja/developers/dynamics-crm-connect/latest/sitecore-connect-for-microsoft-dynamics-365-for-sales/walkthrough--creating-a-custom-contact-facet.html\n\
+        [4] https://shenghaohuang.com/2022/08/11/dynamics365-xrmtoolbox-portal/\n\
+        [5] https://qiita.com/Rambosan/items/7cda28bac81da794b935\n[6] https://kageura.hatenadiary.jp/entry/customconnector01\n\
+        [7] https://deepcom.co.jp/power_automate_custom_connector/\n[8] https://www.qes.co.jp/media/PowerApps/a296\n\
+        [9] https://rekaizen.com/article/detail/business-system/18770\n[10] https://qiita.com/nvtomo1029/items/778cf866308b5b1ebe96\n\
+        \n\n\n-----"
+  - 021_title: 質問：
+    022_line: 008154
     023_contents:
     - 031_question: ''
     - 032_selections: []
