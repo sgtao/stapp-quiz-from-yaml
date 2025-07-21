@@ -1,6 +1,9 @@
 # stapp-quiz-from-yaml
 - [streamlit](https://streamlit.io/)を使いYAML形式で表している質問・回答・解説が書かれたファイルをクイズ形式にする
 
+## Demo
+- [streamlit.io demo app](https://stapp-quiz-from-yaml-bil8wug24hqnd4xjpcthrc.streamlit.app/)
+
 ## Usage
 - [poetry cli](https://python-poetry.org/docs/)を利用する
 
