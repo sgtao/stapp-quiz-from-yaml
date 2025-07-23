@@ -114,6 +114,7 @@ def main():
             return
         else:
             sections = st.session_state.sections
+            st.write("- to reset the quiz, Please reload your browser")
 
         current_section = sections[st.session_state.current_question]
 
