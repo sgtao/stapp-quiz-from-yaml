@@ -9617,11 +9617,11 @@
 
         回答を 1 つだけ選択してください。'
     - 032_selections:
-      - PATCH要求MSCRM.SuppressDuplicateDetectiontrueするヘッダーの値を設定します。
+      - PATCH要求 `MSCRM.SuppressDuplicateDetection true`するヘッダーの値を設定します。
       - PATCH要求で CalculateMatchCodeSynchronously パラメーターを渡します。
-      - PATCH要求MSCRM.SuppressDuplicateDetectionfalseするヘッダーの値を設定します。
+      - PATCH要求 `MSCRM.SuppressDuplicateDetection false`するヘッダーの値を設定します。
       - 'PATCH要求に If-Match: * ヘッダーを含めます。'
-    - 033_answer: '- PATCH要求MSCRM.SuppressDuplicateDetectionfalseするヘッダーの値を設定します。'
+    - 033_answer: '- PATCH要求 `MSCRM.SuppressDuplicateDetection false`するヘッダーの値を設定します。'
     - 034_details: 'この項目では、プラットフォーム API を使用して重複するレコードを検出する候補者の知識をテストします。
 
 

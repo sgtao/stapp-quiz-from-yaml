@@ -2,6 +2,10 @@
 import streamlit as st
 import yaml
 
+from components.ConfigFiles import ConfigFiles
+
+APP_TITLE = "Quiz Test App"
+
 
 def load_quiz_data(file_path):
     with open(file_path, "r", encoding="utf-8") as file:
@@ -35,6 +39,8 @@ def clear_checkbox_options():
 
 def initialize_session_state():
     # セッション状態の初期化
+    if "sections" not in st.session_state:
+        st.session_state.sections = []
     if "current_question" not in st.session_state:
         st.session_state.current_question = 0
     if "score" not in st.session_state:
@@ -84,20 +90,31 @@ def main():
 
     # st.session_stateの初期化
     initialize_session_state()
+    # assets/privatesフォルダからyamlファイルを選択
+    config_files = ConfigFiles("Select a Quiz file")
+
+    st.page_link("main.py", label="Back to Home", icon="🏠")
+    st.subheader(f"🚀 {APP_TITLE}")
 
     try:
         # YAMLファイルの読み込み
-        if "quiz_data" not in locals():
-            quiz_data = load_quiz_data("assets/practice-test.yaml")
+        selected_config_file = config_files.render_config_selector()
+        st.info(f"Selected config file: {selected_config_file}")
 
-        if "011_title" not in quiz_data:
-            st.header("クイズアプリ")
-            st.error("読み込みデータの形式が異なるようです")
+        # if "quiz_data" not in locals():
+        #     quiz_data = load_quiz_data("assets/practice-test.yaml")
+        # sections = quiz_data["013_sections"]
+        if st.button("Load Quiz'"):
+            quiz_data = load_quiz_data(selected_config_file)
+            st.session_state.sections = quiz_data["013_sections"]
+            st.rerun()
+
+        if st.session_state.sections == []:
+            st.warning("Press 'Load Quiz' button to load quiz data.")
             return
         else:
-            st.header(quiz_data["011_title"])
+            sections = st.session_state.sections
 
-        sections = quiz_data["013_sections"]
         current_section = sections[st.session_state.current_question]
 
         # 設問スライダー

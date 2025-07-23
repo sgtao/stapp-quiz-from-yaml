@@ -3,7 +3,7 @@ import streamlit as st
 """
 # Welcome to Streamlit!
 
-- `assets/practice-test.yaml`を読み込んでクイズにする
+- `assets`/`privates`配下のYAMLファイルを読み込んでクイズにする
 """
 
 # サイドバーのページに移動
