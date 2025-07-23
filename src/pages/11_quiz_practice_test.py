@@ -97,20 +97,20 @@ def main():
     st.subheader(f"🚀 {APP_TITLE}")
 
     try:
-        # YAMLファイルの読み込み
-        selected_config_file = config_files.render_config_selector()
-        st.info(f"Selected config file: {selected_config_file}")
-
-        # if "quiz_data" not in locals():
-        #     quiz_data = load_quiz_data("assets/practice-test.yaml")
-        # sections = quiz_data["013_sections"]
-        if st.button("Load Quiz'"):
-            quiz_data = load_quiz_data(selected_config_file)
-            st.session_state.sections = quiz_data["013_sections"]
-            st.rerun()
-
         if st.session_state.sections == []:
+            # YAMLファイルの読み込み
+            selected_config_file = config_files.render_config_selector()
+            st.info(f"Selected config file: {selected_config_file}")
+
+            # if "quiz_data" not in locals():
+            #     quiz_data = load_quiz_data("assets/practice-test.yaml")
+            # sections = quiz_data["013_sections"]
             st.warning("Press 'Load Quiz' button to load quiz data.")
+            if st.button("Load Quiz'"):
+                quiz_data = load_quiz_data(selected_config_file)
+                st.session_state.sections = quiz_data["013_sections"]
+                st.rerun()
+
             return
         else:
             sections = st.session_state.sections
