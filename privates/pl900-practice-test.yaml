@@ -1,0 +1,2267 @@
+- 011_title: 021_練習用問題と解説メモ：PL-900
+  012_line: '000003'
+  013_sections:
+  - 021_title: No-Title
+    022_line: '000003'
+    023_contents:
+    - 031_question: '- 試験 PL-900: Microsoft Power Platform Fundamentals
+
+        - [参照サイト](https://learn.microsoft.com/ja-jp/credentials/certifications/resources/study-guides/pl-900)の「[試験
+        PL-900 のプラクティス評価問題:Microsoft Power Platform の基礎](https://learn.microsoft.com/ja-jp/credentials/certifications/exams/pl-900/practice/assessment?assessment-type=practice&assessmentId=34)」の解説'
+  - 021_title: 質問 例：Power Automate フローでの電子メール通知の実装方法
+    022_line: 000008
+    023_contents:
+    - 031_question: 'Power Automate を使用してフローを作成します。 フローでは、SharePoint リストに新しい項目が追加されるたびにユーザーに通知する必要があります。
+
+
+        電子メール通知がフローに追加されるようにする必要があります。
+
+
+        何を使用する必要がありますか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - トリガー (trigger)
+      - action
+      - '`condition`'
+      - '`loop`'
+    - 033_answer: '- action'
+    - 034_details: 'この項目では、トリガー、アクション、条件、各ループへの適用などの Power Automate コンポーネントに関する受験者の知識をテストします。
+
+
+        アクションはフロー内で何かを実行します。 この場合、アクションを使用して電子メールを送信します。 トリガーはフローを開始するために使用されますが、電子メールの送信などのアクションは実行されません。
+        条件値が true または false に設定されている場合に、クラウド フローでタスクまたは一連のタスクを実行する必要があるかどうかを指定する条件です。
+        この場合、条件は必要ありません。 ループは、コレクション内の項目をループ処理するために使用されます。 この場合、コレクションは存在しないため、ループは必要ありません。
+
+
+        - [Microsoft Power Automate を使用した自動化の構築について説明する – トレーニング | Microsoft Learn](https://learn.microsoft.com/training/modules/introduction-power-automate/)
+
+        - [クラウド フローを作成してタスクを自動化する - Power Automate | Microsoft Learn](https://learn.microsoft.com/power-automate/get-started-logic-flow)'
+    - 035_supplements: '### 補足：Power Automate フローでの電子メール通知の実装方法
+
+        「action」が正解です[1][4]。
+
+
+        その理由は以下の通りです:
+
+
+        - 電子メール通知の送信は、フローの中で実行される具体的なアクションとして実装する必要があります[4][18]。
+
+
+        - 「Send an email」や「Send me an email notification」などのアクションを使用することで、SharePoint
+        リストの更新時に自動的にメール通知を送信できます[20][24]。
+
+
+        - トリガーはフローの開始条件を定義するものであり、この場合は「SharePoint リストの新規項目作成」がトリガーとなります[16]。
+
+
+        - conditionは条件分岐のために使用され、loopは繰り返し処理のために使用されるものであり、単純な通知送信には不要です[8]。
+
+
+        具体的な実装では:
+
+        1. トリガーとして「SharePointリストの新規項目作成」を設定
+
+        2. アクションとして「Send an email」を追加
+
+        3. メールの送信先、件名、本文を設定
+
+
+        という流れで構成します[20]。
+
+
+        #### Citations:
+
+        - [1] https://wonderlaura.com/2024/03/31/microsoft-loop-rules-and-power-automate/
+
+        - [2] https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWSME4
+
+        - [3] https://uds.systems/blog/personalized-email-notifications-with-power-automate/
+
+        - [4] https://learn.microsoft.com/he-IL/power-automate/email-top-scenarios
+
+        - [5] https://www.youtube.com/watch?v=IE2eaygNZPc
+
+        - [6] https://www.edusum.com/microsoft/microsoft-power-platform-fundamentals-pl-900-certification-sample-questions
+
+        - [7] https://techcommunity.microsoft.com/discussions/sharepoint_general/tutorial-how-to-add-email-notifications-to-a-sharepoint-list/3811431
+
+        - [8] https://www.process.st/how-to/avoid-infinite-trigger-loop-in-power-automate/
+
+        - [9] https://www.whizlabs.com/blog/pl-900-certification-free-exam-questions/
+
+        - [10] https://www.bulb.digital/blog/avoid-infinite-loops-using-trigger-conditions-with-sharepoint
+
+        - [11] https://www.linkedin.com/pulse/10-essential-things-know-apply-each-action-power-automate-broschk-sgcgf
+
+        - [12] https://www.udemy.com/course/pl-900-power-platform-fundamentals-practice-exam-questions-answers/
+
+        - [13] https://career.merrimack.edu/classes/practice-exam-1-for-microsoft-power-platform-fundamentals-pl-900/
+
+        - [14] https://www.youtube.com/watch?v=61wJGiCW9ls
+
+        - [15] https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-900
+
+        - [16] https://www.oreilly.com/library/view/learning-microsoft-power/9781098136352/ch04.html
+
+        - [17] https://www.youtube.com/watch?v=P0CrSyr-Az4
+
+        - [18] https://tmrconsult.com/how-to-set-up-teams-notifications-for-new-emails-using-power-automate/
+
+        - [19] https://www.youtube.com/watch?v=KBAv_SmKhVY
+
+        - [20] https://td.usnh.edu/TDClient/60/Portal/KB/ArticleDet?ID=4551
+
+        - [21] https://techcommunity.microsoft.com/blog/healthcareandlifesciencesblog/azure-devops-customize-email-notifications-using-power-automate/3739979
+
+        - [22] https://techcommunity.microsoft.com/discussions/planner/setting-up-email-notifications-in-microsoft-planner-with-power-automate/4030424
+
+        - [23] https://pragmaticworks.com/blog/automating-notifications-with-power-automate-a-pragmatic-guide
+
+        - [24] https://www.samurai-emblem.com/2023/09/16/power-automate-action-send-me-an-email-notification-notifications/
+
+        - [25] https://www.youtube.com/watch?v=DSaaDU4lVYw
+
+        - [26] https://www.youtube.com/watch?v=AXUrFwtmFEU
+
+
+
+
+        -----------------------------'
+  - 021_title: 質問 01/50：
+    022_line: 000095
+    023_contents:
+    - 031_question: 'ある会社では、Web サイトに Power Pages を使用することを検討しています。
+
+
+        Power Pages の機能を特定する必要があります。
+
+
+        Power Pages の 2 つの機能は何ですか? 正しい解答はそれぞれ完全な解決策を示します。
+
+
+        該当するすべての回答を選択してください。'
+    - 032_selections:
+      - ビジネス プロセスの自動化
+      - ローコード ツールを使用したサイトの構築
+      - テンプレートからのドキュメントの作成
+      - Dataverse のデータの顧客への公開
+      - ドキュメントからのデータの抽出
+    - 033_answer: '- ローコード ツールを使用したサイトの構築
+
+        - Dataverse のデータの顧客への公開'
+    - 034_details: 'この項目では、Power Pages のユース ケースとその機能に関する受験者の知識をテストします。
+
+
+        Power Pages を使用すると、ローコード作成者はコードを記述することなく Web サイトを構築および展開できます。 Power Pages
+        には、Dataverse テーブル内のデータを顧客などの外部ユーザーに公開する機能など、コンテンツを管理するためのツールがあります。 Power Pages
+        は、ビジネス プロセスを自動化したり、ドキュメントを作成したりすることはできませんが、Microsoft Power Platform の残りの部分と統合できます。
+        Power Automate は、ビジネス プロセスを自動化するために使用されます。 AI Builder は、ドキュメントからデータを抽出するために使用されます。
+
+
+        - [Microsoft Power Automate の機能を示す - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/demonstrate-capabilities-microsoft-power-pages/)
+
+        - [Power Pages の機能](https://learn.microsoft.com/ja-jp/power-pages/capabilities)
+
+
+
+        ##### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 02/50：
+    022_line: 000138
+    023_contents:
+    - 031_question: '新しい Microsoft Power Platform 環境で Power Pages Web サイトを作成する予定です。
+
+
+        Web サイトの作成を加速させる必要があります。
+
+
+        要件を満たすために使用できるテンプレートの種類はどれですか? 2 つ選んでください。 解答はそれぞれ完全な解決策を示しています。'
+    - 032_selections:
+      - 空白ページ
+      - Dynamics 365
+      - シナリオベース
+      - サイト デザイン
+    - 033_answer: '- シナリオベース
+
+        - サイト デザイン'
+    - 034_details: 'この項目では、テンプレートのユース ケースに関する受験者の知識をテストします。
+
+
+        Power Pages Web サイトを作成するときは、テンプレートを選択する必要があります。 シナリオベースのテンプレートは、一般的なニーズ (たとえば、放課後クラスへの登録、許可の申請、会議の予約など)
+        を満たす完成されたサイトです。 サイト デザイン テンプレートは、さまざまなレイアウト、画像、色を使用した一連の事前作成済みページを含む Web サイトを作成します。
+        空白のページ テンプレートは、ページやその他のコンテンツの追加が必要な単一のホーム ページで構成されたサイトを作成します。 Dynamics 365
+        テンプレートを使用するには、対応する Dynamics 365 アプリが環境にインストールされている必要があります。
+
+
+        - [Microsoft Power Automate の機能を示す - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/demonstrate-capabilities-microsoft-power-pages/)
+
+        - [Power Pages テンプレート](https://learn.microsoft.com/ja-jp/power-pages/templates/)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 03/50：
+    022_line: 000178
+    023_contents:
+    - 031_question: 'ある小売店のマネージャーは、注文の追跡を希望している顧客にセルフサービス ソリューションを提供したいと考えています。
+
+
+        Microsoft Power Platform に基づくソリューションを推奨する必要があります。
+
+
+        どのソリューションを推奨するべきですか?'
+    - 032_selections:
+      - Power Apps を使用したモデル駆動型アプリ
+      - Power Apps を使用したキャンバス アプリ
+      - Power Pages を使用した Web サイト ポータル
+      - Power BI を使用したダッシュボード
+    - 033_answer: '- Power Pages を使用した Web サイト ポータル'
+    - 034_details: 'この項目では、Power Pages のユース ケースに関する受験者の知識をテストします。
+
+
+        Power Pages は外部ユーザーを対象としており、注文を追跡できるプラットフォームを顧客に提供できます。 キャンバスとモデル駆動型 Power
+        Apps は、内部ユーザーを対象としています。 Power BI ダッシュボードは、トランザクション操作を目的としたものではなく、分析データを使用するユーザーを対象としています。
+
+
+        - [Microsoft Power Automate の機能を示す - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/demonstrate-capabilities-microsoft-power-pages/)
+
+        - [Power Pages とは](https://learn.microsoft.com/ja-jp/power-apps/maker/portals/overview)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 04/50：
+    022_line: '000216'
+    023_contents:
+    - 031_question: '管理者が休暇申請を承認または拒否できるように、Power Automate フローを作成する必要があります。
+
+
+        どのフローの種類を使用する必要がありますか? 2 つ選んでください。 正しい解答はそれぞれ完全な解決策を示します。
+
+
+        該当するすべての回答を選択してください。'
+    - 032_selections:
+      - Desktop フロー
+      - ビジネス プロセス フロー
+      - クラウド フロー
+      - フロー テンプレート
+    - 033_answer: '- ビジネス プロセス フロー
+
+        - クラウド フロー'
+    - 034_details: '#### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 05/50：
+    022_line: 000249
+    023_contents:
+    - 031_question: 'ある会社では、Power Automate を使用してアプリケーションを統合しています。
+
+
+        アプリケーション プログラミング インターフェイス (API) がないレガシ アプリケーションがあります。
+
+
+        レガシ アプリケーションのデータにアクセスするためにどの種類のフローを使用する必要があるかを判断する必要があります。
+
+
+        何を使用する必要がありますか?'
+    - 032_selections:
+      - ビジネス プロセス フロー
+      - Desktop フロー
+      - インスタント クラウド フロー
+      - スケジュール済みクラウド フロー
+    - 033_answer: '- Desktop フロー'
+    - 034_details: 'この項目では、デスクトップ フローを含むフローの種類に関する受験者の知識をテストします。
+
+
+        デスクトップ フローは、API がなく、インターフェイスがキーボード、マウス、画面のみのレガシ アプリケーション上でアクションを実行します。 ビジネス
+        プロセス フローは、モデル駆動型アプリ内でビジネスのステージとステップを通じてユーザーをガイドするために使用されます。 インスタント クラウド フローは手動で開始され、API
+        を持つサービスへのコネクタが必要です。 スケジュールされたクラウド フローはタイムテーブルに基づいて実行され、API を持つサービスへのコネクタが必要です。
+        クラウド フローは、API のないアプリケーションでは使用できません。
+
+
+        - [Microsoft Power Automate の機能を示す - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/demonstrate-capabilities-microsoft-power-automate/)
+
+        - [デスクトップ フローの概要 - Power Automate | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-automate/desktop-flows/introduction)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 06/50：
+    022_line: 000290
+    023_contents:
+    - 031_question: 'ある会社では、ドキュメントを PDF 添付ファイルとして電子メールで受け取ります。
+
+
+        Microsoft Power Platform を使用して、ユーザーが操作せずにこれらのドキュメントを自動的に処理する必要があります。
+
+
+        どの 2 つのコンポーネントを使用しますか? 解答には、正しいそれぞれの回答が必要です。
+
+
+        該当するすべての回答を選択してください。'
+    - 032_selections:
+      - AIビルダー
+      - キャンバス アプリ
+      - Power Automate クラウド フロー
+      - Power BI
+      - マイクロソフト コパイロット スタジオ
+    - 033_answer: '- AIビルダー
+
+        - Power Automate クラウド フロー'
+    - 034_details: 'この項目では、Power Automate でのドキュメント処理に関する受験者の知識をテストします。
+
+
+        AI Builder には、ドキュメントから情報を抽出できるドキュメント処理モデルが含まれています。 AI Builder モデルは、電子メールの受信によってトリガーされる
+        Power Automate クラウド フローから呼び出すことができます。 クラウド フローは AI Builder を使用してドキュメントから情報を抽出し、それをさらなるクラウド
+        アクションで処理します。
+
+
+        キャンバス アプリを使用すると、ユーザーはスクリーンやフォームを操作できるようになります。
+
+
+        Microsoft Copilot Studio を使用すると、ユーザーはボットと対話できます。
+
+
+        Power BI は、データを視覚化し、ユーザーにレポートとダッシュボードを提供するために使用されます。
+
+
+        このシナリオでは、アプリ、視覚化、またはチャットボットとの対話なしでドキュメントを自動的に処理する必要があります。
+
+
+        - [Microsoft Power Automate の機能を示す - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/demonstrate-capabilities-microsoft-power-automate/)
+
+        - [Power Automate で AI Builder を使用する](https://learn.microsoft.com/ja-jp/power-automate/use-ai-builder)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 07/50：
+    022_line: '000340'
+    023_contents:
+    - 031_question: 'ある販売会社では、Microsoft Power Platform と Dataverse を使用して、日常業務の管理に役立つソリューションを構築する予定です。
+
+
+        その会社は、各勤務日の終わりに、完了としてマークされていない前の勤務日の予定を自動的に識別してキャンセルするソリューションを必要としています。
+
+
+        要件を満たす Power Automate クラウド フローを作成する必要があります。
+
+
+        どの種類のクラウド フローを作成する必要がありますか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - 予定が更新されたときにトリガーされる自動フロー
+      - 毎日特定の時刻に実行されるスケジュールされたフロー
+      - ボタンが選択されたときにトリガーされるインスタント フロー
+      - 新しい予定が作成されたときにトリガーされる自動フロー
+    - 033_answer: '- 毎日特定の時刻に実行されるスケジュールされたフロー'
+    - 034_details: 'この項目では、必要な操作に基づいて適切な Power Automate フロー トリガーを選択するための受験者の知識をテストします。
+
+
+        スケジュールされたフローは、定義済みのスケジュールに基づいて実行されます。 実行時に、一度に複数のレコードを識別して更新するアクションを簡単に含めることができます。
+        レコードの更新時に自動的にトリガーされるフローは、フローがトリガーされる原因となったレコードを更新するために使用されます。 ボタンの押下に関連付けられたフローでは、ユーザーによる手動入力が必要になります。
+        新しいレコードの作成時にトリガーされる自動フローは、フローがトリガーされる原因となったレコードに対してアクションを実行するために使用されます。
+
+
+        - [Microsoft Power Automate の機能を示す - トレーニング |Microsoft Learn](https://learn.microsoft.com/training/modules/introduction-power-automate/)
+
+        - [トリガーの概要 - ドキュメントスケジュールに基づいてフローを実行する - ドキュメント](https://learn.microsoft.com/ja-jp/power-automate/run-scheduled-tasks?tabs=using-copilot)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 08/50：
+    022_line: 000382
+    023_contents:
+    - 031_question: 'ある会社では、Power Automate を使用して業務のデジタル化を支援することを計画しています。
+
+
+        その会社は、最新の API を含まないアプリケーションで請求書を作成するソリューションを必要としています。
+
+
+        要件を満たす Power Automate フローを選択する必要があります。
+
+
+        どの種類の Power Automate フローを選択する必要がありますか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - 自動クラウド フロー
+      - ビジネス プロセス フロー
+      - デスクトップ フロー
+      - スケジュールされたクラウド フロー
+    - 033_answer: '- デスクトップ フロー'
+    - 034_details: 'この項目では、特定のシナリオでどのフローを使用するかを理解するための受験者の知識をテストします。
+
+
+        デスクトップ フローを使用すると、最新の API を利用できないアプリケーションで実行されるステップを含むステップを記録および再生できます。 自動的にトリガーされるクラウド
+        フローは、最新の API を含む最新のアプリケーションを自動化する場合に使用されます。 ビジネス プロセス フローは、組織プロセスを通じて開始から終了までユーザーをガイドするために使用されます。
+        スケジュールされたクラウド フローは、最新の API を含む最新のアプリケーションを自動化する場合に使用されます。
+
+
+        - [Microsoft Power Automate の機能を示す - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/demonstrate-capabilities-microsoft-power-automate/)
+
+        - [Power Automate の概要 - ドキュメント](https://learn.microsoft.com/ja-jp/power-automate/getting-started)
+
+        - [フローの作成 - ドキュメント](https://learn.microsoft.com/ja-jp/power-automate/getting-started#create-your-first-flow)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 09/50：
+    022_line: '000425'
+    023_contents:
+    - 031_question: 'ブログ サイトにコメントが投稿されるたびにトリガーされる Power Automate フローがあります。
+
+
+        次の要件を満たすようにフローを構成する必要があります。
+
+
+        - コメントを投稿するときにユーザーにサブスクライバー ID を入力するよう要求します。
+
+        - Power Automate フローからのサブスクライバー ID を大文字で保存します。
+
+
+        どの関数を使用する必要がありますか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - 表現
+      - 状態
+      - トリガー
+      - テンプレート
+    - 033_answer: '- 表現'
+    - 034_details: 'この項目では、Power Automate の式に関する受験者の知識をテストします。
+
+
+        式で toUpper 関数を使用して、サブスクライバー ID を大文字に変換できます。 Power Automate の Condition 関数を使用して、特定のビジネス
+        ロジックが満たされているかどうかを確認できます。 トリガーとは、クラウド フローを開始するイベントです。 テンプレートは、一般的な組み込みのビジネス
+        シナリオに基づいて新しいワークフローを作成するために使用できます。 Condition 関数、トリガー、テンプレートはデータ変換に使用できません。
+
+
+        - [Microsoft Power Automate の機能を示す - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/demonstrate-capabilities-microsoft-power-automate/)
+
+        - [式関数のリファレンス ガイド - Azure Logic Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/logic-apps/expression-functions-reference)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 10/50：
+    022_line: 000468
+    023_contents:
+    - 031_question: 'ある会社に新しい従業員の一覧があります。
+
+
+        この会社では、Teams を使用して、新しい従業員に毎日ウェルカム メッセージを送信したいと考えています。
+
+
+        人手を介さずに新しい従業員の一覧をチェックするフローを作成する必要があります。
+
+
+        どの種類のフローを使用する必要がありますか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - インスタント クラウド フロー
+      - 自動化したクラウド フロー
+      - ビジネス プロセス フロー
+      - スケジュール済みクラウド フロー
+    - 033_answer: '- スケジュール済みクラウド フロー'
+    - 034_details: 'この項目では、さまざまな種類のクラウド フローに関する受験者の知識をテストします。
+
+
+        スケジュール フローは、一定の間隔で実行されます。 このフローは 1 日に 1 回実行するように設定できます。 インスタント フローは通常、手動アクションでトリガーされます。
+        この場合、フローは毎日単独で実行する必要があります。 自動化されたクラウド フローは、特定のイベントが発生したときにトリガーされます。 この場合、フローはアクションの実行時ではなく、毎日指定された時刻に実行する必要があります。
+        ビジネス プロセス フローは、複数のステップからなるプロセスを通じてユーザーをガイドするために使用されます。 この場合、フローは人間の介入なしに実行されます。
+
+
+        - [Microsoft Power Automate の機能を示す - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/demonstrate-capabilities-microsoft-power-automate/)
+
+        - [Power Automate でスケジュールに従ってフローを実行する - Power Automate | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-automate/run-scheduled-tasks?tabs=using-copilot)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 11/50：
+    022_line: '000510'
+    023_contents:
+    - 031_question: 'ある会社では Microsoft Power Platform を使用しています。
+
+
+        ユーザーが自然言語のフレーズを使用して質問できるようにする必要があります。
+
+
+        どの Microsoft Power Platform コンポーネントを使用する必要がありますか? 2 つ選んでください。 正しい解答はそれぞれ完全な解決策を示します。
+
+
+        該当するすべての回答を選択してください。'
+    - 032_selections:
+      - パワーオートメート
+      - Power Apps（パワーアプリ）
+      - Power BI
+      - マイクロソフト コパイロット スタジオ
+      - マイクロソフト Dataverse
+    - 033_answer: '- Power BI
+
+        - マイクロソフト コパイロット スタジオ'
+    - 034_details: 'この項目では、Power BI と Microsoft Copilot Studio のビジネス価値に関する候補者の知識をテストします。
+
+
+        Power BI ダッシュボードの Q&A 機能を使用すると、ユーザーは自然言語を使用してデータに関する質問を行い、質問とデータに基づいて新しい視覚化を作成できます。
+        Microsoft Copilot Studio ボットは、ユーザーが自然言語で提供する語句を理解し、ユーザーに応答するために使用するトピックと会話を決定できます。
+        Power Automate と Microsoft Dataverse には、ユーザーが質問できるユーザー インターフェイスは含まれていません。
+
+
+        - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
+
+        - [Power BI ビジネス ユーザー向け Q&A - Power BI | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-bi/consumer/end-user-q-and-a)
+
+        - [トピックを使用してチャットボットの会話を設計する - Power Virtual Agents | Microsoft Learn](https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/authoring-create-edit-topics?tabs=webApp)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 12/50：
+    022_line: '000553'
+    023_contents:
+    - 031_question: 'ある会社が手紙を受け取っています。
+
+
+        ユーザーが手紙を記録して追跡できるようにする必要があります。
+
+
+        どのソリューションを使用する必要がありますか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - パワーオートメート
+      - マイクロソフト コパイロット スタジオ
+      - Power Apps（パワーアプリ）
+      - Power BI
+    - 033_answer: '- Power Apps（パワーアプリ）'
+    - 034_details: 'この項目では、適切な Microsoft Power Platform コンポーネントを選択するための受験者の知識をテストします。
+
+
+        Power Apps では、ビジネス ニーズに合わせてカスタム アプリを構築するための高速ロー コード開発環境が提供されます。 Power Automate
+        は、アプリケーションとサービス間のワークフローを作成するために使用されます。 Microsoft Copilot Studio では、ボットを作成できます。
+        Power BI はビジネス分析サービスです。
+
+
+        - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
+
+        - [アプリの構築を開始する - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/maker/)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 13/50：
+    022_line: 000594
+    023_contents:
+    - 031_question: 'ある会社では Microsoft Power Platform を使用してアプリを作成することを計画しています。
+
+
+        そのアプリでは、顧客に販売見積書を電子メールで送信できる必要があります。
+
+
+        販売見積書の送信プロセスを自動化する必要があります。
+
+
+        何を使用する必要がありますか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - Power Apps（パワーアプリ）
+      - パワーオートメート
+      - Power BI
+      - マイクロソフト コパイロット スタジオ
+    - 033_answer: '- パワーオートメート'
+    - 034_details: 'この項目では、Power Automate を使用してプロセスを自動化するための受験者の知識をテストします。
+
+
+        Power Automate を使用すると、電子メール通知を添付ファイルと共に送信できます。 Power Apps を使用すると、ブラウザー間およびデバイス間の互換性を備えた複雑なユーザー
+        インターフェイスを作成できます。 Power BI は分析に使用され、対話型の視覚化による分析情報を提供します。 Microsoft Copilot
+        Studio を使用すると、ユーザーはサポート シナリオ用のボットを構築できます。 Power Apps、Power BI、Microsoft Copilot
+        Studio を使用して自動メールを送信することはできません。
+
+
+        - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
+
+        - [Power Automate のドキュメント - Power Automate | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-automate/)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 14/50：
+    022_line: '000636'
+    023_contents:
+    - 031_question: 'ある会社では Microsoft Dynamics 365 Sales を使用して販売プロセスを管理しています。
+
+
+        営業マネージャーは、Sales で使用できるものよりも詳細な分析情報にアクセスする必要があります。
+
+
+        必要な分析レポートを作成する Microsoft Power Platform アプリケーションを特定する必要があります。
+
+
+        どのアプリケーションを選択する必要がありますか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - マイクロソフト コパイロット スタジオ
+      - パワーオートメート
+      - Power BI
+      - パワー・ページ
+    - 033_answer: '- Power BI'
+    - 034_details: "この項目では、Microsoft Power Platform アプリケーションの用途に関する受験者の理解をテストします。\
+        \  \n\nPower BI は、組織がビジネス アクションを推進するために使用できる強力な分析情報を作成するために使用されます。 Power BI\
+        \ で作成された分析情報は、Dynamics 365 Sales などの他のアプリケーションで簡単に使用できます。 Microsoft Copilot\
+        \ Studio は、ビジネス全体で使用できるインテリジェント なボットを作成するために使用されます。 Power Automate は、自動化ソリューションを作成するために使用されます。\
+        \ Power Pages は、外部向け Web サイトに使用されます。\n\n- [Microsoft Power Platform 環境の管理\
+        \ - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)\n\
+        - [Power Apps と Dynamics 365 アプリからデータを視覚化](https://learn.microsoft.com/ja-jp/power-bi/create-reports/dynamics-quick-create-report)\n\
+        - [Power BI でレポートとダッシュボードを作成する - ドキュメント](https://learn.microsoft.com/ja-jp/power-bi/create-reports/)\n\
+        \n\n#### 補足：\n\n\n\n\n-----"
+  - 021_title: 質問 15/50：
+    022_line: 000679
+    023_contents:
+    - 031_question: 'ユーザーが新しいプロジェクトを要求するためのキャンバス アプリを作成します。
+
+
+        次の要件を満たすソリューションを構築する必要があります。
+
+
+        要求に関する情報は、SharePoint Online リストに保存する必要があります。
+
+        新しい項目がリストに追加されると、そのプロジェクトに対する新しいチームを作成する必要があります。
+
+        実行する必要がある 2 つのアクションはどれですか? 解答には、正しいそれぞれの回答が必要です。
+
+
+        該当するすべての回答を選択してください。'
+    - 032_selections:
+      - Microsoft Teams への接続を追加する。
+      - インスタント クラウド フローを作成する。
+      - 自動化されたクラウド フローを作成する。
+      - Microsoft Project への接続を追加する。
+    - 033_answer: '- Microsoft Teams への接続を追加する。
+
+        - 自動化されたクラウド フローを作成する。'
+    - 034_details: 'この項目では、SharePoint や Microsoft Teams など、Microsoft 365 のさまざまなアプリケーションを接続する
+        Microsoft Power Platform を使用してソリューションを構築する方法に関する受験者の知識をテストします。
+
+
+        Teams で新しいチームを作成するには、Microsoft Teams への接続を作成する必要があります。 プロジェクト情報が保存されている SharePoint
+        リストに新しい項目が追加されたときにトリガーされる自動フローを作成する必要があります。 インスタント フローには手動トリガーがあります。 要件には、新しいチームを自動的に作成する必要があることが示されています。
+        このソリューションには Microsoft Project は必要ありません。
+
+
+        - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
+
+        - [Microsoft Lists のデータを使用してキャンバス アプリを作成する (ビデオを含む) - Power Apps | Microsoft
+        Learn](https://learn.microsoft.com/ja-jp/power-apps/maker/canvas-apps/app-from-sharepoint)
+
+        - [クラウド フローの概要 (ビデオを含む) - Power Automate | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-automate/overview-cloud)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 16/50：
+    022_line: '000723'
+    023_contents:
+    - 031_question: 'ある会社が Power Pages を所有しています。
+
+
+        サードパーティのサービスを使用して毎週通知を送信する必要があります。 通知には、Power Pages 内で作成されたレコードの要約を含める必要があります。
+
+
+        どの Microsoft Power Platform コンポーネントを使用する必要がありますか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - パワーオートメート
+      - Power BI
+      - マイクロソフト コパイロット スタジオ
+      - マイクロソフト Dataverse
+    - 033_answer: '- パワーオートメート'
+    - 034_details: 'この項目では、サードパーティのサービスや Microsoft Power Platform との統合に使用できるコンポーネントに関する受験者の知識をテストします。
+
+
+        Power Automate では、標準コネクタまたはカスタム コネクタを使用して、サードパーティのサービスに接続できます。 Power BI はビジネス分析サービスです。
+        Microsoft Copilot Studio は、サードパーティ サービスを利用するためではなく、チャットボットを作成するために使用されます。
+        Microsoft Dataverse はデータ プラットフォームです。
+
+
+        - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
+
+        - [よく寄せられる質問 - Power Automate | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-automate/frequently-asked-questions)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 17/50：
+    022_line: '000765'
+    023_contents:
+    - 031_question: 'ある会社では Microsoft Power Platform を使用しています。
+
+
+        企業データの外部漏洩を防ぐ必要があります。
+
+
+        どうすればよいでしょうか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - データ ポリシーを作成する。
+      - 条件付きアクセスを構成する。
+      - Microsoft Power Platform Center of Excellence (CoE) スターター キットを実装する。
+      - Microsoft Dataverse で監査を有効にする。
+    - 033_answer: '- データ ポリシーを作成する。'
+    - 034_details: 'この項目では、データ ポリシーに関する受験者の知識をテストします。
+
+
+        データ ポリシーは、組織外でデータにアクセスまたはコピーできる場合がある 2 つの異なるデータ ソースにアプリまたはフローが接続することを防ぎます。
+        たとえば、Azure SQL Server と Dropbox の両方に接続するクラウドでは、Azure SQL Server から外部の Dropbox
+        フォルダーにデータをコピーできます。 Microsoft Entra ID の条件付きアクセスでは、場所やデバイスなどのさまざまなシグナルを使用して、ユーザーが
+        Power Apps アプリにアクセスできるタイミングを制御できます。 データの外部漏洩を防ぐものではありません。 Microsoft Power
+        Platform CoE ツールキットを使用すると、組織内で使用されるアプリ、フロー、およびコネクタの監視が可能になります。 それだけでデータ漏洩を防ぐものではありません。
+        CoE ツールキットを使用すると、データ ポリシーの管理が可能になります。 Microsoft Dataverse での監査では、Microsoft
+        Dataverse テーブル内のデータに対する変更がキャプチャされます。 監査はデータ漏えいを防ぐものではありません。
+
+
+        - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
+
+        - [データ損失防止ポリシー - Power Platform | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-platform/admin/wp-data-loss-prevention)
+
+        - [Microsoft Power Platform を使用した ExpressRoute のデプロイを計画する - Power Platform
+        | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-platform/architecture/key-concepts/expressroute/planning-expressroute)
+
+        - [Azure AD の条件付きアクセスを設定する - Microsoft Power Platform - Power Platform | Microsoft
+        Learn](https://learn.microsoft.com/ja-jp/power-platform/guidance/adoption/conditional-access)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 18/50：
+    022_line: 000808
+    023_contents:
+    - 031_question: 'ある会社には、ニューヨーク、パリ、マドリードに 3 つの支店があります。
+
+
+        Microsoft Dataverse 環境と Microsoft Dataverse インスタンスを作成する必要があります。
+
+
+        どうすればよいでしょうか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - 3 つのインスタンスを含む環境を 1 つ作成する。
+      - 環境を 3 つ作成し、それぞれに 1 つのインスタンスを含める。
+      - 環境を 2 つ作成し、1 つ目に 1 つのインスタンス、2 つ目に 2 つのインスタンスを含める。
+      - 環境なしで 3 つのインスタンスを作成する。
+    - 033_answer: '- 環境を 3 つ作成し、それぞれに 1 つのインスタンスを含める。'
+    - 034_details: 'この項目では、環境ごとに 0 または 1 つの Microsoft Dataverse インスタンスに関する受験者の知識をテストします。
+
+
+        環境には Microsoft Dataverse インスタンスが 1 つだけあります。 Microsoft Dataverse インスタンスをホストするには環境が必要です。
+
+
+        - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
+
+        - [環境の概要 - Power Platform | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-platform/admin/environments-overview)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 19/50：
+    022_line: 000849
+    023_contents:
+    - 031_question: 'ある会社では、Microsoft Power Platform の単一環境内で一連のモデル駆動型アプリを使用しています。
+
+
+        新しいモデル駆動型アプリをユーザーと共有する必要があります。
+
+
+        ユーザーがアプリにアクセスできるようにするには、ユーザーに何を割り当てる必要がありますか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - データ損失防止 (DLP) ポリシー
+      - Microsoft 365 セキュリティ グループ
+      - Dataverse セキュリティ ロール
+      - ビジネス プロセス フロー
+    - 033_answer: '- Dataverse セキュリティ ロール'
+    - 034_details: 'この項目では、Microsoft Power Platform セキュリティ モデルに関する受験者の知識をテストします。
+
+
+        モデル駆動型アプリは、ロールベースのセキュリティを使用して、アプリ、その機能、およびそのデータへのアクセスを制御します。 モデル駆動型アプリは、1
+        つ以上の Dataverse セキュリティ ロールに関連付けられています。 ユーザーがアプリにアクセスして実行できるようにするには、これらのセキュリティ
+        ロールのいずれかをユーザーに関連付ける必要があります。 モデル駆動型アプリをユーザーと共有する場合、セキュリティ ロールもユーザーと共有するように求められます。
+
+
+        - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
+
+        - [Power Apps を使用してモデル駆動型アプリを共有する](https://learn.microsoft.com/ja-jp/power-apps/maker/model-driven-apps/share-model-driven-app)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 20/50：
+    022_line: 000890
+    023_contents:
+    - 031_question: '従業員には新しい環境が必要です。
+
+
+        あなたは、テナントに新しい環境を作成するための十分な領域があることを確認する必要があります。
+
+
+        どのポータルを使用すればよいですか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - '`https://app.powerbi.com`'
+      - '`https://make.powerapps.com`'
+      - '`https://make.powerautomate.com`'
+      - '`https://admin.powerplatform.microsoft.com`'
+    - 033_answer: '- https://admin.powerplatform.microsoft.com'
+    - 034_details: 'この項目では、さまざまな Microsoft Power Platform ポータルに関する受験者の知識をテストします。
+
+
+        Microsoft Power Platform 管理センターと呼ばれる admin.powerplatform.microsoft.com では、新しい環境の作成に使用できる領域の確認など、Microsoft
+        Power Platform テナントに関連する管理タスクを実行できます。 各 Microsoft Power Platform コア コンポーネントには、その製品を操作するための独自のポータルがあります。
+        make.powerapps.com は、Power Apps を構築し、Dataverse インスタンス内の環境を管理するために使用されます。 make.powerautomate.com
+        はフローの構築に使用され、app.powerbi.com は Power BI ダッシュボードの操作と作成に使用されます。 これらを使用しても、テナントが消費した領域を確認することはできません。
+
+
+        - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
+
+        - [Microsoft Power Platform を管理する – MSLearn | ドキュメント](https://learn.microsoft.com/ja-jp/power-platform/admin/admin-documentation?tabs=new)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 21/50：
+    022_line: 000932
+    023_contents:
+    - 031_question: 'ある会社は、サードパーティ製コネクタを使用するアプリでは会社のデータを使用しないことを必要としています。
+
+
+        あなたは、これらの懸念を軽減するために会社が使用するべき機能を提案する必要があります。
+
+
+        どの機能を推奨する必要がありますか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - テナントの分離
+      - エンタープライズ ポリシー
+      - カスタマー ロックボックス
+      - データ損失防止ポリシー
+    - 033_answer: '- データ損失防止ポリシー'
+    - 034_details: 'この項目では、Microsoft Power Platform セキュリティ モデルに関する受験者の知識をテストします。
+
+
+        データ損失防止ポリシーを使用して、ビジネス データに接続するコネクタと、非ビジネス データに接続するコネクタを指定できます。 ビジネス コネクタと非ビジネス
+        コネクタを同じアプリで使用することはできません。
+
+
+        テナントの分離により、全体管理者と Microsoft Power Platform 管理者は、Microsoft Entra が承認したデータ ソースと自分たちのテナントとの間のテナント
+        データの移動を効果的に管理できます。 これを使用しても、アプリ内で一緒に使用できるコネクタを指定することはできません。 Dataverse 環境はエンタープライズ
+        ポリシーに追加して、環境内のすべての顧客データを暗号化キーで暗号化することができます。 カスタマー ロックボックスは、Microsoft サポートを通じた顧客データへのデータ
+        アクセスが必要であるというまれな場合に、顧客がデータ アクセス要求を確認して承認 (または拒否) するためのインターフェイスを提供します。 これを使用しても、アプリ内で一緒に使用できるコネクタを指定することはできません。
+
+
+        - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
+
+        - [データ損失防止について学習する – MSLearn | ドキュメント](https://learn.microsoft.com/ja-jp/purview/dlp-learn-about-dlp)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 22/50：
+    022_line: 000975
+    023_contents:
+    - 031_question: 'ある会社では Microsoft 365 を使用しています。 社内のすべてのユーザーに、Microsoft 365 ライセンスが割り当てられています。
+
+
+        Microsoft TeamsでMicrosoft Copilot Studioを使用してコパイロットを作成する予定です。
+
+
+        Microsoft Copilot Studio Web アプリに固有の 2 つの機能を特定する必要があります。
+
+
+        特定すべき機能はどれですか? 2 つ選んでください。 正しい解答はそれぞれ完全な解決策を示します。
+
+
+        該当するすべての回答を選択してください。'
+    - 032_selections:
+      - 社外のユーザーがコパイロットを使用できるようにする。
+      - 社内のユーザーが追加ライセンスなしでコパイロットを変更できるようにする。
+      - テンプレートを使用してコパイロットを作成する。
+      - Web サイトでコパイロットを使用する
+    - 033_answer: '- 社外のユーザーがコパイロットを使用できるようにする。
+
+        - Web サイトでコパイロットを使用する'
+    - 034_details: 'この項目では、Microsoft Teamsの Microsoft Copilot Studio Web アプリと Microsoft
+        Copilot Studio を使用して副操縦士を作成することに関する候補者の知識をテストします。
+
+
+        Microsoft Teamsで Microsoft Copilot Studio で作成された副操縦士には、組織内のユーザーのみがアクセスできます。
+        外部ユーザーがアクセスできる副操縦を行う必要がある場合は、Microsoft Copilot Studio Web アプリを使用して副操縦を作成する必要があります。
+        Microsoft Teamsで Microsoft Copilot Studio で作成された副操縦は、Microsoft Teams チャネルにのみデプロイできます。
+        Web サイトに埋め込むことはできません。 Web サイトに copilot を埋め込む必要がある場合は、Microsoft Copilot Studio
+        Web アプリを使用して copilot を作成する必要があります。 Microsoft Teamsで Microsoft Copilot Studio
+        で作成されたCopilot は、Microsoft 365 サブスクリプションを持つユーザーのみが使用できます。 Microsoft Copilot
+        Studio Web アプリで作成された Copilot では、ボットに変更を加えるために追加のライセンスが必要です。 Microsoft Teamsの
+        Microsoft Copilot Studio でテンプレートから副ティロットを作成できます。 テンプレートは、Microsoft Copilot
+        Studio Web アプリでは使用できません。
+
+
+        - [Microsoft Power Automate の機能を示す - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/demonstrate-capabilities-microsoft-power-pages/)
+
+        - [チャットボット テンプレート (ビデオを含む) - Power Virtual Agents | Microsoft Learn](https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/fundamentals-get-started#create-an-agent-from-a-template)
+
+        - [Power Virtual Agents にアクセスする - Power Virtual Agents | Microsoft Learn](https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/requirements-licensing-subscriptions)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 23/50：
+    022_line: '001020'
+    023_contents:
+    - 031_question: 'Microsoft Copilot Studio copilot をビルドします。 あなたは、コパイロットにトピックを追加します。
+
+
+        あなたは、どのようにトピックが要求されるかを理解できるようにコパイロットをトレーニングする必要があります。
+
+
+        コパイロットに追加する必要があるものは何ですか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - 質問する
+      - アクションを呼び出す
+      - メッセージを表示する
+      - トリガー フレーズ
+    - 033_answer: '- トリガー フレーズ'
+    - 034_details: "この項目では、コパイロットを構築する際のトリガー フレーズやその他のノードの種類に関する受験者の知識をテストします。\n\n\
+        トリガー フレーズは、トピックが要求されるさまざまな方法をコパイロットに教えます。 質問ノードを使用すると、コパイロットはユーザーに質問した後に、応答を受け取ることができます。\
+        \ アクションの呼び出しノードを使用すると、Power Automate フローを呼び出したり、コパイロットから認証ノードを挿入したりできます。 メッセージの表示ノードを使用すると、コパイロットがユーザーに返すことができるメッセージを指定できます。\
+        \ 質問、アクションの呼び出し、メッセージの表示は、ユーザーがコパイロットに提供したフレーズを理解するようにコパイロットをトレーニングするのには役立ちません。\n\
+        \n- ~~Microsoft Power Automate の機能を示す - トレーニング |Microsoft Learn~~\n  - [Power\
+        \ Automate を使用したビジネス プロセスの自動化](https://learn.microsoft.com/ja-jp/training/paths/automate-process-power-automate/)\n\
+        - [トピックを使用してチャットボットの会話を設計する - Power Virtual Agents | Microsoft Learn](https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/authoring-create-edit-topics?tabs=webApp)\n\
+        \n\n#### 補足：\n\n\n\n\n-----"
+  - 021_title: 質問 24/50：
+    022_line: '001063'
+    023_contents:
+    - 031_question: 'Microsoft Copilot Studio copilot を作成します。
+
+
+        あなたは、コパイロットが自然言語のフレーズを理解できるようにする必要があります。
+
+
+        コパイロットに追加する必要があるものは何ですか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - ユーザー トピック
+      - サービス チャネル
+      - Power Automate アクション
+      - ユーザー定義エンティティ
+    - 033_answer: '- ユーザー定義エンティティ'
+    - 034_details: "この項目では、コパイロットを構築する際に使用できるさまざまなコンポーネントに関する受験者の知識をテストします。\n\nMicrosoft\
+        \ Copilot Studio エンティティを使用すると、副操縦士は自然言語を一般的な主題にマップできます。 トピックは、会話の一般的なカテゴリを決定するために使用されます。\
+        \ チャンネルを使用すると、コパイロットを Microsoft Teams などの特定のプラットフォームで利用できるようになります。 しかし、チャンネルはコパイロットにおける自然言語処理は実行しません。\
+        \ コパイロットから Power Automate アクションを呼び出すことは可能ですが、これはコパイロットで自然言語処理を実行することを目的としたものではありません。\n\
+        \n- ~~Microsoft Power Automate の機能を示す - トレーニング |Microsoft Learn~~\n  - [Power\
+        \ Automate を使用したビジネス プロセスの自動化](https://learn.microsoft.com/ja-jp/training/paths/automate-process-power-automate/)\n\
+        - [エンティティを作成して使用する (ビデオを含む) - Power Virtual Agents | Microsoft Learn](https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/advanced-entities-slot-filling)\n\
+        \n\n#### 補足：\n\n\n\n\n-----"
+  - 021_title: 質問 25/50：
+    022_line: '001106'
+    023_contents:
+    - 031_question: 'ある会社がソーシャル プラットフォームで新製品の発売を発表します。
+
+
+        その会社は、プラットフォーム上の顧客のレビューを分析して、製品について顧客がどのように感じているかを理解したいと考えています。
+
+
+        会社が分析に使用する必要がある Microsoft Power Platform サービスを特定する必要があります。
+
+
+        何を選択すればよいですか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - Power BI
+      - Dataverse
+      - AIビルダー
+      - Power Apps（パワーアプリ）
+    - 033_answer: '- AIビルダー'
+    - 034_details: 'この項目では、AI Builder の機能と AI Builder を使用できるシナリオに関する受験者の知識をテストします。
+
+
+        Microsoft Power Platform には、テキスト データ内の肯定的および否定的なセンチメントを検出する感情分析モデルなど、事前構築済みの
+        AI Builder モデルが用意されています。 このモデルを使用すると、ソーシャル メディア プラットフォームのコメントを分析できます。
+
+
+        Power BI は、さまざまなソースのデータを使用して視覚化を作成するための分析プラットフォームです。 テキスト内のセンチメントの検出には使用できません。
+
+
+        Dataverse は、データの管理と保存に使用されます。 テキスト内のセンチメントの検出には使用できません。
+
+
+        Power Apps は、エンド ユーザー向けのアプリを作成するために使用されます。 Power Apps を使用すると、要件に基づいてキャンバス
+        アプリ、モデル駆動型アプリ、または Power Pages サイトを作成できます。 ただし、Power Apps はテキスト内のセンチメントの検出には使用できません。
+
+
+        - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
+
+        - [感情分析事前構築済みモデル](https://learn.microsoft.com/ja-jp/ai-builder/prebuilt-sentiment-analysis)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 26/50：
+    022_line: '001155'
+    023_contents:
+    - 031_question: 'ある会社には顧客セルフサービス ポータルがあります。 顧客はポータルを使用して苦情を記録します。
+
+
+        苦情を特定の顧客サービス センターにルーティングする前に、苦情から都市名と製品名を抽出する必要があります。
+
+
+        どの Microsoft Power Platform 機能を使用する必要がありますか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - Dataverse
+      - AIビルダー
+      - Power BI
+      - Power Apps（パワーアプリ）
+    - 033_answer: '- AIビルダー'
+    - 034_details: 'この項目では、AI Builder の機能と AI Builder を使用できるシナリオに関する受験者の知識をテストします。
+
+
+        AI Builder エンティティ抽出モデルを使用して、テキストから都市、色、電話番号、場所などのエンティティ情報を抽出できます。 このモデルは、Power
+        Apps アプリまたは Power Automate フローで使用できます。
+
+
+        Dataverse は、データの保存と管理に使用されます。 テキストから情報を抽出するために使用することはできません。
+
+
+        Power BI は、視覚化の作成に使用されるビジネス インテリジェンス プラットフォームです。 テキストから情報を抽出するために使用することはできません。
+
+
+        Power Apps フレームワークは UI の作成に使用されますが、それ自体にはテキストから情報を抽出する機能はありません。 Power Apps
+        アプリでこの機能を有効にするには、AI Builder を使用する必要があります。
+
+
+        - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
+
+        - [エンティティ抽出事前構築済みモデル](https://learn.microsoft.com/ja-jp/ai-builder/prebuilt-entity-extraction)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 27/50：
+    022_line: '001203'
+    023_contents:
+    - 031_question: 'Power BI レポートを編集します。
+
+
+        計算列を追加する必要があります。
+
+
+        実行する必要がある 2 つのアクションはどれですか? 解答には、正しいそれぞれの回答が必要です。
+
+
+        該当するすべての回答を選択してください。'
+    - 032_selections:
+      - Power BI サービスを使用してレポートを開く。
+      - Power BI Desktop を使用してレポートを開く。
+      - '[データの変換] を選択し、[カスタム列] を選択します。'
+      - '[データ] タブを選択し、[ 新しい列] を選択します。'
+    - 033_answer: '- Power BI Desktop を使用してレポートを開く。
+
+        - [データ] タブを選択し、[ 新しい列] を選択します。'
+    - 034_details: 'この項目では、列の種類を選択し、Power BI Desktop および Power BI サービスで何ができるかを特定するための受験者の知識をテストします。
+
+
+        Power BI Desktop を使用してレポートを開く必要があります。 計算列を追加するために、Power BI Desktop が使用されます。
+        計算列を追加するには、モデル内に新しい列を作成します。 Power BI サービスを使用して計算列を追加することはできません。 カスタム列は、計算列とは異なります。
+
+
+        - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
+
+        - [チュートリアル: Power BI Desktop で計算列を作成する - Power BI | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-bi/transform-model/desktop-tutorial-create-calculated-columns)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 28/50：
+    022_line: '001245'
+    023_contents:
+    - 031_question: 'Microsoft Dataverse から Power BI レポートを作成する予定です。
+
+
+        Power BI Desktop を使用してレポートを作成するときに使用できるコンポーネントを特定する必要があります。
+
+
+        どの 2 つのコンポーネントになりますか? 正しい解答はそれぞれ完全な解決策を示します。
+
+
+        該当するすべての回答を選択してください。'
+    - 032_selections:
+      - データの整形とモデリング
+      - 計算列
+      - 共有
+      - ダッシュボード
+    - 033_answer: '- データの整形とモデリング
+
+        - 計算列'
+    - 034_details: 'この項目では、Power BI Desktop と Power BI サービスの対比、およびそれらで利用可能な機能に関する受験者の知識をテストします。
+
+
+        Power BI Desktop を使用すると、データ ソースからのデータを整形および変換できます。 計算列とメジャーは、Power BI Desktop
+        を使用して Power BI レポートで計算できます。 レポートとダッシュボードは、Power BI サービスを使用してのみ共有できます。 Power
+        BI Desktop を使用してこれを行うことはできません。 Power BI Desktop 内でダッシュボードを作成することはできません。 Power
+        BI Desktop を使用してレポートを作成し、ダッシュボードにピン留めできます。
+
+
+        - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
+
+        - [Power BI Desktop と Power BI サービスの比較 - Power BI | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-bi/fundamentals/power-bi-overview)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 29/50：
+    022_line: 001287
+    023_contents:
+    - 031_question: '現在と前年の月ごとの収益比較を表示する Power BI の視覚化を作成する必要があります。
+
+
+        どのグラフの種類を使用する必要がありますか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - パイ
+      - じょうご
+      - 横棒
+      - カード
+    - 033_answer: '- 横棒'
+    - 034_details: 'この項目では、Power BI で利用できる視覚化の種類に関する受験者の知識をテストします。 要件に適した視覚化を特定することは、Power
+        BI レポートを設計するための基本的な要素です。
+
+
+        横棒グラフを使用すると、さまざまなカテゴリにわたる特定の値を表示できます。 円グラフは、全体に対する部分の関係を示します。 単一行または複数行のカードはいずれも、年間の総売上、年間の市場シェア、営業案件の合計数などのデータ
+        ポイントを表示するために使用されます。 円グラフとカードを使用して、複数のカテゴリのデータ比較を表示することはできません。 ファネルは、複数のステージがあり、項目が
+        1 つのステージから次のステージに順番に流れるプロセスを視覚化するのに役立ちます。
+
+
+        - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
+
+        - [Power BI での視覚化の種類 - Power BI | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 30/50：
+    022_line: '001326'
+    023_contents:
+    - 031_question: 'ある会社では Power BI を使用しています。
+
+
+        Power BI レポートのビジュアルにテキスト フィールドを追加して集計する必要があります。
+
+
+        どの集計を使用する必要がありますか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - '`SUM`'
+      - 中央値
+      - 最新
+      - 数える
+    - 033_answer: '- 数える'
+    - 034_details: 'この項目では、Power BI の集計関数に関する受験者の知識をテストします。
+
+
+        Power BI では、テキスト データが個別のカテゴリとして集計され、各カテゴリの出現回数がカウントされます。 数値フィールドのみが合計として集計されます。
+        数値フィールドのみが中央値として集計されます。 最新の集計が使用されるのは日付フィールドのみです。
+
+
+        - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
+
+        - [Power BI で集計 (合計、平均など) を操作する - Power BI | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-bi/create-reports/service-aggregates)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 31/50：
+    022_line: '001367'
+    023_contents:
+    - 031_question: 'Power BI データセットにテーブルがあります。 集合縦棒グラフ ビジュアルをレポート ページに追加します。
+
+
+        テーブル内の各カテゴリの列として、テーブル内の行数を表示する必要があります。
+
+
+        どのフィールドを行数メジャーに追加する必要がありますか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - 凡例
+      - X 軸
+      - Y 軸
+      - 値
+    - 033_answer: '- Y 軸'
+    - 034_details: 'この項目では、Power BI レポートの作成に関する受験者の知識をテストします。
+
+
+        数値を示すフィールド (列の高さ) は、縦棒グラフ ビジュアルの Y 軸に追加する必要があります。 カテゴリの色を示すフィールドは、凡例ウェルに追加する必要があります。
+        行をグループ化するカテゴリは、縦棒グラフ ビジュアルの X 軸に追加する必要があります。 これらの値は、縦棒グラフ ビジュアルでは使用できません。
+        円グラフ ビジュアルなどの他のビジュアルでは、これらの値がよく使用されます。
+
+
+        - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
+
+        - [Power BI で集計 (合計、平均など) を操作する - Power BI | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-bi/create-reports/service-aggregates)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 32/50：
+    022_line: 001408
+    023_contents:
+    - 031_question: '営業チーム用の Power BI レポートを作成する予定です。
+
+
+        上位 15 件の製品カテゴリの売上収益を表示する必要があります。
+
+
+        どのグラフの種類を使用する必要がありますか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - ドット プロット
+      - 横棒
+      - 複合
+      - ゲージ
+    - 033_answer: '- 横棒'
+    - 034_details: 'この項目では、Power BI で利用できるレポートの種類に関する受験者の知識をテストします。
+
+
+        横棒グラフは、カテゴリ間でデータを視覚化し、比較するために使用されます。 ドット プロット グラフでは、複数のメジャーを大きさで比較し、データをドットで表すことができます。
+        これにより、X 軸に沿ってデータをプロットできます。 ゲージ グラフは、目標または KPI に対する進行状況を測定する単一の値を表すのに役立ちます。
+        例: 会社の平均総売上高。 ドット プロット グラフとゲージ グラフを使用して、カテゴリ全体のデータを表示することはできません。 複合グラフは、1
+        つの視覚化内の 2 つのメジャー間のデータを比較するのに適しています。 例: 昨年と今年の売上および粗利益の値の比較。
+
+
+        - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
+
+        - [Power BI での視覚化の種類 - Power BI | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 33/50：
+    022_line: 001449
+    023_contents:
+    - 031_question: 'ある会社がカンファレンスを主催します。
+
+
+        会社が主催する今後のカンファレンスを顧客が閲覧できるようにする必要があります。
+
+
+        どの Power Apps コンポーネントを使用する必要がありますか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - キャンバス アプリ
+      - モデル駆動型アプリ
+      - パワー・ページ
+      - ビジネス プロセス フロー
+    - 033_answer: '- パワー・ページ'
+    - 034_details: 'この項目では、Power Apps コンポーネントの選択に関する受験者の知識をテストします。
+
+
+        Power Apps ポータルでは、外部ユーザー用の Web サイトを作成できます。 キャンバス アプリ、モデル駆動型アプリ、ビジネス プロセス フローは、外部ユーザーには適していません。
+
+
+        - [Power BI の構築を開始する - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/get-started-with-power-bi/)
+
+        - [アプリの構築を開始する - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/maker/)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 34/50：
+    022_line: 001490
+    023_contents:
+    - 031_question: 'アプリを作成します。
+
+
+        アプリに Azure SQL データベースのデータが表示されるようにする必要があります。
+
+
+        何を使用する必要がありますか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - モデル駆動型アプリ
+      - パワー・ページ
+      - キャンバス アプリ
+      - マイクロソフト Dataverse
+    - 033_answer: '- キャンバス アプリ'
+    - 034_details: 'この項目では、データ ソースに基づいた Power Apps コンポーネントの選択に関する受験者の知識をテストします。
+
+
+        キャンバス アプリでは、Azure SQL データベースを含むさまざまなソースのデータを使用できます。 モデル駆動型アプリと C=canvas アプリでは、Azure
+        SQL データベースではなく Microsoft Dataverse からのデータが使用されます。 Microsoft Dataverse はデータ
+        プラットフォームです。
+
+
+        - [Power BI の構築を開始する - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/get-started-with-power-bi/)
+
+        - [アプリの構築を開始する - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/maker/)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 35/50：
+    022_line: '001532'
+    023_contents:
+    - 031_question: 'ある会社では Microsoft Power Platform を使用しています。
+
+
+        キャンバス アプリにおける数式のユース ケースを推奨する必要があります。
+
+
+        推奨すべき 2 つのアクションはどれですか? 正しい解答はそれぞれ完全な解決策を示します。
+
+
+        該当するすべての回答を選択してください。'
+    - 032_selections:
+      - キャンバス アプリを実行できるユーザーを制御する。
+      - 行の一覧をフィルター処理する。
+      - ユーザーがボタンを選択したときにデータを保存する。
+      - Web ページから XML データを返す。
+    - 033_answer: '- 行の一覧をフィルター処理する。
+
+        - ユーザーがボタンを選択したときにデータを保存する。'
+    - 034_details: 'この項目では、数式のユース ケースに関する受験者の知識をテストします。
+
+
+        FILTER は、データ ソースまたはコレクションの行を制限するためにキャンバス アプリで使用される一般的な数式です。 ボタンの OnSelect
+        プロパティには、実行するアクションが含まれています。 SubmitForm や Patch などの数式は、データ ソースにデータを保存するために使用されます。
+        数式は、キャンバス アプリの共有には使用されません。 数式は、キャンバス アプリを構築する場合にのみ使用できます。 インターネット URL から XML
+        データを取得する Excel 関数 WEBSERVICE に相当する式はありません。
+
+
+        - [Power BI の構築を開始する - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/get-started-with-power-bi/)
+
+        - [キャンバス アプリの数式の使用を開始する - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/maker/canvas-apps/working-with-formulas)
+
+        - [WEBSERVICE 関数 - Microsoft サポート](https://support.microsoft.com/ja-jp/office/webservice-%E9%96%A2%E6%95%B0-0546a35a-ecc6-4739-aed7-c0b7ce1562c4)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 36/50：
+    022_line: '001575'
+    023_contents:
+    - 031_question: 'ある会社では Microsoft Power Platform を使用しています。
+
+
+        Power Apps の機能について説明する必要があります。
+
+
+        キャンバス アプリの 2 つの機能は何ですか? 正しい解答はそれぞれ完全な解決策を示します。
+
+
+        該当するすべての回答を選択してください。'
+    - 032_selections:
+      - アプリに匿名でアクセスする。
+      - Microsoft Power Fx 数式を使用して機能を制御する。
+      - Power BI ダッシュボード全体を埋め込む。
+      - 人工知能を含める。
+    - 033_answer: '- Microsoft Power Fx 数式を使用して機能を制御する。
+
+        - 人工知能を含める。'
+    - 034_details: 'この項目では、キャンバス アプリ、モデル駆動型アプリ、ポータル アプリの違いに関する受験者の知識をテストします。
+
+
+        キャンバス アプリでは、Power Fx 数式を使用して、画面の視覚要素と、データの取得や表示などのアクションを制御します。 キャンバス アプリには、フォーム処理と物体検出のための
+        AI コントロールを含めることができます。 キャンバス アプリでは、ユーザーは匿名ではなく、Microsoft Entra ID で認証される必要があります。
+        キャンバス アプリでは、Power BI ダッシュボードの個々のタイルを埋め込むことができますが、ダッシュボード全体を埋め込むことはできません。 モデル駆動型アプリでは、Power
+        BI ダッシュボードを追加できます。
+
+
+        - [Power BI の構築を開始する - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/get-started-with-power-bi/)
+
+        - [キャンバス アプリをゲスト ユーザーと共有する (ビデオを含む) - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/maker/canvas-apps/share-app-guests)
+
+        - [Power BI ビジュアルでキャンバス アプリを作成する方法 (ビデオを含む) - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/maker/canvas-apps/how-to/build-powerbi-visual)
+
+        - [Microsoft Power Fx の概要 - Power Platform | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-platform/power-fx/overview)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 37/50：
+    022_line: 001619
+    023_contents:
+    - 031_question: 'キャンバス アプリを作成して公開します。
+
+
+        ユーザーから、アプリの最新バージョンに関する問題が報告されます。
+
+
+        アプリを以前の動作バージョンに戻す必要があります。
+
+
+        実行する必要がある 2 つのアクションはどれですか? 解答には、正しいそれぞれの回答が必要です。
+
+
+        該当するすべての回答を選択してください。'
+    - 032_selections:
+      - アプリを編集し、すべての変更を元に戻し、アプリを公開する。
+      - 以前のバージョンのアプリを選択し、[復元] をクリックする。
+      - 復元されたバージョンのアプリを公開する。
+      - 以前のバージョンのアプリをエクスポートしてインポートする。
+    - 033_answer: '- 以前のバージョンのアプリを選択し、[復元] をクリックする。
+
+        - 復元されたバージョンのアプリを公開する。'
+    - 034_details: 'この項目では、キャンバス アプリのバージョン管理に関する受験者の知識をテストします。 キャンバス アプリのバージョン管理について理解することは、アプリを公開および共有するすべてのユーザーにとって基本的な知識です。
+
+
+        キャンバス アプリを以前のバージョンに復元するには、[復元] オプションを使用する必要があります。 キャンバス アプリの以前のバージョンが復元されると、新しいバージョンが作成されます。
+        復元されたバージョンを公開する必要があります。 アプリを以前のバージョンに復元する場合、アプリを編集したり、変更を元に戻したりする必要はありません。
+        [復元] オプションを使用できます。 キャンバス アプリをエクスポートするたびに、最新の変更が反映されたアプリがエクスポートされます。 以前のバージョンのアプリはエクスポートできません。
+
+
+        - [Power BI の構築を開始する - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/get-started-with-power-bi/)
+
+        - [キャンバス アプリを前のバージョンに復元する - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/maker/canvas-apps/restore-an-app)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 38/50：
+    022_line: '001663'
+    023_contents:
+    - 031_question: 'ある会社では Microsoft Power Platform を使用しています。
+
+
+        キャンバス アプリのどのコントロールをデータ ソースに接続できますか? 2 つ選んでください。 正しい解答はそれぞれ完全な解決策を示します。
+
+
+        該当するすべての回答を選択してください。'
+    - 032_selections:
+      - ボタン
+      - フォーム
+      - ギャラリー
+      - スクリーン
+    - 033_answer: '- フォーム
+
+        - ギャラリー'
+    - 034_details: 'この項目では、ユーザー エクスペリエンスを設計するためのコントロールに関する受験者の知識をテストします。
+
+
+        フォームは、データ ソースの単一行を表示、編集、作成するために使用されます。 フォームを構成するには、データ ソースを選択します。 ギャラリーには、データ
+        ソースの行の一覧が表示されます。 ギャラリー コントロールを構成するには、データ ソースを選択します。 ボタンには、他のコントロールのプロパティを変更できる数式があります。
+        ボタンによってデータが保存される可能性がありますが、ボタンはデータ ソースにリンクされていません。 画面はデータ ソースにリンクされていません。 画面に追加されたコントロールは、データ
+        ソースにリンクできます。
+
+
+        - [Power BI の構築を開始する - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/get-started-with-power-bi/)
+
+        - [キャンバス アプリ内のコントロールとプロパティ - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/maker/canvas-apps/reference-properties)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 39/50：
+    022_line: '001703'
+    023_contents:
+    - 031_question: 'オフィス文具を追跡して注文するようにキャンバス アプリを構成します。 このアプリでは、ユーザーは複数の文具を注文できます。
+
+
+        ユーザーがアプリを再度開くたびに、ユーザーが選択した項目をリセットする必要があります。
+
+
+        ユーザーの選択を保存する必要があります。
+
+
+        どの関数を使用する必要がありますか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - コレクション
+      - Dataverse
+      - SharePoint
+      - 変数
+    - 033_answer: '- コレクション'
+    - 034_details: 'この項目では、アプリ内のレコードのコレクションを一時的に保存する場所に関する受験者の知識をテストします。
+
+
+        キャンバス アプリのコレクションは、アプリ内にデータを一時的に保存するために使用できます。 ユーザーがアプリを再度開くと、コレクションは失われます。
+        Clear 関数を使用して、必要に応じてコレクションをクリアすることもできます。 ユーザーが選択した項目はセッションに固有のものであるため、Microsoft
+        Dataverse または SharePoint に保存すべきではありません。 変数は、単一の値またはオブジェクトを保存するために使用されます。 複数の項目を保存するために使用することはできません。
+
+
+        - [Power BI の構築を開始する - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/get-started-with-power-bi/)
+
+        - [Power Apps の Collect、Clear、ClearCollect 関数 - Power Platform | Microsoft
+        Learn](https://learn.microsoft.com/ja-jp/power-platform/power-fx/reference/function-clear-collect-clearcollect)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 40/50：
+    022_line: '001747'
+    023_contents:
+    - 031_question: 'ある会社では Microsoft Power Platform を使用しています。 Microsoft Dataverse
+        でデータをモデル化し、モデル駆動型アプリを作成します。
+
+
+        別のユーザー グループ用の新しいモデル駆動型アプリを作成する必要があります。 モデル駆動型アプリでは、ユーザーが値を変更できるテーブル内の列を制限する必要があります。
+
+
+        実行する必要がある 2 つのアクションはどれですか? 解答には、正しいそれぞれの回答が必要です。
+
+
+        該当するすべての回答を選択してください。'
+    - 032_selections:
+      - Microsoft Dataverse テーブルの新しいフォームを作成する。
+      - ビジネス プロセス フローを作成する。
+      - アプリ デザイナーでフォームを選択する。
+      - 新しいビューを作成します。
+    - 033_answer: '- Microsoft Dataverse テーブルの新しいフォームを作成する。
+
+        - アプリ デザイナーでフォームを選択する。'
+    - 034_details: 'この項目では、モデル駆動型アプリでのフォームの変更に関する受験者の知識をテストします。
+
+
+        モデル駆動型アプリのフォームは Microsoft Dataverse テーブルにリンクされています。 フォームには、そのテーブルの列のサブセットが表示されます。
+        異なるユーザーのグループが異なるフィールドを編集できるようにするには、新しいフォームを作成する必要があります。 Microsoft Dataverse
+        テーブルには、テーブルのさまざまな列とさまざまなレイアウトを含む複数のフォームを含めることができます。 アプリ デザイナーは、アプリで使用できるフォームを選択できます。
+        ビジネス プロセス フローは、テーブルのフォームではなく、Microsoft Dataverse テーブルに関連付けられます。 ビューにはテーブルの列がリストとして表示されます。
+        データを編集するにはフォームが必要です。
+
+
+        - [Power BI の構築を開始する - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/get-started-with-power-bi/)
+
+        - [モデル駆動型アプリのフォームを作成および設計する - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/maker/model-driven-apps/create-design-forms)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 41/50：
+    022_line: 001789
+    023_contents:
+    - 031_question: 'ある会社が、モデル駆動型アプリを所有しています。
+
+
+        すべてのユーザーがアプリ内のデータにアクセスできるようにする必要があります。
+
+
+        どうすればよいでしょうか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - 新しいテーブルを作成します。
+      - 新しいモデル駆動型アプリを作成します。
+      - 新しい個人用ビューを作成する。
+      - 新しいパブリック ビューを作成する。
+    - 033_answer: '- 新しいパブリック ビューを作成する。'
+    - 034_details: 'この項目では、さまざまな種類のビューに関する受験者の知識をテストします。
+
+
+        すべてのユーザーは、このビューを使用してデータにアクセスできます。 別のテーブルや新しいモデル駆動型アプリを作成する必要はありません。 他のユーザーは個人用ビューを利用できません。
+
+
+        - [Microsoft Power Apps を使用してアプリケーションを構築する方法について説明する - トレーニング | Microsoft
+        Learn](https://learn.microsoft.com/ja-jp/training/modules/introduction-power-apps/)
+
+        - [Power Apps でモデル駆動型アプリ ビューを作成または編集する - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/maker/model-driven-apps/create-edit-views)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 42/50：
+    022_line: 001831
+    023_contents:
+    - 031_question: 'ある会社では、顧客データ管理にモデル駆動型アプリを使用しています。
+
+
+        新しい列を作成します。
+
+
+        ユーザーからレコードを編集するときに列を表示できないことが報告されます。
+
+
+        ユーザーが列を表示できるようにする必要があります。
+
+
+        実行する必要がある 2 つのアクションはどれですか? 解答には、正しいそれぞれの回答が必要です。
+
+
+        該当するすべての回答を選択してください。'
+    - 032_selections:
+      - ビューに列を追加する。
+      - フォームに列を追加する。
+      - カスタマイズを公開する。
+      - ページを追加する。
+    - 033_answer: '- フォームに列を追加する。
+
+        - カスタマイズを公開する。'
+    - 034_details: 'この項目では、モデル駆動型アプリでのフォームの変更に関する受験者の知識をテストします。
+
+
+        モデル駆動型アプリにおいて、フォームは、ユーザーが基になる Dataverse テーブル データを操作するために使用可能な UI を提供します。 フォームを使用すると、ユーザーはレコードを表示または編集できます。
+        新しい列が Dataverse テーブルに追加された場合、その列はフォームには追加されません。 ユーザーが列を使用できるようにするには、その列をフォームに追加してから、ユーザーが変更を使用できるように公開する必要があります。
+
+
+        Dataverse のビューには、フィルター条件に基づいてテーブル内のレコードのリストが表示されます。 ビューに列を追加すると、ユーザーは列の値を編集できなくなります。
+
+
+        モデル駆動型アプリのテーブルは、ページを通じて追加できます。 これは、フォーム上の列の表示には影響しません。
+
+
+        - [Power BI の構築を開始する - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/get-started-with-power-bi/)
+
+        - [アプリ デザイナーを使用してモデル駆動型アプリを作成する](https://learn.microsoft.com/ja-jp/power-apps/maker/model-driven-apps/create-model-driven-app)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 43/50：
+    022_line: 001881
+    023_contents:
+    - 031_question: 'ある会社には、販売管理モデル駆動型アプリがあります。
+
+
+        取引先企業フォームに表示される連絡先の一覧に、連絡先担当者の役職を追加する必要があります。
+
+
+        何を変更する必要がありますか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - アプリのサイトマップ
+      - 連絡先フォーム
+      - 取引先企業フォーム
+      - 連絡先ビュー
+      - 取引先企業ビュー
+    - 033_answer: '- 連絡先ビュー'
+    - 034_details: 'この項目では、モデル駆動型アプリのコンポーネントと、ビューの変更方法に関する受験者の知識をテストします。
+
+
+        取引先企業フォームに表示される連絡先ビューは、連絡先担当者の役職を含むように修正する必要があります。 アプリのサイトマップは、アプリに含まれるナビゲーションとコンポーネントを定義します。フォームとビューは既に含まれています。
+        連絡先フォームは特定の連絡先の詳細を表示するために使用されますが、要求は連絡先の一覧に関するものです。 取引先企業フォームは、連絡先の一覧 (ビュー)
+        を表示するために使用されますが、そこに表示される列は定義されていません。 取引先企業ビューには、連絡先ではなく取引先企業が一覧表示されます。
+
+
+        - [Power BI の構築を開始する - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/get-started-with-power-bi/)
+
+        - [モデル駆動型アプリのビューとフォームをカスタマイズする](https://learn.microsoft.com/ja-jp/training/modules/customize-view-forms/)
+
+        - [モデル駆動型アプリ ビューの列を選択および構成する](https://learn.microsoft.com/ja-jp/power-apps/maker/model-driven-apps/choose-and-configure-columns)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 44/50：
+    022_line: 001925
+    023_contents:
+    - 031_question: 'ある会社では、Microsoft Dataverse を使用して小売組織のデータ モデルを作成しています。 その会社は標準の連絡先テーブルを使用して顧客情報を保存しています。
+
+
+        顧客は 1 つ以上の製品を注文できます。
+
+
+        顧客と製品の間にリレーションシップを作成する必要があります。
+
+
+        どの種類のリレーションシップを使用する必要がありますか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - 一対多
+      - 多対多
+      - 多対一
+      - 階層型自己参照
+    - 033_answer: '- 多対多'
+    - 034_details: 'この項目では、Microsoft Dataverse のリレーションシップに関する受験者の知識をテストします。 要件に対する正しいリレーションシップの種類を特定することは、Microsoft
+        Dataverse を使用してデータ モデルを設計するための基本的なスキルです。
+
+
+        顧客と製品の間に多対多の関係があると、複数の製品が複数の注文に関連付けられます。 顧客と製品の間に 1 対多の関係があると、1 つの製品が 1 つの注文にのみ関連付けられます。これは後続の注文では使用できません。
+        顧客と製品の間に多対 1 の関係があると、ユーザーは注文に対して製品を 1 つだけ選択できます。 階層型自己参照は 1 つのテーブル内でのみ確立できます。
+        2 つのテーブル間のリレーションシップを確立するために使用することはできません。
+
+
+        - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
+
+        - [Microsoft Dataverse のテーブル リレーションシップについて - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/maker/data-platform/create-edit-entity-relationships)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 45/50：
+    022_line: 001969
+    023_contents:
+    - 031_question: 'Microsoft Power Platform と Microsoft Dataverse を使用してソリューションを構築します。
+
+
+        Microsoft Dataverse サブスクリプションに付属する既定の Currency テーブルを使用する必要があります。
+
+
+        Currency テーブルのテーブルの種類を決定する必要があります。
+
+
+        特定すべきテーブルの種類はどれですか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - スタンダード
+      - 活動
+      - 習慣
+      - バーチャル
+    - 033_answer: '- スタンダード'
+    - 034_details: 'この項目では、Microsoft Dataverse テーブルの種類に関する受験者の知識をテストします。
+
+
+        Microsoft Dataverse 環境には、複数の標準テーブル (すぐに使えるテーブルとも呼ばれます) が含まれています。 Currency
+        テーブルは、それらのテーブルの 1 つです。 アクティビティ テーブルには、カレンダーにエントリを作成できる情報の種類が保持されます。 Currency
+        テーブルはアクティビティ テーブルではありません。 カスタム テーブルは、Microsoft Dataverse 環境で直接作成されたアンマネージド
+        テーブルです。 このシナリオでは、すぐに使えるテーブルが使用されているため、カスタムではありません。 仮想テーブルは、外部データ ソースからのデータを含む列を持つカスタム
+        テーブルです。 このシナリオでは、外部データにアクセスしないため、仮想テーブルは必要ありません。
+
+
+        - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
+
+        - [テーブルの種類 - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/maker/data-platform/types-of-entities)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 46/50：
+    022_line: '002013'
+    023_contents:
+    - 031_question: 'ある会社が Microsoft Dataverse と Microsoft Dataverse for Teams を評価しています。
+
+
+        Microsoft Dataverse でのみ利用可能な機能を判断する必要があります。
+
+
+        特定すべき機能はどれですか? 2 つ選んでください。 正しい解答はそれぞれ完全な解決策を示します。
+
+
+        該当するすべての回答を選択してください。'
+    - 032_selections:
+      - ファイルと画像のサポート
+      - 複数通貨のサポート
+      - リレーショナル記憶域
+      - Mobile オフライン
+    - 033_answer: '- 複数通貨のサポート
+
+        - 複数通貨のサポート'
+    - 034_details: 'この項目では、Microsoft Dataverse と比較した Microsoft Dataverse for Teams
+        に関する制限事項について受験者の知識をテストします。
+
+
+        Microsoft Dataverse for Teams では、複数の通貨やモバイル オフラインはサポートされていません。 これらは Microsoft
+        Dataverse に固有のものです。 Microsoft Dataverse と Microsoft Dataverse for Teams の両方で、ファイルと画像がサポートされています。
+        Microsoft Dataverse for Teams では、リレーショナル ストレージもサポートされています。
+
+
+        - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
+
+        - [Dataverse for Teams と Dataverse - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/teams/data-platform-compare)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 47/50：
+    022_line: '002055'
+    023_contents:
+    - 031_question: 'Microsoft Dataverse を使用して企業のデータ モデルを開発します。
+
+
+        Problem という名前のカスタム テーブルを使用して、顧客から報告された問題に関する情報を保存する予定です。 問題には、低、中、または高の重大度が割り当てられます。
+
+
+        問題の重大度を把握する必要があります。
+
+
+        どの種類の列を使用する必要がありますか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - 選択肢(複数)
+      - 選択肢
+      - はい/いいえ
+      - オートナンバー
+    - 033_answer: '- 選択肢'
+    - 034_details: 'この項目では、Microsoft Dataverse の列の種類に関する受験者の知識をテストします。 要件に適した列の種類を特定することは、Microsoft
+        Dataverse でデータ モデルを設計するための基本的なスキルです。
+
+
+        "選択肢" 列の種類を使用すると、ユーザーは値のリストから 1 つの値のみを選択できます。 "選択" 列の種類を使用すると、ユーザーは複数の値を選択できます。
+        "はい/いいえ" 列の種類を使用すると、次の 2 つの値のみが許可されます。はい、いいえ。 3 つ以上のオプションを表示するために使用することはできません。
+        "はい/いいえ" 列の種類を使用すると、次の 2 つの値のみが許可されます。はい、いいえ。 3 つ以上のオプションを表示するために使用することはできません。
+        オートナンバーは、各レコードを一意に識別するために自動化された一意の番号を生成できるテキストの列の種類です。 ユーザーにオプションを表示するために使用することはできません。
+
+
+        - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
+
+        - [Microsoft Dataverse の列のデータ型 (ビデオを含む) - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/maker/data-platform/types-of-fields)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 48/50：
+    022_line: 002099
+    023_contents:
+    - 031_question: 'Power Automate クラウド フローで Microsoft Teams コネクタを使用する予定です。
+
+
+        コネクタによって定義されているのはどのコンポーネントですか? 2 つ選んでください。 正しい解答はそれぞれ完全な解決策を示します。
+
+
+        該当するすべての回答を選択してください。'
+    - 032_selections:
+      - アクション
+      - 資格情報
+      - Postman コレクション
+      - トリガー
+    - 033_answer: '- アクション
+
+        - トリガー'
+    - 034_details: 'この項目では、コネクタを使用してサービスおよびデータにアクセスするための受験者の知識をテストします。
+
+
+        コネクタでは、コネクタを使用してサービスで実行できるアクションを定義します。 コネクタでは、サービス内のイベントが Power Automate クラウド
+        フローをトリガーする方法を定義します。 コネクタでは、コネクタが定義されているサービスで実行できる操作を定義します。 コネクタをフローに追加するときは、サービスに必要な資格情報を指定します。
+        Postman コレクションは、カスタム コネクタを作成するために使用できますが、Microsoft Teams コネクタなどのすぐに使えるコネクタのコンポーネントは定義されません。
+
+
+        - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
+
+        - [Power Platform コネクタの概要 | Microsoft Learn](https://learn.microsoft.com/ja-jp/connectors/connectors)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 49/50：
+    022_line: 002139
+    023_contents:
+    - 031_question: '新しいアイテムが SharePoint Online リストに追加されるたびに電子メールを送信するワークフローを構築する必要があります。
+
+
+        どの 2 つのコンポーネントを使用しますか? 解答には、正しいそれぞれの回答が必要です。
+
+
+        該当するすべての回答を選択してください。'
+    - 032_selections:
+      - Power Apps（パワーアプリ）
+      - パワーオートメート
+      - Power BI
+      - マイクロソフト コパイロット スタジオ
+      - コネクタ
+    - 033_answer: '- パワーオートメート
+
+        - コネクタ'
+    - 034_details: 'この項目では、Microsoft Power Platform を構成するコンポーネントと各コンポーネントの機能に関する受験者の知識をテストします。
+
+
+        Power Automate クラウド フローは、SharePoint Online コネクタを使用した自動トリガーで作成する必要があります。 フロー
+        トリガーとアクションを SharePoint Online および Exchange Online に接続するには、コネクタを使用する必要があります。
+
+
+        Power Apps は、グラフィカル フォームを作成するために使用されます。 このソリューションでは、フォームやユーザー インターフェイスは必要ありません。
+        Power BI は、基になるデータを表すビジュアル グラフィックスを生成する機能をユーザーに提供します。 このソリューションでは、データの表示や操作は必要ありません。
+        Microsoft Copilot Studio は、ユーザーが自然言語とチャットボットを使用して基になるデータを操作できるようにするために使用されます。
+        このシナリオでは、ボットまたは Microsoft Copilot Studio を必要とするユーザー操作はありません。
+
+
+        - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
+
+        - [Power Platform コネクタの概要](https://learn.microsoft.com/ja-jp/Connectors/connectors)
+
+        - [クラウドフローを作成してタスクを自動化する - Power Automate |Microsoft Learn](https://learn.microsoft.com/ja-jp/power-automate/get-started-logic-flow?tabs=using-copilot%2Cnew-designer)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問 50/50：
+    022_line: 002183
+    023_contents:
+    - 031_question: '標準コネクタを使用する Power Automate クラウド フローを作成します。
+
+
+        追加予定の機能は、このコネクタで使用できるアクションの一覧には含まれていません。
+
+
+        コネクタの公開元の Web サイトで、機能に関する最新の API 情報を確認します。
+
+
+        その機能をクラウド フローに追加する必要があります。
+
+
+        どうすればよいでしょうか?
+
+
+        回答を 1 つだけ選択してください。'
+    - 032_selections:
+      - Power Automate Per Flow ライセンスをクラウド フローに割り当てる。
+      - より多くのアクセス許可を持つユーザーをコネクタに割り当てる。
+      - システム管理者 **** セキュリティ ロールを持つユーザーに、クラウド フローの編集を依頼します。
+      - カスタム コネクタを作成し、クラウド フローで使用する。
+    - 033_answer: '- カスタム コネクタを作成し、クラウド フローで使用する。'
+    - 034_details: 'この項目では、コネクタ コンポーネント、および標準コネクタ、プレミアム コネクタ、カスタム コネクタの間の違いに関する受験者の知識についてテストします。
+
+
+        API ドキュメントに基づいて、新しい機能を追加できるカスタム コネクタを作成できます。 Power Automate Per Flow ライセンスをクラウド
+        フローに割り当てても、コネクタのアクションのリストには影響しません。 別のユーザーの接続を変更した場合、データのアクセス許可にのみ影響します。コネクタに新しい機能は追加されません。
+        クラウド フローを編集するユーザーのセキュリティ ロールは、コネクタのアクションのリストには影響しません。
+
+
+        - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
+
+        - [Power Platform コネクタの概要 | Microsoft Learn](https://learn.microsoft.com/ja-jp/connectors/connectors)
+
+        - [すべての Standard レベル コネクタの一覧 | Microsoft Learn](https://learn.microsoft.com/ja-jp/connectors/connector-reference/connector-reference-standard-connectors)
+
+        - [すべての Premium レベル コネクタの一覧 | Microsoft Learn](https://learn.microsoft.com/ja-jp/connectors/connector-reference/connector-reference-premium-connectors)
+
+
+
+        #### 補足：
+
+
+
+
+
+        -----'
+  - 021_title: 質問：
+    022_line: '002231'
+    023_contents:
+    - 031_question: ''
+    - 032_selections: []
+    - 033_answer: ''
+    - 034_details: ''
+    - 035_supplements: '### 補足：
+
+
+
+        -----'
