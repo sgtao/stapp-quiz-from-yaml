@@ -106,7 +106,7 @@ def main():
             #     quiz_data = load_quiz_data("assets/practice-test.yaml")
             # sections = quiz_data["013_sections"]
             st.warning("Press 'Load Quiz' button to load quiz data.")
-            if st.button("Load Quiz'"):
+            if st.button("Load Quiz"):
                 quiz_data = load_quiz_data(selected_config_file)
                 st.session_state.sections = quiz_data["013_sections"]
                 st.rerun()
