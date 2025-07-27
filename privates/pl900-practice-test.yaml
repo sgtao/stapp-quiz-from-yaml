@@ -162,19 +162,29 @@
 
         - [Microsoft Power Automate の機能を示す - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/demonstrate-capabilities-microsoft-power-pages/)
 
-        - [Power Pages の機能](https://learn.microsoft.com/ja-jp/power-pages/capabilities)
-
-
-
-        ##### 補足：
-
-
-
-
-
-        -----'
+        - [Power Pages の機能](https://learn.microsoft.com/ja-jp/power-pages/capabilities)'
+    - 035_supplements: "### 補足：Power Pagesの主な機能\n回答\n\n- ローコード ツールを使用したサイトの構築\n- Dataverse\
+        \ のデータの顧客への公開\n\n#### 設問の意図・目的と解説\n\nこの設問は「Power Pages の代表的な機能とユースケース」を正しく理解しているかを問うものです。\n\
+        \nPower Pages は Microsoft Power Platform の一部で、主に以下の機能を提供します。\n\n- **ローコード\
+        \ ツールを使用したサイトの構築**  \n  Power Pages はドラッグ＆ドロップのデザインスタジオを備え、プログラミングの専門知識がなくても、視覚的にWebサイトを構築・デザインできます。テンプレートも豊富で、素早くサイトを立ち上げることが可能です。\n\
+        \n- **Dataverse のデータの顧客への公開**  \n  Power Pages は Microsoft Dataverse とシームレスに連携し、Dataverse\
+        \ に保存されているデータを外部の顧客や利用者に安全に公開することができる外部向けビジネスサイトを作成できます。これにより、顧客がポータル経由で自分のデータを直接参照・操作できます。\n\
+        \n一方で、\n\n- **ビジネス プロセスの自動化** は Power Automate の役割であり、Power Pages の直接機能ではありません。\n\
+        - **テンプレートからのドキュメントの作成** は Power Pages の機能対象外です。\n- **ドキュメントからのデータの抽出** は\
+        \ AI Builder の機能領域であり、Power Pages ではありません。\n\n#### 理解を深めるポイント\n\n- Power Pages\
+        \ は「外部向けの安全でデータ駆動型のWebサイトをローコードで作れる」という特徴を最大限生かせるツールです。\n- Dataverseデータの公開を容易にし、顧客とのインタラクションを可能にします。\n\
+        - Power Automate や AI Builder と組み合わせることで、より高度な自動化やデータ処理も可能になりますが、直接の機能ではない点を区別して理解しましょう。\n\
+        \nこの設問は、Power Pagesの役割を他のPower Platformコンポーネントと混同せずに把握するための基礎知識を問う重要な内容です。\n\
+        \n- [1] https://learn.microsoft.com/en-us/power-pages/capabilities\n- [2]\
+        \ https://trellispoint.com/blog/microsoft-power-pages-explained-features-use-cases-and-pricing\n\
+        - [3] https://learn.microsoft.com/ja-jp/power-platform/release-plan/2025wave1/power-pages/\n\
+        - [4] https://learn.microsoft.com/en-us/power-pages/introduction\n- [5] https://www.withum.com/resources/microsoft-power-pages-pricing-licensing-capabilities-benefits/\n\
+        - [6] https://techcommunity.microsoft.com/blog/nonprofittechies/microsoft-power-pages/3697276\n\
+        - [7] https://www.rishabhsoft.com/blog/microsoft-power-pages\n- [8] https://akitais.com/news/guide-power-pages-features-pricing-use-cases/\n\
+        - [9] https://www.dev4side.com/en/blog/microsoft-power-pages\n- [10] https://www.velosio.com/blog/microsoft-power-pages-pricing-capabilities-and-benefits/\n\
+        \n\n\n\n-----"
   - 021_title: 質問 02/50：
-    022_line: 000138
+    022_line: 000180
     023_contents:
     - 031_question: '新しい Microsoft Power Platform 環境で Power Pages Web サイトを作成する予定です。
 
@@ -202,19 +212,29 @@
 
         - [Microsoft Power Automate の機能を示す - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/demonstrate-capabilities-microsoft-power-pages/)
 
-        - [Power Pages テンプレート](https://learn.microsoft.com/ja-jp/power-pages/templates/)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [Power Pages テンプレート](https://learn.microsoft.com/ja-jp/power-pages/templates/)'
+    - 035_supplements: "### 補足：新しい Microsoft Power Platform 環境で Power Pages Web サイトを作成する場合\n\
+        回答\n\n- シナリオベース\n- サイト デザイン\n\n#### 設問の意図・目的と解説\n\nこの設問は、**Power Pages でWebサイトを迅速に構築するために利用可能なテンプレートの種類や特徴を理解しているかを確認するもの**です。\n\
+        \n#### 各テンプレートの特徴\n\n- **シナリオベース テンプレート**  \n  既に完成されたビジネスシナリオに基づくテンプレートで、たとえば申請受付や予約管理など、具体的で一般的な業務要件を満たすWebサイト構成が用意されています。\
+        \  \n  これを使うことで、要件に即したサイトの素早い立ち上げが可能です。\n\n- **サイト デザイン テンプレート**  \n  色やレイアウトなど視覚デザインを中心に構成された複数ページのサイト雛形です。\
+        \  \n  これにより、デザイン性の高いWebサイトを効率良く作成できます。\n\n- **空白ページ テンプレート**  \n  最小限の設定でホームページのみが用意されたテンプレートで、ほぼすべてのページやコンテンツを一から作成する必要があり、時間がかかります。\n\
+        \n- **Dynamics 365 テンプレート**  \n  Dynamics 365 関連アプリが環境にインストールされていることが前提で、利用可能環境が限定されるため、一般的な迅速構築のテンプレートには適していません。\n\
+        \n#### 理解を深めるポイント\n\n- 新規Webサイトを素早く立ち上げるには、完成度と使いやすさが高い**「シナリオベース」**もしくは**「サイト\
+        \ デザイン」**テンプレートの活用が効果的です。  \n- **「空白ページ」**は自由度は高いものの構築時間がかかるため、即時対応には向きません。\
+        \  \n- **「Dynamics 365」**テンプレートは特定用途・条件があり、汎用的ではありません。\n\nこの設問を通じて、Power Pages\
+        \ におけるテンプレート選択の考え方と、作成スピードや目的に応じた最適なテンプレートの選び方を理解することが求められています。\n\n【参考情報】\
+        \  \nMicrosoft公式ドキュメントによると、Power Pagesのテンプレートには、**空白ページ（Blank）、シナリオベース（Scenario-based）、サイトデザイン（Starter\
+        \ layout）、Dynamics 365連携テンプレート**などがあり、サイト作成のスピードアップには「シナリオベース」と「サイト デザイン」テンプレートが推奨されています[1][3][6]。\n\
+        \n- [1] https://learn.microsoft.com/ja-jp/power-pages/configure/web-templates\n\
+        - [2] https://learn.microsoft.com/ja-jp/power-pages/configure/page-templates\n\
+        - [3] https://learn.microsoft.com/ja-jp/power-pages/templates/\n- [4] https://www.qes.co.jp/media/PowerPages/a331\n\
+        - [5] https://business.ntt-east.co.jp/content/cloudsolution/column-497.html\n\
+        - [6] https://deepcom.co.jp/power_pages/\n- [7] https://learn.microsoft.com/ja-jp/power-apps/maker/portals/configure/page-templates\n\
+        - [8] https://deepcom.co.jp/power_pages_making/\n- [9] https://learn.microsoft.com/ja-jp/power-pages/configure/custom-page-layouts\n\
+        - [10] https://qiita.com/MakotoIshikawa/items/1c9c3e5d002c7ce8f1fc\n\n\n\n\
+        \n-----"
   - 021_title: 質問 03/50：
-    022_line: 000178
+    022_line: '000267'
     023_contents:
     - 031_question: 'ある小売店のマネージャーは、注文の追跡を希望している顧客にセルフサービス ソリューションを提供したいと考えています。
 
@@ -238,19 +258,26 @@
 
         - [Microsoft Power Automate の機能を示す - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/demonstrate-capabilities-microsoft-power-pages/)
 
-        - [Power Pages とは](https://learn.microsoft.com/ja-jp/power-apps/maker/portals/overview)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [Power Pages とは](https://learn.microsoft.com/ja-jp/power-apps/maker/portals/overview)'
+    - 035_supplements: "### 補足：顧客向け注文追跡セルフサービスの推奨ソリューション\n回答\n\n- Power Pages を使用した\
+        \ Web サイト ポータル\n\n#### 設問の意図・目的と解説\n\nこの設問は、「顧客に対して注文の追跡をセルフサービスで可能にするには、Microsoft\
+        \ Power Platformのどのコンポーネントが適しているか」を問うものです。\n\n#### ポイント解説\n\n- **Power Pages（Webサイトポータル）**\
+        \  \n  Power Pages は外部ユーザー（顧客や取引先）向けに安全なWebサイトをローコードで作成できるツールです。顧客が自分自身の注文状況などの情報をポータル上で確認・操作できるセルフサービス環境を構築するのに最適です。\
+        \  \n  Power PagesはDataverseと連携し、顧客情報や注文データを安全に外部に公開しながら顧客操作を可能にします。\n\n-\
+        \ **Power Apps（モデル駆動型・キャンバスアプリ）**  \n  これらは主に社内の従業員や関係者向けのアプリ開発プラットフォームであり、外部顧客向けセルフサービス用途には一般的に向いていません。\n\
+        \n- **Power BI ダッシュボード**  \n  これはデータ分析・可視化に特化したツールであり、顧客が注文を直接操作・追跡するトランザクション操作には適さないため、このシナリオには不適切です。\n\
+        \n#### まとめ\n\nPower Pages を使用すると、顧客が自身の注文情報を閲覧・管理できるポータルサイトを短期間で構築でき、社外ユーザー向けセルフサービス環境を簡単に提供できます。このため、小売店のマネージャーが顧客に注文追跡のセルフサービスを提供したい場合に最も推奨されるソリューションです。\n\
+        \n【参考】  \n- Power Pagesは外部顧客向けポータル作成に特化し、安全でカスタマイズ可能なローコード環境を提供します[2][5][10]。\
+        \  \n- 内部利用向けのPower Appsと異なり、顧客向けの注文追跡セルフサービスに最適な設計となっています[2][3].\n\n- [1]\
+        \ https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/sales-marketing/customer-portal-setup\n\
+        - [2] https://www.isi-grp.co.jp/powerplatform/usage/about-power-pages\n- [3]\
+        \ https://aismiley.co.jp/ai_news/power-pages-apps-explanation/\n- [4] https://www.qes.co.jp/media/PowerPages/a313\n\
+        - [5] https://www.roit.co.jp/blog/2024122301.html\n- [6] https://www.microsoft.com/ja-jp/power-platform/products/power-pages\n\
+        - [7] https://www.cloud-for-all.com/blog/licensing-and-power-apps-portals\n\
+        - [8] https://syscomgs.com/ja/client-story-microsoft-power-pages/\n- [9] https://business.ntt-east.co.jp/content/cloudsolution/column-497.html\n\
+        - [10] https://deepcom.co.jp/power_apps_portal/\n\n\n\n\n-----"
   - 021_title: 質問 04/50：
-    022_line: '000216'
+    022_line: '000344'
     023_contents:
     - 031_question: '管理者が休暇申請を承認または拒否できるように、Power Automate フローを作成する必要があります。
 
@@ -267,15 +294,26 @@
     - 033_answer: '- ビジネス プロセス フロー
 
         - クラウド フロー'
-    - 034_details: '#### 補足：
-
-
-
-
-
-        -----'
+    - 034_details: ''
+    - 035_supplements: "### 補足：管理者による休暇申請承認フローの種類\n回答\n\n- ビジネス プロセス フロー  \n- クラウド\
+        \ フロー\n\n#### 設問の意図・目的と解説\n\nこの設問は、休暇申請の承認や拒否というビジネスプロセスの自動化に適したPower Automateのフローの種類を理解しているかを問うものです。\n\
+        \n#### 各フローの特徴と役割\n\n- **ビジネス プロセス フロー**  \n  業務の進行ステップをユーザーに案内したり、申請の承認プロセスの段階を管理したりするのに適しています。管理者が休暇申請を確認し、承認または拒否を行う意思決定の流れをわかりやすく作成・管理する役割を担います。\n\
+        \n- **クラウド フロー**  \n  クラウドベースでトリガー（例: 休暇申請の送信）に応じて承認依頼の通知を自動発信したり、管理者の承認レスポンスを受けてデータベースを更新するなどの自動処理を実現します。メール送信や通知、データ更新など多様な自動化アクションを実行可能です。\n\
+        \n- **Desktop フロー**  \n  PC上の画面操作を自動化するRPA（ロボティックプロセスオートメーション）用であり、通常の申請承認シナリオには適していません。\n\
+        \n- **フロー テンプレート**  \n  特定のワークフローの「雛形」として使うもので、フローの種類ではありません。機能分類としては不適切です。\n\
+        \n#### 理解を深めるポイント\n\n- 休暇申請の承認業務は「人が意思決定を行う段階的なプロセス」であるため、ビジネスプロセスフローのガイド機能が重要となります。\n\
+        - 承認リクエストの送信や通知、記録更新などはクラウドフローの自動化アクションで対応します。\n- 両者を組み合わせることで、人の判断を含むワークフローが効率的かつ確実に動きます。\n\
+        - Power Automateのフローの種類は役割が異なり、適切なフローの選択が自動化成功の鍵となります。\n\nこの問題は、ビジネスプロセスの自動化に向けてPower\
+        \ Automateの様々なフローの特徴と適材適所の使い分けを理解するための重要な確認項目です。[1][2]\n\n- [1] https://www.teijitaisya.com/powerautomate-5typeflow/\n\
+        - [2] https://daybreak-lab.com/powerautomate-5flows/\n- [3] https://www.artisan.jp.net/blog/power-automate-flow-types-1/\n\
+        - [4] https://learn.microsoft.com/ja-jp/power-platform/admin/power-automate-licensing/types\n\
+        - [5] https://www.cm-net.co.jp/blog/power-automate/\n- [6] https://powerautomate-desktop.com/cloud-flow/\n\
+        - [7] https://www.artisan.jp.net/blog/power-automate-flow-types-2/\n- [8]\
+        \ https://natic.sojitz-ti.com/insight/00063-powerautomate/\n- [9] https://www.geekfujiwara.com/tech/powerplatform/2128/\n\
+        - [10] https://rpa.hideharublog.com/power-automate-cloud-desktop/\n\n\n\n\n\
+        -----"
   - 021_title: 質問 05/50：
-    022_line: 000249
+    022_line: '000420'
     023_contents:
     - 031_question: 'ある会社では、Power Automate を使用してアプリケーションを統合しています。
 
@@ -304,19 +342,30 @@
 
         - [Microsoft Power Automate の機能を示す - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/demonstrate-capabilities-microsoft-power-automate/)
 
-        - [デスクトップ フローの概要 - Power Automate | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-automate/desktop-flows/introduction)
+        - [デスクトップ フローの概要 - Power Automate | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-automate/desktop-flows/introduction)'
+    - 035_supplements: '### 補足：レガシ アプリケーション統合に適したPower Automateフローの種類
+
+        回答
 
 
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - Desktop フロー'
+    - 035_supplements: "### 設問の意図・目的と解説\nこの設問は「APIが存在しないレガシアプリ（キーボードやマウス操作などGUIしか持たないアプリ）をPower\
+        \ Automateでどう自動化するか」というポイントが問われています。\n\n#### 各選択肢の違い\n\n- **Desktop フロー**\n\
+        \    - Power AutomateのRPA機能を利用し、PC上のアプリケーションの画面操作（キーボード、マウス、ウィンドウ操作）を自動化できます[1][2][4]。\n\
+        \    - APIの有無にかかわらず、実際の操作を記録・再生するため、社内外の古いアプリでも対応可能です。\n    - 例えば、Excelや自社開発の画面しかないアプリのデータ自動入力・取得など、多岐にわたる自動化に使われています[2][10]。\n\
+        \n- **クラウドフロー（インスタント/スケジュール済み）**\n    - REST APIやコネクタを使った自動化であり、クラウドサービスやモダンなAPIを持つシステムに適しています。\n\
+        \    - APIが存在しないレガシアプリの操作はできません。\n\n- **ビジネスプロセスフロー**\n    - どちらかといえば「意思決定・業務手順ガイド」を目的にしたもので、直接アプリケーション操作はできません。\n\
+        \n#### 理解を深めるポイント\n\n- 「API非対応のアプリはRPA（Desktopフロー）が有効」という原則を押さえておきましょう。\n\
+        - Desktopフローは「アプリ画面そのものを人の代わりに動かす」ので、最終手段の自動化技術とされます。\n- Power Automateの用途（クラウドフロー、デスクトップフロー、ビジネスプロセスフロー）を、利用シーンと繋げて正確に区別できることが本設問の狙いです。\n\
+        \n- [1] https://learn.microsoft.com/ja-jp/power-automate/desktop-flows/introduction\n\
+        - [2] https://tonari-it.com/power-automate-desktop-run-application/\n- [3]\
+        \ https://tonari-it.com/power-automate-desktop-flow/\n- [4] https://learn.microsoft.com/ja-jp/power-automate/desktop-flows/recording-flow\n\
+        - [5] https://www.youtube.com/watch?v=8LEVhm2h8c0\n- [6] https://cacrpa.com/column/20210331-microsoft-power-automate-and-power-automate-desktop/\n\
+        - [7] https://digimarl.com/syllabus/how-to-use-power-automate/\n- [8] https://blog.marukentokyo.jp/pad_cando\n\
+        - [9] https://gihyo.jp/article/2022/07/basics-of-power-automate\n- [10] https://note.com/46u/n/n7b9c0dabd806\n\
+        \n\n\n\n-----"
   - 021_title: 質問 06/50：
-    022_line: 000290
+    022_line: '000500'
     023_contents:
     - 031_question: 'ある会社では、ドキュメントを PDF 添付ファイルとして電子メールで受け取ります。
 
@@ -359,19 +408,26 @@
 
         - [Microsoft Power Automate の機能を示す - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/demonstrate-capabilities-microsoft-power-automate/)
 
-        - [Power Automate で AI Builder を使用する](https://learn.microsoft.com/ja-jp/power-automate/use-ai-builder)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [Power Automate で AI Builder を使用する](https://learn.microsoft.com/ja-jp/power-automate/use-ai-builder)'
+    - 035_supplements: "### 補足：PDF添付ファイル付きメールの自動処理に必要なコンポーネント\n回答\n\n- AIビルダー\n- Power\
+        \ Automate クラウド フロー\n\n#### 設問の意図・目的と解説\n\nこの設問は「受信したPDF書類を、人が操作せずに自動的に処理する仕組み」をPower\
+        \ Platformでどう構成するかを問うものです。\n\n#### 各選択肢のポイント\n\n- **AIビルダー**  \n  AI Builder\
+        \ には「ドキュメント処理モデル」があり、PDF書類から特定の情報やデータを自動抽出できます。たとえば、請求書番号や金額などの項目を学習させると、同じフォーマットの書類から自動で値を取り出せます[1][2][5]。\n\
+        \n- **Power Automate クラウド フロー**  \n  受信メールの監視や添付ファイルの抽出、抽出したファイルをAIビルダーで解析する連携処理など、自動化ワークフローを実現します。人の操作なしで「ファイル受信→AIビルダー呼び出し→自動処理」という一連の自動化が可能です[1][5][6]。\n\
+        \n- **キャンバスアプリ/Power BI/コパイロットスタジオ**  \n  これらは、ユーザーの画面操作やデータの可視化、会話型AIなどが主な用途であり「受信した書類の自動処理」には直接利用されません。\n\
+        \n#### 理解を深めるポイント\n\n- **AIビルダーとPower Automateクラウドフローの組み合わせで、「メール受信からデータ抽出までの業務を完全自動化」**\
+        \ できます。\n- AIビルダーをPower Automate内からアクションとして呼び出し、電子メールの受信トリガーで自動的にPDFを解析し、抽出データを他システムへ連携可能です。\n\
+        - Office 365標準環境でも利用でき、事務作業の効率化・誤入力防止などに大きな効果があります。\n\n業務自動化の全体像と、各Power Platform製品の違い・得意領域がセットで理解できるようになることが、この設問の学習意図です。\
+        \ \n\n---\n\n- [1] https://learn.microsoft.com/en-us/ai-builder/form-processing-model-in-flow\n\
+        - [2] https://learn.microsoft.com/en-us/ai-builder/create-form-processing-model\n\
+        - [3] https://www.youtube.com/watch?v=EdTDWFHMV2U\n- [4] https://www.youtube.com/watch?v=tmxvLAT3C7s\n\
+        - [5] https://dva81.github.io/blog/2024/AI-builder-quick-guide/\n- [6] https://www.youtube.com/watch?v=y_ZyjpJ33iU\n\
+        - [7] https://www.youtube.com/watch?v=XM82xP40i9k\n- [8] https://www.qes.co.jp/media/powerplatform/a488\n\
+        - [9] https://www.linkedin.com/pulse/step-by-step-guide-document-tagging-automation-using-ai-builder-power-szvqf\n\
+        - [10] https://community.powerplatform.com/forums/thread/details/?threadid=7e092d96-b480-40d8-ae12-c12ec133989b\n\
+        \n\n\n\n-----"
   - 021_title: 質問 07/50：
-    022_line: '000340'
+    022_line: 000591
     023_contents:
     - 031_question: 'ある販売会社では、Microsoft Power Platform と Dataverse を使用して、日常業務の管理に役立つソリューションを構築する予定です。
 
@@ -402,11 +458,68 @@
 
         - [Microsoft Power Automate の機能を示す - トレーニング |Microsoft Learn](https://learn.microsoft.com/training/modules/introduction-power-automate/)
 
-        - [トリガーの概要 - ドキュメントスケジュールに基づいてフローを実行する - ドキュメント](https://learn.microsoft.com/ja-jp/power-automate/run-scheduled-tasks?tabs=using-copilot)
+        - [トリガーの概要 - ドキュメントスケジュールに基づいてフローを実行する - ドキュメント](https://learn.microsoft.com/ja-jp/power-automate/run-scheduled-tasks?tabs=using-copilot)'
+    - 035_supplements: '### 補足：勤務日の予定に対する完了していない前日の予定を自動キャンセルするフローの種類
+
+        回答
 
 
+        - 毎日特定の時刻に実行されるスケジュールされたフロー
 
-        #### 補足：
+
+        #### 設問の意図・目的と解説
+
+
+        この設問は「完了していない前日の予定を毎勤務日の終わりに自動的に識別してキャンセルする」プロセスを自動化するために、どの種類の Power Automate
+        クラウドフローを使うのが最適かを問うものです。
+
+
+        #### ポイント
+
+
+        - **スケジュールされたフロー**は、決まった日時に自動で実行されるため、毎日勤務終了時刻などに設定して、前日の予定を一括で検索・処理するのに最適です。
+
+        - 時刻トリガーで一括処理が可能なため、多数のレコードを対象に一気に判定し、更新やキャンセルなどができます。
+
+        - **予定が更新されたときにトリガーされる自動フロー**は、都度予定の変更に反応しますが、「前日の未完了予定の一括キャンセル」には不向きです。
+
+        - **インスタントフロー（ボタン押下）**はユーザー操作が必須であり、自動処理の要件に合いません。
+
+        - **新しい予定が作成されたときにトリガーされる自動フロー**も特定の作成イベントで動き、既存の日付分を後から処理することには向いていません。
+
+
+        #### 理解を深めるポイント
+
+
+        - 定期的かつ自動に実行される処理が求められる際は「スケジュール済みクラウドフロー」が基本の選択肢になること。
+
+        - Power Automate ではスケジュールフローのトリガーを使って、自分で指定した時刻・頻度でフローを自動実行し、多数のレコードに対し一括判断・処理ができます。
+
+        - 実務で「毎日定時に状態のチェックやメンテナンス処理を行いたい」シナリオではスケジュールフローが非常に有効です。
+
+
+        この設問を通じて、処理の発動タイミング（トリガー）の選択が、業務ニーズに適した自動化の鍵となる点を理解しましょう。
+
+
+        - [1] https://mofumofupower.hatenablog.com/entry/2020/04/17/180000
+
+        - [2] https://support.asahi-robo.jp/tutorial/power-automate/schedule
+
+        - [3] https://www.kmds.jp/pc_kowaza/17-powerautomate-schedule-tips/
+
+        - [4] https://learn.microsoft.com/ja-jp/power-automate/run-scheduled-tasks
+
+        - [5] https://note.com/socionet/n/n1ab3d7c3ac34
+
+        - [6] https://sonorite-sxs.jp/2024/11/22/power-automate%E3%81%AE%E3%83%95%E3%83%AD%E3%83%BC%E4%BD%9C%E6%88%90%E3%81%AE%E5%9F%BA%E7%A4%8E-%EF%BD%9E%E3%83%95%E3%83%AD%E3%83%BC%E3%81%AE%E7%A8%AE%E9%A1%9E%EF%BD%9E/
+
+        - [7] https://techblog.ap-com.co.jp/entry/2023/07/13/143259
+
+        - [8] https://www.artisan.jp.net/blog/power-automate-flow-types-1/
+
+        - [9] https://blog.jbs.co.jp/entry/2023/09/20/123211
+
+        - [10] https://qiita.com/Sanwa_Paint/items/076018ada5ee0bf20314
 
 
 
@@ -414,7 +527,7 @@
 
         -----'
   - 021_title: 質問 08/50：
-    022_line: 000382
+    022_line: 000668
     023_contents:
     - 031_question: 'ある会社では、Power Automate を使用して業務のデジタル化を支援することを計画しています。
 
@@ -447,19 +560,29 @@
 
         - [Power Automate の概要 - ドキュメント](https://learn.microsoft.com/ja-jp/power-automate/getting-started)
 
-        - [フローの作成 - ドキュメント](https://learn.microsoft.com/ja-jp/power-automate/getting-started#create-your-first-flow)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [フローの作成 - ドキュメント](https://learn.microsoft.com/ja-jp/power-automate/getting-started#create-your-first-flow)'
+    - 035_supplements: "### 補足：最新API非対応アプリで請求書作成に使うPower Automateフローの種類\n回答\n\n- デスクトップ\
+        \ フロー\n\n#### 設問の意図・目的と解説\n\nこの設問は「最新APIを備えていない、つまりAPI連携ができないレガシーなアプリケーションの操作自動化のためにどの種類のPower\
+        \ Automateフローを使うべきか」を問うものです。\n\n#### 各選択肢の特徴と違い\n\n- **デスクトップ フロー**  \n  -\
+        \ RPA（ロボティック・プロセス・オートメーション）技術を使い、キーボードやマウス操作などユーザーが行う画面操作を記録・再生して自動化します。 \
+        \ \n  - APIがない古いアプリでも画面上の操作を代行できるため、最新API非対応の請求書アプリの処理自動化に最適です。  \n  - 実際のアプリ操作の手順を記録し、フローとして繰り返し実行できます。\
+        \  \n\n- **自動クラウド フロー / スケジュールされたクラウド フロー**  \n  - これらはAPIやコネクタを利用してクラウドサービスのデータや操作を自動化します。\
+        \  \n  - APIを持たない古いアプリの操作には対応できません。  \n\n- **ビジネス プロセス フロー**  \n  - 業務プロセスのステージ管理やユーザーの操作ガイド用であり、実際のアプリ操作の自動化手段ではありません。\
+        \  \n\n#### 理解を深めるポイント\n\n- 最新APIを提供していないアプリケーションの自動化では、**画面操作を模倣するデスクトップフロー（RPA）**が唯一の手段と言えます。\
+        \  \n- デスクトップフローはPower Automateの中でPC操作そのものを自動化するフローで、これによりAPI連携なしでも業務アプリのデジタル化が可能です。\
+        \  \n- これに対し、クラウドフローはAPI連携が前提なのでAPI非対応アプリの処理には不向きです。  \n- ビジネスプロセスフローは操作ではなく業務フロー管理に特化しているため、実際の請求書自動作成には使いません。\n\
+        \nこの設問を通じて、Power Automateのフロー種類を業務ニーズに即して使い分ける理解が深まります。\n\n#### 参考情報\n\nPower\
+        \ Automate デスクトップフローは、デスクトップアプリのユーザー操作を記録・再生することでAPI非対応アプリの自動化を実現し、請求書作成のようなレガシー業務のデジタル化に適しています[1][2][3][6]。\n\
+        \n- [1] https://learn.microsoft.com/ja-jp/power-automate/desktop-flows/create-flow\n\
+        - [2] https://powerautomate-desktop.com/renkei/\n- [3] https://jpdynamicscrm.github.io/blog/powerautomate/power-automate-desktop-attand-automation/\n\
+        - [4] https://www.powerplatformknowledge.com/rpa-powerautomatedesktop-basic/\n\
+        - [5] https://powerautomate-s.com/run-desktop-flow/\n- [6] https://learn.microsoft.com/ja-jp/power-automate/desktop-flows/introduction\n\
+        - [7] https://gihyo.jp/article/2022/08/create-flow-in-power-automate-for-desktop\n\
+        - [8] https://www.teijitaisya.com/powerautomatedesktop-howto/\n- [9] https://www.cm-net.co.jp/blog/power-automate/\n\
+        - [10] https://tonari-it.com/power-automate-desktop-create-flow/\n\n\n\n\n\
+        -----"
   - 021_title: 質問 09/50：
-    022_line: '000425'
+    022_line: '000757'
     023_contents:
     - 031_question: 'ブログ サイトにコメントが投稿されるたびにトリガーされる Power Automate フローがあります。
 
@@ -492,19 +615,28 @@
 
         - [Microsoft Power Automate の機能を示す - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/demonstrate-capabilities-microsoft-power-automate/)
 
-        - [式関数のリファレンス ガイド - Azure Logic Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/logic-apps/expression-functions-reference)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [式関数のリファレンス ガイド - Azure Logic Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/logic-apps/expression-functions-reference)'
+    - 035_supplements: "### 補足：Power Automate フローでサブスクライバーIDを大文字で保存するために使う関数\n回答\n\
+        \n- 表現\n\n#### 設問の意図・目的と解説\n\nこの設問は、Power Automate で「変換処理などのデータ操作を行う際に使う機能」が理解できているかを確認しています。\n\
+        \n- **表現（Expression）** は Power Automate のフロー内で使用する式や関数のことを指し、文字列の変換や数値計算などのロジックを実装できます。\n\
+        - 具体的には、`toUpper()` 関数を使用して、入力されたサブスクライバーIDを大文字に変換し、保存時に反映させることが可能です。\n\n\
+        一方、\n\n- **状態（State）** は通常、ワークフローの実行状況などを示す概念であり、データ変換には使いません。\n- **トリガー（Trigger）**\
+        \ はフローを開始する条件やイベントのことであり、変換や保存処理とは異なります。\n- **テンプレート（Template）** は既存のフローのひな型を指し、直接機能ではありません。\n\
+        \n#### 理解を深めるポイント\n\n- Power Automate の「式（表現）」を使えば、データの大文字・小文字変換や文字列の操作が自在に可能です。\n\
+        - たとえば、`toUpper(triggerBody()?['subscriberID'])` のように式を書いて、サブスクライバーIDフィールドを大文字化します。\n\
+        - フロー内の条件分岐やデータ変換はすべて「表現」で実装するため、複雑な業務ロジックも組み込みやすくなります。\n\n以上のことから、「サブスクライバー\
+        \ ID を大文字で保存する」という要件は、Power Automate のフロー内で「表現」を使って実現するのが正解です。\n\n【参考】  \n\
+        - Power Automate の式関数リファレンスでは `toUpper()` 関数が文字列を大文字に変える定番関数として紹介されています[1][5].\
+        \  \n- 式（表現）は条件判定やデータ整形の基本ツールとして広く使われます[1][5].\n\n- [1] https://www.teijitaisya.com/pad-text-other/\n\
+        - [2] https://blog-tips.sekenkodqx.jp/2022/01/11/power-automate-upper-small-case/\n\
+        - [3] https://blog-tips.sekenkodqx.jp/2022/03/29/power-automate-function-to-lower/\n\
+        - [4] https://www.rpaone.jp/pad/text\n- [5] https://learn.microsoft.com/ja-jp/azure/logic-apps/workflow-definition-language-functions-reference\n\
+        - [6] https://learn.microsoft.com/ja-jp/azure/logic-apps/expression-functions-reference\n\
+        - [7] https://qiita.com/hrfmjp/items/c804bf5618227d15a6ae\n- [8] https://mochi-pan.com/date-and-time-format/\n\
+        - [9] https://gakushikiweblog.com/power-automate-desktop-text\n- [10] https://dekiru.net/article/4507/\n\
+        \n\n\n-----"
   - 021_title: 質問 10/50：
-    022_line: 000468
+    022_line: 000839
     023_contents:
     - 031_question: 'ある会社に新しい従業員の一覧があります。
 
@@ -535,19 +667,24 @@
 
         - [Microsoft Power Automate の機能を示す - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/demonstrate-capabilities-microsoft-power-automate/)
 
-        - [Power Automate でスケジュールに従ってフローを実行する - Power Automate | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-automate/run-scheduled-tasks?tabs=using-copilot)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [Power Automate でスケジュールに従ってフローを実行する - Power Automate | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-automate/run-scheduled-tasks?tabs=using-copilot)'
+    - 035_supplements: "### 補足：新しい従業員に毎日ウェルカムメッセージを自動送信するフローの種類\n回答\n\n- スケジュール済みクラウド\
+        \ フロー\n\n#### 設問の意図・目的と解説\n\nこの設問は、Power Automate におけるフローの種類の中で、特定のタイミング（この場合は「毎日」）に自動で処理を実行したい場合に適したフローの選択を理解しているかを問うものです。\n\
+        \n#### 各フローの特徴と選択理由\n\n- **スケジュール済みクラウド フロー**  \n  あらかじめ設定した日時、間隔に基づいて自動実行されるフローです。毎日決まった時間に繰り返し処理を行う必要がある場合に最適です。今回のケースでは、毎日新しい従業員の一覧を自動でチェックして、Teamsにウェルカムメッセージを送信する処理に使います。\n\
+        \n- **インスタント クラウド フロー**  \n  ユーザーが任意のタイミングで手動起動するフローであり、自動実行には不向きです。\n\n-\
+        \ **自動化したクラウド フロー**  \n  ある特定のイベント（トリガー）発生時に自動実行されます。今回は新しい従業員の情報が「一覧でまとめて日次チェック」されるためイベントベースの即時実行とは異なり、スケジュール実行が向いています。\n\
+        \n- **ビジネス プロセス フロー**  \n  ユーザーを業務プロセスの段階に沿って案内するためのもので、トリガーや自動実行の役割はありません。\n\
+        \n#### 理解を深めるポイント\n\n- 反復的かつ定期的に実行する必要のある処理は、**スケジュール済みクラウドフロー**で解決するのが基本です。\n\
+        - 自動で日次処理を行うケースでは、ユーザーの介入なくフローがスタートするため運用負荷が低いという利点もあります。\n- Power Automateのフローはトリガー方式に応じて使い分けることで、効率的な業務自動化が可能になります。\n\
+        \n参考文献によると、スケジュール済みクラウドフローは「指定した日時や間隔で定期的にフローを自動実行」し、時間ベースの業務自動化に適しています[1][2][3][7]。\n\
+        \n- [1] https://daybreak-lab.com/powerautomate-5flows/\n- [2] https://sonorite-sxs.jp/2024/11/22/power-automate%E3%81%AE%E3%83%95%E3%83%AD%E3%83%BC%E4%BD%9C%E6%88%90%E3%81%AE%E5%9F%BA%E7%A4%8E-%EF%BD%9E%E3%83%95%E3%83%AD%E3%83%BC%E3%81%AE%E7%A8%AE%E9%A1%9E%EF%BD%9E/\n\
+        - [3] https://www.teijitaisya.com/powerautomate-5typeflow/\n- [4] https://www.ctcs.co.jp/special/detail/107/\n\
+        - [5] https://www.cm-net.co.jp/blog/power-automate/\n- [6] https://www.artisan.jp.net/blog/power-automate-flow-types-1/\n\
+        - [7] https://learn.microsoft.com/ja-jp/power-automate/run-scheduled-tasks\n\
+        - [8] https://mochi-pan.com/what-is-powerautomate/\n- [9] https://blog.marukentokyo.jp/pad_paid\n\
+        - [10] https://www.alta.co.jp/blog/post-11437/\n\n\n\n\n-----"
   - 021_title: 質問 11/50：
-    022_line: '000510'
+    022_line: 000922
     023_contents:
     - 031_question: 'ある会社では Microsoft Power Platform を使用しています。
 
@@ -592,7 +729,7 @@
 
         -----'
   - 021_title: 質問 12/50：
-    022_line: '000553'
+    022_line: 000965
     023_contents:
     - 031_question: 'ある会社が手紙を受け取っています。
 
@@ -632,7 +769,7 @@
 
         -----'
   - 021_title: 質問 13/50：
-    022_line: 000594
+    022_line: '001006'
     023_contents:
     - 031_question: 'ある会社では Microsoft Power Platform を使用してアプリを作成することを計画しています。
 
@@ -676,7 +813,7 @@
 
         -----'
   - 021_title: 質問 14/50：
-    022_line: '000636'
+    022_line: 001048
     023_contents:
     - 031_question: 'ある会社では Microsoft Dynamics 365 Sales を使用して販売プロセスを管理しています。
 
@@ -707,7 +844,7 @@
         - [Power BI でレポートとダッシュボードを作成する - ドキュメント](https://learn.microsoft.com/ja-jp/power-bi/create-reports/)\n\
         \n\n#### 補足：\n\n\n\n\n-----"
   - 021_title: 質問 15/50：
-    022_line: 000679
+    022_line: 001091
     023_contents:
     - 031_question: 'ユーザーが新しいプロジェクトを要求するためのキャンバス アプリを作成します。
 
@@ -757,7 +894,7 @@
 
         -----'
   - 021_title: 質問 16/50：
-    022_line: '000723'
+    022_line: '001135'
     023_contents:
     - 031_question: 'ある会社が Power Pages を所有しています。
 
@@ -797,7 +934,7 @@
 
         -----'
   - 021_title: 質問 17/50：
-    022_line: '000765'
+    022_line: '001177'
     023_contents:
     - 031_question: 'ある会社では Microsoft Power Platform を使用しています。
 
@@ -847,7 +984,7 @@
 
         -----'
   - 021_title: 質問 18/50：
-    022_line: 000808
+    022_line: '001220'
     023_contents:
     - 031_question: 'ある会社には、ニューヨーク、パリ、マドリードに 3 つの支店があります。
 
@@ -885,7 +1022,7 @@
 
         -----'
   - 021_title: 質問 19/50：
-    022_line: 000849
+    022_line: '001261'
     023_contents:
     - 031_question: 'ある会社では、Microsoft Power Platform の単一環境内で一連のモデル駆動型アプリを使用しています。
 
@@ -925,7 +1062,7 @@
 
         -----'
   - 021_title: 質問 20/50：
-    022_line: 000890
+    022_line: '001302'
     023_contents:
     - 031_question: '従業員には新しい環境が必要です。
 
@@ -966,7 +1103,7 @@
 
         -----'
   - 021_title: 質問 21/50：
-    022_line: 000932
+    022_line: '001344'
     023_contents:
     - 031_question: 'ある会社は、サードパーティ製コネクタを使用するアプリでは会社のデータを使用しないことを必要としています。
 
@@ -1011,7 +1148,7 @@
 
         -----'
   - 021_title: 質問 22/50：
-    022_line: 000975
+    022_line: 001387
     023_contents:
     - 031_question: 'ある会社では Microsoft 365 を使用しています。 社内のすべてのユーザーに、Microsoft 365 ライセンスが割り当てられています。
 
@@ -1065,7 +1202,7 @@
 
         -----'
   - 021_title: 質問 23/50：
-    022_line: '001020'
+    022_line: '001432'
     023_contents:
     - 031_question: 'Microsoft Copilot Studio copilot をビルドします。 あなたは、コパイロットにトピックを追加します。
 
@@ -1092,7 +1229,7 @@
         - [トピックを使用してチャットボットの会話を設計する - Power Virtual Agents | Microsoft Learn](https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/authoring-create-edit-topics?tabs=webApp)\n\
         \n\n#### 補足：\n\n\n\n\n-----"
   - 021_title: 質問 24/50：
-    022_line: '001063'
+    022_line: '001475'
     023_contents:
     - 031_question: 'Microsoft Copilot Studio copilot を作成します。
 
@@ -1119,7 +1256,7 @@
         - [エンティティを作成して使用する (ビデオを含む) - Power Virtual Agents | Microsoft Learn](https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/advanced-entities-slot-filling)\n\
         \n\n#### 補足：\n\n\n\n\n-----"
   - 021_title: 質問 25/50：
-    022_line: '001106'
+    022_line: 001518
     023_contents:
     - 031_question: 'ある会社がソーシャル プラットフォームで新製品の発売を発表します。
 
@@ -1171,7 +1308,7 @@
 
         -----'
   - 021_title: 質問 26/50：
-    022_line: '001155'
+    022_line: '001567'
     023_contents:
     - 031_question: 'ある会社には顧客セルフサービス ポータルがあります。 顧客はポータルを使用して苦情を記録します。
 
@@ -1220,7 +1357,7 @@
 
         -----'
   - 021_title: 質問 27/50：
-    022_line: '001203'
+    022_line: '001615'
     023_contents:
     - 031_question: 'Power BI レポートを編集します。
 
@@ -1261,7 +1398,7 @@
 
         -----'
   - 021_title: 質問 28/50：
-    022_line: '001245'
+    022_line: '001657'
     023_contents:
     - 031_question: 'Microsoft Dataverse から Power BI レポートを作成する予定です。
 
@@ -1304,7 +1441,7 @@
 
         -----'
   - 021_title: 質問 29/50：
-    022_line: 001287
+    022_line: 001699
     023_contents:
     - 031_question: '現在と前年の月ごとの収益比較を表示する Power BI の視覚化を作成する必要があります。
 
@@ -1342,7 +1479,7 @@
 
         -----'
   - 021_title: 質問 30/50：
-    022_line: '001326'
+    022_line: 001738
     023_contents:
     - 031_question: 'ある会社では Power BI を使用しています。
 
@@ -1381,7 +1518,7 @@
 
         -----'
   - 021_title: 質問 31/50：
-    022_line: '001367'
+    022_line: 001779
     023_contents:
     - 031_question: 'Power BI データセットにテーブルがあります。 集合縦棒グラフ ビジュアルをレポート ページに追加します。
 
@@ -1421,7 +1558,7 @@
 
         -----'
   - 021_title: 質問 32/50：
-    022_line: 001408
+    022_line: 001820
     023_contents:
     - 031_question: '営業チーム用の Power BI レポートを作成する予定です。
 
@@ -1462,7 +1599,7 @@
 
         -----'
   - 021_title: 質問 33/50：
-    022_line: 001449
+    022_line: 001861
     023_contents:
     - 031_question: 'ある会社がカンファレンスを主催します。
 
@@ -1500,7 +1637,7 @@
 
         -----'
   - 021_title: 質問 34/50：
-    022_line: 001490
+    022_line: 001902
     023_contents:
     - 031_question: 'アプリを作成します。
 
@@ -1540,7 +1677,7 @@
 
         -----'
   - 021_title: 質問 35/50：
-    022_line: '001532'
+    022_line: 001944
     023_contents:
     - 031_question: 'ある会社では Microsoft Power Platform を使用しています。
 
@@ -1585,7 +1722,7 @@
 
         -----'
   - 021_title: 質問 36/50：
-    022_line: '001575'
+    022_line: 001987
     023_contents:
     - 031_question: 'ある会社では Microsoft Power Platform を使用しています。
 
@@ -1632,7 +1769,7 @@
 
         -----'
   - 021_title: 質問 37/50：
-    022_line: 001619
+    022_line: '002031'
     023_contents:
     - 031_question: 'キャンバス アプリを作成して公開します。
 
@@ -1677,7 +1814,7 @@
 
         -----'
   - 021_title: 質問 38/50：
-    022_line: '001663'
+    022_line: '002075'
     023_contents:
     - 031_question: 'ある会社では Microsoft Power Platform を使用しています。
 
@@ -1717,7 +1854,7 @@
 
         -----'
   - 021_title: 質問 39/50：
-    022_line: '001703'
+    022_line: '002115'
     023_contents:
     - 031_question: 'オフィス文具を追跡して注文するようにキャンバス アプリを構成します。 このアプリでは、ユーザーは複数の文具を注文できます。
 
@@ -1761,7 +1898,7 @@
 
         -----'
   - 021_title: 質問 40/50：
-    022_line: '001747'
+    022_line: 002159
     023_contents:
     - 031_question: 'ある会社では Microsoft Power Platform を使用しています。 Microsoft Dataverse
         でデータをモデル化し、モデル駆動型アプリを作成します。
@@ -1806,7 +1943,7 @@
 
         -----'
   - 021_title: 質問 41/50：
-    022_line: 001789
+    022_line: '002201'
     023_contents:
     - 031_question: 'ある会社が、モデル駆動型アプリを所有しています。
 
@@ -1845,7 +1982,7 @@
 
         -----'
   - 021_title: 質問 42/50：
-    022_line: 001831
+    022_line: '002243'
     023_contents:
     - 031_question: 'ある会社では、顧客データ管理にモデル駆動型アプリを使用しています。
 
@@ -1898,7 +2035,7 @@
 
         -----'
   - 021_title: 質問 43/50：
-    022_line: 001881
+    022_line: 002293
     023_contents:
     - 031_question: 'ある会社には、販売管理モデル駆動型アプリがあります。
 
@@ -1941,7 +2078,7 @@
 
         -----'
   - 021_title: 質問 44/50：
-    022_line: 001925
+    022_line: '002337'
     023_contents:
     - 031_question: 'ある会社では、Microsoft Dataverse を使用して小売組織のデータ モデルを作成しています。 その会社は標準の連絡先テーブルを使用して顧客情報を保存しています。
 
@@ -1985,7 +2122,7 @@
 
         -----'
   - 021_title: 質問 45/50：
-    022_line: 001969
+    022_line: 002381
     023_contents:
     - 031_question: 'Microsoft Power Platform と Microsoft Dataverse を使用してソリューションを構築します。
 
@@ -2030,7 +2167,7 @@
 
         -----'
   - 021_title: 質問 46/50：
-    022_line: '002013'
+    022_line: '002425'
     023_contents:
     - 031_question: 'ある会社が Microsoft Dataverse と Microsoft Dataverse for Teams を評価しています。
 
@@ -2073,7 +2210,7 @@
 
         -----'
   - 021_title: 質問 47/50：
-    022_line: '002055'
+    022_line: '002467'
     023_contents:
     - 031_question: 'Microsoft Dataverse を使用して企業のデータ モデルを開発します。
 
@@ -2118,7 +2255,7 @@
 
         -----'
   - 021_title: 質問 48/50：
-    022_line: 002099
+    022_line: '002511'
     023_contents:
     - 031_question: 'Power Automate クラウド フローで Microsoft Teams コネクタを使用する予定です。
 
@@ -2157,7 +2294,7 @@
 
         -----'
   - 021_title: 質問 49/50：
-    022_line: 002139
+    022_line: '002551'
     023_contents:
     - 031_question: '新しいアイテムが SharePoint Online リストに追加されるたびに電子メールを送信するワークフローを構築する必要があります。
 
@@ -2204,7 +2341,7 @@
 
         -----'
   - 021_title: 質問 50/50：
-    022_line: 002183
+    022_line: 002595
     023_contents:
     - 031_question: '標準コネクタを使用する Power Automate クラウド フローを作成します。
 
@@ -2254,7 +2391,7 @@
 
         -----'
   - 021_title: 質問：
-    022_line: '002231'
+    022_line: '002643'
     023_contents:
     - 031_question: ''
     - 032_selections: []
