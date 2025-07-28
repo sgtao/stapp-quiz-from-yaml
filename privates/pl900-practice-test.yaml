@@ -1266,19 +1266,30 @@
 
         - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
 
-        - [データ損失防止について学習する – MSLearn | ドキュメント](https://learn.microsoft.com/ja-jp/purview/dlp-learn-about-dlp)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [データ損失防止について学習する – MSLearn | ドキュメント](https://learn.microsoft.com/ja-jp/purview/dlp-learn-about-dlp)'
+    - 035_supplements: "### 補足：サードパーティ製コネクタ使用時の会社データ保護に推奨される機能\n回答\n\n- データ損失防止ポリシー\n\
+        \n#### 設問の意図・目的と解説\n\nこの設問は、Microsoft Power Platformにおける**組織データの保護と制御のためのセキュリティモデル**、特にサードパーティ製コネクタの使用時に機密データを守るための適切な対策を理解しているかを問うものです。\n\
+        \n#### なぜ「データ損失防止ポリシー（DLPポリシー）」が推奨されるのか？\n\n- **データ損失防止ポリシー（DLPポリシー）**はPower\
+        \ Platformの中核的セキュリティ機能であり、**使用できるコネクタを「ビジネス用」と「非ビジネス用」に分類し、これらが同時に同じアプリやフローで使われるのを禁止する**ことで、業務上重要なデータがサードパーティの非承認コネクタを通じて流出するリスクを低減できます。\n\
+        - 具体的には、「ビジネスコネクタ」（例：SharePoint、Dataverse）と「非ビジネスコネクタ」（例：Gmail、Twitterなど）を明確に分離し、混在利用を防止します。\n\
+        - ポリシー違反が検出されると、フローやアプリは一時停止や利用不可となり、不正もしくは誤ったデータの流出を防止できます。\n\n#### 他の選択肢との違い\n\
+        \n- **テナントの分離**  \n  テナントレベルでデータの移動を制御する機能ですが、アプリやフローで同時に使用できるコネクタの組み合わせを制限するものではありません。\n\
+        \n- **エンタープライズ ポリシー**  \n  これはDataverse環境に対して適用される暗号化や管理機構に関連するもので、サードパーティコネクタ使用制限とは異なります。\n\
+        \n- **カスタマー ロックボックス**  \n  Microsoftのサポートチームが顧客データにアクセスする際に顧客が許可を与える仕組みであり、一般的なコネクタ利用制御やデータ漏洩防止機能ではありません。\n\
+        \n#### 理解を深めるポイント\n\n- DLPポリシーは**Power Platformの利用制限とデータ保護のファーストラインに位置し、組織がサードパーティ製コネクタ使用に伴うデータ漏洩リスクを管理する上で不可欠なツール**です。\n\
+        - 組織固有のニーズに合わせて、どのコネクタをどのグループに分けるかを設定し、のちのアプリ・フロー開発がそれに準拠するよう強制します。\n- これにより、サードパーティコネクタを含む自動化や業務アプリケーションでも会社のデータ保護が実現されます。\n\
+        \n【参考情報】  \n- Power Platform 管理センターでのDLPポリシー設定例と管理手順[2][3][6][7]  \n- DLPポリシーの効果的な活用によるセキュリティ強化事例[1][5]\
+        \  \n\nこの設問を通じて、「Power Platformにおけるサードパーティコネクタ利用時のデータ保護は、データ損失防止ポリシーを活用することが最良の対応である」という基本的な理解を身につけることが目的です。\n\
+        \n- [1] https://qiita.com/skuramoto/items/abc1eb4626be7de5229b\n- [2] https://learn.microsoft.com/ja-jp/power-automate/prevent-data-loss\n\
+        - [3] https://learn.microsoft.com/ja-jp/power-platform/admin/wp-data-loss-prevention\n\
+        - [4] https://learn.microsoft.com/ja-jp/power-platform/admin/prevent-data-loss\n\
+        - [5] https://www.teijitaisya.com/powerautomate-dlp/\n- [6] https://qiita.com/tk3dots/items/a5c7042929d55e481301\n\
+        - [7] https://learn.microsoft.com/ja-jp/power-platform/guidance/adoption/dlp-strategy\n\
+        - [8] https://tech-blog.cloud-config.jp/2023-11-09-power-platform-management-center-dlp-setting\n\
+        - [9] https://www.geekfujiwara.com/tech/powerplatform/6693/\n- [10] https://learn.microsoft.com/ja-jp/power-platform/admin/data-loss-prevention-sdk\n\
+        \n\n\n\n-----"
   - 021_title: 質問 22/50：
-    022_line: 001856
+    022_line: 001904
     023_contents:
     - 031_question: 'ある会社では Microsoft 365 を使用しています。 社内のすべてのユーザーに、Microsoft 365 ライセンスが割り当てられています。
 
@@ -1320,19 +1331,35 @@
 
         - [チャットボット テンプレート (ビデオを含む) - Power Virtual Agents | Microsoft Learn](https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/fundamentals-get-started#create-an-agent-from-a-template)
 
-        - [Power Virtual Agents にアクセスする - Power Virtual Agents | Microsoft Learn](https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/requirements-licensing-subscriptions)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [Power Virtual Agents にアクセスする - Power Virtual Agents | Microsoft Learn](https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/requirements-licensing-subscriptions)'
+    - 035_supplements: "### 補足：Microsoft Copilot Studio Web アプリに固有の2つの機能\n回答\n\n-\
+        \ 社外のユーザーがコパイロットを使用できるようにする\n- Web サイトでコパイロットを使用する\n\n#### 設問の意図・目的と解説\n\n\
+        この設問は、Microsoft Teams の Microsoft Copilot Studio と Microsoft Copilot Studio\
+        \ Web アプリの違いや機能特性を理解しているかを問うものです。\n\n#### 解説\n\n- **Microsoft Copilot Studio（Teams内）**\
+        \  \n  - Teams チャネルにデプロイされるコパイロット（チャットボット的役割）を作成できます。  \n  - ただしアクセスは組織内の\
+        \ Microsoft 365 サブスクリプションユーザーのみが対象です。  \n  - 組織外のユーザーや Web サイト等への埋め込みによる利用はできません。\
+        \  \n  - テンプレートを使用して簡単にコパイロットが作成可能です。  \n\n- **Microsoft Copilot Studio Web\
+        \ アプリ**  \n  - 外部（社外）ユーザーの利用を含めた公開が可能です。  \n  - Web サイトなどにコパイロットを埋め込み、より広範囲で利用できるように設計されています。\
+        \  \n  - ただしテンプレートからの作成はサポートされていません（カスタムでの構築が中心）。  \n  - 変更や編集を加える場合、追加のライセンスが必要になる場合があります。\n\
+        \n##### ポイント整理\n\n| 機能・特徴                     | Teams内 Copilot Studio | Webアプリ\
+        \ Copilot Studio |\n|------------------------------|---------------------|-------------------------|\n\
+        | 社外ユーザーの利用             | ×                   | ○                       |\n\
+        | Webサイトへの埋め込み利用     | ×                   | ○                       |\n|\
+        \ テンプレートの利用             | ○                   | ×                       |\n\
+        | 追加ライセンスなしで編集可能 | ○                   | ×（追加ライセンス必要） |\n\n#### 理解を深めるポイント\n\
+        \n- Microsoft Copilot Studio Web アプリは、**社外ユーザーも含めた幅広いユーザーにコパイロットを提供したい場合や、Webサイトに埋め込んで利用させたい場合に利用される**ツールです。\
+        \  \n- 逆に Microsoft Teams 向けの Copilot Studio は、社内コラボレーションを重視し、簡単にテンプレートを使ってチャットボットを作りたい場合に適しています。\
+        \  \n- ライセンスやアクセスの違い、利用範囲の違いを理解することが重要です。\n\nこの設問を通じて、Microsoft Copilot Studio\
+        \ の製品形態ごとの利用シナリオ、特徴と制約を正しく把握し、組織のニーズに合った選択を行う基礎知識が養えます。\n\n- [1] https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/admin-network-isolation-firewall\n\
+        - [2] https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/requirements-quotas\n\
+        - [3] https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/security-faq\n\
+        - [4] https://www.ai-souken.com/article/microsoft-copilot-studio\n- [5] https://www.qes.co.jp/media/microsoft/Microsoft_365/a381\n\
+        - [6] https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/configuration-end-user-authentication\n\
+        - [7] https://qiita.com/skuramoto/items/9b65339db17eac79b8af\n- [8] https://www.open-lab.co.jp/copilot-studio-review/\n\
+        - [9] https://www.qes.co.jp/media/microsoft/Microsoft_365/a390\n- [10] https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/requirements-licensing-subscriptions\n\
+        \n\n\n\n-----"
   - 021_title: 質問 23/50：
-    022_line: 001901
+    022_line: '002000'
     023_contents:
     - 031_question: 'Microsoft Copilot Studio copilot をビルドします。 あなたは、コパイロットにトピックを追加します。
 
@@ -1356,10 +1383,26 @@
         \ 質問、アクションの呼び出し、メッセージの表示は、ユーザーがコパイロットに提供したフレーズを理解するようにコパイロットをトレーニングするのには役立ちません。\n\
         \n- ~~Microsoft Power Automate の機能を示す - トレーニング |Microsoft Learn~~\n  - [Power\
         \ Automate を使用したビジネス プロセスの自動化](https://learn.microsoft.com/ja-jp/training/paths/automate-process-power-automate/)\n\
-        - [トピックを使用してチャットボットの会話を設計する - Power Virtual Agents | Microsoft Learn](https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/authoring-create-edit-topics?tabs=webApp)\n\
-        \n\n#### 補足：\n\n\n\n\n-----"
+        - [トピックを使用してチャットボットの会話を設計する - Power Virtual Agents | Microsoft Learn](https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/authoring-create-edit-topics?tabs=webApp)"
+    - 035_supplements: "### 補足：Microsoft Copilot Studio でトピックをトレーニングするために追加するもの\n\
+        回答\n\n- トリガー フレーズ\n\n#### 設問の意図・目的と解説\n\nこの設問は、Microsoft Copilot Studio でトピックを作成する際に、ユーザーの多様な発話からコパイロットがトピックを認識し起動できるようにするために必要な設定要素を理解しているかを問うものです。\n\
+        \n#### 解説\n\n- **トリガー フレーズ**は、ユーザーがトピックを要求する際に使う様々な言葉やフレーズ（単語、文、質問など）を指します。これらはトピック単位で設定し、自然言語理解（NLU）モデルの学習に用いられます。\
+        \  \n- トリガー フレーズを複数設定することで、「同じ意味だが表現の異なるフレーズ」も一つのトピックで認識できるようになるため、ユーザーの多様な言い回しに対応可能です。\
+        \  \n- 新規トピック作成時には5～10個程度のサンプルフレーズを用意するのが推奨されます。\n\n一方で、\n\n- **質問する**機能は、ユーザーから追加情報を聞き出すためのもので、トピックの認識には使いません。\
+        \  \n- **アクションを呼び出す**は、フロー呼び出しや認証などの実行を指し、トピック開始の契機にはなりません。  \n- **メッセージを表示する**は、コパイロットが返答としてユーザーに表示する内容設定であり、認識のためではありません。\n\
+        \nこれらから、**トピックの起動・認識を行うトレーニングにはトリガー フレーズの設定が必須**であることがわかります。\n\n【参考】\n\n-\
+        \ Microsoft公式ドキュメントによると、トリガー フレーズは「エージェントの自然言語理解（NLU）モデルをトレーニングし、ユーザーの多様な発話を特定トピックに紐付ける」役割を持つ重要な要素です[1][2]。\
+        \  \n- トピック開始にはユーザーの言い回しを幅広くカバーし、適切なトピックを呼び出せるように設定します。  \n\n以上の理由から、「コパイロットにトピックが要求されるかを理解させるには、トリガー\
+        \ フレーズを追加する」ことが正解です。\n\n- [1] https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/guidance/trigger-phrases-best-practices\n\
+        - [2] https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/guidance/cux-queries\n\
+        - [3] https://note.com/fancy_hornet7579/n/n3389316a119e\n- [4] https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/authoring-triggers\n\
+        - [5] https://unite-365.co.jp/copilot-studio-topic/\n- [6] https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/authoring-create-edit-topics\n\
+        - [7] https://www.open-lab.co.jp/microsoft-copilot-studio%E3%82%92%E6%B4%BB%E7%94%A8%E3%81%97%E3%81%9Fteams%E5%90%91%E3%81%91%E3%83%9C%E3%83%83%E3%83%88%E4%BD%9C%E6%88%90%E3%82%AC%E3%82%A4%E3%83%89/\n\
+        - [8] https://unite-365.co.jp/copilot-studio-action/\n- [9] https://qiita.com/nori790822/items/bdbbb00dd15cc3056e17\n\
+        - [10] https://ippu-biz.com/development/powerplatform/copilot-studio/copilotstudio-dynamic-chain/\n\
+        \n\n\n\n-----"
   - 021_title: 質問 24/50：
-    022_line: 001944
+    022_line: 002083
     023_contents:
     - 031_question: 'Microsoft Copilot Studio copilot を作成します。
 
@@ -1383,10 +1426,29 @@
         \ コパイロットから Power Automate アクションを呼び出すことは可能ですが、これはコパイロットで自然言語処理を実行することを目的としたものではありません。\n\
         \n- ~~Microsoft Power Automate の機能を示す - トレーニング |Microsoft Learn~~\n  - [Power\
         \ Automate を使用したビジネス プロセスの自動化](https://learn.microsoft.com/ja-jp/training/paths/automate-process-power-automate/)\n\
-        - [エンティティを作成して使用する (ビデオを含む) - Power Virtual Agents | Microsoft Learn](https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/advanced-entities-slot-filling)\n\
-        \n\n#### 補足：\n\n\n\n\n-----"
+        - [エンティティを作成して使用する (ビデオを含む) - Power Virtual Agents | Microsoft Learn](https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/advanced-entities-slot-filling)"
+    - 035_supplements: "### 補足：Microsoft Copilot Studio で自然言語のフレーズを理解させるために追加するもの\n\
+        回答\n\n- ユーザー定義エンティティ\n\n#### 設問の意図・目的と解説\n\nこの設問は、Microsoft Copilot Studioにおける自然言語理解（NLU）を補助する「エンティティ」の役割を理解しているかを問うものです。\n\
+        \n#### 解説\n\n- **ユーザー定義エンティティ**は、ユーザーからの自然言語入力の中から特定の項目やキーワード、情報の種類を識別して抽出するために用います。\
+        \  \n  例えば、固有の業務用語や製品名、状態名など、標準で用意されていない情報を独自のリストやパターンとして定義し、コパイロットがそれらを認識・処理できるようにします。\n\
+        \n- **ユーザー トピック**は、会話の大きなカテゴリやシナリオを定義し、トピック単位で会話の振り分けや処理を行いますが、自然言語の細かな情報抽出はエンティティによるところが大きいです。\n\
+        \n- **サービス チャネル**は、コパイロットを利用するプラットフォーム（例：Teams、Webチャット）を指定する機能であり、言語理解とは直接関係ありません。\n\
+        \n- **Power Automate アクション**は、外部のフローや処理を呼び出す機能であり、自然言語フレーズの理解には関与しません。\n\n\
+        #### 理解を深めるポイント\n\n- Microsoft Copilot Studio で自然言語を理解させるためには、**エンティティがユーザー発言の中から必要な情報を正確に抽出し、解析に利用される基盤となる**ことを押さえることが重要です。\
+        \  \n- 標準のエンティティだけでなく、ユーザー固有の業務用語などを登録できる「ユーザー定義エンティティ」が柔軟な会話設計・情報取得に必須となります。\
+        \  \n- トピックは会話のシナリオ単位、エンティティは情報の粒度で区別して設計することが、正しい会話AIの構築に繋がります。\n\n【参考情報】\
+        \  \n- Microsoft公式ドキュメントによると、Copilot Studioのエンティティはユーザー入力を分類・情報抽出し、変数に格納できるため、自然言語処理の中核要素です。\
+        \  \n- ユーザー定義エンティティにより、業務特有のデータや用語を認識可能にし、より高度で正確な対話が実現します。\n\n- [1] https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/advanced-entities-slot-filling\n\
+        - [2] https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/authoring-variables-about\n\
+        - [3] https://note.com/fancy_hornet7579/n/ne93e3af99a3f\n- [4] https://zenn.dev/headwaters/articles/29ec186287ea0b\n\
+        - [5] https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/guidance/slot-filling-best-practices\n\
+        - [6] https://ippu-biz.com/development/powerplatform/copilot-studio/entity-slot-filling/\n\
+        - [7] https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/authoring-ask-a-question\n\
+        - [8] https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/authoring-template-topics\n\
+        - [9] https://note.com/fancy_hornet7579/n/n3389316a119e\n- [10] https://www.youtube.com/watch?v=CRtufwTtC_M\n\
+        \n\n\n\n-----"
   - 021_title: 質問 25/50：
-    022_line: 001987
+    022_line: '002166'
     023_contents:
     - 031_question: 'ある会社がソーシャル プラットフォームで新製品の発売を発表します。
 
@@ -1426,19 +1488,32 @@
 
         - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
 
-        - [感情分析事前構築済みモデル](https://learn.microsoft.com/ja-jp/ai-builder/prebuilt-sentiment-analysis)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [感情分析事前構築済みモデル](https://learn.microsoft.com/ja-jp/ai-builder/prebuilt-sentiment-analysis)'
+    - 035_supplements: "### 補足：ソーシャルプラットフォーム上の顧客レビュー分析に使用する Power Platform サービス\n\
+        回答\n\n- AIビルダー\n\n#### 設問の意図・目的と解説\n\nこの設問は、**Microsoft Power Platformの中で、ソーシャルメディアや顧客のテキストレビューにおける感情（センチメント）を分析する機能やサービスを理解しているかどうか**を問うものです。\n\
+        \n#### AIビルダーの特徴と適用理由\n\n- **AIビルダー（AI Builder）**はPower Platform内のAI機能コンポーネントで、テキストの感情分析（センチメント分析）に特化した事前構築済みモデルを備えています。\
+        \  \n- 例えばSNSの投稿や顧客レビューのテキストから、ポジティブ、ネガティブ、ニュートラルの感情を自動で検出し、数値化されたスコアを提供します。\
+        \  \n- Power Automateと連携し、リアルタイムで分析を実行したり、結果に基づく業務フローを構築したりすることが可能です。  \n\
+        - AIビルダーならではの感情分析機能は、Power BIやDataverse、Power Appsには標準装備されていません。  \n\n####\
+        \ 他の選択肢との違い\n\n- **Power BI**  \n  強力なデータ分析・可視化ツールだが、テキストの感情認識や自然言語処理機能は持たず、分析基盤や結果の表示に使うものである。\
+        \  \n- **Dataverse**  \n  データの保存と管理が主目的で、分析機能や感情検知機能は含まれていない。  \n- **Power\
+        \ Apps**  \n  業務アプリ作成用で、自然言語のセンチメント分析機能は含まれていない。  \n\n#### 理解を深めるポイント\n\n\
+        - ソーシャルメディア上の多様なテキストデータを対象に「感情分析」や「テキスト分析」を行うには、AI Builderの事前学習済みAIモデルを活用するのが最適であること。\
+        \  \n- 分析結果はPower Automateのフローに組み込み、リアルタイム監視や自動応答のトリガーにすることも可能。  \n- その後の結果可視化や詳細分析にはPower\
+        \ BIを利用することで、業務的に価値ある洞察を得る仕組みとなる。\n\n【参考情報】  \n- AI Builderの「センチメント分析モデル」は、テキストデータの感情のポジティブ・ネガティブ・ニュートラル判定を自動で行い、顧客の声を量的・質的に分析できる機能としてPower\
+        \ Platformに統合されています。[1][2][3]\n\n以上の理由から、**新製品に対する顧客の感情分析には「AIビルダー」を使用することが最適**です。\n\
+        \n- [1] https://www.microsoft.com/en-us/power-platform/blog/power-automate/extract-sentiment-from-text-with-ai-builder/\n\
+        - [2] https://learn.microsoft.com/en-us/training/modules/get-started-with-ai-builder-sentiment-analysis/\n\
+        - [3] https://learn.microsoft.com/en-us/ai-builder/prebuilt-sentiment-analysis\n\
+        - [4] https://learn.microsoft.com/en-us/ai-builder/flow-sentiment-analysis\n\
+        - [5] https://paulinekolde.info/part-6-sentiment-analysis-with-the-ai-builder-in-customer-insights/\n\
+        - [6] https://powerautomate.microsoft.com/ja-jp/blog/extract-sentiment-from-text-with-ai-builder/\n\
+        - [7] https://fortude.co/blog/all-you-need-to-know-about-ai-builder-microsoft-power-platform/\n\
+        - [8] https://github.com/MicrosoftDocs/ai-builder/blob/main/ai-builder-docs/prebuilt-sentiment-analysis.md\n\
+        - [9] https://learn.microsoft.com/th-th/training/modules/get-started-with-ai-builder-sentiment-analysis/\n\
+        - [10] https://www.youtube.com/watch?v=b1nWLUetIl4\n\n\n\n\n-----"
   - 021_title: 質問 26/50：
-    022_line: '002036'
+    022_line: '002261'
     023_contents:
     - 031_question: 'ある会社には顧客セルフサービス ポータルがあります。 顧客はポータルを使用して苦情を記録します。
 
@@ -1475,19 +1550,31 @@
 
         - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
 
-        - [エンティティ抽出事前構築済みモデル](https://learn.microsoft.com/ja-jp/ai-builder/prebuilt-entity-extraction)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [エンティティ抽出事前構築済みモデル](https://learn.microsoft.com/ja-jp/ai-builder/prebuilt-entity-extraction)'
+    - 035_supplements: "### 補足：サービスポータルの苦情から都市名と製品名を抽出するために使用するPower Platform機能\n\
+        回答\n\n- AIビルダー\n\n#### 設問の意図・目的と解説\n\nこの設問は、**テキストデータから特定の情報（例えば都市名や製品名などのエンティティ）を抽出できるPower\
+        \ Platform機能の理解**を評価するものです。\n\n#### 解説\n\n- **AIビルダーのエンティティ抽出モデル**は、テキスト内から重要な要素（エンティティ）を認識し抽出するためのAIモデルです。\
+        \  \n- 事前構築済みまたはカスタムでトレーニングしたエンティティ抽出モデルを使用して、自然言語テキストから「市区町村名」「製品名」などの特定情報を識別し、ビジネスプロセスに活用できます。\
+        \  \n- この抽出機能はPower AppsやPower Automateに組み込んで利用可能で、苦情の内容に基づいた自動ルーティングや通知などのフローを構築できます。\n\
+        \n一方、\n\n- **Dataverse** はデータの格納や管理を担当しますが、テキストから抽出処理は行いません。  \n- **Power\
+        \ BI** はデータの可視化・分析ツールであり、自然言語のテキスト分析やエンティティ抽出機能はありません。  \n- **Power Apps**\
+        \ はアプリ作成のプラットフォームで、エンティティ抽出などのAI処理機能は標準で備えておらず、AIビルダーを連携して使うことが前提です。\n\n####\
+        \ 理解を深めるポイント\n\n- テキストから「名前」や「場所」などの構造化された情報を引き出すには、**AIビルダーのエンティティ抽出モデルが最適なツールであることを押さえましょう。**\
+        \  \n- ルーティングなどの次工程は、抽出した情報を元にPower Automateなどで自動化可能です。  \n- AIビルダーの「事前構築済みモデル」はすぐに使え、カスタムモデルを作れば独自の製品名や用語に対応できます。\
+        \  \n\nこの問題は、Power Platform のAI機能の使いどころと、各コンポーネントの役割分担を理解するための重要な確認項目です。\n\
+        \n【参考】  \n- Microsoft公式：「AI Builder エンティティ抽出モデル」では、テキスト内の市区町村名などの標準エンティティを抽出可能とされており、ビジネス自動化に役立つことが説明されています[1][2]。\
+        \  \n- Power Apps や Power Automate への組み込み方法により、実務での苦情処理やルーティング自動化が行えます[2][6][8]。\n\
+        \n- [1] https://learn.microsoft.com/ja-jp/ai-builder/entity-extraction-overview\n\
+        - [2] https://learn.microsoft.com/ja-jp/ai-builder/prebuilt-entity-extraction\n\
+        - [3] https://learn.microsoft.com/ja-jp/ai-builder/entity-extraction-pwr-automate\n\
+        - [4] https://learn.microsoft.com/ja-jp/ai-builder/entity-extraction-create\n\
+        - [5] https://www.youtube.com/watch?v=HYZ8E114x0w\n- [6] https://learn.microsoft.com/ja-jp/ai-builder/prebuilt-entity-extraction-pwr-automate\n\
+        - [7] https://www.pwc.com/jp/ja/knowledge/column/technology-front-line/vol25.html\n\
+        - [8] https://learn.microsoft.com/ja-jp/training/modules/ai-builder-entity-extraction/\n\
+        - [9] https://speakerdeck.com/miyakemito/ai-buildernituite\n- [10] https://learn.microsoft.com/ja-jp/ai-builder/entity-extraction-train\n\
+        \n\n\n\n-----"
   - 021_title: 質問 27/50：
-    022_line: 002084
+    022_line: '002351'
     023_contents:
     - 031_question: 'Power BI レポートを編集します。
 
@@ -1516,19 +1603,27 @@
 
         - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
 
-        - [チュートリアル: Power BI Desktop で計算列を作成する - Power BI | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-bi/transform-model/desktop-tutorial-create-calculated-columns)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [チュートリアル: Power BI Desktop で計算列を作成する - Power BI | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-bi/transform-model/desktop-tutorial-create-calculated-columns)'
+    - 035_supplements: "### 補足：Power BI レポートで計算列を追加するために必要な2つのアクション\n- Power BI Desktop\
+        \ を使用してレポートを開く。  \n- [データ] タブを選択し、[ 新しい列] を選択します。\n\n#### 設問の意図・目的と解説\n\n\
+        この設問は、Power BI における計算列作成の方法と、それが可能な環境の理解を評価するものです。\n\n#### ポイント解説\n\n- **計算列は\
+        \ Power BI Desktop で作成する必要があります。**  \n  Power BI サービス（Web版）では計算列を追加できません。計算列はデータモデルに直接列を新設し、その値をDAX（Data\
+        \ Analysis Expressions）式で計算して作成します。\n\n- **計算列の追加は、Power BI Desktop の [データ]\
+        \ ビューで実行します。**  \n  ここで「新しい列」を選択し、DAXを用いた計算式を入力して列を定義します。これによりデータモデルに新しい計算列が追加され、レポートのビジュアルで使用できるようになります。\n\
+        \n- [データの変換] の [カスタム列] は Power Query エディターの機能であり、「計算列」とは別物です。カスタム列はデータ読み込み前の前処理で使用し、計算列は読み込んだ後のモデル上で作成します。したがって、本設問の正解には含まれません。\n\
+        \n#### 理解を深めるポイント\n\n- Power BI の「計算列」はモデル上の追加列で、DAXで記述でき、行ごとに計算結果が格納されます。\
+        \  \n- Power BI Desktop の「データ」ビューモードで「新しい列」ボタンを使い作成します。  \n- Power BI サービスは作成・編集はできるものの、計算列の追加には対応していません。\
+        \  \n- Power Query の「カスタム列」はデータ取り込み・変換段階の処理であり、計算列とは役割が異なります。\n\nこの問題を通して「Power\
+        \ BI Desktop のデータビューで計算列を作ることが基本」であることを押さえましょう。\n\n- [1] https://www.mediafusion.co.jp/dx-blog/hd20250520/\n\
+        - [2] https://myzw-office.com/power-bi-calculation-column/\n- [3] https://learn.microsoft.com/ja-jp/power-bi/transform-model/desktop-calculated-columns\n\
+        - [4] https://learn.microsoft.com/ja-jp/power-bi/transform-model/desktop-tutorial-create-calculated-columns\n\
+        - [5] https://jpbap-sqlbi.github.io/blog/powerbi/pbi_measures_calculatedcolumns/\n\
+        - [6] https://note.com/mediafusion_eng/n/n99ae1d8d022a\n- [7] https://www.youtube.com/watch?v=-yc2bbfF1-Y\n\
+        - [8] https://powerbiseminar.com/powerbi_blog/calculation/\n- [9] https://zenn.dev/bi_knowledge/articles/fe47c9c49130b9\n\
+        - [10] https://microsoftlearning.github.io/PL-300-Microsoft-Power-BI-Data-Analyst.ja-jp/Instructions/Demos/05-create-measures-DAX.html\n\
+        \n\n\n\n-----"
   - 021_title: 質問 28/50：
-    022_line: '002126'
+    022_line: '002430'
     023_contents:
     - 031_question: 'Microsoft Dataverse から Power BI レポートを作成する予定です。
 
@@ -1559,19 +1654,33 @@
 
         - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
 
-        - [Power BI Desktop と Power BI サービスの比較 - Power BI | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-bi/fundamentals/power-bi-overview)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [Power BI Desktop と Power BI サービスの比較 - Power BI | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-bi/fundamentals/power-bi-overview)'
+    - 035_supplements: "### 補足：Microsoft Dataverse から Power BI レポートを作成する際の使用コンポーネント\n\
+        回答\n\n- データの整形とモデリング  \n- 計算列  \n\n#### 設問の意図・目的と解説\n\nこの設問は、**Power BI DesktopとPower\
+        \ BIサービスの役割の違い、特にPower BI Desktopにおけるデータ準備やモデリング、計算列の作成などの機能理解を問うものです。**\n\
+        \n#### 解説\n\n- **データの整形とモデリング**  \n  Power BI Desktop は、Power Query Editor\
+        \ を備え、Dataverseなどのデータソースから取り込んだデータの整形（クリーニング、変換）とモデリング（テーブル同士のリレーション設定やデータ構造設計）が可能です。\
+        \  \n  これにより、分析に適したデータ基盤を構築します。\n\n- **計算列**  \n  Power BI Desktop のデータモデル上で、新たな計算列を作成し、DAX（Data\
+        \ Analysis Expressions）を用いて複雑な演算や条件付き計算を実装できます。  \n  計算列はレポートの詳細な分析や指標作成に必要な強力なツールです。\n\
+        \n- **共有** や **ダッシュボード** は Power BI サービスの機能であり、Power BI Desktopでは直接これらを作成・管理することはできません。共有やダッシュボード作成はレポート作成後のクラウドでの操作となります。\n\
+        \n#### 理解を深めるポイント\n\n- Power BI Desktop は「データの準備」「モデルの設計」「計算や指標の作成」を行い、レポートを作成する開発環境です。\
+        \  \n- 一方で、Power BI サービスは作成されたレポートを配布・共有し、ダッシュボードを作成して組織内外で閲覧・連携するためのクラウド基盤です。\
+        \  \n- そのため、Power BI Desktop内のワークフローで用いる代表的なコンポーネントは「データの整形とモデリング」と「計算列」であることを押さえる必要があります。\n\
+        \n【参考】\n\n- Power BI公式ドキュメントによると、Power BI Desktopでの主な機能はデータ取得、変換、モデリングおよびDAXによる計算列作成です。\
+        \  \n- 一度作成したレポートはPower BI サービスに公開し、そこで共有やダッシュボードの作成、スケジュール更新などの管理を行います。\n\
+        \n以上の理由から、**Power BI Desktopで使用できるコンポーネントは「データの整形とモデリング」と「計算列」**が正解となります。\n\
+        \n- [1] https://www.entartes.com/blog/power-bi-desktop-vs-power-bi-service\n\
+        - [2] https://learn.microsoft.com/en-us/power-bi/fundamentals/power-bi-overview\n\
+        - [3] https://www.techefficiencysolutions.com/blog/power-bi-desktop-vs-power-bi-service/\n\
+        - [4] https://www.reddit.com/r/PowerBI/comments/1gt5ycu/power_bi_desktop_vs_power_bi_web_service/\n\
+        - [5] https://www.fidelsoftech.com/news-and-blogs/power-bi-desktop-vs-power-bi-services\n\
+        - [6] https://intellipaat.com/blog/power-bi-desktop-vs-power-bi-service/\n\
+        - [7] https://anexas.net/power-bi-desktop-vs-power-bi-service-choosing-the-right-platform/\n\
+        - [8] https://www.youtube.com/watch?v=Z8A1lYRyZy0\n- [9] https://veelead.com/blog/what-is-the-difference-between-power-bi-desktop-and-power-bi-service-online/\n\
+        - [10] https://community.powerbi.com/t5/Desktop/Comparing-Power-BI-Desktop-and-the-Power-BI-service/td-p/3159623\n\
+        \n\n\n\n-----"
   - 021_title: 質問 29/50：
-    022_line: 002168
+    022_line: '002517'
     023_contents:
     - 031_question: '現在と前年の月ごとの収益比較を表示する Power BI の視覚化を作成する必要があります。
 
@@ -1597,19 +1706,24 @@
 
         - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
 
-        - [Power BI での視覚化の種類 - Power BI | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [Power BI での視覚化の種類 - Power BI | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a)'
+    - 035_supplements: "### 補足：Power BIで現在と前年の月ごとの収益比較を表示するグラフの選択\n回答\n\n- 横棒グラフ\n\
+        \n#### 設問の意図・目的と解説\n\nこの問題はPower BIにおけるグラフ（視覚化）の選択に関する理解を問うものです。月ごとに「現在」と「前年」の収益を比較する場合、どの種類のグラフが最も適切かを理解することが目的です。\n\
+        \n- **横棒グラフ**は、複数のカテゴリ（ここでは月ごと）にわたる数値を比較表示するのに適しています。期間ごとの売上や収益などの比較に使いやすく、視覚的に金額の違いや推移をわかりやすく表現できます[3][5]。\
+        \  \n- **パイ（円グラフ）**は全体に対する割合（構成比）を示すのに適しており、期間比較のように複数の値を横並びで比較するのには向いていません。\
+        \  \n- **じょうご（ファネルグラフ）**はプロセスの段階ごとに流れを示すのに適しており、売上比較のような単純な月ごとの比較には使用しません。\
+        \  \n- **カード**は単一のデータポイント（例：総売上高や合計値）を表示するために使われ、月ごとの比較には不向きです。\n\nしたがって、月ごとに現在と前年の収益を視覚的に比較したい場合は「横棒グラフ」が最もふさわしいグラフ種類です[3][5]。\n\
+        \n学習を深める際は、Power BIの各種グラフの特徴と用途を理解し、分析目的に応じて正しいグラフを選ぶことが重要です。売上の時間推移分析には棒グラフ（縦棒・横棒）や折れ線グラフがよく用いられ、この問題のように同じカテゴリ（月）の2つの年度の数値を比較する場合も棒グラフが主要です。さらに使い方としては、複合グラフ（例：棒グラフと折れ線グラフの組み合わせ）で昨年比成長率などを同時に表示することもあります[9]。\n\
+        \n以上の理由から、「現在と前年の月ごとの収益比較」には**横棒グラフ**が最適な選択肢です。\n\n- [1] https://kyosunlab.com/pbi_3/\n\
+        - [2] https://ippu-biz.com/development/powerplatform/other/exam-pl/\n- [3]\
+        \ https://note.com/smkt_interview/n/ne8109ba0323f\n- [4] https://techlife-pag.com/2023/07/29/pl-900_study/\n\
+        - [5] https://www.siteengine.co.jp/blog/powerbi-how-to-make-charts/\n- [6]\
+        \ https://nlab-notebook.com/entry/pl-900-power-apps-maker-portal-part11\n\
+        - [7] https://marshal115.hatenablog.com/entry/2023/03/20/164311\n- [8] https://sal-blog.com/power-platform-fundamentals/\n\
+        - [9] https://learn.microsoft.com/ja-jp/power-bi/visuals/power-bi-visualization-combo-chart\n\
+        - [10] https://youseibubu.com/apps/exam_pl600/\n\n\n\n\n-----"
   - 021_title: 質問 30/50：
-    022_line: '002207'
+    022_line: 002586
     023_contents:
     - 031_question: 'ある会社では Power BI を使用しています。
 
@@ -1636,19 +1750,25 @@
 
         - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
 
-        - [Power BI で集計 (合計、平均など) を操作する - Power BI | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-bi/create-reports/service-aggregates)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [Power BI で集計 (合計、平均など) を操作する - Power BI | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-bi/create-reports/service-aggregates)'
+    - 035_supplements: "### 補足：Power BI レポートのビジュアルにテキストフィールドを追加して集計する方法\n回答\n\n- 数える\n\
+        \n#### 設問の意図・目的と解説\n\nこの問題は、Power BI における異なるデータ型に対してどのような集計方法を適用すべきかを理解できているかを確認するものです。特にテキストフィールドに対して適用される集計についての知識を問います。\n\
+        \n- **テキストフィールド**の場合、数値のように合計（SUM）や中央値、または最新値のような数値や日付の集計はできません。  \n- テキストデータは複数の固有値（カテゴリ）として扱われ、Power\
+        \ BIではそれらの値の**出現数をカウントする（数える）**ことで集計します。  \n- つまり、「数える（Count）」はテキストフィールドの値の個数を把握する際に用いられ、空白でないレコードの数を集計します。\
+        \  \n- 「SUM」は数値型フィールドに適用する集計方法であり、テキストには適用できません。  \n- 「中央値」は数値や日付の連続したデータに使う統計的な指標で、テキストには意味がありません。\
+        \  \n- 「最新」は主に日付フィールドに適用され、その最新の日時を取得する集計方法です。\n\nPower BIでは、テキストフィールドに対してはデフォルトで「Count\
+        \ (Not Blank)」や「Distinct Count（個別の件数）」が使用されることが多いです。この問題のように「テキストフィールドを集計したい」場合は、「数える」集計が正しい選択肢となります。\n\
+        \n#### 学習のポイント\n\n- Power BIの集計方法はデータ型によって適切な選択肢が異なります。  \n- 数値データは合計（SUM）、平均（AVERAGE）、中央値などで集計可能。\
+        \  \n- テキストデータは合計できないため、「カウント（数える）」で集計される。  \n- 日付データには最新値や最小値、最大値などの集計が適用されることがある。\
+        \  \n- 実際のレポート作成時には、対象データの型を確認し、最適な集計方法を選択しましょう。\n\n以上により、「Power BI レポートのビジュアルにテキストフィールドを追加して集計する場合」には**数える**が最適な回答です。\n\
+        \n- [1] https://learn.microsoft.com/ja-jp/power-bi/create-reports/service-aggregates\n\
+        - [2] https://powerbiseminar.com/2025/04/21/power-query/\n- [3] https://support.microsoft.com/ja-jp/office/power-view-%E3%81%A7%E3%81%AE%E5%90%88%E8%A8%88%E3%81%AE%E5%B9%B3%E5%9D%87%E3%81%BE%E3%81%9F%E3%81%AF%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E9%9B%86%E8%A8%88%E3%81%B8%E3%81%AE%E5%A4%89%E6%9B%B4-346fd3b9-3ea4-41de-9a98-2b32871262d0\n\
+        - [4] https://blog.est.co.jp/20240117/\n- [5] https://www.youtube.com/watch?v=brC-1EmIsMY\n\
+        - [6] https://powerbiseminar.com/2025/03/10/calculate/\n- [7] https://frogwell.co.jp/blogs/powerbi-textmining/\n\
+        - [8] https://qiita.com/yugoes1021/items/b0ccd36b53079a748de8\n- [9] https://soft-zou.jp/2025/01/10/power-bi-sum/\n\
+        - [10] https://lab.pasona.co.jp/data-operation/skill/817/\n\n\n\n\n-----"
   - 021_title: 質問 31/50：
-    022_line: 002248
+    022_line: '002665'
     023_contents:
     - 031_question: 'Power BI データセットにテーブルがあります。 集合縦棒グラフ ビジュアルをレポート ページに追加します。
 
@@ -1688,7 +1808,7 @@
 
         -----'
   - 021_title: 質問 32/50：
-    022_line: 002289
+    022_line: '002706'
     023_contents:
     - 031_question: '営業チーム用の Power BI レポートを作成する予定です。
 
@@ -1729,7 +1849,7 @@
 
         -----'
   - 021_title: 質問 33/50：
-    022_line: '002330'
+    022_line: '002747'
     023_contents:
     - 031_question: 'ある会社がカンファレンスを主催します。
 
@@ -1767,7 +1887,7 @@
 
         -----'
   - 021_title: 質問 34/50：
-    022_line: '002371'
+    022_line: 002788
     023_contents:
     - 031_question: 'アプリを作成します。
 
@@ -1807,7 +1927,7 @@
 
         -----'
   - 021_title: 質問 35/50：
-    022_line: '002413'
+    022_line: 002830
     023_contents:
     - 031_question: 'ある会社では Microsoft Power Platform を使用しています。
 
@@ -1852,7 +1972,7 @@
 
         -----'
   - 021_title: 質問 36/50：
-    022_line: '002456'
+    022_line: 002873
     023_contents:
     - 031_question: 'ある会社では Microsoft Power Platform を使用しています。
 
@@ -1899,7 +2019,7 @@
 
         -----'
   - 021_title: 質問 37/50：
-    022_line: '002500'
+    022_line: 002917
     023_contents:
     - 031_question: 'キャンバス アプリを作成して公開します。
 
@@ -1944,7 +2064,7 @@
 
         -----'
   - 021_title: 質問 38/50：
-    022_line: '002544'
+    022_line: 002961
     023_contents:
     - 031_question: 'ある会社では Microsoft Power Platform を使用しています。
 
@@ -1984,7 +2104,7 @@
 
         -----'
   - 021_title: 質問 39/50：
-    022_line: 002584
+    022_line: '003001'
     023_contents:
     - 031_question: 'オフィス文具を追跡して注文するようにキャンバス アプリを構成します。 このアプリでは、ユーザーは複数の文具を注文できます。
 
@@ -2028,7 +2148,7 @@
 
         -----'
   - 021_title: 質問 40/50：
-    022_line: 002628
+    022_line: '003045'
     023_contents:
     - 031_question: 'ある会社では Microsoft Power Platform を使用しています。 Microsoft Dataverse
         でデータをモデル化し、モデル駆動型アプリを作成します。
@@ -2073,7 +2193,7 @@
 
         -----'
   - 021_title: 質問 41/50：
-    022_line: '002670'
+    022_line: 003087
     023_contents:
     - 031_question: 'ある会社が、モデル駆動型アプリを所有しています。
 
@@ -2112,7 +2232,7 @@
 
         -----'
   - 021_title: 質問 42/50：
-    022_line: '002712'
+    022_line: 003129
     023_contents:
     - 031_question: 'ある会社では、顧客データ管理にモデル駆動型アプリを使用しています。
 
@@ -2165,7 +2285,7 @@
 
         -----'
   - 021_title: 質問 43/50：
-    022_line: '002762'
+    022_line: 003179
     023_contents:
     - 031_question: 'ある会社には、販売管理モデル駆動型アプリがあります。
 
@@ -2208,7 +2328,7 @@
 
         -----'
   - 021_title: 質問 44/50：
-    022_line: 002806
+    022_line: '003223'
     023_contents:
     - 031_question: 'ある会社では、Microsoft Dataverse を使用して小売組織のデータ モデルを作成しています。 その会社は標準の連絡先テーブルを使用して顧客情報を保存しています。
 
@@ -2252,7 +2372,7 @@
 
         -----'
   - 021_title: 質問 45/50：
-    022_line: 002850
+    022_line: '003267'
     023_contents:
     - 031_question: 'Microsoft Power Platform と Microsoft Dataverse を使用してソリューションを構築します。
 
@@ -2297,7 +2417,7 @@
 
         -----'
   - 021_title: 質問 46/50：
-    022_line: 002894
+    022_line: '003311'
     023_contents:
     - 031_question: 'ある会社が Microsoft Dataverse と Microsoft Dataverse for Teams を評価しています。
 
@@ -2340,7 +2460,7 @@
 
         -----'
   - 021_title: 質問 47/50：
-    022_line: 002936
+    022_line: '003353'
     023_contents:
     - 031_question: 'Microsoft Dataverse を使用して企業のデータ モデルを開発します。
 
@@ -2385,7 +2505,7 @@
 
         -----'
   - 021_title: 質問 48/50：
-    022_line: 002980
+    022_line: 003397
     023_contents:
     - 031_question: 'Power Automate クラウド フローで Microsoft Teams コネクタを使用する予定です。
 
@@ -2424,7 +2544,7 @@
 
         -----'
   - 021_title: 質問 49/50：
-    022_line: '003020'
+    022_line: '003437'
     023_contents:
     - 031_question: '新しいアイテムが SharePoint Online リストに追加されるたびに電子メールを送信するワークフローを構築する必要があります。
 
@@ -2471,7 +2591,7 @@
 
         -----'
   - 021_title: 質問 50/50：
-    022_line: '003064'
+    022_line: 003481
     023_contents:
     - 031_question: '標準コネクタを使用する Power Automate クラウド フローを作成します。
 
@@ -2521,7 +2641,7 @@
 
         -----'
   - 021_title: 質問：
-    022_line: '003112'
+    022_line: 003529
     023_contents:
     - 031_question: ''
     - 032_selections: []
