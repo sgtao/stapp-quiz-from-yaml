@@ -729,8 +729,8 @@
         \n- **マイクロソフト Dataverse**\n  データ格納・管理機能を担いますが、自然言語による質問受付・解釈・応答の機能はありません。\n\
         \n#### 理解を深めるポイント\n\n- Power BI と Copilot Studio（旧Power Virtual Agents）は、AIを活用した自然言語でのインタラクションが可能で、業務現場での直感的なデータ探索・対話型の体験を実現します。\n\
         - 「自然言語UI」の登場により、プログラミング不要で誰もが質問・指示できる現場が広がっています。\n- どのツールが「ユーザーと自然言語で対話可能」なのかを区別できることが、この設問の学習的な要点です。\n\
-        \n【補足】\n- Copilot Studioでは独自のNLUモデルやAzureの言語サービス連携も可能で、さまざまな業務や顧客対応に自然言語ベースのAIチャットボットを展開できます[1][3][5][6]。\n\
-        - Power BIのQ&Aは“No code”で自然言語分析体験を提供する代表的な機能です。\n\n- [1]: https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-clu-integration\n\
+        \n【補足】\n```\n- Copilot Studioでは独自のNLUモデルやAzureの言語サービス連携も可能で、さまざまな業務や顧客対応に自然言語ベースのAIチャットボットを展開できます[1][3][5][6]。\n\
+        - Power BIのQ&Aは“No code”で自然言語分析体験を提供する代表的な機能です。\n```\n\n- [1]: https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-clu-integration\n\
         - [2]: https://www.microsoft.com/en-us/microsoft-copilot/for-individuals/do-more-with-ai/general-ai/what-is-natural-language-understanding\n\
         - [3]: https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-what-is-copilot-studio\n\
         - [5]: https://www.infoq.com/news/2024/02/copilot-studio-powerva-available/\n\
@@ -745,7 +745,7 @@
         - [9] https://www.rpatech.ai/microsoft-copilot-studio/\n- [10] https://www.proserveit.com/blog/complete-guide-microsoft-copilot\n\
         \n\n\n\n-----"
   - 021_title: 質問 12/50：
-    022_line: '001020'
+    022_line: '001022'
     023_contents:
     - 031_question: 'ある会社が手紙を受け取っています。
 
@@ -799,7 +799,7 @@
         - [9] https://learn.microsoft.com/en-us/power-apps/\n- [10] https://www.youtube.com/watch?v=OiR3TtmMl2A\n\
         \n\n\n\n-----"
   - 021_title: 質問 13/50：
-    022_line: '001110'
+    022_line: '001112'
     023_contents:
     - 031_question: 'ある会社では Microsoft Power Platform を使用してアプリを作成することを計画しています。
 
@@ -852,7 +852,7 @@
         - [9] https://www.mailmodo.com/guides/outlook-email-automation/\n- [10] https://promx.net/en/2024/02/the-most-popular-features-in-power-automate/\n\
         \n\n\n\n-----"
   - 021_title: 質問 14/50：
-    022_line: 001197
+    022_line: 001199
     023_contents:
     - 031_question: 'ある会社では Microsoft Dynamics 365 Sales を使用して販売プロセスを管理しています。
 
@@ -904,7 +904,7 @@
         - [10] https://www.mercuriusit.com/microsoft-power-couple-integrate-power-bi-dynamics-365/\n\
         \n\n\n\n-----"
   - 021_title: 質問 15/50：
-    022_line: 001286
+    022_line: 001288
     023_contents:
     - 031_question: 'ユーザーが新しいプロジェクトを要求するためのキャンバス アプリを作成します。
 
@@ -965,7 +965,7 @@
         \ https://learn.microsoft.com/ja-jp/power-automate/teams/teams-app-create\n\
         \n\n\n\n-----"
   - 021_title: 質問 16/50：
-    022_line: '001372'
+    022_line: '001374'
     023_contents:
     - 031_question: 'ある会社が Power Pages を所有しています。
 
@@ -1007,9 +1007,9 @@
         \ はこのデータをトリガーやアクションとして読み書きできる。  \n- 定期通知の自動化（スケジュール実行）にはPower Automateのクラウドフローが最適で、通知内容の集計や整形も可能。\
         \  \n- サードパーティサービスとの連携もPower Automateで柔軟に実現できる。  \n\nこの設問により、Power Platform\
         \ 製品の役割分担と、特に「データを元にした通知や連携の自動化はPower Automateで対応する」という基本理解を深めることが目的です。\n\n\
-        【参考情報】  \n- Microsoft公式：Power PagesとPower Automateの統合による業務自動化ガイド[1]  \n- Power\
-        \ Automateで外部サービス連携と通知を行う一般的な活用シナリオ[5][6]  \n- Power PagesからPower Automateクラウドフロー呼び出し事例[3][4]\n\
-        \n- [1] https://learn.microsoft.com/en-us/power-pages/configure/cloud-flow-integration\n\
+        【参考情報】  \n```\n- Microsoft公式：Power PagesとPower Automateの統合による業務自動化ガイド[1] \
+        \ \n- Power Automateで外部サービス連携と通知を行う一般的な活用シナリオ[5][6]  \n- Power PagesからPower\
+        \ Automateクラウドフロー呼び出し事例[3][4]\n```\n\n- [1] https://learn.microsoft.com/en-us/power-pages/configure/cloud-flow-integration\n\
         - [2] https://community.powerplatform.com/forums/thread/details/?threadid=7d6f5431-0656-4bc3-bca8-68c9c48e505a\n\
         - [3] https://www.inogic.com/blog/2023/07/how-to-use-power-automate-flow-in-power-pages/\n\
         - [4] https://learn.microsoft.com/en-us/power-pages/configure/power-automate-how-to\n\
@@ -1018,7 +1018,7 @@
         - [8] https://www.youtube.com/watch?v=7JHEjSM5lzo\n- [9] https://www.kimmokoski.dev/power-automate-with-power-pages/\n\
         - [10] https://www.youtube.com/watch?v=UBltc6haCwQ\n\n\n\n\n-----"
   - 021_title: 質問 17/50：
-    022_line: 001458
+    022_line: '001462'
     023_contents:
     - 031_question: 'ある会社では Microsoft Power Platform を使用しています。
 
@@ -1069,8 +1069,9 @@
         \  \n- **Microsoft Dataverseでの監査**は、テーブル内のデータ変更履歴を記録・追跡する機能であり、不正行為の検知や追跡に役立ちますが、「漏洩防止」そのものの機能ではありません。\n\
         \n#### まとめ\n\n- 組織のPower Platform内でのデータの安全な扱いを保証するためには、**「データ ポリシーの作成」が最も直接的かつ実用的な防止策**です。\
         \  \n- これにより、意図せぬ外部共有や不正なデータ移動を未然に防げます。  \n- 条件付きアクセスや監査機能は補助的なセキュリティ対策と理解するのが適切です。\n\
-        \n【参考情報】  \n- Power Platform 管理センターでのデータポリシー作成手順や管理方法[1][2][4]  \n- DLPポリシーが組織のデータ漏洩リスクをどのように低減するかの解説[4][6]\n\
-        \nこれらを踏まえ、「データ ポリシーを作成する」が正解であり、組織のデータ漏洩リスクの根本的な低減に寄与する仕組みです。\n\n- [1] https://learn.microsoft.com/ja-jp/power-platform/admin/prevent-data-loss\n\
+        \n【参考情報】  \n```\n- Power Platform 管理センターでのデータポリシー作成手順や管理方法[1][2][4]  \n- DLPポリシーが組織のデータ漏洩リスクをどのように低減するかの解説[4][6]\n\
+        ```\n\nこれらを踏まえ、「データ ポリシーを作成する」が正解であり、組織のデータ漏洩リスクの根本的な低減に寄与する仕組みです。\n\n- [1]\
+        \ https://learn.microsoft.com/ja-jp/power-platform/admin/prevent-data-loss\n\
         - [2] https://qiita.com/skuramoto/items/abc1eb4626be7de5229b\n- [3] https://learn.microsoft.com/ja-jp/power-automate/prevent-data-loss\n\
         - [4] https://learn.microsoft.com/ja-jp/power-platform/admin/wp-data-loss-prevention\n\
         - [5] https://learn.microsoft.com/ja-jp/power-platform/admin/data-loss-prevention-sdk\n\
@@ -1079,7 +1080,7 @@
         - [9] https://learn.microsoft.com/ja-jp/power-apps/maker/data-platform/data-retention-set\n\
         - [10] https://live-style.jp/powerplatform-explanation/\n\n\n\n\n-----"
   - 021_title: 質問 18/50：
-    022_line: '001544'
+    022_line: '001550'
     023_contents:
     - 031_question: 'ある会社には、ニューヨーク、パリ、マドリードに 3 つの支店があります。
 
@@ -1115,10 +1116,10 @@
         \n#### よって\n\n- 3つの支店に対してデータを分けて管理したい場合は、**「支店ごとに環境を1つずつ作成し、それぞれ環境にひとつのDataverseインスタンスを持たせる」**のが正しい設計となります。\
         \  \n- 「1つの環境に複数のインスタンスを作成」や「環境なしでインスタンスを作る」はできません。\n\n#### 理解を深めるポイント\n\n\
         - Power Platform管理者や開発者は、環境とインスタンスのこの1対1の関係を理解して設計・運用することが不可欠です。  \n- 環境は組織の業務や地理的要件に沿って分けて管理し、それぞれに1つのデータベースインスタンスを持たせて安全に分離運用できます。\
-        \  \n- 環境の分割は、セキュリティ、データガバナンス、レイテンシ（物理的距離）最適化にも関わります。\n\n【参考情報】  \n- Microsoft公式ドキュメント「Power\
-        \ Platform 環境の概要」には以下の記述があります。  \n  - 各環境は0または1つのDataverseデータベースインスタンスを持ちます。\
+        \  \n- 環境の分割は、セキュリティ、データガバナンス、レイテンシ（物理的距離）最適化にも関わります。\n\n【参考情報】  \n```\n-\
+        \ Microsoft公式ドキュメント「Power Platform 環境の概要」には以下の記述があります。  \n  - 各環境は0または1つのDataverseデータベースインスタンスを持ちます。\
         \  \n  - 複数のインスタンスを1つの環境に持つことはできません。  \n  - 環境単位でリージョンが割り当てられます。  \n- 環境＝論理的な枠組み、インスタンス＝その環境の1つのDataverseデータベース実態と覚えましょう。\n\
-        \nこれにより、「ニューヨーク」「パリ」「マドリード」の3つの支店のそれぞれに対して独立した環境を用意し、環境ごとに1つのDataverseインスタンスを持たせることが最適な構成であることが理解できます。\n\
+        ```\n\nこれにより、「ニューヨーク」「パリ」「マドリード」の3つの支店のそれぞれに対して独立した環境を用意し、環境ごとに1つのDataverseインスタンスを持たせることが最適な構成であることが理解できます。\n\
         \n- [1] https://learn.microsoft.com/ja-jp/training/modules/create-manage-environments/\n\
         - [2] https://learn.microsoft.com/ja-jp/power-platform/admin/environments-overview\n\
         - [3] https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv\n\
@@ -1128,7 +1129,7 @@
         \ https://www.sofia-inc.com/blog/16214.html\n- [10] https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-existing-dv\n\
         \n\n\n\n-----"
   - 021_title: 質問 19/50：
-    022_line: 001638
+    022_line: '001646'
     023_contents:
     - 031_question: 'ある会社では、Microsoft Power Platform の単一環境内で一連のモデル駆動型アプリを使用しています。
 
@@ -1168,8 +1169,8 @@
         \  \n  - Microsoft 365 セキュリティグループはユーザー管理の一部ですが、モデル駆動型アプリの権限管理はDataverseロール中心です。\
         \  \n  - ビジネス プロセス フローは業務プロセスのガイドであり、権限設定には関与しません。  \n\n#### まとめ\n\n- モデル駆動型アプリの**共有には、ユーザーに適切な「Dataverse\
         \ セキュリティ ロール」を割り当ててアクセス権限を付与することが基本です。**  \n- これによって、ユーザーはアプリにログインして利用を開始できます。\
-        \  \n- 共有するときは、アプリとセットでセキュリティロールの割り当ても忘れずに行う必要があります。\n\n【参考】  \n- Microsoft公式ドキュメント「モデル駆動型アプリの共有\
-        \ - セキュリティロール」  \n- Power Platform管理センターでのロール割り当て手順とベストプラクティス\n\nこの設問を通じて、Power\
+        \  \n- 共有するときは、アプリとセットでセキュリティロールの割り当ても忘れずに行う必要があります。\n\n【参考】  \n```\n- Microsoft公式ドキュメント「モデル駆動型アプリの共有\
+        \ - セキュリティロール」  \n- Power Platform管理センターでのロール割り当て手順とベストプラクティス\n```\n\nこの設問を通じて、Power\
         \ Platformのモデル駆動型アプリにおける「アクセス権管理＝Dataverseセキュリティロールの割り当て」という重要な知識ポイントを習得できます。\n\
         \n- [1] https://learn.microsoft.com/ja-jp/power-apps/maker/model-driven-apps/share-model-driven-app\n\
         - [2] https://www.qes.co.jp/media/PowerApps/a295\n- [3] https://www.geekfujiwara.com/tech/powerplatform/4823/\n\
@@ -1180,7 +1181,7 @@
         - [10] https://jpdynamicscrm.github.io/blog/powerplatform/About-security-role-in-Dataverse/\n\
         \n\n\n\n-----"
   - 021_title: 質問 20/50：
-    022_line: '001725'
+    022_line: '001735'
     023_contents:
     - 031_question: '従業員には新しい環境が必要です。
 
@@ -1222,10 +1223,10 @@
         \n#### 理解を深めるポイント\n\n- 新しい環境を作成しようとする際は、**Power Platform 管理センターを利用して現在の容量・環境数・ライセンス状況を把握し、適切な準備を行うことが重要**です。\
         \  \n- この管理センターでは環境の割り当て状況を含め、Capacity（容量）情報が可視化されているため、容量オーバーの防止や新規環境運用にあたっての計画策定に役立ちます。\
         \  \n- 「制作」や「利用」ポータルではなく、**運用管理やテナントレベルの設定・監視は専用の管理センターで行う**という基本を押さえましょう。\n\
-        \n【参考情報】  \n- Power Platform 管理センターでの環境管理と容量確認についてはMicrosoft公式ドキュメントに詳細があります\
-        \  \n- 環境の新規作成は管理者権限を持つユーザーのみが行え、管理センターから操作されます\n\n本設問は、Power Platform の運用管理とポータル役割の理解を深める重要なポイントを問うものです。\n\
-        \n- [1] https://www.sofia-inc.com/blog/16214.html\n- [2] https://qiita.com/kumukai/items/f7c958345fa2320ad927\n\
-        - [3] https://learn.microsoft.com/ja-jp/power-platform/admin/control-environment-creation\n\
+        \n【参考情報】  \n```\n- Power Platform 管理センターでの環境管理と容量確認についてはMicrosoft公式ドキュメントに詳細があります\
+        \  \n- 環境の新規作成は管理者権限を持つユーザーのみが行え、管理センターから操作されます\n```\n\n本設問は、Power Platform\
+        \ の運用管理とポータル役割の理解を深める重要なポイントを問うものです。\n\n- [1] https://www.sofia-inc.com/blog/16214.html\n\
+        - [2] https://qiita.com/kumukai/items/f7c958345fa2320ad927\n- [3] https://learn.microsoft.com/ja-jp/power-platform/admin/control-environment-creation\n\
         - [4] https://learn.microsoft.com/ja-jp/power-platform/admin/create-environment\n\
         - [5] https://www.cloud-for-all.com/blog/power-platform-manage-center\n- [6]\
         \ https://yo-yon.hatenablog.com/entry/powerapps20231213\n- [7] https://learn.microsoft.com/ja-jp/power-platform/admin/regions-overview\n\
@@ -1233,7 +1234,7 @@
         - [10] https://learn.microsoft.com/ja-jp/power-platform/admin/admin-documentation\n\
         \n\n\n\n-----"
   - 021_title: 質問 21/50：
-    022_line: 001813
+    022_line: 001825
     023_contents:
     - 031_question: 'ある会社は、サードパーティ製コネクタを使用するアプリでは会社のデータを使用しないことを必要としています。
 
@@ -1278,8 +1279,8 @@
         \n- **カスタマー ロックボックス**  \n  Microsoftのサポートチームが顧客データにアクセスする際に顧客が許可を与える仕組みであり、一般的なコネクタ利用制御やデータ漏洩防止機能ではありません。\n\
         \n#### 理解を深めるポイント\n\n- DLPポリシーは**Power Platformの利用制限とデータ保護のファーストラインに位置し、組織がサードパーティ製コネクタ使用に伴うデータ漏洩リスクを管理する上で不可欠なツール**です。\n\
         - 組織固有のニーズに合わせて、どのコネクタをどのグループに分けるかを設定し、のちのアプリ・フロー開発がそれに準拠するよう強制します。\n- これにより、サードパーティコネクタを含む自動化や業務アプリケーションでも会社のデータ保護が実現されます。\n\
-        \n【参考情報】  \n- Power Platform 管理センターでのDLPポリシー設定例と管理手順[2][3][6][7]  \n- DLPポリシーの効果的な活用によるセキュリティ強化事例[1][5]\
-        \  \n\nこの設問を通じて、「Power Platformにおけるサードパーティコネクタ利用時のデータ保護は、データ損失防止ポリシーを活用することが最良の対応である」という基本的な理解を身につけることが目的です。\n\
+        \n【参考情報】  \n```\n- Power Platform 管理センターでのDLPポリシー設定例と管理手順[2][3][6][7]  \n\
+        - DLPポリシーの効果的な活用によるセキュリティ強化事例[1][5]  \n```\n\nこの設問を通じて、「Power Platformにおけるサードパーティコネクタ利用時のデータ保護は、データ損失防止ポリシーを活用することが最良の対応である」という基本的な理解を身につけることが目的です。\n\
         \n- [1] https://qiita.com/skuramoto/items/abc1eb4626be7de5229b\n- [2] https://learn.microsoft.com/ja-jp/power-automate/prevent-data-loss\n\
         - [3] https://learn.microsoft.com/ja-jp/power-platform/admin/wp-data-loss-prevention\n\
         - [4] https://learn.microsoft.com/ja-jp/power-platform/admin/prevent-data-loss\n\
@@ -1289,7 +1290,7 @@
         - [9] https://www.geekfujiwara.com/tech/powerplatform/6693/\n- [10] https://learn.microsoft.com/ja-jp/power-platform/admin/data-loss-prevention-sdk\n\
         \n\n\n\n-----"
   - 021_title: 質問 22/50：
-    022_line: 001904
+    022_line: 001918
     023_contents:
     - 031_question: 'ある会社では Microsoft 365 を使用しています。 社内のすべてのユーザーに、Microsoft 365 ライセンスが割り当てられています。
 
@@ -1359,7 +1360,7 @@
         - [9] https://www.qes.co.jp/media/microsoft/Microsoft_365/a390\n- [10] https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/requirements-licensing-subscriptions\n\
         \n\n\n\n-----"
   - 021_title: 質問 23/50：
-    022_line: '002000'
+    022_line: '002014'
     023_contents:
     - 031_question: 'Microsoft Copilot Studio copilot をビルドします。 あなたは、コパイロットにトピックを追加します。
 
@@ -1390,9 +1391,9 @@
         \  \n- トリガー フレーズを複数設定することで、「同じ意味だが表現の異なるフレーズ」も一つのトピックで認識できるようになるため、ユーザーの多様な言い回しに対応可能です。\
         \  \n- 新規トピック作成時には5～10個程度のサンプルフレーズを用意するのが推奨されます。\n\n一方で、\n\n- **質問する**機能は、ユーザーから追加情報を聞き出すためのもので、トピックの認識には使いません。\
         \  \n- **アクションを呼び出す**は、フロー呼び出しや認証などの実行を指し、トピック開始の契機にはなりません。  \n- **メッセージを表示する**は、コパイロットが返答としてユーザーに表示する内容設定であり、認識のためではありません。\n\
-        \nこれらから、**トピックの起動・認識を行うトレーニングにはトリガー フレーズの設定が必須**であることがわかります。\n\n【参考】\n\n-\
-        \ Microsoft公式ドキュメントによると、トリガー フレーズは「エージェントの自然言語理解（NLU）モデルをトレーニングし、ユーザーの多様な発話を特定トピックに紐付ける」役割を持つ重要な要素です[1][2]。\
-        \  \n- トピック開始にはユーザーの言い回しを幅広くカバーし、適切なトピックを呼び出せるように設定します。  \n\n以上の理由から、「コパイロットにトピックが要求されるかを理解させるには、トリガー\
+        \nこれらから、**トピックの起動・認識を行うトレーニングにはトリガー フレーズの設定が必須**であることがわかります。\n\n【参考】\n```\n\
+        - Microsoft公式ドキュメントによると、トリガー フレーズは「エージェントの自然言語理解（NLU）モデルをトレーニングし、ユーザーの多様な発話を特定トピックに紐付ける」役割を持つ重要な要素です[1][2]。\
+        \  \n- トピック開始にはユーザーの言い回しを幅広くカバーし、適切なトピックを呼び出せるように設定します。  \n```\n\n以上の理由から、「コパイロットにトピックが要求されるかを理解させるには、トリガー\
         \ フレーズを追加する」ことが正解です。\n\n- [1] https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/guidance/trigger-phrases-best-practices\n\
         - [2] https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/guidance/cux-queries\n\
         - [3] https://note.com/fancy_hornet7579/n/n3389316a119e\n- [4] https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/authoring-triggers\n\
@@ -1402,7 +1403,7 @@
         - [10] https://ippu-biz.com/development/powerplatform/copilot-studio/copilotstudio-dynamic-chain/\n\
         \n\n\n\n-----"
   - 021_title: 質問 24/50：
-    022_line: 002083
+    022_line: 002098
     023_contents:
     - 031_question: 'Microsoft Copilot Studio copilot を作成します。
 
@@ -1437,8 +1438,9 @@
         #### 理解を深めるポイント\n\n- Microsoft Copilot Studio で自然言語を理解させるためには、**エンティティがユーザー発言の中から必要な情報を正確に抽出し、解析に利用される基盤となる**ことを押さえることが重要です。\
         \  \n- 標準のエンティティだけでなく、ユーザー固有の業務用語などを登録できる「ユーザー定義エンティティ」が柔軟な会話設計・情報取得に必須となります。\
         \  \n- トピックは会話のシナリオ単位、エンティティは情報の粒度で区別して設計することが、正しい会話AIの構築に繋がります。\n\n【参考情報】\
-        \  \n- Microsoft公式ドキュメントによると、Copilot Studioのエンティティはユーザー入力を分類・情報抽出し、変数に格納できるため、自然言語処理の中核要素です。\
-        \  \n- ユーザー定義エンティティにより、業務特有のデータや用語を認識可能にし、より高度で正確な対話が実現します。\n\n- [1] https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/advanced-entities-slot-filling\n\
+        \  \n```\n- Microsoft公式ドキュメントによると、Copilot Studioのエンティティはユーザー入力を分類・情報抽出し、変数に格納できるため、自然言語処理の中核要素です。\
+        \  \n- ユーザー定義エンティティにより、業務特有のデータや用語を認識可能にし、より高度で正確な対話が実現します。\n```\n\n- [1]\
+        \ https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/advanced-entities-slot-filling\n\
         - [2] https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/authoring-variables-about\n\
         - [3] https://note.com/fancy_hornet7579/n/ne93e3af99a3f\n- [4] https://zenn.dev/headwaters/articles/29ec186287ea0b\n\
         - [5] https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/guidance/slot-filling-best-practices\n\
@@ -1448,7 +1450,7 @@
         - [9] https://note.com/fancy_hornet7579/n/n3389316a119e\n- [10] https://www.youtube.com/watch?v=CRtufwTtC_M\n\
         \n\n\n\n-----"
   - 021_title: 質問 25/50：
-    022_line: '002166'
+    022_line: 002183
     023_contents:
     - 031_question: 'ある会社がソーシャル プラットフォームで新製品の発売を発表します。
 
@@ -1500,8 +1502,8 @@
         \ Apps**  \n  業務アプリ作成用で、自然言語のセンチメント分析機能は含まれていない。  \n\n#### 理解を深めるポイント\n\n\
         - ソーシャルメディア上の多様なテキストデータを対象に「感情分析」や「テキスト分析」を行うには、AI Builderの事前学習済みAIモデルを活用するのが最適であること。\
         \  \n- 分析結果はPower Automateのフローに組み込み、リアルタイム監視や自動応答のトリガーにすることも可能。  \n- その後の結果可視化や詳細分析にはPower\
-        \ BIを利用することで、業務的に価値ある洞察を得る仕組みとなる。\n\n【参考情報】  \n- AI Builderの「センチメント分析モデル」は、テキストデータの感情のポジティブ・ネガティブ・ニュートラル判定を自動で行い、顧客の声を量的・質的に分析できる機能としてPower\
-        \ Platformに統合されています。[1][2][3]\n\n以上の理由から、**新製品に対する顧客の感情分析には「AIビルダー」を使用することが最適**です。\n\
+        \ BIを利用することで、業務的に価値ある洞察を得る仕組みとなる。\n\n【参考情報】  \n```\n- AI Builderの「センチメント分析モデル」は、テキストデータの感情のポジティブ・ネガティブ・ニュートラル判定を自動で行い、顧客の声を量的・質的に分析できる機能としてPower\
+        \ Platformに統合されています。[1][2][3]\n```\n\n以上の理由から、**新製品に対する顧客の感情分析には「AIビルダー」を使用することが最適**です。\n\
         \n- [1] https://www.microsoft.com/en-us/power-platform/blog/power-automate/extract-sentiment-from-text-with-ai-builder/\n\
         - [2] https://learn.microsoft.com/en-us/training/modules/get-started-with-ai-builder-sentiment-analysis/\n\
         - [3] https://learn.microsoft.com/en-us/ai-builder/prebuilt-sentiment-analysis\n\
@@ -1513,7 +1515,7 @@
         - [9] https://learn.microsoft.com/th-th/training/modules/get-started-with-ai-builder-sentiment-analysis/\n\
         - [10] https://www.youtube.com/watch?v=b1nWLUetIl4\n\n\n\n\n-----"
   - 021_title: 質問 26/50：
-    022_line: '002261'
+    022_line: 002280
     023_contents:
     - 031_question: 'ある会社には顧客セルフサービス ポータルがあります。 顧客はポータルを使用して苦情を記録します。
 
@@ -1562,9 +1564,9 @@
         \ 理解を深めるポイント\n\n- テキストから「名前」や「場所」などの構造化された情報を引き出すには、**AIビルダーのエンティティ抽出モデルが最適なツールであることを押さえましょう。**\
         \  \n- ルーティングなどの次工程は、抽出した情報を元にPower Automateなどで自動化可能です。  \n- AIビルダーの「事前構築済みモデル」はすぐに使え、カスタムモデルを作れば独自の製品名や用語に対応できます。\
         \  \n\nこの問題は、Power Platform のAI機能の使いどころと、各コンポーネントの役割分担を理解するための重要な確認項目です。\n\
-        \n【参考】  \n- Microsoft公式：「AI Builder エンティティ抽出モデル」では、テキスト内の市区町村名などの標準エンティティを抽出可能とされており、ビジネス自動化に役立つことが説明されています[1][2]。\
+        \n【参考】  \n```\n- Microsoft公式：「AI Builder エンティティ抽出モデル」では、テキスト内の市区町村名などの標準エンティティを抽出可能とされており、ビジネス自動化に役立つことが説明されています[1][2]。\
         \  \n- Power Apps や Power Automate への組み込み方法により、実務での苦情処理やルーティング自動化が行えます[2][6][8]。\n\
-        \n- [1] https://learn.microsoft.com/ja-jp/ai-builder/entity-extraction-overview\n\
+        ```\n\n- [1] https://learn.microsoft.com/ja-jp/ai-builder/entity-extraction-overview\n\
         - [2] https://learn.microsoft.com/ja-jp/ai-builder/prebuilt-entity-extraction\n\
         - [3] https://learn.microsoft.com/ja-jp/ai-builder/entity-extraction-pwr-automate\n\
         - [4] https://learn.microsoft.com/ja-jp/ai-builder/entity-extraction-create\n\
@@ -1574,7 +1576,7 @@
         - [9] https://speakerdeck.com/miyakemito/ai-buildernituite\n- [10] https://learn.microsoft.com/ja-jp/ai-builder/entity-extraction-train\n\
         \n\n\n\n-----"
   - 021_title: 質問 27/50：
-    022_line: '002351'
+    022_line: '002372'
     023_contents:
     - 031_question: 'Power BI レポートを編集します。
 
@@ -1623,7 +1625,7 @@
         - [10] https://microsoftlearning.github.io/PL-300-Microsoft-Power-BI-Data-Analyst.ja-jp/Instructions/Demos/05-create-measures-DAX.html\n\
         \n\n\n\n-----"
   - 021_title: 質問 28/50：
-    022_line: '002430'
+    022_line: '002451'
     023_contents:
     - 031_question: 'Microsoft Dataverse から Power BI レポートを作成する予定です。
 
@@ -1666,9 +1668,9 @@
         \n#### 理解を深めるポイント\n\n- Power BI Desktop は「データの準備」「モデルの設計」「計算や指標の作成」を行い、レポートを作成する開発環境です。\
         \  \n- 一方で、Power BI サービスは作成されたレポートを配布・共有し、ダッシュボードを作成して組織内外で閲覧・連携するためのクラウド基盤です。\
         \  \n- そのため、Power BI Desktop内のワークフローで用いる代表的なコンポーネントは「データの整形とモデリング」と「計算列」であることを押さえる必要があります。\n\
-        \n【参考】\n\n- Power BI公式ドキュメントによると、Power BI Desktopでの主な機能はデータ取得、変換、モデリングおよびDAXによる計算列作成です。\
+        \n【参考】\n```\n- Power BI公式ドキュメントによると、Power BI Desktopでの主な機能はデータ取得、変換、モデリングおよびDAXによる計算列作成です。\
         \  \n- 一度作成したレポートはPower BI サービスに公開し、そこで共有やダッシュボードの作成、スケジュール更新などの管理を行います。\n\
-        \n以上の理由から、**Power BI Desktopで使用できるコンポーネントは「データの整形とモデリング」と「計算列」**が正解となります。\n\
+        ```\n\n以上の理由から、**Power BI Desktopで使用できるコンポーネントは「データの整形とモデリング」と「計算列」**が正解となります。\n\
         \n- [1] https://www.entartes.com/blog/power-bi-desktop-vs-power-bi-service\n\
         - [2] https://learn.microsoft.com/en-us/power-bi/fundamentals/power-bi-overview\n\
         - [3] https://www.techefficiencysolutions.com/blog/power-bi-desktop-vs-power-bi-service/\n\
@@ -1680,7 +1682,7 @@
         - [10] https://community.powerbi.com/t5/Desktop/Comparing-Power-BI-Desktop-and-the-Power-BI-service/td-p/3159623\n\
         \n\n\n\n-----"
   - 021_title: 質問 29/50：
-    022_line: '002517'
+    022_line: 002539
     023_contents:
     - 031_question: '現在と前年の月ごとの収益比較を表示する Power BI の視覚化を作成する必要があります。
 
@@ -1723,7 +1725,7 @@
         - [9] https://learn.microsoft.com/ja-jp/power-bi/visuals/power-bi-visualization-combo-chart\n\
         - [10] https://youseibubu.com/apps/exam_pl600/\n\n\n\n\n-----"
   - 021_title: 質問 30/50：
-    022_line: 002586
+    022_line: 002608
     023_contents:
     - 031_question: 'ある会社では Power BI を使用しています。
 
@@ -1768,7 +1770,7 @@
         - [8] https://qiita.com/yugoes1021/items/b0ccd36b53079a748de8\n- [9] https://soft-zou.jp/2025/01/10/power-bi-sum/\n\
         - [10] https://lab.pasona.co.jp/data-operation/skill/817/\n\n\n\n\n-----"
   - 021_title: 質問 31/50：
-    022_line: '002665'
+    022_line: 002687
     023_contents:
     - 031_question: 'Power BI データセットにテーブルがあります。 集合縦棒グラフ ビジュアルをレポート ページに追加します。
 
@@ -1796,19 +1798,28 @@
 
         - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
 
-        - [Power BI で集計 (合計、平均など) を操作する - Power BI | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-bi/create-reports/service-aggregates)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [Power BI で集計 (合計、平均など) を操作する - Power BI | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-bi/create-reports/service-aggregates)'
+    - 035_supplements: "### 補足：Power BI 集合縦棒グラフでテーブル内のカテゴリ行数を表示するフィールド選択\n回答\n\n-\
+        \ Y 軸\n\n#### 設問の意図・目的と解説\n\nこの問題は、Power BI の集合縦棒グラフの基本的な構成要素の理解を確認するものです。具体的には、グラフのどのフィールドに「集計値（この場合は行数）」を設定すべきかを問うています。\n\
+        \n- **Y 軸**には、数値的な「値」や「計算結果（メジャー）」を設定します。これは縦棒グラフの棒の高さを決定し、今回の問題でいう「テーブル内の行数（集計数）」を表現する場所です。\
+        \  \n- **X 軸**には、棒グラフの横軸に配置するカテゴリ（例：商品名、月、部門など）を設定します。これは棒の区分けをするために必須です。\
+        \  \n- **凡例**は、グラフ内で色分けされる追加的なカテゴリを示すためのフィールドで、例えば売上を地域別に色分けしたい場合などに使用されます。\
+        \  \n- **値**は単に「データの値」を示す一般的な名称ですが、Power BI の視覚化ビルド画面上では、Y 軸に該当する役割のフィールドを指します。今回の問題文は、Power\
+        \ BI で「Y 軸」に該当するフィールド設定を求めています。\n\nしたがって、**行数を表す数値メジャーは「Y 軸」に追加する**ことが正しい設定です。これにより、集合縦棒グラフで各カテゴリの行数が縦方向の棒の高さとして視覚化されます。\n\
+        \n#### 追加情報\n\nPower BI の集合縦棒グラフ作成時の基本的フィールド配置は以下のとおりです。  \n\n| フィールド役割 |\
+        \ 内容例 | Power BI ビジュアルへの配置場所 |\n|-----------------|---------|--------------------------------|\n\
+        | カテゴリ（横軸） | 月、製品名 | X 軸 |\n| 値（数値集計） | 売上合計、行数 | Y 軸 |\n| カテゴリ色分け | 地域、部門名\
+        \ | 凡例 |\n\nこの理解はPower BIレポートのビジュアル作成の基本であり、多くのグラフタイプで共通しています。  \n行数などの数値集計は必ずY軸に置き、区分けしたいカテゴリをX軸に設定します。\n\
+        \n以上の理由により、テーブル内の各カテゴリの行数を集合縦棒グラフで表現するには「Y 軸」に行数のメジャー（集計）を追加することが正解です。\n\n\
+        - [1] https://www.zdh.co.jp/bi-online/pb-010-020-d/\n- [2] https://qiita.com/shinyasasaki/items/6af02bb81fd2c9e9f6ee\n\
+        - [3] https://learn.microsoft.com/ja-jp/power-bi/visuals/power-bi-visualization-column-charts\n\
+        - [4] https://learn.microsoft.com/ja-jp/power-bi/visuals/power-bi-visualization-column-chart-format-settings\n\
+        - [5] https://kawausoanalytics.com/231/\n- [6] https://yuatech-eng.com/power-bi-desktop-collective-verticalbar-chart/517/\n\
+        - [7] https://www.zdh.co.jp/bi-online/pb-010-130-d/\n- [8] https://tech-blog.cloud-config.jp/2022-06-09-power-bi-small-multiples/\n\
+        - [9] https://frogwell.co.jp/blogs/hukugougraph/\n- [10] https://www.youtube.com/watch?v=fsZbq3IIKtQ\n\
+        \n\n\n\n-----"
   - 021_title: 質問 32/50：
-    022_line: '002706'
+    022_line: 002769
     023_contents:
     - 031_question: '営業チーム用の Power BI レポートを作成する予定です。
 
@@ -1837,19 +1848,25 @@
 
         - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
 
-        - [Power BI での視覚化の種類 - Power BI | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [Power BI での視覚化の種類 - Power BI | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a)'
+    - 035_supplements: "### 補足：上位の製品カテゴリの売上収益を表示するグラフの種類選択\n回答\n\n- 横棒\n\n#### 設問の意図・目的と解説\n\
+        \nこの問題は、Power BIで複数のカテゴリの売上収益を分かりやすく比較表示するために、最適なグラフの種類を理解しているかを問うものです。  \n\
+        \n- **横棒グラフ**は、カテゴリごとの数値を比較するのに非常に適しています。棒の長さで数値の大小が直感的に把握できるため、「上位15件」のように多数のカテゴリを比較・ランキング表示する際に見やすく便利です。特にカテゴリ名が長い場合は横棒の方が視認性が高いです。\
+        \  \n- **ドットプロットグラフ**はデータポイントを点で表示し、複数のメジャーを比較するのに使えますが、上位複数カテゴリの売上ランキングを示すにはやや視認性が劣ります。\
+        \  \n- **複合グラフ**は2つのメジャーを異なるグラフタイプで同時に示す場合に適しており、単一の指標（売上収益）だけの比較には必ずしも向きません。\
+        \  \n- **ゲージグラフ**は単一の値の目標達成度を示すためのグラフであり、多数のカテゴリ間の比較には不向きです。  \n\nしたがって、多数の製品カテゴリの売上収益ランキングをわかりやすく比較するには、**横棒グラフ**が最も適切な選択です。\n\
+        \n#### 参考情報\n```\n- Power BIの標準的な視覚化では、カテゴリ別の比較には棒グラフ（縦棒・横棒）が多用されます。売上の上位○件を並べる場合も棒グラフの利用が一般的です。\
+        \  \n- 特に、横棒グラフはカテゴリ名が長い場合に文字を読みやすくできる点で重宝されます。  \n- 複合グラフは売上と利益のように複数指標の同時比較に向きますが、単純なランキング表示には過剰です。\n\
+        ```\n\nこのようにPower BIのグラフは用途に応じて使い分ける必要がありますが、今回の「上位15件の製品カテゴリの売上比較」に最も適しているのは**横棒グラフ**です。[1][2][3][5][6]\n\
+        \n- [1] https://www.siteengine.co.jp/blog/powerbi-how-to-make-charts/\n- [2]\
+        \ https://deepcom.co.jp/powerbi_charttype/\n- [3] https://learn.microsoft.com/ja-jp/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a\n\
+        - [4] https://powerbiseminar.com/2025/04/21/power-bil-ine-graph/\n- [5] https://tctstm.hatenablog.com/entry/2025/06/01/104950\n\
+        - [6] https://www.learnpowerbi.infocuve.com/?p=566\n- [7] https://learn.microsoft.com/ja-jp/power-bi/create-reports/desktop-insights-find-where-different\n\
+        - [8] https://powerbiseminar.com/2025/01/05/power-bi-sales-analysis/\n- [9]\
+        \ https://www.zdh.co.jp/bi-online/pb-010-100-c/\n- [10] https://qiita.com/pytomo/items/5278667b71f06d27d40d\n\
+        \n\n\n\n-----"
   - 021_title: 質問 33/50：
-    022_line: '002747'
+    022_line: 002845
     023_contents:
     - 031_question: 'ある会社がカンファレンスを主催します。
 
@@ -1875,19 +1892,27 @@
 
         - [Power BI の構築を開始する - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/get-started-with-power-bi/)
 
-        - [アプリの構築を開始する - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/maker/)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [アプリの構築を開始する - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/maker/)'
+    - 035_supplements: "### 補足：Power Apps コンポーネントの選択：顧客が閲覧可能な主催カンファレンス\n回答\n\n- パワー・ページ\n\
+        \n#### 設問の意図・目的と解説\n\nこの問題は、Power Apps の各コンポーネントの特徴を理解し、外部の顧客向けに情報を公開する際に適切なものを選択できるかを試しています。\n\
+        \n- **パワー・ページ（Power Pages）**は、Power Platformの一部で、外部ユーザー（顧客など）向けに安全なウェブサイトを簡単に構築し公開できるローコードのソリューションです。\
+        \  \n  - パワー・ページは、公開Webサイトやポータルを通じて外部の人々がアクセス可能な情報ページや申請フォーム、イベント情報（今回のカンファレンス情報等）を公開するのに最適です。\
+        \  \n  - また、テンプレート利用やカスタマイズも柔軟にでき、Dataverseと連携してデータの管理も可能です。  \n  - これは、外部の顧客が閲覧することを目的としているため、組織外向けに公開可能なサイト作成ができるパワー・ページが適しています。\n\
+        \n- **キャンバスアプリ**は主に組織内部の業務用に柔軟なUIでアプリを作成するためのもので、外部公開には向きません。  \n- **モデル駆動型アプリ**はデータモデルに基づいて構築され、こちらも主に組織内部用であり外部公開用ではありません。\
+        \  \n- **ビジネスプロセスフロー**は業務プロセスをガイドするためのツールであり、公開用コンポーネントではありません。\n\nこのように、カンファレンスのような外部向けのイベント情報を顧客に見せるための手段としては、**パワー・ページが最も適切**です。\n\
+        \n#### 学習のポイント\n\n- Power Apps のコンポーネントには「キャンバスアプリ」「モデル駆動型アプリ」「パワー・ページ」「ビジネスプロセスフロー」があり、それぞれ対象の利用場面が異なる。\
+        \  \n- 外部向けに情報発信やデータ収集をしたい場合は、「パワー・ページ（旧 Power Apps ポータル）」を使うことが一般的である。  \n\
+        - パワー・ページは、外部ユーザーが安全にアクセスできるWebサイトを作成し、Power PlatformやDataverseとの統合も可能。  \n\
+        - この理解は、Power Platformを活用した情報公開や顧客対応ソリューションの設計において重要。\n\n以上の理由から、今後のカンファレンスを顧客に閲覧させるには**パワー・ページ**を利用するのが正解です。\n\
+        \n- [1] https://www.isi-grp.co.jp/powerplatform/usage/about-power-pages\n\
+        - [2] https://www.qes.co.jp/media/PowerPages/a313\n- [3] https://business.ntt-east.co.jp/content/cloudsolution/column-497.html\n\
+        - [4] https://learn.microsoft.com/ja-jp/power-pages/introduction\n- [5] https://deepcom.co.jp/power_pages/\n\
+        - [6] https://learn.microsoft.com/ja-jp/power-apps/maker/portals/overview\n\
+        - [7] https://www.rpa-roboffice.jp/column/power-pages/\n- [8] https://www.cloud-for-all.com/blog/what-is-the-power-platform\n\
+        - [9] https://www.qes.co.jp/media/PowerPages/a331\n- [10] https://qiita.com/MakotoIshikawa/items/1c9c3e5d002c7ce8f1fc\n\
+        \n\n\n\n-----"
   - 021_title: 質問 34/50：
-    022_line: 002788
+    022_line: 002925
     023_contents:
     - 031_question: 'アプリを作成します。
 
@@ -1915,19 +1940,30 @@
 
         - [Power BI の構築を開始する - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/get-started-with-power-bi/)
 
-        - [アプリの構築を開始する - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/maker/)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [アプリの構築を開始する - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/maker/)'
+    - 035_supplements: "### 補足：Power AppsでAzure SQLデータベースのデータを表示するアプリの選択\n回答\n\n-\
+        \ キャンバス アプリ\n\n#### 設問の意図・目的と解説\n\nこの問題は、Power Appsで外部のデータソースであるAzure SQLデータベースのデータを表示する場合、どのタイプのアプリ（コンポーネント）を使うべきかを理解しているかを問うものです。\n\
+        \n- **キャンバス アプリ**は多種多様なデータソースと接続可能であり、Azure SQLデータベースもその一つです。キャンバスアプリではSQL\
+        \ Serverコネクタを使用してAzure SQLデータベースに直接接続し、テーブルのデータを読み込み、ユーザーが操作しやすいUIを自由に設計できます。このため、Azure\
+        \ SQLデータベースのデータ表示を実現するにはキャンバスアプリが最適です。\n\n- **モデル駆動型アプリ**はMicrosoft Dataverseのデータモデルに依存して構築されるため、Azure\
+        \ SQLデータベースとは直接連携しません。  \n- **パワー・ページ（Power Pages）**は主に外部ユーザー向けWebポータルの作成に使われ、今回のようにアプリ内でAzure\
+        \ SQLのデータを直接表示操作する用途には向きません。  \n- **Microsoft Dataverse**はPower Platform専用のデータプラットフォーム（データベース）であり、Azure\
+        \ SQLデータベースではありません。Dataverseのテーブルを使う場合はモデル駆動型アプリやキャンバスアプリが利用されますが、問題文の「Azure\
+        \ SQLデータベースのデータを表示」という条件には合致しません。\n\n#### 追加補足\n\nキャンバスアプリでAzure SQLへの接続は、「SQL\
+        \ Serverコネクタ」を使い、接続設定（サーバー名・データベース名・認証情報）を行うことで実現可能です。一度接続を設定すると、Azure SQLのテーブルデータをアプリ上に表示したり、更新操作も実装可能です。\n\
+        \nPower AppsにおけるAzure SQLデータベース連携は、キャンバスアプリが最も直接的かつ標準的な利用方法であるため、この問題における正解は**キャンバスアプリ**です。\n\
+        \n以上より、アプリにAzure SQLデータベースのデータを表示するには**キャンバスアプリ**を使用するのが正しい選択です。\n\n- [1]\
+        \ https://cptechweb.teldevice.co.jp/hc/ja/articles/7436305303193-Power-Apps%E3%81%A8%E3%83%87%E3%83%BC%E3%82%BF%E3%82%BD%E3%83%BC%E3%82%B9-%E7%AC%AC%EF%BC%92%E5%9B%9E-%E3%83%87%E3%83%BC%E3%82%BF%E9%80%A3%E6%90%BA-Azure-SQL-Database%E7%B7%A8-2022%E5%B9%B4%EF%BC%96%E6%9C%88\n\
+        - [2] https://learn.microsoft.com/ja-jp/power-apps/maker/canvas-apps/app-from-azure-sql-database\n\
+        - [3] https://www.artisan.jp.net/blog/connecting-power-apps-to-external-database/\n\
+        - [4] https://learn.microsoft.com/ja-jp/power-apps/maker/canvas-apps/connections/sql-connection-overview\n\
+        - [5] https://www.cdata.com/jp/kb/tech/sql-odata-powerapps.rst\n- [6] https://www.cdata.com/jp/kb/tech/azuresynapse-odata-powerapps.rst\n\
+        - [7] https://cptechweb.teldevice.co.jp/hc/ja/articles/8399392080025-Power-Apps%E3%81%A8%E3%83%87%E3%83%BC%E3%82%BF%E3%82%BD%E3%83%BC%E3%82%B9-%E7%AC%AC%EF%BC%93%E5%9B%9E-%E3%83%87%E3%83%BC%E3%82%BF%E9%80%A3%E6%90%BA-Cosmos-DB%E7%B7%A8-2022%E5%B9%B4%EF%BC%96%E6%9C%88\n\
+        - [8] https://qiita.com/kzkamiya/items/afa5d379ee6d3d79b28c\n- [9] https://qiita.com/futa_ttjh/items/dab096182188d5600da3\n\
+        - [10] https://memo.tyoshida.me/ja/power-platform/powerapps/power-apps-canvas-app-performance-issue-overview/\n\
+        \n\n\n\n-----"
   - 021_title: 質問 35/50：
-    022_line: 002830
+    022_line: '003000'
     023_contents:
     - 031_question: 'ある会社では Microsoft Power Platform を使用しています。
 
@@ -1960,19 +1996,26 @@
 
         - [キャンバス アプリの数式の使用を開始する - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/maker/canvas-apps/working-with-formulas)
 
-        - [WEBSERVICE 関数 - Microsoft サポート](https://support.microsoft.com/ja-jp/office/webservice-%E9%96%A2%E6%95%B0-0546a35a-ecc6-4739-aed7-c0b7ce1562c4)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [WEBSERVICE 関数 - Microsoft サポート](https://support.microsoft.com/ja-jp/office/webservice-%E9%96%A2%E6%95%B0-0546a35a-ecc6-4739-aed7-c0b7ce1562c4)'
+    - 035_supplements: "### 補足：キャンバス アプリにおける数式のユースケース推奨\n回答\n\n- 行の一覧をフィルター処理する。 \
+        \ \n- ユーザーがボタンを選択したときにデータを保存する。  \n\n#### 設問の意図・目的と解説\n\nこの問題は、キャンバス アプリにおける**Power\
+        \ Fx（数式言語）**の代表的なユースケースを理解しているかを確認するものです。Power FxはExcel風の数式で、ユーザー操作に応じて画面の挙動やデータの操作を柔軟に制御します。\n\
+        \n- **行の一覧をフィルター処理する**  \n  FILTER関数などの数式を使って、データテーブルやコレクションの行を特定の条件で絞り込む操作がよく使われます。例えば、「特定の条件に合致する顧客リストを表示する」などの場面です。\n\
+        \n- **ユーザーがボタンを選択したときにデータを保存する**  \n  ボタンの`OnSelect`プロパティに数式（例えば`SubmitForm()`や`Patch()`）を記述することで、ユーザーの操作に応じてデータソースへデータの送信や更新を行う処理を行います。これはインタラクティブなアプリの根幹となる操作です。\n\
+        \n- **キャンバス アプリを実行できるユーザーを制御する**  \n  これはセキュリティやアクセス制御の観点で行うもので、一般に数式で直接制御するケースはありません。ユーザー権限はPower\
+        \ PlatformやAzure AD側の設定で管理されます。\n\n- **Web ページから XML データを返す**  \n  Power Appsの数式では、Excelの`WEBSERVICE`関数のように外部Web\
+        \ APIからXMLを取得する機能は標準で備わっていません。よって、この用途に数式は使いません。\n\n#### 学習ポイント\n\n- Power\
+        \ Fxはユーザー操作と連動して、データの検索・絞り込みやデータの追加・更新を行うために使われる。  \n- 典型的なユースケースは「データのフィルタリング」「フォーム送信・データ保存」などの操作を数式で行うこと。\
+        \  \n- アクセス権管理や外部WebサービスからのXML取得は数式の対象外であり、それぞれ別の仕組みで対応する。  \n\n以上の理由から、キャンバスアプリの数式ユースケースとして推奨されるのは\
+        \ **「行の一覧をフィルター処理する」** と **「ユーザーがボタンを選択したときにデータを保存する」** の2つです。\n\n- [1] https://learn.microsoft.com/ja-jp/power-apps/maker/canvas-apps/working-with-formulas\n\
+        - [2] https://learn.microsoft.com/ja-jp/power-apps/maker/canvas-apps/working-with-large-apps\n\
+        - [3] https://qiita.com/PowerPlatform4/items/b423cee449edb72c97d9\n- [4] https://youseibubu.com/apps/reference_cheatsheet/\n\
+        - [5] https://jpdynamicscrm.github.io/blog/canvasapp/Canvas-app-delegation/\n\
+        - [6] https://youseibubu.com/apps/reference_update3/\n- [7] https://zezeze.hateblo.jp/?page=1533045245\n\
+        - [8] https://www.geekfujiwara.com/tech/1402/\n- [9] https://qiita.com/h-nagao/items/e5e7a3708ddb5a10ce0e\n\
+        - [10] https://www.qes.co.jp/media/PowerApps/a97\n\n\n\n\n-----"
   - 021_title: 質問 36/50：
-    022_line: 002873
+    022_line: 003083
     023_contents:
     - 031_question: 'ある会社では Microsoft Power Platform を使用しています。
 
@@ -2007,19 +2050,27 @@
 
         - [Power BI ビジュアルでキャンバス アプリを作成する方法 (ビデオを含む) - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/maker/canvas-apps/how-to/build-powerbi-visual)
 
-        - [Microsoft Power Fx の概要 - Power Platform | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-platform/power-fx/overview)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [Microsoft Power Fx の概要 - Power Platform | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-platform/power-fx/overview)'
+    - 035_supplements: "### 補足：Power Apps キャンバス アプリの機能について\n回答\n\n- Microsoft Power\
+        \ Fx 数式を使用して機能を制御する。  \n- 人工知能を含める。  \n\n#### 設問の意図・目的と解説\n\nこの問題は、Power Appsの中でも「キャンバスアプリ」の特徴的な機能を理解しているかを問うものです。キャンバスアプリは、ユーザーが自由に画面デザインを行い、ビジネス要件に応じた高度な操作や処理を行うためのアプリを作成できるプラットフォームです。\n\
+        \n- **Microsoft Power Fx 数式を使用して機能を制御する**  \n  キャンバスアプリの最大の特徴は、Excelの関数に似た「Power\
+        \ Fx」という数式言語を駆使して画面の動作やデータ処理を制御できる点です。  \n  これにより、ユーザー操作に応じた条件分岐やデータの取得・更新などを柔軟に実装できます。\
+        \  \n\n- **人工知能を含める**  \n  キャンバスアプリにはAIコントロール（例：フォーム処理、物体検出など）が組み込め、画像認識や自然言語処理などのAI機能をアプリに組み込むことが可能です。これにより高度なユーザー体験や自動化を実現できます。\
+        \  \n\n- **アプリに匿名でアクセスする**は誤りです。キャンバスアプリは利用者がMicrosoft Entra ID（旧Azure AD）などの認証を経てアクセスする設計が多く、匿名アクセスはできません。\
+        \  \n\n- **Power BI ダッシュボード全体を埋め込む**は不正確です。キャンバスアプリはPower BIの個々のタイル（チャート等）を埋め込むことはできますが、ダッシュボード全体の埋め込みはモデル駆動型アプリで主に利用されます。\n\
+        \n#### 学習のポイント\n\n- キャンバスアプリは、Power Fx 数式で動作を定義しユーザー操作に対応できる柔軟な開発環境を提供する。\
+        \  \n- AI機能（AIコントロール）を取り込むことで、アプリに高度な認識や解析機能をもたせることが可能。  \n- 認証は必須で、匿名アクセスは一般的にできない。\
+        \  \n- Power BIとの連携はタイル単位が中心で、ダッシュボード全体の埋め込みはモデル駆動型アプリに適している。  \n\n以上の理由から、キャンバスアプリの主な機能としては**「Microsoft\
+        \ Power Fx 数式を使用して機能を制御する」**と**「人工知能を含める」**が正しい選択です。\n\n- [1] https://www.isi-grp.co.jp/powerplatform/usage/about-canvas-vs-model\n\
+        - [2] https://learn.microsoft.com/ja-jp/power-apps/maker/canvas-apps/getting-started\n\
+        - [3] https://business.ntt-east.co.jp/content/cloudsolution/column-509.html\n\
+        - [4] https://learn.microsoft.com/ja-jp/power-apps/maker/canvas-apps/\n- [5]\
+        \ https://www.hikarisys.co.jp/column/detail.php?CNo=9\n- [6] https://devlog.mescius.jp/powerapps-canvas-reports-app/\n\
+        - [7] https://hblab.co.jp/blog/power-apps-usecases/\n- [8] https://www.artisan.jp.net/blog/skills-for-the-power-apps-developer/\n\
+        - [9] https://biz.techvan.co.jp/tech-microsoft/blog/contents/microsoft_power_apps_appli.html\n\
+        - [10] https://www.iimhs.co.jp/services/ms365/power-apps/\n\n\n\n\n-----"
   - 021_title: 質問 37/50：
-    022_line: 002917
+    022_line: '003167'
     023_contents:
     - 031_question: 'キャンバス アプリを作成して公開します。
 
@@ -2052,19 +2103,18 @@
 
         - [Power BI の構築を開始する - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/get-started-with-power-bi/)
 
-        - [キャンバス アプリを前のバージョンに復元する - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/maker/canvas-apps/restore-an-app)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [キャンバス アプリを前のバージョンに復元する - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/maker/canvas-apps/restore-an-app)'
+    - 035_supplements: "### 補足：キャンバス アプリの以前の動作バージョンに戻す際の手順\n回答\n\n- 以前のバージョンのアプリを選択し、[復元]\
+        \ をクリックする。  \n- 復元されたバージョンのアプリを公開する。  \n\n#### 設問の意図・目的と解説\n\nこの問題は、キャンバス\
+        \ アプリの**バージョン管理機能**に関する理解を確認するものです。  \n特に、ユーザーから報告された問題に対応し、最新の変更が不具合を起こしている場合に直前の安定したバージョンに戻す操作を適切に行えるかを問います。\n\
+        \n- **以前のバージョンを選択して「復元」**することで、過去の状態のアプリに戻すことができます。この操作により、復元したバージョンが新しいバージョンとして登録されます。\
+        \  \n- 復元されたバージョンは**必ず公開**して初めてユーザーに有効となるため、復元後に公開操作も必要です。  \n- 一方で、「アプリを編集してすべての変更を元に戻す」や「以前のバージョンをエクスポートしてインポートする」は非効率、不確実、もしくは適用できない方法です。編集で変更を元に戻すのは手間がかかりミスが起きやすく、エクスポートは最新バージョンのアプリが対象であり、過去のバージョン単体をエクスポートできません。\
+        \  \n\n#### 学習のポイント\n\n- Power Appsのキャンバスアプリは自動的にバージョン管理されており、過去の任意のバージョンに戻すことができる。\
+        \  \n- バージョン管理画面から「復元」操作を行い、その復元したバージョンを公開して初めて変更が反映される。  \n- この仕組みはトラブル時の迅速なロールバックを可能にし、安定稼働を支援する重要な機能である。\
+        \  \n- 過去バージョンのインポート・エクスポートは利用できず、手動編集は非推奨。  \n\nしたがって、過去の安定版に戻すには  \n- **「以前のバージョンを選択し、[復元]\
+        \ をクリックする」**と  \n- **「復元されたバージョンのアプリを公開する」**の2つが正しいアクションです。\n\n\n\n\n-----"
   - 021_title: 質問 38/50：
-    022_line: 002961
+    022_line: '003236'
     023_contents:
     - 031_question: 'ある会社では Microsoft Power Platform を使用しています。
 
@@ -2092,19 +2142,27 @@
 
         - [Power BI の構築を開始する - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/get-started-with-power-bi/)
 
-        - [キャンバス アプリ内のコントロールとプロパティ - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/maker/canvas-apps/reference-properties)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [キャンバス アプリ内のコントロールとプロパティ - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/maker/canvas-apps/reference-properties)'
+    - 035_supplements: "### 補足：キャンバス アプリでデータ ソースに接続できるコントロールの選択\n回答\n\n- フォーム  \n\
+        - ギャラリー  \n\n#### 設問の意図・目的と解説\n\nこの問題は、Power Apps のキャンバスアプリにおいて、どのコントロールが外部のデータ\
+        \ ソースに直接接続してデータを表示・編集できるかを理解しているかを確認するものです。\n\n- **フォームコントロール**は、データソースの単一行データを表示、編集、新規作成するために使用されます。フォームには「表示フォーム」と「編集フォーム」があり、それぞれ適した用途でデータソースと連携します。フォームを設置するときに、必ず接続するデータソースを選択します。\n\
+        \n- **ギャラリーコントロール**は、データソースの複数行（一覧）を表示するのに適しています。ギャラリーはリストやグリッドのようにデータ集合をユーザーに見せるためのコントロールで、データソースを指定して一覧表示を実現します。\n\
+        \n- **ボタンコントロール**はユーザーの操作をトリガーするもので、数式を通じて他のコントロールやデータソースに働きかけることは可能ですが、ボタン自体が直接データソースに接続されることはありません。\n\
+        \n- **スクリーンコントロール（画面）**はキャンバスアプリの画面単位のコンテナであり、データソースに接続する機能はありません。画面内に配置したフォームやギャラリーなどのコントロールがデータソースを利用します。\n\
+        \n#### 学習のポイント\n\n- キャンバス アプリでデータの表示や編集を行うには、**フォーム**と**ギャラリー**というデータ連携対応のコントロールを使います。\
+        \  \n- これらのコントロールはUIで直接データソースの情報を取り扱い、ユーザーにデータを見せたり、編集したデータをデータベースへ反映したりします。\
+        \  \n- 操作トリガーの「ボタン」や「スクリーン」は直接データソース接続はしませんが、数式を使用してフォームやギャラリーの動作を制御します。 \
+        \ \n\n以上より、キャンバスアプリでデータソースに接続可能なコントロールは**フォーム**と**ギャラリー**の2つが正しい選択です。\n\n\
+        - [1] https://learn.microsoft.com/ja-jp/power-apps/maker/canvas-apps/add-manage-connections\n\
+        - [2] https://learn.microsoft.com/ja-jp/power-apps/maker/canvas-apps/working-with-data-sources\n\
+        - [3] https://www.powerplatformknowledge.com/powerapps-create-read/\n- [4]\
+        \ https://devlog.mescius.jp/powerapps-canvas-reports-app/\n- [5] https://www.artisan.jp.net/blog/connecting-power-apps-to-external-database/\n\
+        - [6] https://bolt-dev.net/posts/16972/\n- [7] https://cptechweb.teldevice.co.jp/hc/ja/articles/6366100711833-Power-Apps%E3%81%A8%E3%83%87%E3%83%BC%E3%82%BF%E3%82%BD%E3%83%BC%E3%82%B9-%E7%AC%AC%EF%BC%91%E5%9B%9E-%E3%83%87%E3%83%BC%E3%82%BF%E9%80%A3%E6%90%BA-SharePoint%E3%83%AA%E3%82%B9%E3%83%88%E7%B7%A8-2022%E5%B9%B4%EF%BC%96%E6%9C%88\n\
+        - [8] https://itc-engineering-blog.netlify.app/blogs/power-apps-tips-15-2\n\
+        - [9] https://www.qes.co.jp/media/PowerApps/a531\n- [10] https://zezeze.hateblo.jp/entry/2018/08/20/230428\n\
+        \n\n\n\n-----"
   - 021_title: 質問 39/50：
-    022_line: '003001'
+    022_line: '003312'
     023_contents:
     - 031_question: 'オフィス文具を追跡して注文するようにキャンバス アプリを構成します。 このアプリでは、ユーザーは複数の文具を注文できます。
 
@@ -2136,19 +2194,20 @@
         - [Power BI の構築を開始する - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/get-started-with-power-bi/)
 
         - [Power Apps の Collect、Clear、ClearCollect 関数 - Power Platform | Microsoft
-        Learn](https://learn.microsoft.com/ja-jp/power-platform/power-fx/reference/function-clear-collect-clearcollect)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        Learn](https://learn.microsoft.com/ja-jp/power-platform/power-fx/reference/function-clear-collect-clearcollect)'
+    - 035_supplements: "### 補足：キャンバスアプリでユーザー選択を保存し、再起動時にリセットするための関数選択\n回答\n\n- コレクション\n\
+        \n#### 設問の意図・目的と解説\n\nこの問題は、Power Apps キャンバスアプリでユーザーの複数選択データを「一時的に保存」しつつ、アプリ再起動時にはリセット（初期化）したい場合にどの方法が適切かを理解しているかを問います。\n\
+        \n#### ポイント解説\n\n- **コレクション**はアプリ内にデータのリスト（複数行のデータセット）を一時的に保存できる構造です。  \n\
+        \  - ユーザーが選択した複数の文具アイテムなどを保持しておき、画面間でデータを共有できるので複数データの管理に適しています。  \n  - ただし、**アプリのセッション中のみ保持され、アプリを閉じて再起動するとコレクションは消える**ため、「再起動時にリセット」したい場合に有効です。\
+        \  \n  - コレクションはClear関数で簡単にクリアもできるため、起動時に初期化も容易です。\n\n- **Dataverse**や**SharePoint**は外部データソースであり、恒久的にデータを保存します。\
+        \  \n  - ユーザーの選択項目を「永続的」に保存したい場合には適していますが、アプリを閉じても情報が残ってしまうため「毎回リセット」はできません。\
+        \  \n  - また、この設問の通り「ユーザーの選択はセッションごとにリセット」を求められているため、これらは適していません。\n\n- **変数**は単一の値や単一のオブジェクトを保持するのに向いていますが、複数の文具選択のような複数アイテムの集合体を効率的に扱うには不向きです。\n\
+        \n#### 学習のポイント\n\n- Power Appsの**コレクションは複数行のデータを一時的に保存管理するのに最適**で、画面遷移してもデータが維持されます。\
+        \  \n- アプリを閉じるとコレクションは消え、再起動時にはリセットされる挙動を利用して「毎回リセットしたい」状態を実現できる。  \n- 恒久保存が必要な場合や外部共有が必要な場合はDataverseやSharePointといった永続データソースを使うが、今回の要件とは異なる。\
+        \  \n- 変数は単一値に使うため、複数項目の保存には適さない。\n\n以上の理由から、ユーザーの選択項目を複数行で一時的に保存し、アプリ再起動時には選択情報をリセットしたい場合は、**「コレクション」を使用する**のが最も適切な回答です。\n\
+        \n\n\n\n-----"
   - 021_title: 質問 40/50：
-    022_line: '003045'
+    022_line: 003386
     023_contents:
     - 031_question: 'ある会社では Microsoft Power Platform を使用しています。 Microsoft Dataverse
         でデータをモデル化し、モデル駆動型アプリを作成します。
@@ -2181,19 +2240,29 @@
 
         - [Power BI の構築を開始する - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/get-started-with-power-bi/)
 
-        - [モデル駆動型アプリのフォームを作成および設計する - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/maker/model-driven-apps/create-design-forms)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [モデル駆動型アプリのフォームを作成および設計する - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/maker/model-driven-apps/create-design-forms)'
+    - 035_supplements: "### 補足：モデル駆動型アプリでユーザーが値を変更できる列を制限する方法\n回答\n\n- Microsoft Dataverse\
+        \ テーブルの新しいフォームを作成する。  \n- アプリ デザイナーでフォームを選択する。  \n\n#### 設問の意図・目的と解説\n\nこの問題は、**モデル駆動型アプリにおけるフォームのカスタマイズ方法**と、\
+        \  \nユーザーごとに編集可能なフィールドの制限を行う実践的な方法を理解しているかを確認するものです。  \n\n- **Microsoft Dataverse\
+        \ テーブルの新しいフォームを作成する**  \n  モデル駆動型アプリのフォームはDataverseテーブルに紐づいています。  \n  1つのテーブルに複数のフォームを作成可能で、それぞれに含める列（フィールド）を自由に設定できます。\
+        \  \n  これにより、ユーザーグループごとに異なる編集可能フィールドを含む専用フォームを用意できます。  \n\n- **アプリ デザイナーでフォームを選択する**\
+        \  \n  作成した複数のフォームの中から、どのフォームをそのモデル駆動型アプリで使用するかをアプリデザイナーで指定します。  \n  ここで特定のフォームのみを割り当てることで、ユーザーグループに合わせたフォームをアプリ内で表示・利用させることができます。\
+        \  \n\n- **ビジネス プロセス フローの作成**は、業務プロセスの段階管理に使われるもので、フィールドの編集制限とは異なります。  \n\n\
+        - **新しいビューの作成**はデータの一覧表示方法を変えるものであり、編集可能フィールドの制限には影響しません。ビューはあくまで一覧表示用の列設定で、フォームの編集権限とは無関係です。\n\
+        \n#### まとめ\n\nモデル駆動型アプリで特定のユーザーに対してテーブルの列（フィールド）の編集を制限したい場合は、  \n**対象のDataverseテーブルに対して専用の新しいフォームを作成し、必要なフィールドだけを含め、\
+        \  \nそのフォームをアプリデザイナーでアプリに割り当てることが基本のアプローチ** です。  \n\nこれによりユーザーがアクセスできる編集画面をグループ別に制御できます。\
+        \  \n\n#### 参考情報\n\nMicrosoft公式ドキュメントによると、モデル駆動型アプリのフォームはテーブルに関連づけられ、複数のフォームを作成・管理できるため、ユーザーごとに異なるフォームを割り当てて表示内容や編集可能な列を制御できます。また、アプリデザイナーでどのフォームをアプリに表示するかを設定することで、実際のアプリ画面の制御が可能です[1][2]。\
+        \  \n\n```\n- [1] Microsoft Learn: モデル駆動型アプリ フォームの設定を管理する  \n- [2] Microsoft\
+        \ Learn: モデル駆動型アプリ フォームを作成および設計する\n```\n\n- [1] https://learn.microsoft.com/ja-jp/power-apps/maker/model-driven-apps/control-access-forms\n\
+        - [2] https://learn.microsoft.com/ja-jp/power-apps/maker/model-driven-apps/create-design-forms\n\
+        - [3] https://zenn.dev/nanoka/articles/20220060_powerapps_modeldriven_memo\n\
+        - [4] https://www.artisan.jp.net/blog/power-apps-show-hide/\n- [5] https://www.qes.co.jp/media/PowerApps/a542\n\
+        - [6] https://blog.jbs.co.jp/entry/2024/09/26/091613\n- [7] https://youseibubu.com/apps/navigation_displaycontrol/\n\
+        - [8] https://qiita.com/skuramoto/items/628ac9ea412eb34b63c0\n- [9] https://infoshare.co.jp/2024/12/16/powerapps-modeldriven-customize-personal-view/\n\
+        - [10] https://www.isi-grp.co.jp/powerplatform/usage/about-canvas-vs-model\n\
+        \n\n\n\n-----"
   - 021_title: 質問 41/50：
-    022_line: 003087
+    022_line: 003479
     023_contents:
     - 031_question: 'ある会社が、モデル駆動型アプリを所有しています。
 
@@ -2220,19 +2289,24 @@
         - [Microsoft Power Apps を使用してアプリケーションを構築する方法について説明する - トレーニング | Microsoft
         Learn](https://learn.microsoft.com/ja-jp/training/modules/introduction-power-apps/)
 
-        - [Power Apps でモデル駆動型アプリ ビューを作成または編集する - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/maker/model-driven-apps/create-edit-views)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [Power Apps でモデル駆動型アプリ ビューを作成または編集する - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/maker/model-driven-apps/create-edit-views)'
+    - 035_supplements: "### 補足：モデル駆動型アプリで全ユーザーがデータにアクセスするための方法\n回答\n\n- 新しいパブリック ビューを作成する。\n\
+        \n#### 設問の意図・目的と解説\n\nこの問題は、Power Appsのモデル駆動型アプリにおける「ビュー」の種類とその共有範囲の理解を問うものです。\
+        \  \n\n- **パブリックビュー（共有ビュー）**は、Dataverse上のテーブルに関連付けられて作成されるビューであり、アプリのすべてのユーザーが利用可能な共通のビューです。これにより、全ユーザーが同じデータの一覧画面を参照できます。\
+        \  \n- **個人用ビュー**は、特定ユーザーが自分だけのカスタマイズとして作成するもので、他ユーザーからはアクセスできません。  \n- 新しいテーブルや新しいモデル駆動型アプリを作成することは、単にビューの共有範囲を拡大したい場合には不要な手段であり適切ではありません。\
+        \  \n\n#### 追加解説\n\nモデル駆動型アプリでは、テーブルのレコード一覧を表示する「ビュー」が重要なUI要素です。  \nアプリ設計者はパブリックビューを作成し、適切に設定することで、多くのユーザーが共通の一覧画面からデータを参照・操作できるようにします。\
+        \  \n一方で個人用ビューはユーザー自身の作業用としてカスタマイズされたものであり、共有目的には使いません。  \n\nしたがって、「すべてのユーザーがデータにアクセスできる」ようにするためには、**「新しいパブリック\
+        \ ビューを作成する」**ことが適切です。\n\n#### 参考情報\n\nMicrosoft公式ドキュメントによると、パブリックビューは環境内のユーザー全員がアクセスできる共有ビューであり、モデル駆動型アプリではこれを使用して多くのユーザーに共通のデータ表示を提供します[1][3][4]。\
+        \  \n個人用ビューはユーザー個人だけが使用でき、共有はされません[7]。\n\n- [1] https://learn.microsoft.com/ja-jp/power-apps/maker/model-driven-apps/create-or-edit-model-driven-app-view\n\
+        - [2] https://www.qes.co.jp/media/PowerApps/a446\n- [3] https://learn.microsoft.com/ja-jp/power-apps/maker/model-driven-apps/create-edit-views\n\
+        - [4] https://www.docswell.com/s/bothernpa/K7VRPG-2023-05-02-002702\n- [5]\
+        \ https://www.geekfujiwara.com/tech/powerplatform/3240/\n- [6] https://jp.linkedin.com/learning/microsoft-power-platform-fundamentals-pl-900-power-apps/5977178\n\
+        - [7] https://infoshare.co.jp/2024/12/16/powerapps-modeldriven-customize-personal-view/\n\
+        - [8] https://microsoftlearning.github.io/PL-7003-Create-and-manage-model-driven-apps-with-Power-Apps-and-Dataverse.ja-jp/Instructions/Labs/LAB%5BPL-7003%5D_M03L01_Forms_views.html\n\
+        - [9] https://licensecounter.jp/engineer-voice/blog/articles/20230914_powerapps.html\n\
+        - [10] https://zenn.dev/topics/powerapps?page=2\n\n\n\n\n-----"
   - 021_title: 質問 42/50：
-    022_line: 003129
+    022_line: '003557'
     023_contents:
     - 031_question: 'ある会社では、顧客データ管理にモデル駆動型アプリを使用しています。
 
@@ -2273,19 +2347,26 @@
 
         - [Power BI の構築を開始する - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/get-started-with-power-bi/)
 
-        - [アプリ デザイナーを使用してモデル駆動型アプリを作成する](https://learn.microsoft.com/ja-jp/power-apps/maker/model-driven-apps/create-model-driven-app)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [アプリ デザイナーを使用してモデル駆動型アプリを作成する](https://learn.microsoft.com/ja-jp/power-apps/maker/model-driven-apps/create-model-driven-app)'
+    - 035_supplements: "### 補足：モデル駆動型アプリでレコードの新しい列を表示できるようにするための対応\n回答\n\n- フォームに列を追加する。\
+        \  \n- カスタマイズを公開する。  \n\n#### 設問の意図・目的と解説\n\nこの問題は、モデル駆動型アプリで新しく追加したテーブルの列（フィールド）をユーザーが編集画面で見られるようにするための具体的な手順を理解しているかを確認するものです。\n\
+        \n- **フォームに列を追加する**  \n  モデル駆動型アプリのレコード編集画面は「フォーム」で構成されており、ユーザーが編集できる列はこのフォームに配置されている必要があります。\
+        \  \n  単にDataverseテーブルに列を作成しただけでは、フォーム上にその列が表示されません。したがって、フォームデザイナーを使って該当の列をフォームに追加しなければなりません。\
+        \  \n\n- **カスタマイズを公開する**  \n  フォームの編集は「カスタマイズ」として一時保存されますが、ユーザーに反映させるためには**必ず公開操作を実行する必要**があります。公開することにより、変更がユーザーのアプリに適用されて表示されるようになります。\
+        \  \n\n- **ビューに列を追加すると、一覧表示では列は見えますが編集画面のフォームには反映されません**。したがってユーザーがレコード編集時に列を確認・編集できるようにするにはフォームへの追加が必須です。\
+        \  \n\n- **ページを追加する**操作はモデル駆動型アプリのカスタムページを構築するためのものであり、既存テーブルの列表示には直接関係ありません。\
+        \  \n\n#### 追加情報\n\nフォームに列を追加する手順は、Power Apps のフォームデザイナーで列（フィールド）ウィンドウから目的の列をドラッグアンドドロップして配置し、「保存して公開」を実行します。これにより、編集画面に新しい列が見えるようになります。\
+        \  \n\nしたがって、新しい列をユーザーの編集画面に表示させるには、  \n1. 対象テーブルのフォームに列を追加し、  \n2. 変更したフォームカスタマイズを公開する\
+        \  \n\nことが正しい対応です。\n\n- [1] https://learn.microsoft.com/ja-jp/power-apps/maker/model-driven-apps/add-move-or-delete-fields-on-form\n\
+        - [2] https://learn.microsoft.com/ja-jp/power-apps/maker/model-driven-apps/create-and-edit-a-model-driven-form\n\
+        - [3] https://qiita.com/skuramoto/items/ec631ca9404adff1955a\n- [4] https://www.youtube.com/watch?v=w0jjhwRm3ig\n\
+        - [5] https://qiita.com/skuramoto/items/ab2498362ec30c3913d7\n- [6] https://www.qes.co.jp/media/PowerApps/a446\n\
+        - [7] https://zenn.dev/nanoka/articles/20220060_powerapps_modeldriven_memo\n\
+        - [8] https://ippu-biz.com/development/powerplatform/powerapps/mda/model-cat03/\n\
+        - [9] https://www.qes.co.jp/media/PowerApps/a289\n- [10] https://blog.jbs.co.jp/entry/2024/09/26/091613\n\
+        \n\n\n\n-----"
   - 021_title: 質問 43/50：
-    022_line: 003179
+    022_line: 003648
     023_contents:
     - 031_question: 'ある会社には、販売管理モデル駆動型アプリがあります。
 
@@ -2316,19 +2397,20 @@
 
         - [モデル駆動型アプリのビューとフォームをカスタマイズする](https://learn.microsoft.com/ja-jp/training/modules/customize-view-forms/)
 
-        - [モデル駆動型アプリ ビューの列を選択および構成する](https://learn.microsoft.com/ja-jp/power-apps/maker/model-driven-apps/choose-and-configure-columns)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [モデル駆動型アプリ ビューの列を選択および構成する](https://learn.microsoft.com/ja-jp/power-apps/maker/model-driven-apps/choose-and-configure-columns)'
+    - 035_supplements: "### 補足：フォームに表示される連絡先一覧に役職を追加するための変更箇所\n回答\n\n- 連絡先ビュー\n\n\
+        #### 設問の意図・目的と解説\n\nこの問題は、モデル駆動型アプリ内で「フォーム」と「ビュー」の役割を理解し、  \n特に一覧表示されるデータのカスタマイズ（列の追加など）がどのコンポーネントで行われるかを把握しているかを問うものです。\n\
+        \n- **連絡先ビュー**は「連絡先」エンティティ（テーブル）の一覧表示画面に使われており、列（フィールド）の追加や削除を行う場所です。  \n\
+        \  - 今回の要件は「取引先企業フォームに表示される連絡先の一覧」つまりリレーションで連結された連絡先の一覧部分を修正し、  \n    そこに役職という列を表示させること。従って、連絡先の一覧表示（ビュー）を編集するのが正しいアプローチです。\
+        \  \n\n- **アプリのサイトマップ**はアプリのナビゲーション構造を決めるもので、一覧の列の表示内容には影響しません。  \n- **連絡先フォーム**は連絡先の詳細画面など個別レコードの表示や編集に使われ、一覧の列追加には関係ありません。\
+        \  \n- **取引先企業フォーム**は取引先企業の詳細表示や編集用で、連絡先の「一覧の中の表示列」はここでは定義されません。  \n- **取引先企業ビュー**は取引先企業の一覧を表示するものなので、連絡先一覧の列には影響しません。\n\
+        \n#### まとめ\n\n- 一覧で表示される列は「ビュー」で定義されているため、今回の「連絡先担当者の役職」を連絡先一覧に表示したい場合は**連絡先ビューの編集**が必要です。\
+        \  \n- ビューで該当のフィールド（役職）を列として追加・保存し公開することで、取引先企業フォームの連絡先一覧へ反映されます。\n\n####\
+        \ 学習のポイント\n\n- モデル駆動型アプリでは、**「フォーム」＝個別レコードの詳細表示・編集画面**  \n- **「ビュー」＝複数レコードを一覧表示する画面**\
+        \  \n- 一覧の表示内容（列の配置）はビューで管理  \n- ナビゲーションはサイトマップで管理\n\n今回のような「一覧に表示する列を増やす」変更はビューの編集で行うことを理解することが重要です。\n\
+        \n\n\n\n-----"
   - 021_title: 質問 44/50：
-    022_line: '003223'
+    022_line: '003724'
     023_contents:
     - 031_question: 'ある会社では、Microsoft Dataverse を使用して小売組織のデータ モデルを作成しています。 その会社は標準の連絡先テーブルを使用して顧客情報を保存しています。
 
@@ -2360,19 +2442,29 @@
 
         - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
 
-        - [Microsoft Dataverse のテーブル リレーションシップについて - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/maker/data-platform/create-edit-entity-relationships)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [Microsoft Dataverse のテーブル リレーションシップについて - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/maker/data-platform/create-edit-entity-relationships)'
+    - 035_supplements: "### 補足：Microsoft Dataverseで顧客と製品間のリレーションシップの種類選択\n回答\n\n-\
+        \ 多対多\n\n#### 設問の意図・目的と解説\n\nこの問題は、Microsoft Dataverseにおけるテーブル間のリレーションシップの種類と、現実的なビジネスシナリオに合わせた適切な関係性を理解しているかを確認するものです。\
+        \  \n\n- **多対多（Many-to-Many, N:N）**リレーションシップは、ひとつの顧客が複数の製品を注文でき、かつひとつの製品が複数の顧客に注文されるという双方向の多重性を表現します。\
+        \  \n  顧客と製品が複数レコードを相互に関連付ける関係性として理想的です。  \n\n- **一対多（One-to-Many, 1:N）**や**多対一（Many-to-One,\
+        \ N:1）**は一方向の多重性であり、例えば1つの親テーブルに複数の子テーブルが紐づく関係を表すため、今回の要件（顧客対製品の多対多関係）とは一致しません。\
+        \  \n\n- **階層型自己参照**は同一テーブル内で親子関係などの階層構造を表すためのものであり、異なるテーブル間の関連には使用しません。 \
+        \ \n\n#### 追加情報\n\nMicrosoft Dataverseのリレーションシップの種類には主に次の3つがあります。  \n\n| リレーションシップの種類\
+        \ | 内容例                             |\n|--------------------|--------------------------------|\n\
+        | 一対多 (1:N)        | 1人の顧客に複数の注文が紐づく              |\n| 多対一 (N:1)        |\
+        \ 複数の注文が1つの製品に紐づく              |\n| 多対多 (N:N)        | 複数の顧客が複数の製品を同時に注文できる関係\
+        \      |\n\n今回の「顧客は1つ以上の製品を注文できる」状況は、多対多関係を必要とします。  \n\nこの多対多リレーションシップでは、Dataverseが内部的に交差テーブル（関連テーブル）を作成し、顧客と製品の複数の組み合わせを管理します。\
+        \  \n\n以上の理由から、正しいリレーションシップの種類は**多対多**です。\n\n- [1] https://qiita.com/skuramoto/items/03bf837efed710fdbfee\n\
+        - [2] https://powerplatformnikki.com/relationshiptypes/\n- [3] https://learn.microsoft.com/ja-jp/power-apps/teams/relationships-table\n\
+        - [4] https://learn.microsoft.com/ja-jp/power-apps/maker/data-platform/create-edit-entity-relationships\n\
+        - [5] https://devlog.mescius.jp/dataverse-create-relationship2/\n- [6] https://qiita.com/skuramoto/items/7ac4d4ee662e7800f9ba\n\
+        - [7] https://jpdynamicscrm.github.io/blog/powerplatform/table-relationship-behavior/\n\
+        - [8] https://tech-blog.cloud-config.jp/2022-04-28-dataverse-many-to-many-relationship/\n\
+        - [9] https://learn.microsoft.com/ja-jp/power-query/dataflows/relationships-in-standard-dataflows\n\
+        - [10] https://learn.microsoft.com/ja-jp/power-apps/maker/data-platform/types-of-entities\n\
+        \n\n\n\n-----"
   - 021_title: 質問 45/50：
-    022_line: '003267'
+    022_line: 003810
     023_contents:
     - 031_question: 'Microsoft Power Platform と Microsoft Dataverse を使用してソリューションを構築します。
 
@@ -2405,19 +2497,26 @@
 
         - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
 
-        - [テーブルの種類 - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/maker/data-platform/types-of-entities)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [テーブルの種類 - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/maker/data-platform/types-of-entities)'
+    - 035_supplements: "### 補足：Microsoft DataverseのCurrencyテーブルの種類の選択\n回答\n\n- スタンダード\n\
+        \n#### 設問の意図・目的と解説\n\nこの問題は、Microsoft Dataverseのテーブルの種類に関する基礎的な知識を問うものです。\
+        \  \nDataverseにはいくつかの種類のテーブルがあり、それぞれ役割や用途が異なります。\n\n- **スタンダード（標準テーブル）**は、Microsoft\
+        \ Dataverseに予め用意されていて、一般的な業務用のデータを格納するためのテーブルです。  \n  既定のCurrency（通貨）テーブルもこの「スタンダードテーブル」に分類されます。ユーザーがカスタム追加するものではなく、即利用可能な組み込みテーブルです。\n\
+        \n- **活動（Activity）テーブル**は、カレンダーやタスクなど日時を伴う活動を管理するための特殊なテーブル群です。Currencyテーブルは活動テーブルではありません。\n\
+        \n- **習慣**は選択肢として通常Dataverseテーブルの種類に存在しないため、今回の問題では誤りです。\n\n- **バーチャル（仮想）テーブル**は、外部データソースのデータをDataverseに仮想的にマッピングするためのテーブルであり、外部接続が前提です。Currencyテーブルは外部データではなくDataverse内に組み込みで存在するため該当しません。\n\
+        \n#### 追加補足\n\nMicrosoft Dataverseの**標準テーブル**はすぐに使えるテーブル群で、多くの業務アプリケーションで共通して利用されるデータ構造を提供します。Currency（通貨）テーブルも、複数通貨対応のため組織内で共通利用される基本テーブルです。\
+        \  \n\nこのため、Currencyテーブルの種類は**標準（スタンダード）テーブル**が正しい識別となります。\n\nこのように問題文の条件に基づき、Microsoft\
+        \ DataverseのCurrencyテーブルは**スタンダード（標準）テーブル**として分類されることを理解してください。\n\n- [1] https://learn.microsoft.com/ja-jp/power-apps/developer/data-platform/transaction-currency-currency-entity\n\
+        - [2] https://learn.microsoft.com/ja-jp/power-apps/maker/data-platform/types-of-fields\n\
+        - [3] https://learn.microsoft.com/ja-jp/power-platform/power-fx/data-types\n\
+        - [4] https://qiita.com/fsdg-nishina/items/f63bc87b9b55563e0abf\n- [5] https://nlab-notebook.com/entry/pl-900-tables-ataverse-environment-part15\n\
+        - [6] https://learn.microsoft.com/ja-jp/power-apps/maker/data-platform/types-of-entities\n\
+        - [7] https://kurattyodiary.hatenablog.com/entry/DataVerseColumntype\n- [8]\
+        \ https://qiita.com/Sanwa_Paint/items/d9f597d64eded2685a4c\n- [9] https://learn.microsoft.com/ja-jp/power-apps/maker/data-platform/formula-columns\n\
+        - [10] https://www.d3654.be/d365bc-datavaerse-virtualtable-configuration/\n\
+        \n\n\n\n-----"
   - 021_title: 質問 46/50：
-    022_line: '003311'
+    022_line: 003891
     023_contents:
     - 031_question: 'ある会社が Microsoft Dataverse と Microsoft Dataverse for Teams を評価しています。
 
@@ -2448,19 +2547,26 @@
 
         - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
 
-        - [Dataverse for Teams と Dataverse - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/teams/data-platform-compare)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [Dataverse for Teams と Dataverse - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/teams/data-platform-compare)'
+    - 035_supplements: "### 補足：Microsoft Dataverseでのみ利用可能な機能の選択\n回答\n\n- 複数通貨のサポート\
+        \  \n- Mobile オフライン  \n\n#### 設問の意図・目的と解説\n\nこの問題は、Microsoft DataverseとDataverse\
+        \ for Teamsとの機能差異、特に制限項目に関する理解を問うものです。  \n\n- **複数通貨のサポート**はMicrosoft Dataverse独自の機能であり、Dataverse\
+        \ for Teamsでは利用できません。多通貨を扱う国際的な業務シナリオで必須の機能が標準のDataverseに限定されていることを理解する必要があります。\
+        \  \n\n- **Mobile オフライン機能**（モバイルデバイスでのオフラインアクセスや同期機能）もMicrosoft Dataverse限定機能で、Dataverse\
+        \ for Teamsにはこのサポートはありません。  \n\n- **ファイルと画像のサポート**は両者とも利用可能です。Dataverse for\
+        \ Teamsでも添付ファイルや画像データの管理が可能です。  \n\n- **リレーショナル記憶域**（リレーショナル型データベース機能）についてもDataverse\
+        \ for Teamsでサポートされています。  \n\n#### 追加情報\n\nDataverse for TeamsはMicrosoft 365のチーム環境に特化した軽量版Dataverseであり、基本的なテーブルやリレーションはサポートしつつも、高度なビジネス機能や運用機能は制限されています。\
+        \  \n\nそのため、多くの企業アプリで重要となる多通貨対応やモバイルオフライン環境は標準のDataverseにのみ提供されています。利用検討時にはこの違いを把握し、要件に応じたプラットフォーム選択を行うことが重要です。\
+        \  \n\n以上より、Microsoft Dataverseでのみ利用可能な機能として、**複数通貨のサポート**と**Mobile オフライン**が正しい回答となります。\n\
+        \n- [1] https://www.geekfujiwara.com/tech/powerplatform/5277/\n- [2] https://learn.microsoft.com/ja-jp/power-apps/teams/known-issues-limitations\n\
+        - [3] https://learn.microsoft.com/ja-jp/power-platform/admin/about-teams-environment\n\
+        - [4] https://ika88.hateblo.jp/entry/2024/08/22/211622\n- [5] https://frog-pod.com/FrogTechLog/2025/07/dataverse-for-teams-Enviroments-Recomend.html\n\
+        - [6] https://jpdynamicscrm.github.io/blog/powerplatform/Manage-Dataverse-for-Teams/\n\
+        - [7] https://zenn.dev/mokyumokyu/articles/0256428c5b2e7e\n- [8] https://deepcom.co.jp/dataverse_for_teams_clean_up_mechanism/\n\
+        - [9] https://flali.hatenablog.com/entry/2022/12/18/121739\n- [10] https://bolt-dev.net/posts/17743/\n\
+        \n\n\n\n-----"
   - 021_title: 質問 47/50：
-    022_line: '003353'
+    022_line: 003969
     023_contents:
     - 031_question: 'Microsoft Dataverse を使用して企業のデータ モデルを開発します。
 
@@ -2493,19 +2599,25 @@
 
         - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
 
-        - [Microsoft Dataverse の列のデータ型 (ビデオを含む) - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/maker/data-platform/types-of-fields)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [Microsoft Dataverse の列のデータ型 (ビデオを含む) - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/maker/data-platform/types-of-fields)'
+    - 035_supplements: "### 補足：Microsoft Dataverseでカスタムテーブルの重大度管理列の種類選択\n回答\n\n- 選択肢\n\
+        \n#### 設問の意図・目的と解説\n\nこの問題は、Microsoft Dataverseの列データ型の理解を測り、ビジネス要件に最適なデータ型を選択できる能力を問います。\n\
+        \n- **「選択肢」列**は、ユーザーがあらかじめ定義されたリストから**1つだけ値を選択**できるフィールドです。  \n  - 「低」「中」「高」のように限定された複数の選択肢から1つの重大度を指定する場合、これが最も適切です。\
+        \  \n- **「選択肢(複数)」列**は、複数の値を同時に選択可能ですが、重大度のように一つだけを示す用途には不向きです。  \n- **「はい/いいえ」**列は二択（真偽・オンオフ）の情報を扱うため、3つ以上の選択肢には適応できません。\
+        \  \n- **「オートナンバー」**は自動的に連番などを生成する列であり、ユーザーが選ぶリスト項目の用途には使いません。\n\n#### 学習ポイント\n\
+        \n- 値のリストから1つだけ選択する場合は「選択肢」の列が推奨される。  \n- 複数選択や真偽値の場合はそれぞれの適切な列タイプを選ぶ。  \n\
+        - ビジネスルールやUIでの入力制御に即したデータ型選択が重要である。\n\nしたがって、このケースでは重大度を管理するために**「選択肢」列**を使用するのが最適です。\n\
+        \n- [1] https://learn.microsoft.com/ja-jp/power-apps/developer/data-platform/org-service/create-custom-entity\n\
+        - [2] https://learn.microsoft.com/ja-jp/power-apps/maker/data-platform/types-of-entities\n\
+        - [3] https://learn.microsoft.com/ja-jp/power-apps/maker/data-platform/types-of-fields\n\
+        - [4] https://learn.microsoft.com/ja-jp/power-apps/maker/data-platform/data-platform-create-entity\n\
+        - [5] https://kurattyodiary.hatenablog.com/entry/DataVerseColumntype\n- [6]\
+        \ https://devlog.mescius.jp/dataverse-create-table/\n- [7] https://it-confiado.com/blog/%E3%80%90mspp%E3%80%91dataverse%E3%81%AE%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB%E3%81%AE%E7%A8%AE%E9%A1%9E%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/\n\
+        - [8] https://learn.microsoft.com/ja-jp/power-apps/maker/data-platform/create-edit-field-portal\n\
+        - [9] https://note.com/masayan21/n/n1077f7eb94dc\n- [10] https://learn.microsoft.com/ja-jp/power-apps/maker/data-platform/create-edit-fields\n\
+        \n\n\n\n-----"
   - 021_title: 質問 48/50：
-    022_line: 003397
+    022_line: '004046'
     023_contents:
     - 031_question: 'Power Automate クラウド フローで Microsoft Teams コネクタを使用する予定です。
 
@@ -2532,19 +2644,26 @@
 
         - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
 
-        - [Power Platform コネクタの概要 | Microsoft Learn](https://learn.microsoft.com/ja-jp/connectors/connectors)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [Power Platform コネクタの概要 | Microsoft Learn](https://learn.microsoft.com/ja-jp/connectors/connectors)'
+    - 035_supplements: "### 補足：Power Automateフローで Microsoft Teams コネクタのコンポーネント\n回答\n\
+        \n- アクション  \n- トリガー  \n\n#### 設問の意図・目的と解説\n\nこの問題は、Power Automateのコネクタがどのようなコンポーネントで構成されているかを理解しているかを確認するものです。\
+        \  \n\n- **アクション**は、Power Automateで接続先サービス（ここではMicrosoft Teams）に対して実行可能な操作（例：チャットメッセージの投稿、チャンネルの作成など）を指します。\
+        \  \n- **トリガー**は、指定したイベントを検知してフローを開始する役割を持ちます。Teamsの例では「新しいメッセージが投稿されたとき」などが該当します。\
+        \  \n- **資格情報**（認証情報）はサービスにアクセスするためのユーザー認証情報であり、コネクタ自体のコンポーネントではなく、フロー利用時に接続設定として指定します。\
+        \  \n- **Postman コレクション**はAPIのテストやカスタムコネクタ作成時に使われるもので、標準コネクタの定義コンポーネントではありません。\n\
+        \nよって、Microsoft Teamsの標準コネクタで定義されているのは**アクション**と**トリガー**の2つです。\n\n#### 参考情報\n\
+        \n- Power Automateのコネクタは「トリガー」と「アクション」で構成されることが標準的な仕様です。  \n- 認証情報は利用時に設定するものの、コネクタの機能としては区別されます。\
+        \  \n- PostmanコレクションはAPIの仕様管理やカスタムコネクタ作成導入時に役立つツールです。  \n\nこのように、Power AutomateのMicrosoft\
+        \ Teamsコネクタの基本的な要素を理解することが、フロー作成や連携設定の基本になります。\n\n- [1] https://learn.microsoft.com/en-us/connectors/connector-reference/connector-reference-powerautomate-connectors\n\
+        - [2] https://learn.microsoft.com/en-us/connectors/teams/\n- [3] https://nboldapp.com/power-automate-for-microsoft-teams-communication/\n\
+        - [4] https://learn.microsoft.com/ja-jp/connectors/connector-reference/connector-reference-powerautomate-connectors\n\
+        - [5] https://www.youtube.com/watch?v=EfsYrRQTfgw\n- [6] https://www.microsoft.com/en-us/power-platform/blog/power-automate/automate-workflows-with-power-automate-connector-for-updates-in-microsoft-teams/?msockid=394ffc9219656948014aea98184c6885\n\
+        - [7] https://powerautomate.microsoft.com/en-gb/connectors/\n- [8] https://learn.microsoft.com/en-us/training/modules/use-teams-connector/\n\
+        - [9] https://dev.classmethod.jp/articles/teams-power-automate-event/\n- [10]\
+        \ https://learn.microsoft.com/ja-jp/power-platform/admin/dlp-connector-classification\n\
+        \n\n\n\n-----"
   - 021_title: 質問 49/50：
-    022_line: '003437'
+    022_line: '004121'
     023_contents:
     - 031_question: '新しいアイテムが SharePoint Online リストに追加されるたびに電子メールを送信するワークフローを構築する必要があります。
 
@@ -2579,19 +2698,33 @@
 
         - [Power Platform コネクタの概要](https://learn.microsoft.com/ja-jp/Connectors/connectors)
 
-        - [クラウドフローを作成してタスクを自動化する - Power Automate |Microsoft Learn](https://learn.microsoft.com/ja-jp/power-automate/get-started-logic-flow?tabs=using-copilot%2Cnew-designer)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [クラウドフローを作成してタスクを自動化する - Power Automate |Microsoft Learn](https://learn.microsoft.com/ja-jp/power-automate/get-started-logic-flow?tabs=using-copilot%2Cnew-designer)'
+    - 035_supplements: "### 補足：SharePointリストのアイテム追加時にメール送信フローで使用するコンポーネント\n回答\n\n\
+        - パワーオートメート  \n- コネクタ  \n\n#### 設問の意図・目的と解説\n\nこの問題は、Microsoft Power Platformの各コンポーネントの役割と、特にSharePoint\
+        \ Onlineのイベントをトリガーにメール送信などの自動処理を実装する際に必要な要素を理解しているかを確認するものです。\n\n- **パワーオートメート\
+        \ (Power Automate)** は、ワークフローや自動化フローを作成するサービスで、SharePoint Onlineのリストアイテム追加を検知してメール送信など複数サービスを連携させる役割を担います。\
+        \  \n  つまり、イベントの検知からアクションの実行までのプロセス全体を実装する場所です。\n\n- **コネクタ (Connector)**\
+        \ は、Power AutomateがSharePoint OnlineやExchange Online（メール送信）などのさまざまな外部サービスと安全かつ容易に通信できるようにするインターフェースのことです。\
+        \  \n  コネクタによって、SharePointリストの操作をトリガーとして取得したり、メール送信のアクションを実行したりします。  \n  コネクタはフローの中で使われ、各サービスへのアクセス権やデータ形式を仲介します。\n\
+        \n- **Power Apps** は主にユーザーインターフェイスの作成や入力フォームに使うものであり、このシナリオのような自動メール送信ワークフローの構築には使いません。\
+        \  \n- **Power BI** はデータの可視化や分析用であり、ワークフロー処理には関係ありません。  \n- **Microsoft Copilot\
+        \ Studio** はAIやチャットボット向けのツールで、今回のシナリオに該当しません。\n\n#### まとめ\n\n- SharePoint\
+        \ Onlineに新しいアイテムが追加されたことを検知しメールを自動送信するには、  \n  → Power Automateのフローを作成する（パワーオートメート）\
+        \  \n  → SharePoint Onlineおよびメール送信サービスへの接続を担うコネクタを利用することが必須  \n\nこの2つが主要なコンポーネントです。\n\
+        \n#### 参考資料\n\n```\n- Power Automate と SharePoint の連携: Power AutomateはSharePointトリガーとアクションを組み合わせてワークフローを作成可能[1]。\
+        \  \n- コネクタは様々なMicrosoftサービスをPower Automateで操作するためのインターフェース[1][7]。\n\n- [1]\
+        \ Microsoft Learn: Use SharePoint and Power Automate to build workflows (2025)\
+        \  \n- [7] Power Automate Flow Components Overview (2024)\n```\n\n- [1] https://learn.microsoft.com/en-us/power-automate/sharepoint-overview\n\
+        - [2] https://www.artisan.jp.net/blog/run-power-automate-from-sharepoint/\n\
+        - [3] https://learn.microsoft.com/ja-jp/sharepoint/dev/sp-add-ins-modernize/from-workflow-apps-to-power-automate\n\
+        - [4] https://sharepointmaven.com/3-major-components-microsoft-flow/\n- [5]\
+        \ https://www.linkedin.com/pulse/power-automate-series-component-detail-first-flow-demo-syed-amir-ali\n\
+        - [6] https://www.youtube.com/watch?v=-eMQuCHS6-o\n- [7] https://alrafayglobal.com/learn-about-microsoft-power-automate-flows-and-components/\n\
+        - [8] https://www.dev4side.com/en/blog/sharepoint-workflow\n- [9] https://sharegate.com/blog/sharepoint-designer-vs-power-automate-transitioning-from-classic-sharepoint-workflows-to-power-automate-flows\n\
+        - [10] https://www.redwood.com/article/sharepoint-workflow-automation/\n\n\
+        \n\n\n-----"
   - 021_title: 質問 50/50：
-    022_line: 003481
+    022_line: '004214'
     023_contents:
     - 031_question: '標準コネクタを使用する Power Automate クラウド フローを作成します。
 
@@ -2629,19 +2762,26 @@
 
         - [すべての Standard レベル コネクタの一覧 | Microsoft Learn](https://learn.microsoft.com/ja-jp/connectors/connector-reference/connector-reference-standard-connectors)
 
-        - [すべての Premium レベル コネクタの一覧 | Microsoft Learn](https://learn.microsoft.com/ja-jp/connectors/connector-reference/connector-reference-premium-connectors)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [すべての Premium レベル コネクタの一覧 | Microsoft Learn](https://learn.microsoft.com/ja-jp/connectors/connector-reference/connector-reference-premium-connectors)'
+    - 035_supplements: "### 補足：Power Automate標準コネクタにない機能をクラウドフローに追加する方法\n回答\n\n- カスタム\
+        \ コネクタを作成し、クラウドフローで使用する。\n\n#### 設問の意図・目的と解説\n\nこの問題は、Power Automateにおける**標準コネクタとプレミアムコネクタ、カスタムコネクタの違い**と、APIに新たに公開された機能を扱う方法を理解しているかを確認しています。\n\
+        \n- **標準コネクタ**はMicrosoftやサービス提供者が用意し、一般的な機能が実装されていますが、最新のAPI機能すべてが即反映されているとは限りません。\
+        \  \n- 新しいAPI機能が標準コネクタのアクション一覧にない場合、Power Automateのフロー上から直接利用できません。その場合は、API仕様を元に自分で**カスタムコネクタ**を作成します。\
+        \  \n- カスタムコネクタは、公開されているRESTやSOAP APIをPower AutomateやPower Appsに組み込めるようにするラッパーであり、APIエンドポイントごとのトリガーやアクションを定義します。\
+        \  \n- これにより、最新のAPI機能や標準コネクタにない機能をPower Automateのクラウドフローに追加して利用可能になります。  \n\
+        - 他の選択肢は誤りです。Per Flowライセンスの割り当てはコネクタのアクション追加には影響しません。  \n- アクセス許可や編集者の権限はあくまで実行権限やフロー管理権限で、コネクタ自身の機能を増やすものではありません。\n\
+        \n#### 補足情報\n\n- カスタムコネクタはPower Automateの「データ」メニューから作成可能で、OpenAPI（Swagger）定義や手動設定でAPIのエンドポイントを登録します。\
+        \  \n- 作成後、コネクタは標準コネクタと同様にフローのアクションとして使用できます。  \n- カスタムコネクタを作成することで、自社独自のAPIやまだコネクタ化されていないサービスのAPIなどもPower\
+        \ Automateでシームレスに利用できるようになります。\n\nしたがって、**標準コネクタにない新機能をクラウドフローで使いたい場合は「カスタム\
+        \ コネクタを作成し利用する」ことが最適解**です。\n\n- [1] https://tech-blog.cloud-config.jp/2023-11-05-power-automate-custom-connector-and-azure-functions\n\
+        - [2] https://deepcom.co.jp/power_automate_custom_connector/\n- [3] https://cptechweb.teldevice.co.jp/hc/ja/articles/6667954383769--%E7%AC%AC2%E5%9B%9E-Power-Automate%E3%82%92%E6%B4%BB%E7%94%A8%E3%81%97%E3%81%A6%E8%87%AA%E5%8B%95%E5%8C%96%E3%82%92%E3%82%88%E3%82%8A%E8%BA%AB%E8%BF%91%E3%81%AB-2022%E5%B9%B4%EF%BC%96%E6%9C%88\n\
+        - [4] https://learn.microsoft.com/ja-jp/connectors/custom-connectors/define-blank\n\
+        - [5] https://support.lms365.jp/hc/ja/articles/900007073683-Power-Apps%E3%81%A7%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%82%B3%E3%83%8D%E3%82%AF%E3%82%BF%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95\n\
+        - [6] https://qiita.com/pierusan2010/items/52576be2091a6d3fda6e\n- [7] https://www.geekfujiwara.com/tech/powerplatform/5325/\n\
+        - [8] https://www.roit.co.jp/blog/2024110601.html\n- [9] https://learn.microsoft.com/ja-jp/connectors/custom-connectors/\n\
+        - [10] https://www.youtube.com/watch?v=dATvTzngbb0\n\n\n\n\n-----"
   - 021_title: 質問：
-    022_line: 003529
+    022_line: 004296
     023_contents:
     - 031_question: ''
     - 032_selections: []
