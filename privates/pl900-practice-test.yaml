@@ -717,19 +717,35 @@
 
         - [Power BI ビジネス ユーザー向け Q&A - Power BI | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-bi/consumer/end-user-q-and-a)
 
-        - [トピックを使用してチャットボットの会話を設計する - Power Virtual Agents | Microsoft Learn](https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/authoring-create-edit-topics?tabs=webApp)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [トピックを使用してチャットボットの会話を設計する - Power Virtual Agents | Microsoft Learn](https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/authoring-create-edit-topics?tabs=webApp)'
+    - 035_supplements: "### 補足：ユーザーが自然言語で質問できるPower Platformコンポーネント\n回答\n\n- Power\
+        \ BI\n- マイクロソフト コパイロット スタジオ\n\n#### 設問の意図・目的と解説\n\nこの設問は、「Power Platform内でユーザーが“自然言語（例：話し言葉や会話的な文章）”で質問できるAIおよび対話システムの実装知識」を問うものです。\n\
+        \n#### 各コンポーネントの役割\n\n- **Power BI**  \n  Power BI の Q&A 機能を利用すると、ユーザーは「売上の月別推移を見せて」や「昨年の地域ごとの売上は？」などの自然言語で質問できます。Power\
+        \ BIは入力された言葉から意図を解析し、該当するデータの視覚化を自動生成します。専門知識がなくても、直感的にデータ探索ができます。\n\n- **マイクロソフト\
+        \ コパイロット スタジオ（Microsoft Copilot Studio）**  \n  Copilot Studio は、「自然言語理解（NLU）」とAIを活用して、ユーザーが入力するさまざまな質問や要望を理解し、最適な応答や動作を提供する会話型AIボット（エージェント）を作成できるプラットフォームです。\
+        \  \n  Copilot Studioエージェントは、ユーザーの意図や文脈を理解し、会話内容や質問内容に沿って最適な回答や業務処理を実行します[1][2][3][6]。\n\
+        \n#### 他の選択肢\n- **パワーオートメート（Power Automate）**\n  主に業務の自動化ワークフローを設計・実行するものであり、ユーザーがダイレクトに自然言語で質問・対話するUIは標準では搭載されていません。\n\
+        \n- **Power Apps**\n  ローコードで業務アプリを開発できますが、ユーザーが直接自然言語で質問を入力するインターフェースは用意されていません。\n\
+        \n- **マイクロソフト Dataverse**\n  データ格納・管理機能を担いますが、自然言語による質問受付・解釈・応答の機能はありません。\n\
+        \n#### 理解を深めるポイント\n\n- Power BI と Copilot Studio（旧Power Virtual Agents）は、AIを活用した自然言語でのインタラクションが可能で、業務現場での直感的なデータ探索・対話型の体験を実現します。\n\
+        - 「自然言語UI」の登場により、プログラミング不要で誰もが質問・指示できる現場が広がっています。\n- どのツールが「ユーザーと自然言語で対話可能」なのかを区別できることが、この設問の学習的な要点です。\n\
+        \n【補足】\n- Copilot Studioでは独自のNLUモデルやAzureの言語サービス連携も可能で、さまざまな業務や顧客対応に自然言語ベースのAIチャットボットを展開できます[1][3][5][6]。\n\
+        - Power BIのQ&Aは“No code”で自然言語分析体験を提供する代表的な機能です。\n\n- [1]: https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-clu-integration\n\
+        - [2]: https://www.microsoft.com/en-us/microsoft-copilot/for-individuals/do-more-with-ai/general-ai/what-is-natural-language-understanding\n\
+        - [3]: https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-what-is-copilot-studio\n\
+        - [5]: https://www.infoq.com/news/2024/02/copilot-studio-powerva-available/\n\
+        - [6]: https://elevenlabs.io/blog/conversational-ai-features-in-microsoft-copilot-ai\n\
+        \n- [1] https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-clu-integration\n\
+        - [2] https://www.microsoft.com/en-us/microsoft-copilot/for-individuals/do-more-with-ai/general-ai/what-is-natural-language-understanding\n\
+        - [3] https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-what-is-copilot-studio\n\
+        - [4] https://www.youtube.com/watch?v=zkf2uW5qTeY\n- [5] https://www.infoq.com/news/2024/02/copilot-studio-powerva-available/\n\
+        - [6] https://elevenlabs.io/blog/conversational-ai-features-in-microsoft-copilot-ai\n\
+        - [7] https://windowsforum.com/threads/microsofts-nlu-in-copilot-studio-revolutionizing-customer-service-with-fine-tuned-language-understanding.373531/?amp=1\n\
+        - [8] https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-gpt-overview\n\
+        - [9] https://www.rpatech.ai/microsoft-copilot-studio/\n- [10] https://www.proserveit.com/blog/complete-guide-microsoft-copilot\n\
+        \n\n\n\n-----"
   - 021_title: 質問 12/50：
-    022_line: 000965
+    022_line: '001020'
     023_contents:
     - 031_question: 'ある会社が手紙を受け取っています。
 
@@ -757,19 +773,33 @@
 
         - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
 
-        - [アプリの構築を開始する - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/maker/)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [アプリの構築を開始する - Power Apps | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-apps/maker/)'
+    - 035_supplements: "### 補足：ユーザーが手紙を記録・追跡できるソリューションの選択\n回答\n\n- Power Apps（パワーアプリ）\n\
+        \n#### 設問の意図・目的と解説\n\nこの設問は、「ユーザーが記録を入力し、それを蓄積・管理・参照できるシナリオで、どのPower Platform製品が適しているか」を問うものです。\n\
+        \n#### 解説\n\n- **Power Apps（パワーアプリ）**  \n  Power Appsは、利用者自身が情報（例：手紙の受領記録や詳細）を簡単に入力し、閲覧・データベース化・検索できる“カスタムアプリ”をノーコード/ローコードで作成できます。例えば、「記録フォーム」「一覧表示」「検索・フィルタ」などの画面を、社内の業務フローや管理ルールに合わせて自由に設定可能です。\
+        \  \n  *→ ユーザーが「手紙の内容・到着日・送付者・処理状況」などを記録し、後から一覧で参照・追跡する運用に柔軟に対応できます。*\n\n\
+        - **Power Automate（パワーオートメート）**  \n  主に自動化ワークフロー（例えば「記録された手紙情報を誰かへ通知」「記録を帳票へ転記」など）に適しており、情報を“手動で記録・追跡するアプリ”そのものとしては使いません[1][2][5]。\n\
+        \n- **マイクロソフト コパイロット スタジオ**  \n  会話型AIボットやFAQエージェントを作成するためのツールで、人間が直接記録・追跡データベースを管理する用途には向いていません。\n\
+        \n- **Power BI**  \n  データの集計・可視化・レポート作成が得意なツールですが、「新たな情報を登録し追跡するアプリ」自体を作成する機能はありません。\n\
+        \n#### 理解を深めるポイント\n\n- **Power Appsは「業務記録・トラッキングアプリ」用途に最も強みがある**\n    - 例：手紙、書類、問い合わせ、活動記録…等、あらゆる自社フローに合わせてカスタムできます。\n\
+        \    - 入力フォームの作成、データベース連携、一覧表示・検索・編集などをノンプログラミングで素早く構築できます。\n- 他の選択肢（Power\
+        \ Automate、Copilot Studio、Power BI）は、記録・追跡主体の業務アプリそのものを作るには適しません。\n\nこの設問は「情報入力・記録・管理の主役となるアプリ基盤は何か？」を明確に区別して理解することを目的としています。\n\
+        \n```\n[1] Power Apps allows you to build custom apps for tracking and managing\
+        \ any type of business record, including letters and documents, providing\
+        \ easy input and tracking features without the need for code.\n[2] Power Apps\
+        \ can be integrated with SharePoint and other data sources for document management\
+        \ and tracking workflows.\n[5] Power Apps can be enhanced for document tracking\
+        \ with additional features like classification, mandatory fields, and drag-and-drop\
+        \ if needed.\n```\n\n- [1] https://www.datahaven4dynamics.com/microsoft-power-platform\n\
+        - [2] https://www.ecleva.com/integrating-power-apps-with-sharepoint-for-document-management-solutions/\n\
+        - [3] https://www.youtube.com/watch?v=nvaopgC4fAI\n- [4] https://learn.microsoft.com/en-us/power-apps/maker/data-platform/solutions-overview\n\
+        - [5] https://appsource.microsoft.com/nl-nl/product/dynamics-365/consultinginformaticocantabriacic1653566494756.ciccladoc?tab=overview\n\
+        - [6] https://www.youtube.com/watch?v=mkiTk0ssTuk\n- [7] https://www.microsoft.com/en-us/power-platform/blog/power-automate/automate-document-processing-with-power-automate/\n\
+        - [8] https://www.linkedin.com/pulse/streamlining-document-control-power-apps-sharepoint-thabet-bendaoued-jxztf\n\
+        - [9] https://learn.microsoft.com/en-us/power-apps/\n- [10] https://www.youtube.com/watch?v=OiR3TtmMl2A\n\
+        \n\n\n\n-----"
   - 021_title: 質問 13/50：
-    022_line: '001006'
+    022_line: '001110'
     023_contents:
     - 031_question: 'ある会社では Microsoft Power Platform を使用してアプリを作成することを計画しています。
 
@@ -801,19 +831,28 @@
 
         - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
 
-        - [Power Automate のドキュメント - Power Automate | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-automate/)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [Power Automate のドキュメント - Power Automate | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-automate/)'
+    - 035_supplements: "### 補足：顧客への販売見積書送信プロセスの自動化で使用するコンポーネント\n回答\n\n- パワーオートメート\n\
+        \n#### 設問の意図・目的と解説\n\nこの設問は、「見積書送信の業務をPower Platformで自動化する場合にどのコンポーネントを使うべきか」を問うものです。\n\
+        \n#### 各選択肢の特徴\n\n- **パワーオートメート（Power Automate）**\n    - 電子メール送信や通知、業務プロセスの自動化が得意なRPA／ワークフローエンジンです。\n\
+        \    - 「見積内容の入力→顧客への自動メール送信」の仕組みをフローとして簡単に実現できます。\n    - 添付ファイル（PDF見積書など）の自動送信や、データ連携も対応できます[1][2][3][6]。\n\
+        \n- **Power Apps（パワーアプリ）**\n    - 入力フォームや一覧など、業務アプリそのもののUXを作ることが得意ですが、「メール送信を自動化する」処理自体は必ずしも担当しません。\n\
+        \n- **Power BI**\n    - データ分析・可視化ツールであり、自動的なメール送信機能は本来の役割ではありません。\n\n- **マイクロソフト\
+        \ コパイロット スタジオ**\n    - 会話型AIやチャットボットの作成用途で、メール通知・自動書類送信のプロセス自動化は担当しません。\n\n\
+        #### 理解を深めるポイント\n\n- Power Automateは「トリガー（きっかけ）」に応じてメール送信アクションを自動で実行できます。\n\
+        - 業務プロセスの自動化（例：見積書の承認後、自動で顧客へPDFを添付して送信など）はPower Automateが最も適しています。\n- Power\
+        \ AppsとPower Automateはよく連携して使われ、「アプリで入力→自動送信をフローで実現」という構成がよく採用されます。\n\nこの設問を通じて、「通知・郵送・ステータス変更など、自動化したい業務フローはPower\
+        \ Automateに任せる」というアーキテクチャの基本が身につきます。\n\n---\n\n- [1] https://www.xray.tech/post/automate-outlook-power-automate\n\
+        - [2] https://learn.microsoft.com/en-us/power-automate/email-top-scenarios\n\
+        - [3] https://learn.microsoft.com/en-us/training/modules/email-power-automate/\n\
+        - [4] https://www.onpointinsights.us/automating-email-reports-from-power-bi-using-power-automate/\n\
+        - [5] https://dev.to/citizendevacad/how-to-send-automated-emails-with-power-automate-468i\n\
+        - [6] https://www.bluebi.com/en/the-4-benefits-of-email-automation-with-power-automate/\n\
+        - [7] https://www.youtube.com/watch?v=WKRXEIRCotQ\n- [8] https://www.c-sharpcorner.com/article/how-to-send-emails-using-power-automate/\n\
+        - [9] https://www.mailmodo.com/guides/outlook-email-automation/\n- [10] https://promx.net/en/2024/02/the-most-popular-features-in-power-automate/\n\
+        \n\n\n\n-----"
   - 021_title: 質問 14/50：
-    022_line: 001048
+    022_line: 001197
     023_contents:
     - 031_question: 'ある会社では Microsoft Dynamics 365 Sales を使用して販売プロセスを管理しています。
 
@@ -841,10 +880,31 @@
         \ Power Pages は、外部向け Web サイトに使用されます。\n\n- [Microsoft Power Platform 環境の管理\
         \ - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)\n\
         - [Power Apps と Dynamics 365 アプリからデータを視覚化](https://learn.microsoft.com/ja-jp/power-bi/create-reports/dynamics-quick-create-report)\n\
-        - [Power BI でレポートとダッシュボードを作成する - ドキュメント](https://learn.microsoft.com/ja-jp/power-bi/create-reports/)\n\
-        \n\n#### 補足：\n\n\n\n\n-----"
+        - [Power BI でレポートとダッシュボードを作成する - ドキュメント](https://learn.microsoft.com/ja-jp/power-bi/create-reports/)"
+    - 035_supplements: "### 補足：Dynamics 365 Sales の詳細分析情報を得るためのPower Platformアプリケーション選択\n\
+        回答\n\n- Power BI\n\n#### 設問の意図\n\nこの設問は、「Dynamics 365 Salesと連携し、営業マネージャーが現場の標準ダッシュボード以上の柔軟・高度な分析を行うために最善のPower\
+        \ Platform製品は何か」を理解しているかを問うものです。\n\n#### 各選択肢の役割\n\n- **Power BI**  \n  Power\
+        \ BIは、Dynamics 365 Salesとシームレスに連携し、リアルタイムデータに基づいた詳細な分析やカスタムレポート作成を得意とするビジネスインテリジェンス（BI）ツールです。\
+        \  \n  実際、Power BIにはDynamics 365 Sales用の「テンプレートアプリ」も用意されており、複雑な分析・グラフ・ダッシュボードの迅速な作成や、独自の要望に合わせたカスタム分析が可能です。\
+        \  \n  たとえば、「営業パイプラインの可視化」「受注確度別の傾向分析」「KPIのトレンド把握」「部門別・担当者別の成績比較」など、標準機能を越えた深堀りや可視化ができます[1][2][5][6][8]。\n\
+        \n- **パワーオートメート（Power Automate）**  \n  業務自動化やプロセス管理向けであり、分析レポートやデータの可視化は担当外です。\n\
+        \n- **マイクロソフト コパイロット スタジオ**  \n  会話型AI（ボット）作成プラットフォームであって、データ可視化や分析ツールではありません。\n\
+        \n- **パワー・ページ（Power Pages）**  \n  外部公開用Webサイトの作成が主用途で、分析・レポート業務には用いません。\n\n\
+        #### 理解を深めるポイント\n\n- **Power BIは、さまざまなデータソース（Dynamics 365 Sales含む）に接続し、従来のダッシュボードでは見えない複雑な分析や多角的な可視化が可能**です。\n\
+        - Power BIのダッシュボード・レポートは、セールスマネージャーが最善の意思決定をするための「深い洞察」を与えます。\n- 標準のSalesレポートに物足りなさを感じる場合や、会社独自のKPI・切り口で営業分析したい場合は必ずPower\
+        \ BIの活用が推奨されます。\n\n【参考：Power BI 公式】\n> Dynamics 365 Sales 用の Power BI テンプレートアプリを利用すると、パイプライン指標や営業成績の詳細分析、カスタム視覚化がスピーディーに可能となり、営業マネージャーの意思決定レベルが大きく向上します[2][5][6][8]。\n\
+        \n**この設問を通じて、「データの高度な分析」が求められる現場ではPower BIを選ぶ ― という原則をしっかり理解しましょう。**\n\n-\
+        \ [1] https://www.beyondkey.com/blog/dynamics-365-with-power-bi/\n- [2] https://www.microsoft.com/en/power-platform/products/power-bi/power-bi-and-dynamics\n\
+        - [3] https://www.youtube.com/watch?v=mcdpm_5skpA\n- [4] https://learn.microsoft.com/ja-jp/dynamics365/sales/\n\
+        - [5] https://prakashinfotech.com/guide-power-bi-integration-with-microsoft-dynamics-365\n\
+        - [6] https://learn.microsoft.com/en-ca/dynamics365/sales/introduction-sales-template-apps\n\
+        - [7] https://uds.systems/blog/power-bi-integration-with-dynamics-365/\n-\
+        \ [8] https://community.dynamics.com/blogs/post/?postid=f7d212c7-d945-4a95-8350-b8cc1cc2b0ad\n\
+        - [9] https://www.roit.co.jp/blog/integration-dynamics-365-power-bi.html\n\
+        - [10] https://www.mercuriusit.com/microsoft-power-couple-integrate-power-bi-dynamics-365/\n\
+        \n\n\n\n-----"
   - 021_title: 質問 15/50：
-    022_line: 001091
+    022_line: 001286
     023_contents:
     - 031_question: 'ユーザーが新しいプロジェクトを要求するためのキャンバス アプリを作成します。
 
@@ -882,19 +942,30 @@
         - [Microsoft Lists のデータを使用してキャンバス アプリを作成する (ビデオを含む) - Power Apps | Microsoft
         Learn](https://learn.microsoft.com/ja-jp/power-apps/maker/canvas-apps/app-from-sharepoint)
 
-        - [クラウド フローの概要 (ビデオを含む) - Power Automate | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-automate/overview-cloud)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [クラウド フローの概要 (ビデオを含む) - Power Automate | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-automate/overview-cloud)'
+    - 035_supplements: "### 補足：新しいプロジェクト申請キャンバスアプリと自動チーム作成処理の設計\n回答\n\n- Microsoft\
+        \ Teams への接続を追加する。\n- 自動化されたクラウド フローを作成する。\n\n#### 設問の意図・目的と解説\n\nこの設問は、「Power\
+        \ Platform によるアプリ＆ワークフロー設計時に、各種Microsoft 365 サービスと自動連携するための基本構成」を理解しているかを問うものです。\n\
+        \n#### 解説\n\n- **Microsoft Teams への接続を追加する**  \n  新しいプロジェクトごとにTeamsのチームを自動生成するには、Power\
+        \ AutomateなどからTeams APIへアクセスできる状態が必要です。そのためには「Teamsコネクタ（接続）」をフロー上に明示的に追加することが必須です【1】【2】【3】。\n\
+        \n- **自動化されたクラウド フローを作成する**  \n  SharePointリストに新しいプロジェクト申請が追加された時（アイテム追加イベント）をトリガーにして自動的に処理（＝Teamsチームの新規作成）を実行する必要があります。これには「自動化された（オートメーション）クラウドフロー」を利用します。\
+        \  \n  インスタントフローはユーザーが手動ボタンを押す場合に使うもので、本シナリオでは要件に合いません【2】【6】。\n\n- **Microsoft\
+        \ Project への接続を追加する**  \n  Microsoft Projectは今回の要求やワークフローの内容（新規プロジェクトの記録とTeamsチームの生成処理）には直接関係しません。\n\
+        \n#### 理解を深めるポイント\n\n- 業務申請・新規記録のトリガー（SharePointリストへの登録）→自動処理（Teamsチームの新規作成）は、Microsoft\
+        \ 365連携の基本パターンです。\n- 「自動化されたクラウドフロー」とは、あらかじめ決めたイベントを検知して流れを自動実行するフローです。日常オペレーションの省力化・自動化には不可欠です。\n\
+        - チーム自動作成には、Teamsコネクタと自動化フローの組み合わせが推奨されており、応用すればメンバー自動追加なども可能です【2】【3】【6】。\n\
+        \n**参考・事例**:  \nPower Automateを使った「SharePointリスト追加→自動でTeamsチーム作成」の連携は、実際に数多くの組織で活用されている自動化シナリオです。\
+        \  \n（例：Bizwind【6】、Qiita【3】、公式ドキュメント【10】など）\n\n- [1] https://www.iimhs.co.jp/columns/2023/05/case069.html\n\
+        - [2] https://jpdynamicscrm.github.io/blog/powerautomate/create-team-and-add-members/\n\
+        - [3] https://qiita.com/MiyakeMito/items/8e20f136cbe072c44979\n- [4] https://www.sofia-inc.com/blog/16212.html\n\
+        - [5] https://qiita.com/h-nagao/items/9c008ef2a8c0b7159acb\n- [6] https://bizwind.co.jp/blog/business-efficiency/post12772/\n\
+        - [7] https://www.avepoint.co.jp/blog/power-automate-teams-linkage/\n- [8]\
+        \ https://www.a-c-japan.com/solution/rpa/power-automate-workflow-teams/\n\
+        - [9] https://learn.microsoft.com/ja-jp/power-automate/teams/overview\n- [10]\
+        \ https://learn.microsoft.com/ja-jp/power-automate/teams/teams-app-create\n\
+        \n\n\n\n-----"
   - 021_title: 質問 16/50：
-    022_line: '001135'
+    022_line: '001372'
     023_contents:
     - 031_question: 'ある会社が Power Pages を所有しています。
 
@@ -922,19 +993,32 @@
 
         - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
 
-        - [よく寄せられる質問 - Power Automate | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-automate/frequently-asked-questions)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [よく寄せられる質問 - Power Automate | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-automate/frequently-asked-questions)'
+    - 035_supplements: "### 補足：Power Pages のレコード要約を含む週次通知に使う Power Platform コンポーネント\n\
+        回答\n\n- パワーオートメート\n\n#### 設問の意図・目的と解説\n\nこの設問は、「Power Pages で管理しているデータを基にして、サードパーティのサービスと連携しつつ定期的な通知を自動化する際に最適な\
+        \ Power Platform コンポーネントは何か」を問うものです。\n\n#### なぜパワーオートメートなのか？\n\n- **Power\
+        \ Automate（パワーオートメート）** は、Microsoft Power Platform の中でワークフロー自動化および多種多様なサービス（Microsoft製品に限らずサードパーティ含む）との連携に特化しています。\
+        \  \n- Power Pages 内のレコード（通常は Dataverse に保存されているデータ）を抽出・集計し、その内容を週次のタイマーやスケジュールトリガーで処理し、メールや他の通知サービスを通じて送信するフローを構築可能です。\
+        \  \n- 標準コネクタやカスタムコネクタを使い、SalesforceやSlack、Twilioなど多様な外部サービスとも連携できるのが強みです。\
+        \  \n\n#### その他の選択肢について\n\n- **Power BI** は主にデータ分析と可視化のツールであり、通知送信機能やサードパーティへの連携自動化には直接対応していません。\
+        \  \n- **Microsoft Copilot Studio** はボットや対話型AI作成向けであり、定期通知やサードパーティ連携の自動化には向いていません。\
+        \  \n- **Microsoft Dataverse** はデータ格納プラットフォームで、通知処理や外部連携の役割は持っていません。  \n\n\
+        #### 理解を深めるポイント\n\n- Power Pages のデータは通常 Dataverse 上に存在しており、Power Automate\
+        \ はこのデータをトリガーやアクションとして読み書きできる。  \n- 定期通知の自動化（スケジュール実行）にはPower Automateのクラウドフローが最適で、通知内容の集計や整形も可能。\
+        \  \n- サードパーティサービスとの連携もPower Automateで柔軟に実現できる。  \n\nこの設問により、Power Platform\
+        \ 製品の役割分担と、特に「データを元にした通知や連携の自動化はPower Automateで対応する」という基本理解を深めることが目的です。\n\n\
+        【参考情報】  \n- Microsoft公式：Power PagesとPower Automateの統合による業務自動化ガイド[1]  \n- Power\
+        \ Automateで外部サービス連携と通知を行う一般的な活用シナリオ[5][6]  \n- Power PagesからPower Automateクラウドフロー呼び出し事例[3][4]\n\
+        \n- [1] https://learn.microsoft.com/en-us/power-pages/configure/cloud-flow-integration\n\
+        - [2] https://community.powerplatform.com/forums/thread/details/?threadid=7d6f5431-0656-4bc3-bca8-68c9c48e505a\n\
+        - [3] https://www.inogic.com/blog/2023/07/how-to-use-power-automate-flow-in-power-pages/\n\
+        - [4] https://learn.microsoft.com/en-us/power-pages/configure/power-automate-how-to\n\
+        - [5] https://www.esri.com/arcgis-blog/products/field-maps/field-mobility/automate-field-notifications-with-microsoft-power-automate\n\
+        - [6] https://www.youtube.com/watch?v=Fe9MKXQQoNo\n- [7] https://www.youtube.com/watch?v=KBAv_SmKhVY\n\
+        - [8] https://www.youtube.com/watch?v=7JHEjSM5lzo\n- [9] https://www.kimmokoski.dev/power-automate-with-power-pages/\n\
+        - [10] https://www.youtube.com/watch?v=UBltc6haCwQ\n\n\n\n\n-----"
   - 021_title: 質問 17/50：
-    022_line: '001177'
+    022_line: 001458
     023_contents:
     - 031_question: 'ある会社では Microsoft Power Platform を使用しています。
 
@@ -972,19 +1056,30 @@
         | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-platform/architecture/key-concepts/expressroute/planning-expressroute)
 
         - [Azure AD の条件付きアクセスを設定する - Microsoft Power Platform - Power Platform | Microsoft
-        Learn](https://learn.microsoft.com/ja-jp/power-platform/guidance/adoption/conditional-access)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        Learn](https://learn.microsoft.com/ja-jp/power-platform/guidance/adoption/conditional-access)'
+    - 035_supplements: "### 補足：Microsoft Power Platform における企業データの外部漏洩防止策\n回答\n\n\
+        - データ ポリシーを作成する。\n\n#### 設問の意図・目的と解説\n\nこの設問は、「Microsoft Power Platform での組織データの漏洩リスクを軽減するために最も効果的な管理策は何か」を理解しているかを評価しています。\n\
+        \n##### なぜ「データ ポリシーを作成する」なのか？\n\n- **データ ポリシー（Data Loss Prevention：DLPポリシー）**は、Power\
+        \ Platform環境内で使用されるアプリやフローがアクセスできるデータソース（コネクタ）を制御し、異なるデータ領域間でのデータ移動を制限します。\
+        \  \n- 例えば、機密性の高い企業データが含まれているAzure SQL Databaseと外部サービスのDropboxへの同時接続を禁止することで、意図せずデータが外部に送られるリスクを防止します。\
+        \  \n- DLPポリシーはPower Platform管理センターで作成・適用され、環境単位またはテナント全体に展開可能です。\n\n####\
+        \ 他の選択肢との違い\n\n- **条件付きアクセス**はMicrosoft Entra ID（旧Azure AD）の機能で、ユーザーのアクセス権を場所、デバイスなどの条件に基づき制御します。これは「アクセスの管理」であり、データの持ち出しや転送制御ではないため漏洩防止には直接つながりません。\
+        \  \n- **Microsoft Power Platform Center of Excellence (CoE) スターター キット**は組織内でのPower\
+        \ Platformの運用管理とガバナンスの強化に役立つツールキットですが、それ自体が即データ漏洩を防ぐ仕組みではありません。むしろ、DLPの管理を支援します。\
+        \  \n- **Microsoft Dataverseでの監査**は、テーブル内のデータ変更履歴を記録・追跡する機能であり、不正行為の検知や追跡に役立ちますが、「漏洩防止」そのものの機能ではありません。\n\
+        \n#### まとめ\n\n- 組織のPower Platform内でのデータの安全な扱いを保証するためには、**「データ ポリシーの作成」が最も直接的かつ実用的な防止策**です。\
+        \  \n- これにより、意図せぬ外部共有や不正なデータ移動を未然に防げます。  \n- 条件付きアクセスや監査機能は補助的なセキュリティ対策と理解するのが適切です。\n\
+        \n【参考情報】  \n- Power Platform 管理センターでのデータポリシー作成手順や管理方法[1][2][4]  \n- DLPポリシーが組織のデータ漏洩リスクをどのように低減するかの解説[4][6]\n\
+        \nこれらを踏まえ、「データ ポリシーを作成する」が正解であり、組織のデータ漏洩リスクの根本的な低減に寄与する仕組みです。\n\n- [1] https://learn.microsoft.com/ja-jp/power-platform/admin/prevent-data-loss\n\
+        - [2] https://qiita.com/skuramoto/items/abc1eb4626be7de5229b\n- [3] https://learn.microsoft.com/ja-jp/power-automate/prevent-data-loss\n\
+        - [4] https://learn.microsoft.com/ja-jp/power-platform/admin/wp-data-loss-prevention\n\
+        - [5] https://learn.microsoft.com/ja-jp/power-platform/admin/data-loss-prevention-sdk\n\
+        - [6] https://www.geekfujiwara.com/tech/powerplatform/6405/\n- [7] https://qiita.com/tk3dots/items/a5c7042929d55e481301\n\
+        - [8] https://tech-blog.cloud-config.jp/2023-11-09-power-platform-management-center-dlp-setting\n\
+        - [9] https://learn.microsoft.com/ja-jp/power-apps/maker/data-platform/data-retention-set\n\
+        - [10] https://live-style.jp/powerplatform-explanation/\n\n\n\n\n-----"
   - 021_title: 質問 18/50：
-    022_line: '001220'
+    022_line: '001544'
     023_contents:
     - 031_question: 'ある会社には、ニューヨーク、パリ、マドリードに 3 つの支店があります。
 
@@ -1010,19 +1105,30 @@
 
         - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
 
-        - [環境の概要 - Power Platform | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-platform/admin/environments-overview)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [環境の概要 - Power Platform | Microsoft Learn](https://learn.microsoft.com/ja-jp/power-platform/admin/environments-overview)'
+    - 035_supplements: "### 補足：Microsoft Dataverse 環境およびインスタンスの作成方法\n回答\n\n- 環境を3つ作成し、それぞれに1つのインスタンスを含める。\n\
+        \n#### 設問の意図・目的と解説\n\nこの設問は、**Microsoft Dataverseにおける「環境」と「インスタンス」の関係性**を理解しているかを問うものです。\n\
+        \n#### 環境とインスタンスの関係\n\n- **環境とは**  \n  Dataverseデータベースをホストし、アプリやフローなどが動作する「論理的なコンテナ」です。\
+        \  \n  組織の部門や地域、用途に応じて分けて作成されます。  \n  また、環境ごとに配置される地域（リージョン）やセキュリティ設定も異なります。\n\
+        \n- **インスタンスとは**  \n  環境内に存在するDataverseのデータベース実体です。  \n\n- **重要なポイント**  \n\
+        \  *1つの環境に作成できるインスタンスは「0個または1個のみ」です。*  \n  つまり、複数のインスタンスを同一環境内に配置することはできません。\n\
+        \n#### よって\n\n- 3つの支店に対してデータを分けて管理したい場合は、**「支店ごとに環境を1つずつ作成し、それぞれ環境にひとつのDataverseインスタンスを持たせる」**のが正しい設計となります。\
+        \  \n- 「1つの環境に複数のインスタンスを作成」や「環境なしでインスタンスを作る」はできません。\n\n#### 理解を深めるポイント\n\n\
+        - Power Platform管理者や開発者は、環境とインスタンスのこの1対1の関係を理解して設計・運用することが不可欠です。  \n- 環境は組織の業務や地理的要件に沿って分けて管理し、それぞれに1つのデータベースインスタンスを持たせて安全に分離運用できます。\
+        \  \n- 環境の分割は、セキュリティ、データガバナンス、レイテンシ（物理的距離）最適化にも関わります。\n\n【参考情報】  \n- Microsoft公式ドキュメント「Power\
+        \ Platform 環境の概要」には以下の記述があります。  \n  - 各環境は0または1つのDataverseデータベースインスタンスを持ちます。\
+        \  \n  - 複数のインスタンスを1つの環境に持つことはできません。  \n  - 環境単位でリージョンが割り当てられます。  \n- 環境＝論理的な枠組み、インスタンス＝その環境の1つのDataverseデータベース実態と覚えましょう。\n\
+        \nこれにより、「ニューヨーク」「パリ」「マドリード」の3つの支店のそれぞれに対して独立した環境を用意し、環境ごとに1つのDataverseインスタンスを持たせることが最適な構成であることが理解できます。\n\
+        \n- [1] https://learn.microsoft.com/ja-jp/training/modules/create-manage-environments/\n\
+        - [2] https://learn.microsoft.com/ja-jp/power-platform/admin/environments-overview\n\
+        - [3] https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv\n\
+        - [4] https://qiita.com/fsdg-yook/items/86dfacc8060637ae39de\n- [5] https://www.qes.co.jp/media/PowerApps/a538\n\
+        - [6] https://qiita.com/max_kamitoda/items/d500bb5824f21a0e9816\n- [7] https://learn.microsoft.com/ja-jp/power-platform/admin/about-teams-environment\n\
+        - [8] https://www.docswell.com/s/fworlddocs/K38Y4Y-2023-10-29-222642\n- [9]\
+        \ https://www.sofia-inc.com/blog/16214.html\n- [10] https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-existing-dv\n\
+        \n\n\n\n-----"
   - 021_title: 質問 19/50：
-    022_line: '001261'
+    022_line: 001638
     023_contents:
     - 031_question: 'ある会社では、Microsoft Power Platform の単一環境内で一連のモデル駆動型アプリを使用しています。
 
@@ -1050,19 +1156,31 @@
 
         - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
 
-        - [Power Apps を使用してモデル駆動型アプリを共有する](https://learn.microsoft.com/ja-jp/power-apps/maker/model-driven-apps/share-model-driven-app)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [Power Apps を使用してモデル駆動型アプリを共有する](https://learn.microsoft.com/ja-jp/power-apps/maker/model-driven-apps/share-model-driven-app)'
+    - 035_supplements: "### 補足：Microsoft Power Platform のモデル駆動型アプリ共有時に必要なユーザーへの割り当て\n\
+        回答\n\n- Dataverse セキュリティ ロール\n\n#### 設問の意図・目的と解説\n\nこの設問は、Microsoft Power\
+        \ Platform 特にモデル駆動型アプリのセキュリティモデルの理解を問うものです。\n\n#### ポイント解説\n\n- **モデル駆動型アプリはロールベースのセキュリティを採用しています。**\
+        \  \n  アプリ自体は1つ以上の「Dataverse セキュリティ ロール」に関連付けられており、そのロールによってアプリ内の各種機能・データの利用権限が決まります。\n\
+        \n- **ユーザーがそのアプリにアクセスし操作できるようにするには、対応するセキュリティ ロールをユーザーに割り当てる必要があります。**  \n\
+        \  これは、アプリの機能やアクセス範囲を細かく制御するために必須です。単にユーザーを Microsoft 365 のセキュリティグループに属させるだけでは、Dataverse\
+        \ データへのアクセス権限は付与されません。\n\n- **権限の細分化と管理がしやすい仕組みであり、業務の安全性やデータガバナンスに寄与します。**\n\
+        \n- **その他の選択肢の意味**  \n  - データ損失防止（DLP）ポリシーはデータの扱いルール管理であり、ユーザー単位のアプリアクセスとは異なります。\
+        \  \n  - Microsoft 365 セキュリティグループはユーザー管理の一部ですが、モデル駆動型アプリの権限管理はDataverseロール中心です。\
+        \  \n  - ビジネス プロセス フローは業務プロセスのガイドであり、権限設定には関与しません。  \n\n#### まとめ\n\n- モデル駆動型アプリの**共有には、ユーザーに適切な「Dataverse\
+        \ セキュリティ ロール」を割り当ててアクセス権限を付与することが基本です。**  \n- これによって、ユーザーはアプリにログインして利用を開始できます。\
+        \  \n- 共有するときは、アプリとセットでセキュリティロールの割り当ても忘れずに行う必要があります。\n\n【参考】  \n- Microsoft公式ドキュメント「モデル駆動型アプリの共有\
+        \ - セキュリティロール」  \n- Power Platform管理センターでのロール割り当て手順とベストプラクティス\n\nこの設問を通じて、Power\
+        \ Platformのモデル駆動型アプリにおける「アクセス権管理＝Dataverseセキュリティロールの割り当て」という重要な知識ポイントを習得できます。\n\
+        \n- [1] https://learn.microsoft.com/ja-jp/power-apps/maker/model-driven-apps/share-model-driven-app\n\
+        - [2] https://www.qes.co.jp/media/PowerApps/a295\n- [3] https://www.geekfujiwara.com/tech/powerplatform/4823/\n\
+        - [4] https://learn.microsoft.com/ja-jp/power-apps/maker/model-driven-apps/model-app-faq\n\
+        - [5] https://ippu-biz.com/development/powerplatform/powerapps/mda/share_security_role/\n\
+        - [6] https://qiita.com/fsdg-yook/items/572cd765aa50350ddccd\n- [7] https://www.arcuss-japan.com/crmblogs/13909\n\
+        - [8] https://qiita.com/skuramoto/items/6937fb5bcfab72633ec9\n- [9] https://www.qes.co.jp/media/PowerApps/a291\n\
+        - [10] https://jpdynamicscrm.github.io/blog/powerplatform/About-security-role-in-Dataverse/\n\
+        \n\n\n\n-----"
   - 021_title: 質問 20/50：
-    022_line: '001302'
+    022_line: '001725'
     023_contents:
     - 031_question: '従業員には新しい環境が必要です。
 
@@ -1091,19 +1209,31 @@
 
         - [Microsoft Power Platform 環境の管理 - トレーニング |Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/manage-microsoft-power-platform-environment/)
 
-        - [Microsoft Power Platform を管理する – MSLearn | ドキュメント](https://learn.microsoft.com/ja-jp/power-platform/admin/admin-documentation?tabs=new)
-
-
-
-        #### 補足：
-
-
-
-
-
-        -----'
+        - [Microsoft Power Platform を管理する – MSLearn | ドキュメント](https://learn.microsoft.com/ja-jp/power-platform/admin/admin-documentation?tabs=new)'
+    - 035_supplements: "### 補足：新しい環境の作成に必要な領域確認ポータル\n回答\n\n- `https://admin.powerplatform.microsoft.com`\n\
+        \n#### 設問の意図・目的と解説\n\nこの設問は、Microsoft Power Platform の様々なポータルの役割と、**テナントレベルの管理・環境作成やストレージ領域の確認をどのポータルで行うかを理解しているか**を評価しています。\n\
+        \n#### 各ポータルの役割\n\n- **Power Platform 管理センター (`admin.powerplatform.microsoft.com`)**\
+        \  \n  管理者向けのダッシュボードであり、環境の作成管理、使用中環境の一覧、テナントに割り当てられている容量や消費状況の確認ができます。  \n\
+        \  新しい環境を作成する前に、十分な容量や割り当てがあるかどうかをここでチェックするのが正しい手順です。\n\n- **Power Apps 制作ポータル\
+        \ (`make.powerapps.com`)**  \n  主に Power Apps のアプリの作成や既存環境内のアプリ管理を行いますが、テナント全体の環境情報や領域確認はできません。\n\
+        \n- **Power Automate 制作ポータル (`make.powerautomate.com`)**  \n  Power Automate\
+        \ のフローの作成・管理をする場所であり、環境作成や領域確認の機能は含まれていません。\n\n- **Power BI ポータル (`app.powerbi.com`)**\
+        \  \n  Power BI のレポートやダッシュボードの作成・閲覧を行う場所であり、Power Platformの管理や環境作成との関係はありません。\n\
+        \n#### 理解を深めるポイント\n\n- 新しい環境を作成しようとする際は、**Power Platform 管理センターを利用して現在の容量・環境数・ライセンス状況を把握し、適切な準備を行うことが重要**です。\
+        \  \n- この管理センターでは環境の割り当て状況を含め、Capacity（容量）情報が可視化されているため、容量オーバーの防止や新規環境運用にあたっての計画策定に役立ちます。\
+        \  \n- 「制作」や「利用」ポータルではなく、**運用管理やテナントレベルの設定・監視は専用の管理センターで行う**という基本を押さえましょう。\n\
+        \n【参考情報】  \n- Power Platform 管理センターでの環境管理と容量確認についてはMicrosoft公式ドキュメントに詳細があります\
+        \  \n- 環境の新規作成は管理者権限を持つユーザーのみが行え、管理センターから操作されます\n\n本設問は、Power Platform の運用管理とポータル役割の理解を深める重要なポイントを問うものです。\n\
+        \n- [1] https://www.sofia-inc.com/blog/16214.html\n- [2] https://qiita.com/kumukai/items/f7c958345fa2320ad927\n\
+        - [3] https://learn.microsoft.com/ja-jp/power-platform/admin/control-environment-creation\n\
+        - [4] https://learn.microsoft.com/ja-jp/power-platform/admin/create-environment\n\
+        - [5] https://www.cloud-for-all.com/blog/power-platform-manage-center\n- [6]\
+        \ https://yo-yon.hatenablog.com/entry/powerapps20231213\n- [7] https://learn.microsoft.com/ja-jp/power-platform/admin/regions-overview\n\
+        - [8] https://qiita.com/kumukai/items/56c380e337a3699aa8a0\n- [9] https://blog.jbs.co.jp/entry/2025/07/03/123853\n\
+        - [10] https://learn.microsoft.com/ja-jp/power-platform/admin/admin-documentation\n\
+        \n\n\n\n-----"
   - 021_title: 質問 21/50：
-    022_line: '001344'
+    022_line: 001813
     023_contents:
     - 031_question: 'ある会社は、サードパーティ製コネクタを使用するアプリでは会社のデータを使用しないことを必要としています。
 
@@ -1148,7 +1278,7 @@
 
         -----'
   - 021_title: 質問 22/50：
-    022_line: 001387
+    022_line: 001856
     023_contents:
     - 031_question: 'ある会社では Microsoft 365 を使用しています。 社内のすべてのユーザーに、Microsoft 365 ライセンスが割り当てられています。
 
@@ -1202,7 +1332,7 @@
 
         -----'
   - 021_title: 質問 23/50：
-    022_line: '001432'
+    022_line: 001901
     023_contents:
     - 031_question: 'Microsoft Copilot Studio copilot をビルドします。 あなたは、コパイロットにトピックを追加します。
 
@@ -1229,7 +1359,7 @@
         - [トピックを使用してチャットボットの会話を設計する - Power Virtual Agents | Microsoft Learn](https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/authoring-create-edit-topics?tabs=webApp)\n\
         \n\n#### 補足：\n\n\n\n\n-----"
   - 021_title: 質問 24/50：
-    022_line: '001475'
+    022_line: 001944
     023_contents:
     - 031_question: 'Microsoft Copilot Studio copilot を作成します。
 
@@ -1256,7 +1386,7 @@
         - [エンティティを作成して使用する (ビデオを含む) - Power Virtual Agents | Microsoft Learn](https://learn.microsoft.com/ja-jp/microsoft-copilot-studio/advanced-entities-slot-filling)\n\
         \n\n#### 補足：\n\n\n\n\n-----"
   - 021_title: 質問 25/50：
-    022_line: 001518
+    022_line: 001987
     023_contents:
     - 031_question: 'ある会社がソーシャル プラットフォームで新製品の発売を発表します。
 
@@ -1308,7 +1438,7 @@
 
         -----'
   - 021_title: 質問 26/50：
-    022_line: '001567'
+    022_line: '002036'
     023_contents:
     - 031_question: 'ある会社には顧客セルフサービス ポータルがあります。 顧客はポータルを使用して苦情を記録します。
 
@@ -1357,7 +1487,7 @@
 
         -----'
   - 021_title: 質問 27/50：
-    022_line: '001615'
+    022_line: 002084
     023_contents:
     - 031_question: 'Power BI レポートを編集します。
 
@@ -1398,7 +1528,7 @@
 
         -----'
   - 021_title: 質問 28/50：
-    022_line: '001657'
+    022_line: '002126'
     023_contents:
     - 031_question: 'Microsoft Dataverse から Power BI レポートを作成する予定です。
 
@@ -1441,7 +1571,7 @@
 
         -----'
   - 021_title: 質問 29/50：
-    022_line: 001699
+    022_line: 002168
     023_contents:
     - 031_question: '現在と前年の月ごとの収益比較を表示する Power BI の視覚化を作成する必要があります。
 
@@ -1479,7 +1609,7 @@
 
         -----'
   - 021_title: 質問 30/50：
-    022_line: 001738
+    022_line: '002207'
     023_contents:
     - 031_question: 'ある会社では Power BI を使用しています。
 
@@ -1518,7 +1648,7 @@
 
         -----'
   - 021_title: 質問 31/50：
-    022_line: 001779
+    022_line: 002248
     023_contents:
     - 031_question: 'Power BI データセットにテーブルがあります。 集合縦棒グラフ ビジュアルをレポート ページに追加します。
 
@@ -1558,7 +1688,7 @@
 
         -----'
   - 021_title: 質問 32/50：
-    022_line: 001820
+    022_line: 002289
     023_contents:
     - 031_question: '営業チーム用の Power BI レポートを作成する予定です。
 
@@ -1599,7 +1729,7 @@
 
         -----'
   - 021_title: 質問 33/50：
-    022_line: 001861
+    022_line: '002330'
     023_contents:
     - 031_question: 'ある会社がカンファレンスを主催します。
 
@@ -1637,7 +1767,7 @@
 
         -----'
   - 021_title: 質問 34/50：
-    022_line: 001902
+    022_line: '002371'
     023_contents:
     - 031_question: 'アプリを作成します。
 
@@ -1677,7 +1807,7 @@
 
         -----'
   - 021_title: 質問 35/50：
-    022_line: 001944
+    022_line: '002413'
     023_contents:
     - 031_question: 'ある会社では Microsoft Power Platform を使用しています。
 
@@ -1722,7 +1852,7 @@
 
         -----'
   - 021_title: 質問 36/50：
-    022_line: 001987
+    022_line: '002456'
     023_contents:
     - 031_question: 'ある会社では Microsoft Power Platform を使用しています。
 
@@ -1769,7 +1899,7 @@
 
         -----'
   - 021_title: 質問 37/50：
-    022_line: '002031'
+    022_line: '002500'
     023_contents:
     - 031_question: 'キャンバス アプリを作成して公開します。
 
@@ -1814,7 +1944,7 @@
 
         -----'
   - 021_title: 質問 38/50：
-    022_line: '002075'
+    022_line: '002544'
     023_contents:
     - 031_question: 'ある会社では Microsoft Power Platform を使用しています。
 
@@ -1854,7 +1984,7 @@
 
         -----'
   - 021_title: 質問 39/50：
-    022_line: '002115'
+    022_line: 002584
     023_contents:
     - 031_question: 'オフィス文具を追跡して注文するようにキャンバス アプリを構成します。 このアプリでは、ユーザーは複数の文具を注文できます。
 
@@ -1898,7 +2028,7 @@
 
         -----'
   - 021_title: 質問 40/50：
-    022_line: 002159
+    022_line: 002628
     023_contents:
     - 031_question: 'ある会社では Microsoft Power Platform を使用しています。 Microsoft Dataverse
         でデータをモデル化し、モデル駆動型アプリを作成します。
@@ -1943,7 +2073,7 @@
 
         -----'
   - 021_title: 質問 41/50：
-    022_line: '002201'
+    022_line: '002670'
     023_contents:
     - 031_question: 'ある会社が、モデル駆動型アプリを所有しています。
 
@@ -1982,7 +2112,7 @@
 
         -----'
   - 021_title: 質問 42/50：
-    022_line: '002243'
+    022_line: '002712'
     023_contents:
     - 031_question: 'ある会社では、顧客データ管理にモデル駆動型アプリを使用しています。
 
@@ -2035,7 +2165,7 @@
 
         -----'
   - 021_title: 質問 43/50：
-    022_line: 002293
+    022_line: '002762'
     023_contents:
     - 031_question: 'ある会社には、販売管理モデル駆動型アプリがあります。
 
@@ -2078,7 +2208,7 @@
 
         -----'
   - 021_title: 質問 44/50：
-    022_line: '002337'
+    022_line: 002806
     023_contents:
     - 031_question: 'ある会社では、Microsoft Dataverse を使用して小売組織のデータ モデルを作成しています。 その会社は標準の連絡先テーブルを使用して顧客情報を保存しています。
 
@@ -2122,7 +2252,7 @@
 
         -----'
   - 021_title: 質問 45/50：
-    022_line: 002381
+    022_line: 002850
     023_contents:
     - 031_question: 'Microsoft Power Platform と Microsoft Dataverse を使用してソリューションを構築します。
 
@@ -2167,7 +2297,7 @@
 
         -----'
   - 021_title: 質問 46/50：
-    022_line: '002425'
+    022_line: 002894
     023_contents:
     - 031_question: 'ある会社が Microsoft Dataverse と Microsoft Dataverse for Teams を評価しています。
 
@@ -2210,7 +2340,7 @@
 
         -----'
   - 021_title: 質問 47/50：
-    022_line: '002467'
+    022_line: 002936
     023_contents:
     - 031_question: 'Microsoft Dataverse を使用して企業のデータ モデルを開発します。
 
@@ -2255,7 +2385,7 @@
 
         -----'
   - 021_title: 質問 48/50：
-    022_line: '002511'
+    022_line: 002980
     023_contents:
     - 031_question: 'Power Automate クラウド フローで Microsoft Teams コネクタを使用する予定です。
 
@@ -2294,7 +2424,7 @@
 
         -----'
   - 021_title: 質問 49/50：
-    022_line: '002551'
+    022_line: '003020'
     023_contents:
     - 031_question: '新しいアイテムが SharePoint Online リストに追加されるたびに電子メールを送信するワークフローを構築する必要があります。
 
@@ -2341,7 +2471,7 @@
 
         -----'
   - 021_title: 質問 50/50：
-    022_line: 002595
+    022_line: '003064'
     023_contents:
     - 031_question: '標準コネクタを使用する Power Automate クラウド フローを作成します。
 
@@ -2391,7 +2521,7 @@
 
         -----'
   - 021_title: 質問：
-    022_line: '002643'
+    022_line: '003112'
     023_contents:
     - 031_question: ''
     - 032_selections: []
